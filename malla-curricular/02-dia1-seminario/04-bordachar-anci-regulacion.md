@@ -44,3 +44,7 @@ Eleva la ciberseguridad de un problema puramente informático a un asunto de gob
 ### 📚 Enlaces y Video
 * 📺 [Video Oficial YouTube Día 1](https://www.youtube.com/watch?v=PEqWRTb1idE)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [Agencia Nacional de Ciberseguridad de Chile (ANCI)](https://www.gob.cl)
+
+---
+
+[⬅ Lección Anterior](03-fernandez-crimen-ia.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](05-evirtus-efecto-domino.md)

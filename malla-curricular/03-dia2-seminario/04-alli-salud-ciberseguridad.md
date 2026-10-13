@@ -44,3 +44,7 @@ Porque manejan datos confidenciales y, al tratarse de servicios críticos donde 
 ### 📚 Enlaces y Video
 * 📺 [Canal Oficial YouTube PDI Chile](https://www.youtube.com/@PDIChile)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [Biohacking Village Health Security](https://www.villageb.io/)
+
+---
+
+[⬅ Lección Anterior](03-cordero-resiliencia-hardware.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](05-albuquerque-deteccion-respuesta.md)

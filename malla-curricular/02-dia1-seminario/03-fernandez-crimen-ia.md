@@ -44,3 +44,7 @@ Es una tecnología que verifica si la persona frente a la cámara es un ser huma
 ### 📚 Enlaces y Video
 * 📺 [Video Oficial YouTube Día 1](https://www.youtube.com/watch?v=PEqWRTb1idE)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [TRM - IAFIS Biometrics](https://www.iafisgroup.com/nosotros/)
+
+---
+
+[⬅ Lección Anterior](02-lama-infraestructura-dns.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](04-bordachar-anci-regulacion.md)

@@ -1,5 +1,5 @@
 # Fundamentos
 
-Este módulo está reservado para las lecciones introductorias. `datos_seminario.json` no contiene lecciones de fundamentos; queda pendiente recibir ese contenido de AGY.
+Empieza por [Glosario y conceptos clave](01-glosario-y-conceptos-clave.md), una guía introductoria basada en las definiciones y el glosario ilustrado del documento base.
 
-Puedes comenzar por las lecciones del día 1 desde la [malla curricular](../../README.md).
+Después, continúa por las lecciones del día 1. El pie de cada lección permite avanzar, retroceder o volver a la [malla curricular](../../README.md).

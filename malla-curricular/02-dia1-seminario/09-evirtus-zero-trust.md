@@ -44,3 +44,7 @@ El modelo tradicional confía ciegamente en todo lo que está dentro de la red c
 ### 📚 Enlaces y Video
 * 📺 [Video Oficial YouTube Día 1](https://www.youtube.com/watch?v=PEqWRTb1idE)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [E-Virtus Arquitecturas Resilientes](https://e-virtus.com)
+
+---
+
+[⬅ Lección Anterior](08-bonnaire-agentes-ia.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](../03-dia2-seminario/01-caceres-blue-team-ia.md)

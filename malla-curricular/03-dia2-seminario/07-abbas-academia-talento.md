@@ -44,3 +44,7 @@ Porque las ciberamenazas evolucionan en tiempo real, por lo que los defensores n
 ### 📚 Enlaces y Video
 * 📺 [Canal Oficial YouTube PDI Chile](https://www.youtube.com/@PDIChile)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [Universidad Bernardo O'Higgins (UBO)](https://www.ubo.cl)
+
+---
+
+[⬅ Lección Anterior](06-norman-amenazas-hibridas.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](../04-investigacion-global/01-nist-cisa-ncsc.md)

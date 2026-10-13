@@ -44,3 +44,7 @@ Es el Sistema Estatal de Detección, Prevención y Eliminación de Consecuencias
 ### 📚 Enlaces y Video
 * 📺 No se proporcionó un video oficial para esta lección.
 * 📄 [FSTEC de Rusia (ФСТЭК России)](https://fstec.ru); [Centro Nacional de Coordinación de Incidentes Informáticos (NKTsKI)](http://safe-surf.ru); [Portal Oficial de Información Legal de Rusia (Ley 187-FZ)](http://pravo.gov.ru)
+
+---
+
+[⬅ Lección Anterior](02-china-cii-cac.md) | [🏠 Volver a la Malla Curricular](../../README.md) | Fin del recorrido ➡

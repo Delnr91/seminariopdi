@@ -44,3 +44,7 @@ No busca solo desconectar un servidor o robar datos, sino combinar el impacto de
 ### 📚 Enlaces y Video
 * 📺 [Canal Oficial YouTube PDI Chile](https://www.youtube.com/@PDIChile)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [UK Foreign, Commonwealth & Development Office](https://www.gov.uk/fcdo)
+
+---
+
+[⬅ Lección Anterior](05-albuquerque-deteccion-respuesta.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](07-abbas-academia-talento.md)

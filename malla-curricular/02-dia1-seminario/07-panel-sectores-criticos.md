@@ -44,3 +44,7 @@ Porque detener un controlador industrial para reiniciarlo puede apagar turbinas 
 ### 📚 Enlaces y Video
 * 📺 [Video Oficial YouTube Día 1](https://www.youtube.com/watch?v=PEqWRTb1idE)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [CSIRT de Gobierno de Chile](https://www.csirt.gob.cl); [Coordinador Eléctrico Nacional](https://www.coordinador.cl)
+
+---
+
+[⬅ Lección Anterior](06-fernandez-dispositivos-medicos.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](08-bonnaire-agentes-ia.md)

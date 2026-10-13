@@ -44,3 +44,7 @@ Analizando y correlacionando automáticamente millones de registros por segundo 
 ### 📚 Enlaces y Video
 * 📺 [Canal Oficial YouTube PDI Chile](https://www.youtube.com/@PDIChile)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [Investigación Call for Papers USM](https://usm.cl)
+
+---
+
+[⬅ Lección Anterior](../02-dia1-seminario/09-evirtus-zero-trust.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](02-fuentes-threat-intelligence.md)

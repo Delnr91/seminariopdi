@@ -503,7 +503,7 @@ datos = {
         },
         {
             "id": "intl_01_eeuu_uk",
-            "carpeta": "04-comparativa-internacional",
+            "carpeta": "04-investigacion-global",
             "archivo": "01-nist-cisa-ncsc.md",
             "speaker": "Marco CISA / NIST & NCSC",
             "institucion": "CISA / NIST (EE.UU.) & NCSC (Reino Unido)",
@@ -534,7 +534,7 @@ datos = {
         },
         {
             "id": "intl_02_china",
-            "carpeta": "04-comparativa-internacional",
+            "carpeta": "04-investigacion-global",
             "archivo": "02-china-cii-cac.md",
             "speaker": "Administración del Ciberespacio de China (CAC)",
             "institucion": "CAC / MPS (República Popular China)",
@@ -565,7 +565,7 @@ datos = {
         },
         {
             "id": "intl_03_rusia",
-            "carpeta": "04-comparativa-internacional",
+            "carpeta": "04-investigacion-global",
             "archivo": "03-rusia-187fz-fstec.md",
             "speaker": "Servicio Federal de Control Técnico y Exportaciones (FSTEC / FSB)",
             "institucion": "FSTEC / NKTsKI (Federación Rusa)",

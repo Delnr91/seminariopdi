@@ -44,3 +44,7 @@ Porque los directores y tomadores de decisiones de negocio necesitan comprender 
 ### 📚 Enlaces y Video
 * 📺 [Canal Oficial YouTube PDI Chile](https://www.youtube.com/@PDIChile)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [SEK Cybersecurity Intelligence](https://sek.com)
+
+---
+
+[⬅ Lección Anterior](01-caceres-blue-team-ia.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](03-cordero-resiliencia-hardware.md)

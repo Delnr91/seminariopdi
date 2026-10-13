@@ -44,3 +44,7 @@ La función 'Gobernar' (Govern), que establece cómo las organizaciones toman de
 ### 📚 Enlaces y Video
 * 📺 No se proporcionó un video oficial para esta lección.
 * 📄 [NIST Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework); [CISA - Cross-Sector Cybersecurity Performance Goals](https://www.cisa.gov/cpgs); [UK National Cyber Security Centre (NCSC)](https://www.ncsc.gov.uk)
+
+---
+
+[⬅ Lección Anterior](../03-dia2-seminario/07-abbas-academia-talento.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](02-china-cii-cac.md)

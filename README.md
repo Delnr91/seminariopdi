@@ -2,17 +2,17 @@
 
 Malla de aprendizaje sobre **protección de la infraestructura crítica y ciberresiliencia**, basada en el 9° Seminario Internacional de Ciberseguridad organizado por la Policía de Investigaciones de Chile (PDI) y la Universidad Técnica Federico Santa María (USM).
 
-Las lecciones presentan analogías, explicaciones, tres aprendizajes, una lista de chequeo preventiva y una autoevaluación con respuesta desplegable. El recorrido reúne **19 lecciones: 9 del día 1, 7 del día 2 y 3 de investigación global**, para estudiar la protección de servicios como electricidad, agua, salud, banca e Internet.
+Las lecciones presentan analogías, explicaciones, tres aprendizajes, una lista de chequeo preventiva y una autoevaluación con respuesta desplegable. El recorrido reúne **una guía de fundamentos y 19 lecciones: 9 del día 1, 7 del día 2 y 3 de investigación global**, para estudiar la protección de servicios como electricidad, agua, salud, banca e Internet.
 
 Abre una lección desde la tabla para leerla en la aplicación móvil o en la web de GitHub. Todo el material de lectura está en GitHub Flavored Markdown (GFM), sin CSS, JavaScript, frameworks ni despliegue.
 
 ## Malla Curricular
 
-Sigue el orden de los módulos y de las lecciones. El módulo de fundamentos está reservado: los datos de AGY todavía no incluyen lecciones para él.
+Empieza por fundamentos y sigue el orden de la tabla. Al final de cada lección encontrarás enlaces a la anterior, a la siguiente y a esta malla curricular; al inicio y al final del recorrido se indica el límite correspondiente.
 
 | Módulo | Lección | Speaker | Nivel |
 | --- | --- | --- | --- |
-| Fundamentos | [Estado del módulo](malla-curricular/01-fundamentos/README.md) | Pendiente de contenido de AGY | — |
+| Fundamentos | [Glosario y conceptos clave](malla-curricular/01-fundamentos/01-glosario-y-conceptos-clave.md) | Documento base del seminario | Principiante |
 | Día 1 del seminario | [Adversarios digitales IA y el nuevo escenario de amenazas a la infraestructura crítica](malla-curricular/02-dia1-seminario/01-wong-ia-cibercrimen.md) | Subprefecto Marcelo Wong Cea | Principiante |
 | Día 1 del seminario | [Infraestructura de Internet: Seguridad, Continuidad y Resiliencia](malla-curricular/02-dia1-seminario/02-lama-infraestructura-dns.md) | Guillermo Lama | Principiante |
 | Día 1 del seminario | [El lado práctico del crimen con IA](malla-curricular/02-dia1-seminario/03-fernandez-crimen-ia.md) | Manu Fernández | Intermedio |
@@ -45,11 +45,11 @@ Cuando se incorporen los MP3:
 2. En la vista del archivo de GitHub, usa **Download / Descargar archivo** o **Raw / Ver sin procesar**, según la interfaz disponible.
 3. Abre el MP3 en el navegador o en el reproductor de tu dispositivo. La reproducción depende del navegador y de la app; no se garantiza un reproductor dentro del Markdown de GitHub.
 
-El encabezado «1 Minuto» pertenece a la plantilla. La duración efectiva deberá verificarse cuando existan las grabaciones.
+El encabezado «1 Minuto» pertenece a la plantilla. Los guiones tienen entre 113 y 124 palabras, por lo que su extensión no garantiza una duración exacta de 60 segundos. La duración efectiva deberá verificarse cuando existan las grabaciones. La guía de fundamentos no dispone de un guion de audio propio.
 
 ## Recursos y procedencia
 
-- [Datos originales de AGY](datos_seminario.json): fuente de las 19 lecciones y sus guiones.
+- [Datos de AGY](datos_seminario.json): fuente de las 19 lecciones y sus guiones, con las carpetas sincronizadas con la malla curricular.
 - [Resumen de speakers](resumen_speakers_seminario_ciberseguridad.md): documento base del seminario.
 - [Documentos PDF](assets/docs-pdf/README.md): directorio reservado, sin archivos PDF suministrados.
 - [Verificación y pendientes](VERIFICACION.md): enlaces revisados, correcciones y límites de la comprobación.

@@ -44,3 +44,7 @@ Que un malware o ransomware que infecte una computadora administrativa por un co
 ### 📚 Enlaces y Video
 * 📺 [Video Oficial YouTube Día 1](https://www.youtube.com/watch?v=PEqWRTb1idE)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [Biohacking Village DEF CON](https://www.villageb.io/)
+
+---
+
+[⬅ Lección Anterior](05-evirtus-efecto-domino.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](07-panel-sectores-criticos.md)

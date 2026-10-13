@@ -44,3 +44,7 @@ Exige someter todos los productos y servicios de red de proveedores externos a r
 ### 📚 Enlaces y Video
 * 📺 No se proporcionó un video oficial para esta lección.
 * 📄 [CAC - Administración del Ciberespacio de China](http://www.cac.gov.cn); [Ministerio de Seguridad Pública de China (MPS)](https://www.mps.gov.cn); [Directrices MLPS 2.0 (Multi-Level Protection Scheme)](http://www.tc260.org.cn)
+
+---
+
+[⬅ Lección Anterior](01-nist-cisa-ncsc.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](03-rusia-187fz-fstec.md)

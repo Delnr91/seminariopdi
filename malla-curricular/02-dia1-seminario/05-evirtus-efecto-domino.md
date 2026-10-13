@@ -44,3 +44,7 @@ Porque los proveedores medianos suelen tener menos presupuesto y controles de ci
 ### 📚 Enlaces y Video
 * 📺 [Video Oficial YouTube Día 1](https://www.youtube.com/watch?v=PEqWRTb1idE)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [E-Virtus Ciberseguridad Industrial](https://e-virtus.com)
+
+---
+
+[⬅ Lección Anterior](04-bordachar-anci-regulacion.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](06-fernandez-dispositivos-medicos.md)

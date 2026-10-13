@@ -44,3 +44,7 @@ Significa que un ser humano calificado debe estar integrado obligatoriamente en 
 ### 📚 Enlaces y Video
 * 📺 [Video Oficial YouTube Día 1](https://www.youtube.com/watch?v=PEqWRTb1idE)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [Departamento de Informática USM](https://inf.utfsm.cl)
+
+---
+
+[⬅ Lección Anterior](07-panel-sectores-criticos.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](09-evirtus-zero-trust.md)

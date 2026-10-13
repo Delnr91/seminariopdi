@@ -44,3 +44,7 @@ Porque reside por debajo del sistema operativo y los antivirus, logrando sobrevi
 ### 📚 Enlaces y Video
 * 📺 [Canal Oficial YouTube PDI Chile](https://www.youtube.com/@PDIChile)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [Lenovo ThinkShield Security](https://www.lenovo.com)
+
+---
+
+[⬅ Lección Anterior](02-fuentes-threat-intelligence.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](04-alli-salud-ciberseguridad.md)

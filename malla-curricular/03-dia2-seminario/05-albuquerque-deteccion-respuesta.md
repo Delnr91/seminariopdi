@@ -44,3 +44,7 @@ Consiste en que los atacantes utilizan utilitarios y programas legítimos ya ins
 ### 📚 Enlaces y Video
 * 📺 [Canal Oficial YouTube PDI Chile](https://www.youtube.com/@PDIChile)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [Sophos MDR & Threat Research](https://www.sophos.com)
+
+---
+
+[⬅ Lección Anterior](04-alli-salud-ciberseguridad.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](06-norman-amenazas-hibridas.md)

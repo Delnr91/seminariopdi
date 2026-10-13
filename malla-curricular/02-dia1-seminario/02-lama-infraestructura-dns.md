@@ -44,3 +44,7 @@ Permite que múltiples servidores en distintas partes del mundo compartan la mis
 ### 📚 Enlaces y Video
 * 📺 [Video Oficial YouTube Día 1](https://www.youtube.com/watch?v=PEqWRTb1idE)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [NIC Chile - Centro de Información de Redes](https://www.nic.cl)
+
+---
+
+[⬅ Lección Anterior](01-wong-ia-cibercrimen.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](03-fernandez-crimen-ia.md)

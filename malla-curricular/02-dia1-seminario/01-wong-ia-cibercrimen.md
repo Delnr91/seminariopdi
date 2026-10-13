@@ -44,3 +44,7 @@ Porque permite a los delincuentes redactar mensajes perfectamente contextualizad
 ### 📚 Enlaces y Video
 * 📺 [Video Oficial YouTube Día 1](https://www.youtube.com/watch?v=PEqWRTb1idE)
 * 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [Jefatura Nacional de Cibercrimen PDI](https://www.pdichile.cl)
+
+---
+
+[⬅ Lección Anterior](../01-fundamentos/01-glosario-y-conceptos-clave.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](02-lama-infraestructura-dns.md)
