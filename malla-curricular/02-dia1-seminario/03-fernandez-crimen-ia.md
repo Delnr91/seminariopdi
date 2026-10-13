@@ -34,6 +34,16 @@ La detección de contenido sintético y la verificación de procedencia aportan 
 * [CS50's Introduction to Cybersecurity](https://cs50.harvard.edu/cybersecurity/) — estudiar protección de cuentas, datos y sistemas mediante material gratuito.
 * [Establish the guiding principles and core components of Zero Trust](https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/) — relacionar verificación explícita y mínimo privilegio con los procesos de autorización.
 
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 03:20:20](https://www.youtube.com/watch?v=PEqWRTb1idE&t=12020s) · [Cierre aproximado: 03:46:20](https://www.youtube.com/watch?v=PEqWRTb1idE&t=13580s)
+
+**Duración estimada del bloque:** ≈ 26 min 00 s. **Formato:** Exposición. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/02-dia1-seminario/03-fernandez-crimen-ia.md). Incluye entregables y métricas para contrastar resultados.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

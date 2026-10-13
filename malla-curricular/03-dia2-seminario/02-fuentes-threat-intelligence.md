@@ -33,6 +33,16 @@ Los desafíos incluyen duplicación de fuentes, indicadores obsoletos, sesgos de
 
 * [Perform threat hunting in Microsoft Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/) — contrastar hipótesis de inteligencia con eventos y entidades; contenido gratuito, prácticas Azure sujetas a consumo.
 
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 00:33:20](https://www.youtube.com/watch?v=jLbdG67TqW8&t=2000s) · [Cierre aproximado: 01:04:40](https://www.youtube.com/watch?v=jLbdG67TqW8&t=3880s)
+
+**Duración estimada del bloque:** ≈ 31 min 20 s. **Formato:** Exposición. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/03-dia2-seminario/02-fuentes-threat-intelligence.md). Incluye entregables y métricas para contrastar resultados.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

@@ -35,6 +35,16 @@ El desafío operativo consiste en investigar campañas asistidas por IA sin conv
 * [CS50's Introduction to Artificial Intelligence with Python](https://cs50.harvard.edu/ai/) — estudiar los fundamentos de los modelos y sus límites; requiere experiencia previa en Python.
 * [Perform threat hunting in Microsoft Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/) — practicar investigaciones basadas en telemetría; lectura gratuita, con posibles costes si se despliegan servicios Azure.
 
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 01:02:00](https://www.youtube.com/watch?v=PEqWRTb1idE&t=3720s) · [Cierre aproximado: 01:37:40](https://www.youtube.com/watch?v=PEqWRTb1idE&t=5860s)
+
+**Duración estimada del bloque:** ≈ 35 min 40 s. **Formato:** Exposición. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/02-dia1-seminario/01-wong-ia-cibercrimen.md). Incluye entregables y métricas para contrastar resultados.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

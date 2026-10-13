@@ -33,6 +33,16 @@ El desafío de implementación consiste en mantener trazabilidad entre riesgos, 
 
 * [Introduction to Microsoft Purview and Microsoft's privacy principles](https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/) — estudiar conceptos de cumplimiento y privacidad; sus contenidos no sustituyen el análisis de la normativa ANCI.
 
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 03:48:40](https://www.youtube.com/watch?v=PEqWRTb1idE&t=13720s) · [Cierre aproximado: 04:20:40](https://www.youtube.com/watch?v=PEqWRTb1idE&t=15640s)
+
+**Duración estimada del bloque:** ≈ 32 min 00 s. **Formato:** Exposición. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/02-dia1-seminario/04-bordachar-anci-regulacion.md). Incluye entregables y métricas para contrastar resultados.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

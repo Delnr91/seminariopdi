@@ -34,6 +34,16 @@ La calidad de la asistencia depende de la cobertura de sensores, el etiquetado y
 * [Mitigate threats using Microsoft Security Copilot](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/) — estudiar asistencia generativa a analistas.
 * [Create detections and perform investigations using Microsoft Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/) — desarrollar detecciones e investigaciones; los contenidos son gratuitos, los servicios usados en prácticas pueden generar costes.
 
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 00:10:40](https://www.youtube.com/watch?v=jLbdG67TqW8&t=640s) · [Cierre aproximado: 00:29:00](https://www.youtube.com/watch?v=jLbdG67TqW8&t=1740s)
+
+**Duración estimada del bloque:** ≈ 18 min 20 s. **Formato:** Exposición. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/03-dia2-seminario/01-caceres-blue-team-ia.md). Incluye entregables y métricas para contrastar resultados.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

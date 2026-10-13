@@ -1,4 +1,4 @@
-# Arquitecturas Zero Trust para Redes Críticas - Especialista en redes de E-Virtus
+# Arquitecturas Zero Trust para Redes Críticas - E-Virtus (ampliación temática)
 
 ## Síntesis Ejecutiva
 
@@ -31,6 +31,18 @@ El principal desafío es sostener controles granulares sin introducir fallos de 
 ### Ruta de Aprendizaje Autónoma
 
 * [Establish the guiding principles and core components of Zero Trust](https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/) — seguir la ruta gratuita de principios, componentes y protección de recursos.
+
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 09:26:40](https://www.youtube.com/watch?v=PEqWRTb1idE&t=34000s) · [Cierre aproximado: 09:46:20](https://www.youtube.com/watch?v=PEqWRTb1idE&t=35180s)
+
+**Duración estimada del bloque:** ≈ 19 min 40 s. **Formato:** Exposición. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+Ampliación temática de Lattices. Se enlaza el mismo bloque de Mauricio Barrera que la lección de efecto dominó; no se ha identificado una segunda charla dedicada a Zero Trust.
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/02-dia1-seminario/09-evirtus-zero-trust.md). Incluye entregables y métricas para contrastar resultados.
 
 ## 🎧 Audio Resumen
 

@@ -34,6 +34,18 @@ El diseño de controles debe considerar ritmos operativos, acceso de terceros y 
 * [Establish the guiding principles and core components of Zero Trust](https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/) — estudiar control de acceso y protección de recursos.
 * [CS50's Introduction to Cybersecurity](https://cs50.harvard.edu/cybersecurity/) — reforzar principios de protección de cuentas, datos y sistemas con materiales gratuitos.
 
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 02:51:40](https://www.youtube.com/watch?v=jLbdG67TqW8&t=10300s) · [Cierre aproximado: 03:22:20](https://www.youtube.com/watch?v=jLbdG67TqW8&t=12140s)
+
+**Duración estimada del bloque:** ≈ 30 min 40 s. **Formato:** Panel compartido. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+El bloque audiovisual es una conversación compartida con Nina Alli y otras personas. Su duración no equivale al tiempo de voz individual de Nina Alli.
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/03-dia2-seminario/04-alli-salud-ciberseguridad.md). Incluye entregables y métricas para contrastar resultados.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

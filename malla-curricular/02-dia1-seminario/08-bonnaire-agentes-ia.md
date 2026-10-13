@@ -35,6 +35,16 @@ La inyección indirecta de instrucciones muestra cómo una aplicación puede con
 * [CS50's Introduction to Artificial Intelligence with Python](https://cs50.harvard.edu/ai/) — comprender modelos, búsqueda y aprendizaje; contenido gratuito, requiere base de Python.
 * [Mitigate threats using Microsoft Security Copilot](https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/) — estudiar asistencia generativa en operaciones de seguridad; lectura gratuita, prácticas con licencias o consumo adicional según el entorno.
 
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 08:56:40](https://www.youtube.com/watch?v=PEqWRTb1idE&t=32200s) · [Cierre aproximado: 09:25:40](https://www.youtube.com/watch?v=PEqWRTb1idE&t=33940s)
+
+**Duración estimada del bloque:** ≈ 29 min 00 s. **Formato:** Entrevista. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/02-dia1-seminario/08-bonnaire-agentes-ia.md). Incluye entregables y métricas para contrastar resultados.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

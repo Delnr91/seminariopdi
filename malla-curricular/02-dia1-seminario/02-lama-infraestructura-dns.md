@@ -33,6 +33,16 @@ La resiliencia exige distribuir autoridad y resolución sin reproducir dependenc
 
 * [Host your domain on Azure DNS](https://learn.microsoft.com/en-us/training/modules/host-domain-azure-dns/) — aprender gestión de zonas y registros; material gratuito, despliegues Azure sujetos a costes.
 
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 02:49:00](https://www.youtube.com/watch?v=PEqWRTb1idE&t=10140s) · [Cierre aproximado: 03:15:40](https://www.youtube.com/watch?v=PEqWRTb1idE&t=11740s)
+
+**Duración estimada del bloque:** ≈ 26 min 40 s. **Formato:** Exposición. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/02-dia1-seminario/02-lama-infraestructura-dns.md). Incluye entregables y métricas para contrastar resultados.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

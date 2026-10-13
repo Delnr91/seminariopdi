@@ -1,4 +1,4 @@
-# Efecto Dominó de los Incidentes y Riesgo de Proveedores - Representante técnico de E-Virtus
+# Efecto Dominó de los Incidentes y Riesgo de Proveedores - E-Virtus (ampliación temática)
 
 ## Síntesis Ejecutiva
 
@@ -32,6 +32,18 @@ La reducción del riesgo combina inventarios de componentes, verificación de ar
 ### Ruta de Aprendizaje Autónoma
 
 * [CISA — ICS Cybersecurity (101)](https://www.cisa.gov/resources-tools/programs/ics-training-available-through-cisa) — cursar ICS Cybersecurity (101), gratuito con registro, y trasladar el análisis de dependencias a servicios operacionales.
+
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 09:26:40](https://www.youtube.com/watch?v=PEqWRTb1idE&t=34000s) · [Cierre aproximado: 09:46:20](https://www.youtube.com/watch?v=PEqWRTb1idE&t=35180s)
+
+**Duración estimada del bloque:** ≈ 19 min 40 s. **Formato:** Exposición. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+Ampliación temática de Lattices relacionada con la intervención de Mauricio Barrera sobre IA y ciberresiliencia; no representa una segunda charla de E-Virtus ni su título oficial.
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/02-dia1-seminario/05-evirtus-efecto-domino.md). Incluye entregables y métricas para contrastar resultados.
 
 ## 🎧 Audio Resumen
 

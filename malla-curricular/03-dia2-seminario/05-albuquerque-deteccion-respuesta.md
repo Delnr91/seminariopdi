@@ -34,6 +34,16 @@ El desafío operativo es convertir señales incompletas en decisiones proporcion
 * [Create detections and perform investigations using Microsoft Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/) — construir detecciones e investigar casos.
 * [Perform threat hunting in Microsoft Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/) — desarrollar búsquedas basadas en hipótesis; lectura gratuita, prácticas con servicios Azure sujetas a costes.
 
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 03:24:00](https://www.youtube.com/watch?v=jLbdG67TqW8&t=12240s) · [Cierre aproximado: 03:48:20](https://www.youtube.com/watch?v=jLbdG67TqW8&t=13700s)
+
+**Duración estimada del bloque:** ≈ 24 min 20 s. **Formato:** Exposición. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/03-dia2-seminario/05-albuquerque-deteccion-respuesta.md). Incluye entregables y métricas para contrastar resultados.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

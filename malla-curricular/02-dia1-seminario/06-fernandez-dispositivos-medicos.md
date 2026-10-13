@@ -33,6 +33,16 @@ En una red clínica, las ventanas de intervención, los equipos heredados y la d
 
 * [Establish the guiding principles and core components of Zero Trust](https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/) — estudiar control de identidades y endpoints para adaptar principios de acceso a redes clínicas.
 
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 06:57:20](https://www.youtube.com/watch?v=PEqWRTb1idE&t=25040s) · [Cierre aproximado: 07:14:00](https://www.youtube.com/watch?v=PEqWRTb1idE&t=26040s)
+
+**Duración estimada del bloque:** ≈ 16 min 40 s. **Formato:** Exposición. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/02-dia1-seminario/06-fernandez-dispositivos-medicos.md). Incluye entregables y métricas para contrastar resultados.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

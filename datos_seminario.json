@@ -102,7 +102,20 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "wong",
+        "video_id": "PEqWRTb1idE",
+        "speaker_video": "Marcelo Wong Cea",
+        "url": "https://www.youtube.com/watch?v=PEqWRTb1idE&t=3720s",
+        "inicio_segundos": 3720,
+        "fin_segundos": 5860,
+        "duracion_estimada_segundos": 2140,
+        "formato": "Exposición",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/02-dia1-seminario/01-wong-ia-cibercrimen.md"
     },
     {
       "id": "dia1_02_lama",
@@ -189,7 +202,20 @@
             "url": "https://learn.microsoft.com/en-us/training/modules/host-domain-azure-dns/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "lama",
+        "video_id": "PEqWRTb1idE",
+        "speaker_video": "Guillermo Lama",
+        "url": "https://www.youtube.com/watch?v=PEqWRTb1idE&t=10140s",
+        "inicio_segundos": 10140,
+        "fin_segundos": 11740,
+        "duracion_estimada_segundos": 1600,
+        "formato": "Exposición",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/02-dia1-seminario/02-lama-infraestructura-dns.md"
     },
     {
       "id": "dia1_03_fernandez_manu",
@@ -284,7 +310,20 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "manu",
+        "video_id": "PEqWRTb1idE",
+        "speaker_video": "Manu Fernández",
+        "url": "https://www.youtube.com/watch?v=PEqWRTb1idE&t=12020s",
+        "inicio_segundos": 12020,
+        "fin_segundos": 13580,
+        "duracion_estimada_segundos": 1560,
+        "formato": "Exposición",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/02-dia1-seminario/03-fernandez-crimen-ia.md"
     },
     {
       "id": "dia1_04_bordachar",
@@ -371,13 +410,26 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "michelle",
+        "video_id": "PEqWRTb1idE",
+        "speaker_video": "Michelle Bordachar",
+        "url": "https://www.youtube.com/watch?v=PEqWRTb1idE&t=13720s",
+        "inicio_segundos": 13720,
+        "fin_segundos": 15640,
+        "duracion_estimada_segundos": 1920,
+        "formato": "Exposición",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/02-dia1-seminario/04-bordachar-anci-regulacion.md"
     },
     {
       "id": "dia1_05_evirtus_incidentes",
       "carpeta": "02-dia1-seminario",
       "archivo": "05-evirtus-efecto-domino.md",
-      "speaker": "Representante técnico de E-Virtus",
+      "speaker": "E-Virtus (ampliación temática)",
       "institucion": "E-Virtus",
       "titulo": "Efecto Dominó de los Incidentes y Riesgo de Proveedores",
       "dificultad": "Intermedio",
@@ -458,7 +510,20 @@
             "url": "https://www.cisa.gov/resources-tools/programs/ics-training-available-through-cisa"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "mauricio",
+        "video_id": "PEqWRTb1idE",
+        "speaker_video": "Mauricio Barrera (E-Virtus)",
+        "url": "https://www.youtube.com/watch?v=PEqWRTb1idE&t=34000s",
+        "inicio_segundos": 34000,
+        "fin_segundos": 35180,
+        "duracion_estimada_segundos": 1180,
+        "formato": "Exposición",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "ampliacion_tematica"
+      },
+      "anexo_practico": "anexos/02-dia1-seminario/05-evirtus-efecto-domino.md"
     },
     {
       "id": "dia1_06_fernandez_victor",
@@ -545,7 +610,20 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "victor",
+        "video_id": "PEqWRTb1idE",
+        "speaker_video": "Víctor Fernández",
+        "url": "https://www.youtube.com/watch?v=PEqWRTb1idE&t=25040s",
+        "inicio_segundos": 25040,
+        "fin_segundos": 26040,
+        "duracion_estimada_segundos": 1000,
+        "formato": "Exposición",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/02-dia1-seminario/06-fernandez-dispositivos-medicos.md"
     },
     {
       "id": "dia1_07_panel_multisectorial",
@@ -632,7 +710,20 @@
             "url": "https://www.cisa.gov/resources-tools/programs/ics-training-available-through-cisa"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "panel",
+        "video_id": "PEqWRTb1idE",
+        "speaker_video": "Panel Multisectorial",
+        "url": "https://www.youtube.com/watch?v=PEqWRTb1idE&t=26260s",
+        "inicio_segundos": 26260,
+        "fin_segundos": 28960,
+        "duracion_estimada_segundos": 2700,
+        "formato": "Panel compartido",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/02-dia1-seminario/07-panel-sectores-criticos.md"
     },
     {
       "id": "dia1_08_bonnaire",
@@ -735,13 +826,26 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "bonnaire",
+        "video_id": "PEqWRTb1idE",
+        "speaker_video": "Xavier Bonnaire",
+        "url": "https://www.youtube.com/watch?v=PEqWRTb1idE&t=32200s",
+        "inicio_segundos": 32200,
+        "fin_segundos": 33940,
+        "duracion_estimada_segundos": 1740,
+        "formato": "Entrevista",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/02-dia1-seminario/08-bonnaire-agentes-ia.md"
     },
     {
       "id": "dia1_09_evirtus_redes",
       "carpeta": "02-dia1-seminario",
       "archivo": "09-evirtus-zero-trust.md",
-      "speaker": "Especialista en redes de E-Virtus",
+      "speaker": "E-Virtus (ampliación temática)",
       "institucion": "E-Virtus",
       "titulo": "Arquitecturas Zero Trust para Redes Críticas",
       "dificultad": "Intermedio",
@@ -814,7 +918,20 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "mauricio",
+        "video_id": "PEqWRTb1idE",
+        "speaker_video": "Mauricio Barrera (E-Virtus)",
+        "url": "https://www.youtube.com/watch?v=PEqWRTb1idE&t=34000s",
+        "inicio_segundos": 34000,
+        "fin_segundos": 35180,
+        "duracion_estimada_segundos": 1180,
+        "formato": "Exposición",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "ampliacion_tematica"
+      },
+      "anexo_practico": "anexos/02-dia1-seminario/09-evirtus-zero-trust.md"
     },
     {
       "id": "dia2_01_caceres",
@@ -909,7 +1026,20 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "diego",
+        "video_id": "jLbdG67TqW8",
+        "speaker_video": "Diego Cáceres",
+        "url": "https://www.youtube.com/watch?v=jLbdG67TqW8&t=640s",
+        "inicio_segundos": 640,
+        "fin_segundos": 1740,
+        "duracion_estimada_segundos": 1100,
+        "formato": "Exposición",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/03-dia2-seminario/01-caceres-blue-team-ia.md"
     },
     {
       "id": "dia2_02_fuentes",
@@ -996,7 +1126,20 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "omar",
+        "video_id": "jLbdG67TqW8",
+        "speaker_video": "Omar Fuentes",
+        "url": "https://www.youtube.com/watch?v=jLbdG67TqW8&t=2000s",
+        "inicio_segundos": 2000,
+        "fin_segundos": 3880,
+        "duracion_estimada_segundos": 1880,
+        "formato": "Exposición",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/03-dia2-seminario/02-fuentes-threat-intelligence.md"
     },
     {
       "id": "dia2_03_cordero",
@@ -1083,7 +1226,20 @@
             "url": "https://training.linuxfoundation.org/training/introduction-to-riscv-lfd110/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "cesar",
+        "video_id": "jLbdG67TqW8",
+        "speaker_video": "César Cordero",
+        "url": "https://www.youtube.com/watch?v=jLbdG67TqW8&t=8260s",
+        "inicio_segundos": 8260,
+        "fin_segundos": 10100,
+        "duracion_estimada_segundos": 1840,
+        "formato": "Exposición",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/03-dia2-seminario/03-cordero-resiliencia-hardware.md"
     },
     {
       "id": "dia2_04_alli",
@@ -1178,7 +1334,20 @@
             "url": "https://cs50.harvard.edu/cybersecurity/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "nina",
+        "video_id": "jLbdG67TqW8",
+        "speaker_video": "Nina Alli y participantes",
+        "url": "https://www.youtube.com/watch?v=jLbdG67TqW8&t=10300s",
+        "inicio_segundos": 10300,
+        "fin_segundos": 12140,
+        "duracion_estimada_segundos": 1840,
+        "formato": "Panel compartido",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/03-dia2-seminario/04-alli-salud-ciberseguridad.md"
     },
     {
       "id": "dia2_05_albuquerque",
@@ -1273,7 +1442,20 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "tales",
+        "video_id": "jLbdG67TqW8",
+        "speaker_video": "Tales Albuquerque",
+        "url": "https://www.youtube.com/watch?v=jLbdG67TqW8&t=12240s",
+        "inicio_segundos": 12240,
+        "fin_segundos": 13700,
+        "duracion_estimada_segundos": 1460,
+        "formato": "Exposición",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/03-dia2-seminario/05-albuquerque-deteccion-respuesta.md"
     },
     {
       "id": "dia2_06_norman",
@@ -1360,7 +1542,20 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "norman",
+        "video_id": "jLbdG67TqW8",
+        "speaker_video": "James Norman",
+        "url": "https://www.youtube.com/watch?v=jLbdG67TqW8&t=20500s",
+        "inicio_segundos": 20500,
+        "fin_segundos": 22320,
+        "duracion_estimada_segundos": 1820,
+        "formato": "Exposición",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/03-dia2-seminario/06-norman-amenazas-hibridas.md"
     },
     {
       "id": "dia2_07_abbas",
@@ -1455,7 +1650,20 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/"
           }
         ]
-      }
+      },
+      "video_oficial": {
+        "intervencion_id": "abbas",
+        "video_id": "jLbdG67TqW8",
+        "speaker_video": "Nadezda Abbas",
+        "url": "https://www.youtube.com/watch?v=jLbdG67TqW8&t=22480s",
+        "inicio_segundos": 22480,
+        "fin_segundos": 23760,
+        "duracion_estimada_segundos": 1280,
+        "formato": "Exposición",
+        "tiempos_aproximados": true,
+        "relacion_con_leccion": "tematica_relacionada"
+      },
+      "anexo_practico": "anexos/03-dia2-seminario/07-abbas-academia-talento.md"
     },
     {
       "id": "intl_01_eeuu_uk",
@@ -1726,5 +1934,726 @@
         ]
       }
     }
-  ]
+  ],
+  "videos_seminario": [
+    {
+      "dia": 1,
+      "video_id": "PEqWRTb1idE",
+      "url": "https://www.youtube.com/watch?v=PEqWRTb1idE",
+      "duracion_segundos": 37139
+    },
+    {
+      "dia": 2,
+      "video_id": "jLbdG67TqW8",
+      "url": "https://www.youtube.com/watch?v=jLbdG67TqW8",
+      "duracion_segundos": 27110
+    }
+  ],
+  "intervenciones_video": [
+    {
+      "id": "wong",
+      "dia": 1,
+      "speaker": "Marcelo Wong Cea",
+      "tema_observado": "IA y amenazas digitales",
+      "formato": "Exposición",
+      "video_id": "PEqWRTb1idE",
+      "inicio_segundos": 3720,
+      "fin_segundos": 5860,
+      "rotulo_segundos": 3860,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 2140
+    },
+    {
+      "id": "lama",
+      "dia": 1,
+      "speaker": "Guillermo Lama",
+      "tema_observado": "Infraestructura de Internet y continuidad operacional",
+      "formato": "Exposición",
+      "video_id": "PEqWRTb1idE",
+      "inicio_segundos": 10140,
+      "fin_segundos": 11740,
+      "rotulo_segundos": 10260,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1600
+    },
+    {
+      "id": "manu",
+      "dia": 1,
+      "speaker": "Manu Fernández",
+      "tema_observado": "El lado práctico del crimen con IA",
+      "formato": "Exposición",
+      "video_id": "PEqWRTb1idE",
+      "inicio_segundos": 12020,
+      "fin_segundos": 13580,
+      "rotulo_segundos": 12100,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1560
+    },
+    {
+      "id": "michelle",
+      "dia": 1,
+      "speaker": "Michelle Bordachar",
+      "tema_observado": "Mes de la Ciberseguridad: el rol clave de la ANCI",
+      "formato": "Exposición",
+      "video_id": "PEqWRTb1idE",
+      "inicio_segundos": 13720,
+      "fin_segundos": 15640,
+      "rotulo_segundos": 13780,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1920
+    },
+    {
+      "id": "fernanda",
+      "dia": 1,
+      "speaker": "Fernanda Macías",
+      "tema_observado": "Análisis de amenazas y filtraciones",
+      "formato": "Exposición",
+      "video_id": "PEqWRTb1idE",
+      "inicio_segundos": 15720,
+      "fin_segundos": 17260,
+      "rotulo_segundos": 15780,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1540
+    },
+    {
+      "id": "victor",
+      "dia": 1,
+      "speaker": "Víctor Fernández",
+      "tema_observado": "Superficies de ataque de dispositivos médicos",
+      "formato": "Exposición",
+      "video_id": "PEqWRTb1idE",
+      "inicio_segundos": 25040,
+      "fin_segundos": 26040,
+      "rotulo_segundos": 25060,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1000
+    },
+    {
+      "id": "panel",
+      "dia": 1,
+      "speaker": "Panel Multisectorial",
+      "tema_observado": "Protección y continuidad de sectores críticos",
+      "formato": "Panel compartido",
+      "video_id": "PEqWRTb1idE",
+      "inicio_segundos": 26260,
+      "fin_segundos": 28960,
+      "rotulo_segundos": 26280,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 2700
+    },
+    {
+      "id": "bonnaire",
+      "dia": 1,
+      "speaker": "Xavier Bonnaire",
+      "tema_observado": "Agentes de IA e infraestructura crítica",
+      "formato": "Entrevista",
+      "video_id": "PEqWRTb1idE",
+      "inicio_segundos": 32200,
+      "fin_segundos": 33940,
+      "rotulo_segundos": 32240,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1740
+    },
+    {
+      "id": "mauricio",
+      "dia": 1,
+      "speaker": "Mauricio Barrera (E-Virtus)",
+      "tema_observado": "IA, ciberresiliencia y supervisión humana",
+      "formato": "Exposición",
+      "video_id": "PEqWRTb1idE",
+      "inicio_segundos": 34000,
+      "fin_segundos": 35180,
+      "rotulo_segundos": 34200,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1180
+    },
+    {
+      "id": "sergey",
+      "dia": 1,
+      "speaker": "Sergey Nikitin (Group-IB)",
+      "tema_observado": "Cibercrimen y economía del fraude",
+      "formato": "Exposición",
+      "video_id": "PEqWRTb1idE",
+      "inicio_segundos": 35300,
+      "fin_segundos": 37000,
+      "rotulo_segundos": 35400,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1700
+    },
+    {
+      "id": "diego",
+      "dia": 2,
+      "speaker": "Diego Cáceres",
+      "tema_observado": "Ciberdefensa e IA en infraestructura crítica",
+      "formato": "Exposición",
+      "video_id": "jLbdG67TqW8",
+      "inicio_segundos": 640,
+      "fin_segundos": 1740,
+      "rotulo_segundos": 680,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1100
+    },
+    {
+      "id": "omar",
+      "dia": 2,
+      "speaker": "Omar Fuentes",
+      "tema_observado": "Cyber Threat Intelligence",
+      "formato": "Exposición",
+      "video_id": "jLbdG67TqW8",
+      "inicio_segundos": 2000,
+      "fin_segundos": 3880,
+      "rotulo_segundos": 2160,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1880
+    },
+    {
+      "id": "cesar",
+      "dia": 2,
+      "speaker": "César Cordero",
+      "tema_observado": "Estrategia de ciberresiliencia y protección de infraestructura crítica",
+      "formato": "Exposición",
+      "video_id": "jLbdG67TqW8",
+      "inicio_segundos": 8260,
+      "fin_segundos": 10100,
+      "rotulo_segundos": 8520,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1840
+    },
+    {
+      "id": "nina",
+      "dia": 2,
+      "speaker": "Nina Alli y participantes",
+      "tema_observado": "Ciberseguridad y continuidad en salud",
+      "formato": "Panel compartido",
+      "video_id": "jLbdG67TqW8",
+      "inicio_segundos": 10300,
+      "fin_segundos": 12140,
+      "rotulo_segundos": 10440,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1840
+    },
+    {
+      "id": "tales",
+      "dia": 2,
+      "speaker": "Tales Albuquerque",
+      "tema_observado": "Seguridad Digital: prevención, detección y respuesta",
+      "formato": "Exposición",
+      "video_id": "jLbdG67TqW8",
+      "inicio_segundos": 12240,
+      "fin_segundos": 13700,
+      "rotulo_segundos": 12300,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1460
+    },
+    {
+      "id": "norman",
+      "dia": 2,
+      "speaker": "James Norman",
+      "tema_observado": "Amenazas híbridas y resiliencia",
+      "formato": "Exposición",
+      "video_id": "jLbdG67TqW8",
+      "inicio_segundos": 20500,
+      "fin_segundos": 22320,
+      "rotulo_segundos": 20640,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1820
+    },
+    {
+      "id": "abbas",
+      "dia": 2,
+      "speaker": "Nadezda Abbas",
+      "tema_observado": "Conocimiento y desarrollo de capacidades de ciberresiliencia",
+      "formato": "Exposición",
+      "video_id": "jLbdG67TqW8",
+      "inicio_segundos": 22480,
+      "fin_segundos": 23760,
+      "rotulo_segundos": 22500,
+      "verificacion": "Inspección visual; tiempos aproximados",
+      "duracion_estimada_segundos": 1280
+    }
+  ],
+  "total_intervenciones_video": 17,
+  "anexos_practicos": [
+    {
+      "ruta": "anexos/02-dia1-seminario/01-wong-ia-cibercrimen.md",
+      "titulo": "Inteligencia Artificial aplicada al Cibercrimen",
+      "intervencion_id": "wong",
+      "objetivo": "Evaluar el abuso de IA y convertir señales observables en hipótesis de investigación reproducibles.",
+      "herramientas": [
+        {
+          "nombre": "garak",
+          "url": "https://github.com/NVIDIA/garak"
+        },
+        {
+          "nombre": "Adversarial Robustness Toolbox",
+          "url": "https://github.com/Trusted-AI/adversarial-robustness-toolbox"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "MITRE ATLAS",
+          "url": "https://atlas.mitre.org/"
+        },
+        {
+          "nombre": "NIST Adversarial Machine Learning",
+          "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/02-dia1-seminario/02-lama-infraestructura-dns.md",
+      "titulo": "Seguridad y Resiliencia de la Infraestructura DNS",
+      "intervencion_id": "lama",
+      "objetivo": "Comprobar la cadena DNSSEC y diseñar continuidad de resolución sin confundir redundancia con independencia.",
+      "herramientas": [
+        {
+          "nombre": "DNSViz",
+          "url": "https://github.com/dnsviz/dnsviz"
+        },
+        {
+          "nombre": "Unbound",
+          "url": "https://github.com/NLnetLabs/unbound"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "DNSSEC Protocol Modifications (RFC 4035)",
+          "url": "https://www.rfc-editor.org/rfc/rfc4035"
+        },
+        {
+          "nombre": "DNSViz: ejemplos y diagnóstico",
+          "url": "https://github.com/dnsviz/dnsviz#usage"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/02-dia1-seminario/03-fernandez-crimen-ia.md",
+      "titulo": "Fraude y Suplantación de Identidad con IA",
+      "intervencion_id": "manu",
+      "objetivo": "Diseñar una verificación de identidad que resista suplantación audiovisual y no dependa de detectar visualmente un deepfake.",
+      "herramientas": [
+        {
+          "nombre": "C2PA Tool",
+          "url": "https://github.com/contentauth/c2patool"
+        },
+        {
+          "nombre": "FaceForensics",
+          "url": "https://github.com/ondyari/FaceForensics"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "C2PA Tool: lectura de manifiestos",
+          "url": "https://github.com/contentauth/c2patool/blob/main/docs/usage.md"
+        },
+        {
+          "nombre": "NIST Digital Identity Guidelines: Authentication",
+          "url": "https://csrc.nist.gov/pubs/sp/800/63/b/4/final"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/02-dia1-seminario/04-bordachar-anci-regulacion.md",
+      "titulo": "Regulación ANCI y Gobernanza de Ciberseguridad",
+      "intervencion_id": "michelle",
+      "objetivo": "Traducir decisiones de gobernanza en responsables, evidencias y un proceso de respuesta que pueda revisarse.",
+      "herramientas": [
+        {
+          "nombre": "DFIR-IRIS",
+          "url": "https://github.com/dfir-iris/iris-web"
+        },
+        {
+          "nombre": "CSET",
+          "url": "https://github.com/cisagov/cset"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "NIST CSF 2.0",
+          "url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+        },
+        {
+          "nombre": "NIST SP 800-61 Rev. 3",
+          "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/02-dia1-seminario/05-evirtus-efecto-domino.md",
+      "titulo": "Efecto Dominó de los Incidentes y Riesgo de Proveedores",
+      "intervencion_id": "mauricio",
+      "objetivo": "Analizar cómo un componente o proveedor puede interrumpir varios servicios y priorizar mitigaciones por impacto operacional.",
+      "herramientas": [
+        {
+          "nombre": "Syft",
+          "url": "https://github.com/anchore/syft"
+        },
+        {
+          "nombre": "OpenSSF Scorecard",
+          "url": "https://github.com/ossf/scorecard"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "NIST SP 800-161 Rev. 1 Update 1",
+          "url": "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final"
+        },
+        {
+          "nombre": "OpenSSF Scorecard: checks",
+          "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/02-dia1-seminario/06-fernandez-dispositivos-medicos.md",
+      "titulo": "Superficies de Ataque en Dispositivos Médicos Conectados",
+      "intervencion_id": "victor",
+      "objetivo": "Relacionar interfaces de un dispositivo médico con riesgos técnicos y consecuencias asistenciales, usando únicamente artefactos de laboratorio.",
+      "herramientas": [
+        {
+          "nombre": "OWASP Threat Dragon",
+          "url": "https://github.com/OWASP/threat-dragon"
+        },
+        {
+          "nombre": "Ghidra",
+          "url": "https://github.com/NationalSecurityAgency/ghidra"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "NIST SP 1800-8",
+          "url": "https://csrc.nist.gov/pubs/sp/1800/8/final"
+        },
+        {
+          "nombre": "Ghidra",
+          "url": "https://github.com/NationalSecurityAgency/ghidra"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/02-dia1-seminario/07-panel-sectores-criticos.md",
+      "titulo": "Ciberresiliencia en Sectores Críticos",
+      "intervencion_id": "panel",
+      "objetivo": "Ensayar coordinación IT/OT y continuidad entre sectores a partir de información mínima y evidencia compartible.",
+      "herramientas": [
+        {
+          "nombre": "Malcolm",
+          "url": "https://github.com/cisagov/Malcolm"
+        },
+        {
+          "nombre": "MISP",
+          "url": "https://github.com/MISP/MISP"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "NIST SP 800-82 Rev. 3",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "nombre": "FIRST Traffic Light Protocol",
+          "url": "https://www.first.org/tlp/"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/02-dia1-seminario/08-bonnaire-agentes-ia.md",
+      "titulo": "Agentes de IA y Riesgo en Infraestructura Crítica",
+      "intervencion_id": "bonnaire",
+      "objetivo": "Medir si un agente respeta límites de autoridad y se recupera de datos adversarios sin ejecutar acciones reales.",
+      "herramientas": [
+        {
+          "nombre": "Promptfoo",
+          "url": "https://github.com/promptfoo/promptfoo"
+        },
+        {
+          "nombre": "garak",
+          "url": "https://github.com/NVIDIA/garak"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Promptfoo: Assertions and Metrics",
+          "url": "https://www.promptfoo.dev/docs/configuration/expected-outputs/"
+        },
+        {
+          "nombre": "OWASP Top 10 for LLM Applications",
+          "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/02-dia1-seminario/09-evirtus-zero-trust.md",
+      "titulo": "Arquitecturas Zero Trust para Redes Críticas",
+      "intervencion_id": "mauricio",
+      "objetivo": "Diseñar acceso basado en identidad y contexto para limitar propagación de fallos entre cargas de trabajo.",
+      "herramientas": [
+        {
+          "nombre": "SPIRE",
+          "url": "https://github.com/spiffe/spire"
+        },
+        {
+          "nombre": "Cilium",
+          "url": "https://github.com/cilium/cilium"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "NIST SP 800-207",
+          "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
+        },
+        {
+          "nombre": "SPIFFE Overview",
+          "url": "https://spiffe.io/docs/latest/spiffe-about/overview/"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/03-dia2-seminario/01-caceres-blue-team-ia.md",
+      "titulo": "Blue Team Aumentado por Inteligencia Artificial",
+      "intervencion_id": "diego",
+      "objetivo": "Evaluar si la asistencia de IA mejora la detección sin perder trazabilidad ni aumentar acciones erróneas.",
+      "herramientas": [
+        {
+          "nombre": "Sigma",
+          "url": "https://github.com/SigmaHQ/sigma"
+        },
+        {
+          "nombre": "CALDERA",
+          "url": "https://github.com/apache/caldera"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Sigma: Getting Started",
+          "url": "https://sigmahq.io/docs/guide/getting-started.html"
+        },
+        {
+          "nombre": "MITRE D3FEND",
+          "url": "https://d3fend.mitre.org/"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/03-dia2-seminario/02-fuentes-threat-intelligence.md",
+      "titulo": "Cyber Threat Intelligence y Decisiones de Defensa",
+      "intervencion_id": "omar",
+      "objetivo": "Convertir una pregunta de inteligencia en una decisión defensiva, conservando procedencia, vigencia y restricciones de intercambio.",
+      "herramientas": [
+        {
+          "nombre": "MISP",
+          "url": "https://github.com/MISP/MISP"
+        },
+        {
+          "nombre": "OpenCTI",
+          "url": "https://github.com/OpenCTI-Platform/opencti"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "OASIS CTI Documentation",
+          "url": "https://oasis-open.github.io/cti-documentation/"
+        },
+        {
+          "nombre": "OASIS Python STIX 2",
+          "url": "https://github.com/oasis-open/cti-python-stix2"
+        },
+        {
+          "nombre": "FIRST TLP",
+          "url": "https://www.first.org/tlp/"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/03-dia2-seminario/03-cordero-resiliencia-hardware.md",
+      "titulo": "Resiliencia de Hardware y Firmware",
+      "intervencion_id": "cesar",
+      "objetivo": "Comprender protección, detección y recuperación del firmware como parte de la continuidad de un servicio.",
+      "herramientas": [
+        {
+          "nombre": "UEFITool",
+          "url": "https://github.com/LongSoft/UEFITool"
+        },
+        {
+          "nombre": "CHIPSEC",
+          "url": "https://github.com/chipsec/chipsec"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "NIST SP 800-193",
+          "url": "https://csrc.nist.gov/pubs/sp/800/193/final"
+        },
+        {
+          "nombre": "UEFITool",
+          "url": "https://github.com/LongSoft/UEFITool"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/03-dia2-seminario/04-alli-salud-ciberseguridad.md",
+      "titulo": "Ciberseguridad y Continuidad Asistencial en Salud",
+      "intervencion_id": "nina",
+      "objetivo": "Evaluar continuidad asistencial y recuperación de información sin utilizar pacientes ni sistemas clínicos reales.",
+      "herramientas": [
+        {
+          "nombre": "OpenEMR",
+          "url": "https://github.com/openemr/openemr"
+        },
+        {
+          "nombre": "OWASP Threat Dragon",
+          "url": "https://github.com/OWASP/threat-dragon"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "NIST SP 1800-8",
+          "url": "https://csrc.nist.gov/pubs/sp/1800/8/final"
+        },
+        {
+          "nombre": "ENISA Health Threat Landscape",
+          "url": "https://www.enisa.europa.eu/publications/health-threat-landscape"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/03-dia2-seminario/05-albuquerque-deteccion-respuesta.md",
+      "titulo": "Prevención, Detección y Respuesta ante Ciberamenazas",
+      "intervencion_id": "tales",
+      "objetivo": "Conectar una hipótesis de intrusión con evidencia mínima, una decisión de contención y una recuperación comprobable.",
+      "herramientas": [
+        {
+          "nombre": "Velociraptor",
+          "url": "https://github.com/Velocidex/velociraptor"
+        },
+        {
+          "nombre": "Atomic Red Team",
+          "url": "https://github.com/redcanaryco/atomic-red-team"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Velociraptor Artifacts",
+          "url": "https://docs.velociraptor.app/docs/artifacts/"
+        },
+        {
+          "nombre": "NIST SP 800-61 Rev. 3",
+          "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/03-dia2-seminario/06-norman-amenazas-hibridas.md",
+      "titulo": "Amenazas Híbridas y Resiliencia Informacional",
+      "intervencion_id": "norman",
+      "objetivo": "Analizar una campaña informacional ficticia junto a un incidente técnico sin confundir coordinación, identidad y atribución.",
+      "herramientas": [
+        {
+          "nombre": "DISARMframeworks",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks"
+        },
+        {
+          "nombre": "Gephi",
+          "url": "https://github.com/gephi/gephi"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "DISARM frameworks",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks"
+        },
+        {
+          "nombre": "Gephi",
+          "url": "https://github.com/gephi/gephi"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/03-dia2-seminario/07-abbas-academia-talento.md",
+      "titulo": "Desarrollo de Talento para la Ciberresiliencia",
+      "intervencion_id": "abbas",
+      "objetivo": "Construir una ruta de formación basada en tareas y evidencias observables, con evaluación repetible de capacidades.",
+      "herramientas": [
+        {
+          "nombre": "CTFd",
+          "url": "https://github.com/CTFd/CTFd"
+        },
+        {
+          "nombre": "Sigma",
+          "url": "https://github.com/SigmaHQ/sigma"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "NICE Framework Resource Center",
+          "url": "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center"
+        },
+        {
+          "nombre": "CTFd: Challenge Overview",
+          "url": "https://docs.ctfd.io/docs/challenges/overview/"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/02-dia1-seminario/10-macias-analisis-amenazas.md",
+      "titulo": "Análisis de amenazas y filtraciones",
+      "intervencion_id": "fernanda",
+      "objetivo": "Transformar una alerta de filtración en un análisis contextualizado y un intercambio responsable entre equipos de respuesta.",
+      "herramientas": [
+        {
+          "nombre": "DFIR-IRIS",
+          "url": "https://github.com/dfir-iris/iris-web"
+        },
+        {
+          "nombre": "MISP",
+          "url": "https://github.com/MISP/MISP"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "NIST SP 800-61 Rev. 3",
+          "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+        },
+        {
+          "nombre": "ATT&CK: Valid Accounts",
+          "url": "https://attack.mitre.org/techniques/T1078/"
+        },
+        {
+          "nombre": "FIRST TLP",
+          "url": "https://www.first.org/tlp/"
+        }
+      ]
+    },
+    {
+      "ruta": "anexos/02-dia1-seminario/11-nikitin-cibercrimen-fraude.md",
+      "titulo": "Cibercrimen y economía del fraude",
+      "intervencion_id": "sergey",
+      "objetivo": "Analizar fraude vinculado a abuso de identidades y sesiones mediante telemetría sintética y decisiones de respuesta trazables.",
+      "herramientas": [
+        {
+          "nombre": "Sigma",
+          "url": "https://github.com/SigmaHQ/sigma"
+        },
+        {
+          "nombre": "OpenCTI",
+          "url": "https://github.com/OpenCTI-Platform/opencti"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "ATT&CK: Valid Accounts",
+          "url": "https://attack.mitre.org/techniques/T1078/"
+        },
+        {
+          "nombre": "ATT&CK: Steal Web Session Cookie",
+          "url": "https://attack.mitre.org/techniques/T1539/"
+        },
+        {
+          "nombre": "Sigma: Getting Started",
+          "url": "https://sigmahq.io/docs/guide/getting-started.html"
+        }
+      ]
+    }
+  ],
+  "total_anexos_practicos": 18
 }

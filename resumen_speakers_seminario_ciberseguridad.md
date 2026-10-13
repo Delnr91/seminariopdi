@@ -4,6 +4,8 @@
 **Lugar:** Escuela de Investigaciones Policiales, Santiago de Chile  
 **Guía temática de referencia para el estudio de las ponencias.**
 
+Para navegar la grabación, utilizar el [índice audiovisual revisado](VIDEOS.md). Los apartados de E-Virtus son ampliaciones temáticas: el bloque observado corresponde a Mauricio Barrera y no a dos speakers distintos. El índice incorpora también a Fernanda Macías y Sergey Nikitin. Las explicaciones de esta guía son material educativo complementario, no una transcripción.
+
 ---
 
 ## Guía de Lectura Rápida (Para Personas sin Conocimientos Previos)
@@ -65,9 +67,9 @@
 
 ---
 
-### 5. Representante Técnico Sectorial
+### 5. E-Virtus — ampliación temática sobre efecto dominó
 * **Institución:** E-Virtus.
-* **Charla:** *Un Incidente, Múltiples Impactos: La Criticidad de la Ciberseguridad*.
+* **Tema de estudio:** Efecto dominó y riesgo de proveedores. Ampliación de Lattices, no título oficial verificado de una charla independiente.
 * **Concepto central:** El efecto dominó de los ciberataques.
 * **Qué enseña (Explicación simple):**
   * Los sistemas de hoy están completamente interconectados: si hackean el sistema logístico de camiones de combustible, las estaciones se quedan sin bencina, las ambulancias no pueden salir y los generadores de hospitales se apagan.
@@ -112,9 +114,9 @@
 
 ---
 
-### 9. Especialista en Redes
+### 9. E-Virtus — ampliación temática sobre Zero Trust
 * **Institución:** E-Virtus.
-* **Charla:** *Seguridad en la Red: Hacia una infraestructura crítica resiliente*.
+* **Tema de estudio:** Arquitectura Zero Trust. Ampliación de Lattices, no título oficial verificado de una charla independiente.
 * **Concepto central:** Arquitectura de "Confianza Cero" (Zero Trust).
 * **Qué enseña (Explicación simple):**
   * La vieja seguridad funcionaba como un castillo: un foso afuera y confianza total adentro. Hoy los atacantes ya logran entrar al castillo.
@@ -164,7 +166,7 @@
 
 ### 4. Nina Alli
 * **Institución:** Biohacking Village.
-* **Charla (Entrevista Magistral):** *Ciberseguridad en Salud: Protegiendo la Infraestructura que Protege Vidas*.
+* **Bloque observado:** Conversación compartida sobre ciberseguridad y salud con Nina Alli y otras personas; consultar tiempos y límites en el índice audiovisual.
 * **Concepto central:** La ética y urgencia de proteger a los pacientes.
 * **Qué enseña (Explicación simple):**
   * Comparte la experiencia global de hospitales bloqueados por ransomware, donde se debieron desviar ambulancias y posponer cirugías de urgencia.

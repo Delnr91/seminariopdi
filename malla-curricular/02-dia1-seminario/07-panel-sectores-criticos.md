@@ -33,6 +33,18 @@ La respuesta multisectorial necesita vocabulario común, responsables identifica
 
 * [CISA — ICS Cybersecurity (101)](https://www.cisa.gov/resources-tools/programs/ics-training-available-through-cisa) — comenzar por ICS Cybersecurity (101), formación gratuita con registro sobre sistemas de control.
 
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 07:17:40](https://www.youtube.com/watch?v=PEqWRTb1idE&t=26260s) · [Cierre aproximado: 08:02:40](https://www.youtube.com/watch?v=PEqWRTb1idE&t=28960s)
+
+**Duración estimada del bloque:** ≈ 45 min 00 s. **Formato:** Panel compartido. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+El video corresponde al panel completo. Este anexo no atribuye todas las recomendaciones a cada participante individual.
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/02-dia1-seminario/07-panel-sectores-criticos.md). Incluye entregables y métricas para contrastar resultados.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

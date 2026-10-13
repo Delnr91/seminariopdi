@@ -33,6 +33,18 @@ El reto empresarial es gestionar equipos heterogéneos, soporte de fabricantes, 
 
 * [Introduction to RISC-V (LFD110)](https://training.linuxfoundation.org/training/introduction-to-riscv-lfd110/) — cursar la introducción gratuita de Linux Foundation para comprender arquitectura y herramientas; complementarla con los ejercicios de CHIPSEC.
 
+## 📺 Video de la intervención
+
+[▶️ Ir al bloque: 02:17:40](https://www.youtube.com/watch?v=jLbdG67TqW8&t=8260s) · [Cierre aproximado: 02:48:20](https://www.youtube.com/watch?v=jLbdG67TqW8&t=10100s)
+
+**Duración estimada del bloque:** ≈ 30 min 40 s. **Formato:** Exposición. Puntos de navegación aproximados por inspección visual; pueden incluir introducción o preguntas. [Consultar metodología y recorrido de ambas jornadas](../../VIDEOS.md).
+
+La exposición observada aborda una estrategia de ciberresiliencia más amplia. El análisis de firmware es una profundización educativa de Lattices.
+
+## 🛠️ Anexo de métodos y herramientas
+
+[Práctica guiada, estrategias y herramientas open source](../../anexos/03-dia2-seminario/03-cordero-resiliencia-hardware.md). Incluye entregables y métricas para contrastar resultados.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.
