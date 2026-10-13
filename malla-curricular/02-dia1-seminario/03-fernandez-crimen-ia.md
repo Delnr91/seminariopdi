@@ -1,52 +1,45 @@
-# El Lado Práctico del Crimen con IA - Manu Fernández
+# Fraude y Suplantación de Identidad con IA - Manu Fernández
 
 ## Síntesis Ejecutiva
 
-La mercantilización de herramientas generativas avanzadas ha democratizado tácticas de ingeniería social de grado militar para organizaciones delictivas de alcance global. A través de la síntesis neuronal de voz (Voice Cloning) y la generación de avatares sintéticos dinámicos en tiempo real, los ciberdelincuentes están ejecutando con éxito ataques de compromiso de correo corporativo (BEC 3.0) y fraudes de autorización financiera, sorteando los filtros de verificación auditiva y visual tradicionales aplicados por el personal operativo.
+La generación de voz, imagen y texto permite fabricar señales de identidad convincentes, pero su apariencia no acredita que una orden proceda de una persona autorizada. El fraude asistido por IA explota la separación entre reconocimiento visual, autenticación y aprobación de operaciones. Una videollamada o un mensaje coherente pueden inducir a eludir controles financieros aunque la sesión no disponga de garantías suficientes. El diseño defensivo debe vincular cada autorización con credenciales verificables, contexto transaccional y validación independiente. [NIST SP 800-63B-4 — Digital Identity Guidelines: Authentication and Authenticator Management](https://csrc.nist.gov/pubs/sp/800/63/b/4/final).
 
-Simultáneamente, la fiabilidad de las credenciales biométricas convencionales (reconocimiento facial y huella dactilar) se encuentra en entredicho frente a vectores de ataque de presentación (PAD) construidos con modelos de difusión y máscaras tridimensionales. Neutralizar estas amenazas requiere evolucionar los esquemas de autenticación hacia arquitecturas de confianza cero contextuales, exigiendo desafíos de prueba de vida dinámicos (liveness verification), canales independientes de autorización fuera de banda y una reingeniería profunda de los procesos de autorización corporativa.
-
----
+La detección de contenido sintético y la verificación de procedencia aportan señales complementarias, con límites que deben explicitarse. Una firma de procedencia acredita determinadas afirmaciones y su integridad, no la veracidad de todo lo representado; un detector también puede fallar ante material nuevo. Conviene priorizar autenticadores resistentes al phishing, separación de funciones y confirmación por canales previamente establecidos. Las evaluaciones deben comparar falsos positivos y negativos sin utilizar la confianza del modelo como sustituto de evidencia ni de controles de autorización. [Reducing Risks Posed by Synthetic Content: An Overview of Technical Approaches to Digital Content Transparency](https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content).
 
 ## Conceptos Core
 
-* **Presentation Attack Detection (PAD):** Conjunto de algoritmos y sensores fisiológicos diseñados para discriminar entre una muestra biométrica humana viva y una suplantación sintética o pregrabada.
-* **Business Email Compromise 3.0 (AI-BEC):** Evolución del fraude corporativo donde se integran llamadas y videoconferencias sintéticas hiperrealistas para ordenar transferencias monetarias urgentes.
-* **Voice Biometrics Spoofing:** Técnicas adversariales basadas en síntesis de audio texto-a-voz (TTS) condicionadas a muestras acústicas de pocos segundos para burlar IVRs bancarios.
-* **Out-of-Band Multi-Factor Authentication (OOB-MFA):** Mecanismo de validación criptográfica que utiliza canales físicos y de red completamente desacoplados para confirmar instrucciones críticas.
-
----
+* **Deepfake:** Contenido sintético o manipulado que reproduce la apariencia o voz de una persona.
+* **Autenticación resistente al phishing:** Autenticación diseñada para impedir el uso de una credencial capturada en un servicio impostor.
+* **Presentation Attack Detection (PAD):** Controles que buscan identificar intentos de engañar a sensores o procesos biométricos.
+* **Procedencia de contenido:** Información verificable sobre el origen y las transformaciones declaradas de un artefacto digital.
 
 ## 🧠 Ecosistema de Recursos Globales (Deep Dive)
 
 ### Estándares y Frameworks
-* [ISO/IEC 30107 (Biometric Presentation Attack Detection Framework)](https://www.iso.org/standard/67381.html): Estándar internacional que regula la evaluación, métricas y pruebas de resistencia frente a ataques de suplantación biométrica.
-* [NIST SP 800-63-3: Digital Identity Guidelines](https://pages.nist.gov/800-63-3/): Directrices técnicas del NIST sobre niveles de aseguramiento de identidad (IAL), autenticación (AAL) y federación (FAL).
-* [FIDO Alliance Biometric Certification Requirements](https://fidoalliance.org/certification/biometric-component-certification/): Criterios de certificación independiente para garantizar que los sensores y algoritmos biométricos resistan falsificaciones de alta complejidad.
-* [MITRE ATT&CK: Technique T1566.002 (Spearphishing Link) & T1656 (Impersonation)](https://attack.mitre.org/techniques/T1656/): Mapeo formal de técnicas de suplantación de identidad e ingeniería social dirigida.
+
+* [NIST SP 800-63B-4 — Digital Identity Guidelines: Authentication and Authenticator Management](https://csrc.nist.gov/pubs/sp/800/63/b/4/final) — analizar garantías de autenticadores y resistencia a la suplantación.
 
 ### Papers y Literatura de Frontera
-* **IEEE Transactions on Biometrics, Behavior, and Identity Science (2022):** *Deepfake Detection in Biometrics: A Comprehensive Review and Future Directions* ([IEEE Xplore](https://ieeexplore.ieee.org/document/9672074)) — Evaluación de modelos de aprendizaje profundo para identificar anomalías espectrales y micropatrones en rostros sintéticos.
-* **arXiv / Computer Vision Foundation (2023):** *Real-Time Deepfake Detection via Physiological Dynamics* ([arXiv:2303.04838](https://arxiv.org/abs/2303.04838)) — Propuesta metodológica para validar la pulsación sanguínea dérmica (fotopletismografía remota) en videollamadas.
 
-### Repositorios y Herramientas (Open Source)
-* [FaceForensics++ Toolkit](https://github.com/ondyari/FaceForensics): Benchmark y biblioteca forense de referencia desarrollada por la Universidad Técnica de Múnich para detección de manipulaciones faciales.
-* [DeepFaceLab](https://github.com/iperov/DeepFaceLab): Framework de código abierto líder en pipeline de generación neural facial, utilizado por investigadores para diseñar defensas y pruebas de penetración biométrica.
-* [OpenFace 2.0](https://github.com/TadasBaltrusaitis/OpenFace): Herramienta de análisis facial open source capaz de capturar microexpresiones y puntos de referencia de mirada para detectar patrones sintéticos anómalos.
-* [Canarytokens (Thinkst Canary)](https://github.com/thinkst/canarytokens): Generador de señuelos digitales y trampas de credenciales para alertar tempranamente accesos no autorizados en canales corporativos.
+* [Reducing Risks Posed by Synthetic Content: An Overview of Technical Approaches to Digital Content Transparency](https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content) — comparar procedencia, marcas de agua y detección de contenido sintético.
+* [FaceForensics++: Learning to Detect Manipulated Facial Images](https://arxiv.org/abs/1901.08971) — analizar un benchmark de manipulación facial sin extrapolar sus resultados a todas las tecnologías actuales.
+
+### Repositorios y Herramientas Open Source
+
+* [C2PA Rust SDK](https://github.com/contentauth/c2pa-rs) — validar manifiestos de procedencia sin confundirlos con pruebas de veracidad.
+* [FaceForensics++](https://github.com/ondyari/FaceForensics) — estudiar evaluación de detección de manipulación facial y sus condiciones de uso de datos.
 
 ### Ruta de Aprendizaje Autónoma
-* [Microsoft Learn: Implementación de Soluciones Biométricas con Azure AI Face](https://learn.microsoft.com/es-es/training/modules/detect-analyze-faces/): Módulo técnico sobre integración de verificación facial, detección de máscaras y prueba de vida.
-* [AWS Skill Builder: Architecting Identity and Access Management](https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-identity-and-access-management-iam-foundations): Formación sobre políticas de mínimo privilegio, autenticación multifactor contextual y control de accesos federados.
-* [TryHackMe: Phishing & Social Engineering Analysis](https://tryhackme.com/module/phishing): Laboratorios interactivos para analizar cabeceras de correo, desarmar señuelos de ingeniería social y desplegar contramedidas en gateways.
-* [SANS Cyber Defense Community Curriculum](https://www.sans.org): Recursos abiertos sobre mitigación de fraudes ejecutivos y procedimientos de control interno ante incidentes financieros.
+
+* [CS50's Introduction to Cybersecurity](https://cs50.harvard.edu/cybersecurity/) — estudiar protección de cuentas, datos y sistemas mediante material gratuito.
+* [Establish the guiding principles and core components of Zero Trust](https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/) — relacionar verificación explícita y mínimo privilegio con los procesos de autorización.
+
+## 🎧 Audio Resumen
+
+**Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.
+
+[▶️ Escuchar Podcast Resumen](../../assets/audio/03-fernandez-crimen-ia.mp3)
 
 ---
 
-## Enlace al Audio
-
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_03_fernandez_manu.mp3)
-
----
-
-[⬅️ Lección Anterior](02-lama-infraestructura-dns.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡️](04-bordachar-anci-regulacion.md)
+[⬅ Lección Anterior](02-lama-infraestructura-dns.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](04-bordachar-anci-regulacion.md)

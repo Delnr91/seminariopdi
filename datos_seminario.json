@@ -5,16 +5,16 @@
       "id": "dia1_01_wong",
       "carpeta": "02-dia1-seminario",
       "archivo": "01-wong-ia-cibercrimen.md",
-      "speaker": "Subprefecto Marcelo Wong Cea",
+      "speaker": "Marcelo Wong Cea",
       "institucion": "Jefatura Nacional de Cibercrimen, PDI Chile",
-      "titulo": "Adversarios digitales IA y el nuevo escenario de amenazas a la infraestructura crítica",
+      "titulo": "Inteligencia Artificial aplicada al Cibercrimen",
       "dificultad": "Principiante",
       "analogia": "Imagina que un ladrón común antes tenía que probar las cerraduras de una casa una por una caminando por la calle. Ahora, ese delincuente tiene un dron invisible equipado con rayos X que recorre toda la ciudad en tres segundos, detectando qué ventana tiene el pestillo suelto y además imitando la voz de tu hermano para pedirte que le abras la puerta principal.",
-      "explicacion": "El Subprefecto Marcelo Wong expone cómo la delincuencia digital ha dado un salto evolutivo al adoptar herramientas de Inteligencia Artificial generativa y automatización masiva. Los atacantes ya no necesitan semanas de planeación manual; hoy despliegan algoritmos capaces de escanear redes enteras de empresas de electricidad, agua y finanzas en busca de vulnerabilidades en tiempo récord, generando correos trampa con lenguaje natural impecable.\n\nAnte esta amenaza simétrica, la PDI recalca que la respuesta policial y corporativa no puede ser artesanal. Proteger la infraestructura crítica exige elevar las capacidades de ciberinvestigación científica con analítica avanzada, cooperación multisectorial y una cultura ciudadana de verificación rigurosa, desconfiando de comunicaciones que parezcan legítimas pero utilicen canales atípicos.",
+      "explicacion": "La IA generativa reduce el coste de producir mensajes de suplantación, adaptar señuelos y procesar información obtenida durante el reconocimiento. Para una organización crítica, el impacto relevante es la combinación de escala y personalización: un acceso inicial aparentemente menor puede comprometer identidades con permisos sobre servicios esenciales. La defensa debe relacionar autenticación, telemetría y exposición de activos con escenarios adversarios concretos; evaluar únicamente la calidad visual de un mensaje deja fuera el contexto técnico del ataque. [MITRE ATLAS](https://atlas.mitre.org/).\n\nEl desafío operativo consiste en investigar campañas asistidas por IA sin convertir inferencias en evidencia. La conservación de registros, la trazabilidad de los artefactos y la revisión humana de hipótesis ayudan a separar hechos observables de atribuciones inciertas. Como criterio de diseño, conviene medir cobertura de detección, calidad de los avisos y capacidad de revocar accesos, mientras se ensayan controles frente a abuso de modelos en un laboratorio. La automatización defensiva requiere permisos acotados y validación de resultados antes de actuar sobre sistemas críticos. [2023 Redacted Europol Report on the Impact of ChatGPT and Large Language Models on Law Enforcement](https://www.europol.europa.eu/publications-events/publications/2023-redacted-europol-report-impact-of-chatgpt-and-large-language-models-law-enforcement).",
       "puntos_clave": [
-        "Automatización ofensiva: Los ciberdelincuentes utilizan IA para ejecutar reconocimiento masivo y ataques dirigidos con mínima inversión de tiempo.",
-        "Ingeniería social hiperrealista: La síntesis de voz y los modelos de lenguaje eliminan las faltas ortográficas típicas del phishing tradicional, volviendo creíbles las suplantaciones.",
-        "Investigación científica y predictiva: La ciberdefensa requiere telemetría continua y modelos analíticos de la policía para anticipar patrones delictivos."
+        "Spear phishing asistido por IA: Producción de señuelos adaptados a una persona o función utilizando información contextual.",
+        "Adversarial Machine Learning: Estudio de ataques y defensas que afectan datos, modelos o aplicaciones basadas en aprendizaje automático.",
+        "Tactics, Techniques and Procedures (TTP): Descripción del comportamiento adversario que permite relacionar señales con una estrategia de ataque."
       ],
       "checklist": [
         "- [ ] Implementar un protocolo de verificación fuera de banda (por otra vía) para cualquier orden ejecutiva o financiera recibida por correo o mensajería.",
@@ -25,21 +25,84 @@
         "pregunta": "¿Por qué la Inteligencia Artificial hace que los ataques de phishing sean mucho más peligrosos que antes?",
         "respuesta": "Porque permite a los delincuentes redactar mensajes perfectamente contextualizados y libres de errores gramaticales a escala masiva, e incluso clonar voces y rostros (deepfakes), haciendo casi imposible distinguir el fraude a simple vista sin una verificación secundaria."
       },
-      "guion_audio": "¡Hola! Bienvenidos a esta cápsula de ciberseguridad. Hoy abordamos la ponencia del Subprefecto Marcelo Wong de la PDI, sobre cómo los ciberdelincuentes usan la Inteligencia Artificial. Imagina a un adversario que no duerme, capaz de probar miles de cerraduras digitales en un segundo y copiar la voz de tu jefe para que le entregues las llaves de los sistemas eléctricos o de agua potable. Frente a esto, la intuición ya no basta. La regla de oro es simple: nunca confirmes una orden urgente o inusual solo porque el mensaje se ve formal o creíble. Establece siempre una llamada de confirmación por una línea segura. La tecnología avanza rápido, pero el criterio humano y la verificación rigurosa siguen siendo nuestro escudo principal.",
+      "guion_audio": "La IA generativa reduce el coste de producir mensajes de suplantación, adaptar señuelos y procesar información obtenida durante el reconocimiento. Para una organización crítica, el impacto relevante es la combinación de escala y personalización: un acceso inicial aparentemente menor puede comprometer identidades con permisos sobre servicios esenciales. La defensa debe relacionar autenticación, telemetría y exposición de activos con escenarios adversarios concretos; evaluar únicamente la calidad visual de un mensaje deja fuera el contexto técnico del ataque. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "MITRE ATLAS",
+          "url": "https://atlas.mitre.org/"
         },
         {
-          "nombre": "Video Oficial YouTube Día 1",
-          "url": "https://www.youtube.com/watch?v=PEqWRTb1idE"
+          "nombre": "MITRE ATT&CK Enterprise",
+          "url": "https://attack.mitre.org/matrices/enterprise/"
         },
         {
-          "nombre": "Jefatura Nacional de Cibercrimen PDI",
-          "url": "https://www.pdichile.cl"
+          "nombre": "2023 Redacted Europol Report on the Impact of ChatGPT and Large Language Models on Law Enforcement",
+          "url": "https://www.europol.europa.eu/publications-events/publications/2023-redacted-europol-report-impact-of-chatgpt-and-large-language-models-law-enforcement"
+        },
+        {
+          "nombre": "Extracting Training Data from Large Language Models",
+          "url": "https://arxiv.org/abs/2012.07805"
+        },
+        {
+          "nombre": "garak",
+          "url": "https://github.com/NVIDIA/garak"
+        },
+        {
+          "nombre": "Adversarial Robustness Toolbox (ART)",
+          "url": "https://github.com/Trusted-AI/adversarial-robustness-toolbox"
+        },
+        {
+          "nombre": "CS50's Introduction to Artificial Intelligence with Python",
+          "url": "https://cs50.harvard.edu/ai/"
+        },
+        {
+          "nombre": "Perform threat hunting in Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
         }
-      ]
+      ],
+      "archivo_audio": "01-wong-ia-cibercrimen.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "MITRE ATLAS",
+            "url": "https://atlas.mitre.org/"
+          },
+          {
+            "nombre": "MITRE ATT&CK Enterprise",
+            "url": "https://attack.mitre.org/matrices/enterprise/"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "2023 Redacted Europol Report on the Impact of ChatGPT and Large Language Models on Law Enforcement",
+            "url": "https://www.europol.europa.eu/publications-events/publications/2023-redacted-europol-report-impact-of-chatgpt-and-large-language-models-law-enforcement"
+          },
+          {
+            "nombre": "Extracting Training Data from Large Language Models",
+            "url": "https://arxiv.org/abs/2012.07805"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "garak",
+            "url": "https://github.com/NVIDIA/garak"
+          },
+          {
+            "nombre": "Adversarial Robustness Toolbox (ART)",
+            "url": "https://github.com/Trusted-AI/adversarial-robustness-toolbox"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "CS50's Introduction to Artificial Intelligence with Python",
+            "url": "https://cs50.harvard.edu/ai/"
+          },
+          {
+            "nombre": "Perform threat hunting in Microsoft Sentinel",
+            "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
+          }
+        ]
+      }
     },
     {
       "id": "dia1_02_lama",
@@ -47,14 +110,14 @@
       "archivo": "02-lama-infraestructura-dns.md",
       "speaker": "Guillermo Lama",
       "institucion": "NIC Chile (Universidad de Chile)",
-      "titulo": "Infraestructura de Internet: Seguridad, Continuidad y Resiliencia",
+      "titulo": "Seguridad y Resiliencia de la Infraestructura DNS",
       "dificultad": "Principiante",
       "analogia": "Imagina la guía telefónica y el mapa central de una gran metrópolis. Cada vez que tomas un autobús o buscas una dirección, consultas ese mapa. Si alguien borrara o cambiara las señales en todas las esquinas al mismo tiempo, los vehículos chocarían o se detendrían, las ambulancias no llegarían a los hospitales y nadie encontraría su casa. Eso es el DNS para Internet.",
-      "explicacion": "Guillermo Lama explica la función vital del Sistema de Nombres de Dominio (DNS), especialmente para el dominio nacional .cl administrado por NIC Chile. El DNS traduce nombres legibles para los humanos (como el de tu banco o centro de salud) en números de coordenadas que las computadoras entienden (direcciones IP). Sin este servicio en funcionamiento continuo, la red queda virtualmente inaccesible para los ciudadanos.\n\nLa charla detalla cómo se blinda esta columna vertebral mediante arquitecturas Anycast, servidores distribuidos geográficamente en varios continentes y protocolos de seguridad criptográfica como DNSSEC. Gracias a esta redundancia masiva, aunque un centro de datos sufra un ataque masivo de denegación de servicio (DDoS), las consultas de los usuarios son absorbidas por réplicas operativas, garantizando la continuidad de Chile en la red global.",
+      "explicacion": "El DNS conecta los nombres de los servicios con los destinos utilizados por aplicaciones y usuarios. Su indisponibilidad puede impedir el acceso a sistemas que continúan funcionando, mientras una resolución manipulada puede desviar conexiones hacia infraestructura hostil. DNSSEC incorpora autenticación del origen y verificación de integridad mediante firmas y una cadena de confianza; no cifra las consultas ni elimina los riesgos de saturación. La arquitectura debe abordar por separado autenticidad, disponibilidad y privacidad. [RFC 4033 — DNS Security Introduction and Requirements](https://www.rfc-editor.org/rfc/rfc4033).\n\nLa resiliencia exige distribuir autoridad y resolución sin reproducir dependencias comunes de red, energía o administración. Anycast puede mejorar la distribución del tráfico, pero no sustituye la capacidad suficiente ni la operación correcta de las zonas. La rotación de claves, la publicación de registros DS y la monitorización de errores de validación necesitan procedimientos de cambio y recuperación. La evaluación debe considerar expiraciones, fallos de proveedores y tiempos de propagación, además de distinguir una respuesta criptográficamente válida de un destino seguro para el usuario. [CISA — DNS Risk Assessment](https://www.cisa.gov/sites/default/files/c3vp/DNS_Risk_Assessment.pdf).",
       "puntos_clave": [
-        "El DNS como servicio esencial: Es el cimiento sobre el cual opera toda la economía digital, la banca, la salud y las telecomunicaciones nacionales.",
-        "Arquitectura Anycast y redundancia: Distribuir copias operativas de los servidores raíz y de nivel superior en múltiples regiones mitiga ataques de saturación masiva.",
-        "Validación criptográfica con DNSSEC: Impide que atacantes intermedios falsifiquen respuestas de resolución y desvíen a usuarios a sitios web fraudulentos."
+        "DNSSEC: Extensiones que permiten verificar el origen y la integridad de los datos DNS mediante firmas digitales.",
+        "Cadena de confianza: Relación entre anclas de confianza, registros DS y claves DNSKEY utilizada para validar zonas.",
+        "Anycast: Anuncio de una dirección desde múltiples ubicaciones para dirigir tráfico según el enrutamiento de la red."
       ],
       "checklist": [
         "- [ ] Activar DNSSEC en todos los nombres de dominio institucionales para certificar la autenticidad de las respuestas DNS.",
@@ -65,21 +128,68 @@
         "pregunta": "¿Cuál es el principal beneficio de desplegar una arquitectura Anycast en los servidores DNS?",
         "respuesta": "Permite que múltiples servidores en distintas partes del mundo compartan la misma dirección IP, de modo que el tráfico se reparte automáticamente al nodo más cercano y un ataque masivo de denegación de servicio queda disperso y neutralizado sin botar el servicio global."
       },
-      "guion_audio": "¿Te has preguntado cómo llega tu computador a la página web correcta en milésimas de segundo? En esta sesión revisamos la infraestructura de internet con Guillermo Lama de NIC Chile. El sistema DNS es como el mapa de navegación de nuestro país en internet: traduce cada nombre de dominio punto cl a la dirección exacta del servidor correspondiente. Si este servicio falla, los bancos, hospitales y servicios de emergencia quedan desconectados. Para evitarlo, se utiliza redundancia Anycast, lo que significa colocar copias de estos mapas en servidores de todo el mundo. Si uno es atacado o falla, los demás responden de inmediato. La lección para toda organización es clara: jamás dependas de un único punto de falla en tus sistemas críticos.",
+      "guion_audio": "El DNS conecta los nombres de los servicios con los destinos utilizados por aplicaciones y usuarios. Su indisponibilidad puede impedir el acceso a sistemas que continúan funcionando, mientras una resolución manipulada puede desviar conexiones hacia infraestructura hostil. DNSSEC incorpora autenticación del origen y verificación de integridad mediante firmas y una cadena de confianza; no cifra las consultas ni elimina los riesgos de saturación. La arquitectura debe abordar por separado autenticidad, disponibilidad y privacidad. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "RFC 4033 — DNS Security Introduction and Requirements",
+          "url": "https://www.rfc-editor.org/rfc/rfc4033"
         },
         {
-          "nombre": "Video Oficial YouTube Día 1",
-          "url": "https://www.youtube.com/watch?v=PEqWRTb1idE"
+          "nombre": "RFC 4035 — Protocol Modifications for the DNS Security Extensions",
+          "url": "https://www.rfc-editor.org/rfc/rfc4035"
         },
         {
-          "nombre": "NIC Chile - Centro de Información de Redes",
-          "url": "https://www.nic.cl"
+          "nombre": "CISA — DNS Risk Assessment",
+          "url": "https://www.cisa.gov/sites/default/files/c3vp/DNS_Risk_Assessment.pdf"
+        },
+        {
+          "nombre": "Unbound",
+          "url": "https://github.com/NLnetLabs/unbound"
+        },
+        {
+          "nombre": "DNSViz",
+          "url": "https://github.com/dnsviz/dnsviz"
+        },
+        {
+          "nombre": "Host your domain on Azure DNS",
+          "url": "https://learn.microsoft.com/en-us/training/modules/host-domain-azure-dns/"
         }
-      ]
+      ],
+      "archivo_audio": "02-lama-infraestructura-dns.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "RFC 4033 — DNS Security Introduction and Requirements",
+            "url": "https://www.rfc-editor.org/rfc/rfc4033"
+          },
+          {
+            "nombre": "RFC 4035 — Protocol Modifications for the DNS Security Extensions",
+            "url": "https://www.rfc-editor.org/rfc/rfc4035"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "CISA — DNS Risk Assessment",
+            "url": "https://www.cisa.gov/sites/default/files/c3vp/DNS_Risk_Assessment.pdf"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "Unbound",
+            "url": "https://github.com/NLnetLabs/unbound"
+          },
+          {
+            "nombre": "DNSViz",
+            "url": "https://github.com/dnsviz/dnsviz"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "Host your domain on Azure DNS",
+            "url": "https://learn.microsoft.com/en-us/training/modules/host-domain-azure-dns/"
+          }
+        ]
+      }
     },
     {
       "id": "dia1_03_fernandez_manu",
@@ -87,14 +197,14 @@
       "archivo": "03-fernandez-crimen-ia.md",
       "speaker": "Manu Fernández",
       "institucion": "TRM - IAFIS",
-      "titulo": "El lado práctico del crimen con IA",
+      "titulo": "Fraude y Suplantación de Identidad con IA",
       "dificultad": "Intermedio",
       "analogia": "Es como un imitador profesional con una máscara de silicona hiperrealista que entra a una sucursal bancaria imitando a la perfección los gestos, la voz y la firma del dueño de la cuenta para retirar los fondos de emergencia, mientras por teléfono llama a los empleados con la voz idéntica de la junta directiva diciendo que liberen el dinero inmediatamente.",
-      "explicacion": "Manu Fernández aterriza las amenazas de la Inteligencia Artificial a la práctica cotidiana del cibercrimen financiero y corporativo. Demuestra cómo delincuentes con herramientas de bajo costo clonan timbres vocales a partir de videos públicos de ejecutivos y crean avatares hiperrealistas capaces de participar en videollamadas para autorizar transferencias millonarias hacia cuentas en el extranjero.\n\nAdemás, la presentación expone la debilidad de los métodos biométricos convencionales cuando no cuentan con algoritmos de detección de vida (liveness detection). Ante este panorama, se exige a las organizaciones redefinir sus procesos de validación de identidad, incorporando autenticaciones contextuales, palabras clave fuera de canal y una cultura de tolerancia cero a la precipitación ante órdenes urgentes.",
+      "explicacion": "La generación de voz, imagen y texto permite fabricar señales de identidad convincentes, pero su apariencia no acredita que una orden proceda de una persona autorizada. El fraude asistido por IA explota la separación entre reconocimiento visual, autenticación y aprobación de operaciones. Una videollamada o un mensaje coherente pueden inducir a eludir controles financieros aunque la sesión no disponga de garantías suficientes. El diseño defensivo debe vincular cada autorización con credenciales verificables, contexto transaccional y validación independiente. [NIST SP 800-63B-4 — Digital Identity Guidelines: Authentication and Authenticator Management](https://csrc.nist.gov/pubs/sp/800/63/b/4/final).\n\nLa detección de contenido sintético y la verificación de procedencia aportan señales complementarias, con límites que deben explicitarse. Una firma de procedencia acredita determinadas afirmaciones y su integridad, no la veracidad de todo lo representado; un detector también puede fallar ante material nuevo. Conviene priorizar autenticadores resistentes al phishing, separación de funciones y confirmación por canales previamente establecidos. Las evaluaciones deben comparar falsos positivos y negativos sin utilizar la confianza del modelo como sustituto de evidencia ni de controles de autorización. [Reducing Risks Posed by Synthetic Content: An Overview of Technical Approaches to Digital Content Transparency](https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content).",
       "puntos_clave": [
-        "Suplantación de voz y video en tiempo real: Los deepfakes ya no son solo teóricos; se usan en estafas del CEO y fraudes corporativos en vivo.",
-        "Evasión de biometría sin prueba de vida: Fotografías 3D o máscaras generadas por IA pueden burlar cámaras si los algoritmos no exigen desafíos dinámicos reales.",
-        "Quiebre de la urgencia psicológica: Los atacantes combinan la perfección técnica del engaño con un ambiente de extrema presión para evitar que la víctima verifique."
+        "Deepfake: Contenido sintético o manipulado que reproduce la apariencia o voz de una persona.",
+        "Autenticación resistente al phishing: Autenticación diseñada para impedir el uso de una credencial capturada en un servicio impostor.",
+        "Presentation Attack Detection (PAD): Controles que buscan identificar intentos de engañar a sensores o procesos biométricos."
       ],
       "checklist": [
         "- [ ] Implementar un canal secundario obligatorio y telefónico directo para autorizar transferencias monetarias o cambios de cuentas bancarias.",
@@ -105,21 +215,76 @@
         "pregunta": "¿Qué es una prueba de vida (liveness detection) y por qué es indispensable ante el uso de IA?",
         "respuesta": "Es una tecnología que verifica si la persona frente a la cámara es un ser humano real presente en ese instante (mediante parpadeo, movimiento o patrones de luz), impidiendo que videos pregrabados o deepfakes sintéticos engañen al sistema de biometría."
       },
-      "guion_audio": "¿Creerías si tu gerente general te pide una transferencia urgente por videollamada? En esta lección, Manu Fernández de TRM IAFIS nos muestra el lado más peligroso del fraude digital actual: el cibercrimen con Inteligencia Artificial. Con unos pocos segundos de audio extraído de redes sociales, los estafadores clonan voces reales y crean videos falsos tan convincentes que burlan a cualquiera. Para proteger a nuestras instituciones, la regla de oro es nunca permitir que la prisa anule los protocolos. Implementa palabras de paso secretas y valida siempre cualquier movimiento financiero a través de una segunda vía de comunicación independiente. Si una orden huele a apuro extraordinario, detente, respira y verifica. En ciberseguridad, dudar a tiempo salva millones.",
+      "guion_audio": "La generación de voz, imagen y texto permite fabricar señales de identidad convincentes, pero su apariencia no acredita que una orden proceda de una persona autorizada. El fraude asistido por IA explota la separación entre reconocimiento visual, autenticación y aprobación de operaciones. Una videollamada o un mensaje coherente pueden inducir a eludir controles financieros aunque la sesión no disponga de garantías suficientes. El diseño defensivo debe vincular cada autorización con credenciales verificables, contexto transaccional y validación independiente. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "NIST SP 800-63B-4 — Digital Identity Guidelines: Authentication and Authenticator Management",
+          "url": "https://csrc.nist.gov/pubs/sp/800/63/b/4/final"
         },
         {
-          "nombre": "Video Oficial YouTube Día 1",
-          "url": "https://www.youtube.com/watch?v=PEqWRTb1idE"
+          "nombre": "Reducing Risks Posed by Synthetic Content: An Overview of Technical Approaches to Digital Content Transparency",
+          "url": "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content"
         },
         {
-          "nombre": "TRM - IAFIS Biometrics",
-          "url": "https://www.iafis.com"
+          "nombre": "FaceForensics++: Learning to Detect Manipulated Facial Images",
+          "url": "https://arxiv.org/abs/1901.08971"
+        },
+        {
+          "nombre": "C2PA Rust SDK",
+          "url": "https://github.com/contentauth/c2pa-rs"
+        },
+        {
+          "nombre": "FaceForensics++",
+          "url": "https://github.com/ondyari/FaceForensics"
+        },
+        {
+          "nombre": "CS50's Introduction to Cybersecurity",
+          "url": "https://cs50.harvard.edu/cybersecurity/"
+        },
+        {
+          "nombre": "Establish the guiding principles and core components of Zero Trust",
+          "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
         }
-      ]
+      ],
+      "archivo_audio": "03-fernandez-crimen-ia.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "NIST SP 800-63B-4 — Digital Identity Guidelines: Authentication and Authenticator Management",
+            "url": "https://csrc.nist.gov/pubs/sp/800/63/b/4/final"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "Reducing Risks Posed by Synthetic Content: An Overview of Technical Approaches to Digital Content Transparency",
+            "url": "https://www.nist.gov/publications/reducing-risks-posed-synthetic-content-overview-technical-approaches-digital-content"
+          },
+          {
+            "nombre": "FaceForensics++: Learning to Detect Manipulated Facial Images",
+            "url": "https://arxiv.org/abs/1901.08971"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "C2PA Rust SDK",
+            "url": "https://github.com/contentauth/c2pa-rs"
+          },
+          {
+            "nombre": "FaceForensics++",
+            "url": "https://github.com/ondyari/FaceForensics"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "CS50's Introduction to Cybersecurity",
+            "url": "https://cs50.harvard.edu/cybersecurity/"
+          },
+          {
+            "nombre": "Establish the guiding principles and core components of Zero Trust",
+            "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
+          }
+        ]
+      }
     },
     {
       "id": "dia1_04_bordachar",
@@ -127,14 +292,14 @@
       "archivo": "04-bordachar-anci-regulacion.md",
       "speaker": "Michelle Bordachar",
       "institucion": "Agencia Nacional de Ciberseguridad (ANCI)",
-      "titulo": "Ciberseguridad y Resiliencia: Un Desafío Nacional",
+      "titulo": "Regulación ANCI y Gobernanza de Ciberseguridad",
       "dificultad": "Principiante",
       "analogia": "Es similar a la creación del código de construcción y la inspección oficial de edificios tras un gran terremoto: ya no se deja al criterio de cada constructor si coloca o no vigas antisísmicas; la ley establece normas obligatorias, exige simulacros periódicos y castiga severamente a quien ponga en riesgo la vida de los vecinos por ahorrar en cemento.",
-      "explicacion": "Michelle Bordachar detalla el hito institucional de Chile con la promulgación de la Ley Marco de Ciberseguridad y la puesta en marcha de la Agencia Nacional de Ciberseguridad (ANCI). Este marco legal transforma la ciberseguridad de ser una recomendación técnica optativa a convertirse en una obligación de Estado con fuerza de ley para entidades públicas y privadas.\n\nLa exposición se centra en la figura de los Operadores de Importancia Vital (OIV), aquellos cuya interrupción afectaría gravemente servicios esenciales como salud, energía, transporte y telecomunicaciones. Estos actores están legalmente obligados a implementar estándares de gestión de riesgos, realizar auditorías y reportar incidentes graves en plazos perentorios de pocas horas, bajo apercibimiento de cuantiosas multas.",
+      "explicacion": "La Ley N.º 21.663 establece el marco chileno de ciberseguridad y distingue prestadores de servicios esenciales y operadores de importancia vital, cuya calificación y obligaciones deben analizarse según la normativa aplicable. La gobernanza transforma ese marco en decisiones operativas: quién acepta un riesgo, qué servicios requieren continuidad y qué evidencias respaldan los controles. Para una organización, el cumplimiento exige relacionar alcance regulatorio, responsabilidades y procesos técnicos; una certificación o un checklist aislado no demuestran por sí solos el cumplimiento de todas las obligaciones. [Ley N.º 21.663 — Ley Marco de Ciberseguridad](https://www.bcn.cl/leychile/navegar?idNorma=1202434).\n\nEl desafío de implementación consiste en mantener trazabilidad entre riesgos, medidas y resultados durante la operación y los incidentes. Un programa consistente asigna responsables, conserva evidencias, define escalamiento y revisa cambios de exposición y proveedores. Los ejercicios permiten evaluar si los equipos pueden coordinar contención, continuidad y comunicación con información incompleta. El NIST CSF proporciona un lenguaje de gestión útil para ordenar estas capacidades, pero debe aplicarse junto con las disposiciones y resoluciones nacionales pertinentes, sin trasladar automáticamente obligaciones de otras jurisdicciones. [NIST SP 800-61 Rev. 3 — Incident Response Recommendations and Considerations for Cybersecurity Risk Management](https://csrc.nist.gov/pubs/sp/800/61/r3/final).",
       "puntos_clave": [
-        "Creación de la ANCI: Una autoridad rectora con facultades de fiscalización, sanción y coordinación técnica para la protección nacional.",
-        "Operadores de Importancia Vital (OIV): Designación formal de entidades estratégicas obligadas a mantener estándares estrictos de ciberseguridad y continuidad.",
-        "Obligatoriedad de notificación de incidentes: El reporte rápido a la autoridad permite emitir alertas tempranas y proteger al resto del ecosistema chileno."
+        "Gobernanza del riesgo: Asignación de autoridad, objetivos y responsabilidades para decidir sobre la exposición cibernética.",
+        "Servicios esenciales y OIV: Categorías legales diferenciadas que requieren analizar alcance, calificación y obligaciones aplicables.",
+        "Trazabilidad de controles: Relación documentada entre un riesgo, la medida implantada y la evidencia de su funcionamiento."
       ],
       "checklist": [
         "- [ ] Determinar si la organización clasifica como Operador de Importancia Vital (OIV) bajo los criterios de la Ley Marco chilena.",
@@ -145,36 +310,83 @@
         "pregunta": "¿Cuál es el cambio de paradigma principal que introduce la Ley Marco de Ciberseguridad y la ANCI en Chile?",
         "respuesta": "Eleva la ciberseguridad de un problema puramente informático a un asunto de gobernanza corporativa y seguridad nacional obligatoria, con deberes de reporte legal e importantes sanciones económicas para directivos y empresas estratégicas."
       },
-      "guion_audio": "Chile cuenta con un nuevo escudo legal. En esta lección repasamos la presentación de Michelle Bordachar sobre la Agencia Nacional de Ciberseguridad, la ANCI, y la Ley Marco de Ciberseguridad. Proteger los sistemas informáticos ya no es un favor ni una opción técnica: es una exigencia legal para todas las empresas de servicios esenciales, conocidas como Operadores de Importancia Vital. Si una planta de agua, una distribuidora eléctrica o un hospital sufre un ciberataque, la ley exige reportarlo de inmediato para alertar y blindar al resto del país. La ciberseguridad se sienta ahora en la mesa del directorio. Cumplir con las normativas y mitigar riesgos es hoy un deber ciudadano y corporativo fundamental para la resiliencia de nuestra nación.",
+      "guion_audio": "La Ley N.º 21.663 establece el marco chileno de ciberseguridad y distingue prestadores de servicios esenciales y operadores de importancia vital, cuya calificación y obligaciones deben analizarse según la normativa aplicable. La gobernanza transforma ese marco en decisiones operativas: quién acepta un riesgo, qué servicios requieren continuidad y qué evidencias respaldan los controles. Para una organización, el cumplimiento exige relacionar alcance regulatorio, responsabilidades y procesos técnicos; una certificación o un checklist aislado no demuestran por sí solos el cumplimiento de todas las obligaciones. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "Ley N.º 21.663 — Ley Marco de Ciberseguridad",
+          "url": "https://www.bcn.cl/leychile/navegar?idNorma=1202434"
         },
         {
-          "nombre": "Video Oficial YouTube Día 1",
-          "url": "https://www.youtube.com/watch?v=PEqWRTb1idE"
+          "nombre": "Directive (EU) 2022/2555 — NIS2",
+          "url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj"
         },
         {
-          "nombre": "Agencia Nacional de Ciberseguridad de Chile (ANCI)",
-          "url": "https://www.gob.cl"
+          "nombre": "NIST SP 800-61 Rev. 3 — Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+          "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+        },
+        {
+          "nombre": "DFIR-IRIS",
+          "url": "https://github.com/dfir-iris/iris-web"
+        },
+        {
+          "nombre": "CISA Cyber Security Evaluation Tool (CSET)",
+          "url": "https://github.com/cisagov/cset"
+        },
+        {
+          "nombre": "Introduction to Microsoft Purview and Microsoft's privacy principles",
+          "url": "https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/"
         }
-      ]
+      ],
+      "archivo_audio": "04-bordachar-anci-regulacion.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "Ley N.º 21.663 — Ley Marco de Ciberseguridad",
+            "url": "https://www.bcn.cl/leychile/navegar?idNorma=1202434"
+          },
+          {
+            "nombre": "Directive (EU) 2022/2555 — NIS2",
+            "url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "NIST SP 800-61 Rev. 3 — Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+            "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "DFIR-IRIS",
+            "url": "https://github.com/dfir-iris/iris-web"
+          },
+          {
+            "nombre": "CISA Cyber Security Evaluation Tool (CSET)",
+            "url": "https://github.com/cisagov/cset"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "Introduction to Microsoft Purview and Microsoft's privacy principles",
+            "url": "https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/"
+          }
+        ]
+      }
     },
     {
       "id": "dia1_05_evirtus_incidentes",
       "carpeta": "02-dia1-seminario",
       "archivo": "05-evirtus-efecto-domino.md",
-      "speaker": "Representante Técnico Sectorial",
+      "speaker": "Representante técnico de E-Virtus",
       "institucion": "E-Virtus",
-      "titulo": "Un Incidente, Múltiples Impactos: La Criticidad de la Ciberseguridad",
+      "titulo": "Efecto Dominó de los Incidentes y Riesgo de Proveedores",
       "dificultad": "Intermedio",
       "analogia": "Piensa en una hilera de fichas de dominó dispuestas en espiral. La primera ficha es un pequeño taller que suministra tornillos; la última es el aeropuerto internacional de la capital. Si un niño empuja la ficha del taller, la caída se propaga ficha por ficha hasta apagar la torre de control del aeropuerto, a pesar de que el aeropuerto nunca conoció directamente al pequeño taller de tornillos.",
-      "explicacion": "El especialista de E-Virtus ilustra el fenómeno del efecto dominó y la vulnerabilidad en la cadena de suministro industrial. En la economía digital actual, las grandes corporaciones de infraestructura crítica están blindadas internamente, por lo que los atacantes seleccionan como blanco a pequeños proveedores externos de software, climatización o soporte técnico que poseen accesos directos a la red corporativa.\n\nA través de incidentes sectoriales reales, se evidencia cómo la paralización de un único sistema logístico de transporte de combustible puede detener ambulancias, dejar sin energía térmica a hospitales y paralizar la distribución de alimentos frescos. La lección primordial es que la superficie de ataque de una entidad no termina en sus propias oficinas, sino que abarca a todos los socios tecnológicos conectados a su ecosistema.",
+      "explicacion": "Las organizaciones críticas dependen de proveedores de identidad, comunicaciones, software y mantenimiento que conectan dominios de confianza distintos. Un incidente en una dependencia puede propagarse mediante permisos compartidos, actualizaciones o interrupciones de servicios, incluso sin comprometer todos los sistemas afectados. Analizar el efecto dominó exige modelar qué funciones consumen cada servicio y qué consecuencias produce su ausencia. La evaluación de terceros debe incluir su exposición técnica y el impacto operacional de la dependencia, no limitarse a su documentación comercial. [NIST SP 800-161 Rev. 1 — Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations](https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final).\n\nLa reducción del riesgo combina inventarios de componentes, verificación de artefactos, acceso restringido y alternativas de continuidad. Las listas SBOM ayudan a identificar software, pero no acreditan por sí solas que un proveedor sea confiable ni describen toda la cadena operacional. Como criterio de arquitectura, conviene ensayar la pérdida de una dependencia, validar restauraciones y revisar los permisos concedidos a terceros. El seguimiento debe medir rutas de propagación y tiempos de recuperación de servicios, evitando confundir la redundancia de servidores con independencia de proveedores o de planos de administración. [ENISA — Threat Landscape for Supply Chain Attacks](https://www.enisa.europa.eu/publications/threat-landscape-for-supply-chain-attacks).",
       "puntos_clave": [
-        "Ataques a la cadena de suministro (Supply Chain Attacks): El eslabón más débil de tus proveedores es la puerta de entrada a tu red principal.",
-        "Interdependencia de infraestructuras: La caída de telecomunicaciones o logística impacta inmediatamente en energía, salud y transporte público.",
-        "Auditoría de accesos de terceros: Se requiere revocar privilegios permanentes y aplicar el principio de mínimo privilegio a contratistas externos."
+        "Cybersecurity Supply Chain Risk Management (C-SCRM): Gestión del riesgo cibernético asociado a productos, servicios y proveedores durante su ciclo de vida.",
+        "Software Bill of Materials (SBOM): Inventario estructurado de componentes de software y sus relaciones.",
+        "Radio de impacto: Conjunto de sistemas o servicios que puede afectar una falla o compromiso inicial."
       ],
       "checklist": [
         "- [ ] Levantar un inventario exhaustivo de todos los proveedores y contratistas con conexiones de red remotas o cuentas activas.",
@@ -185,21 +397,68 @@
         "pregunta": "¿Por qué los atacantes prefieren vulnerar a un pequeño proveedor externo en lugar de atacar directamente a la gran empresa de infraestructura crítica?",
         "respuesta": "Porque los proveedores medianos suelen tener menos presupuesto y controles de ciberdefensa más débiles, pero conservan conexiones VPN o credenciales de confianza que permiten al atacante saltar directamente al corazón de la empresa principal."
       },
-      "guion_audio": "Todo está conectado, y esa es nuestra mayor fortaleza pero también nuestro mayor riesgo. En esta sesión de E-Virtus exploramos el efecto dominó de los ciberataques. Cuando pensamos en defender una gran empresa eléctrica o bancaria, solemos vigilar su fachada principal. Sin embargo, los atacantes modernos buscan la puerta trasera: vulneran al pequeño proveedor de mantenimiento, limpieza o software de facturación para colarse a los servidores centrales. Un simple incidente en una empresa de transporte puede dejar sin combustible a los generadores de un hospital. Tu nivel de seguridad real es el de tu proveedor más vulnerable. Por eso, auditar a terceros, restringir accesos temporales y vigilar la cadena de suministro es imprescindible para evitar que una pequeña chispa incendie todo el bosque.",
+      "guion_audio": "Las organizaciones críticas dependen de proveedores de identidad, comunicaciones, software y mantenimiento que conectan dominios de confianza distintos. Un incidente en una dependencia puede propagarse mediante permisos compartidos, actualizaciones o interrupciones de servicios, incluso sin comprometer todos los sistemas afectados. Analizar el efecto dominó exige modelar qué funciones consumen cada servicio y qué consecuencias produce su ausencia. La evaluación de terceros debe incluir su exposición técnica y el impacto operacional de la dependencia, no limitarse a su documentación comercial. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "NIST SP 800-161 Rev. 1 — Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations",
+          "url": "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final"
         },
         {
-          "nombre": "Video Oficial YouTube Día 1",
-          "url": "https://www.youtube.com/watch?v=PEqWRTb1idE"
+          "nombre": "NIST Cybersecurity Framework (CSF) 2.0",
+          "url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
         },
         {
-          "nombre": "E-Virtus Ciberseguridad Industrial",
-          "url": "https://e-virtus.com"
+          "nombre": "ENISA — Threat Landscape for Supply Chain Attacks",
+          "url": "https://www.enisa.europa.eu/publications/threat-landscape-for-supply-chain-attacks"
+        },
+        {
+          "nombre": "Syft",
+          "url": "https://github.com/anchore/syft"
+        },
+        {
+          "nombre": "OpenSSF Scorecard",
+          "url": "https://github.com/ossf/scorecard"
+        },
+        {
+          "nombre": "CISA — ICS Cybersecurity (101)",
+          "url": "https://www.cisa.gov/resources-tools/programs/ics-training-available-through-cisa"
         }
-      ]
+      ],
+      "archivo_audio": "05-evirtus-efecto-domino.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "NIST SP 800-161 Rev. 1 — Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations",
+            "url": "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final"
+          },
+          {
+            "nombre": "NIST Cybersecurity Framework (CSF) 2.0",
+            "url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "ENISA — Threat Landscape for Supply Chain Attacks",
+            "url": "https://www.enisa.europa.eu/publications/threat-landscape-for-supply-chain-attacks"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "Syft",
+            "url": "https://github.com/anchore/syft"
+          },
+          {
+            "nombre": "OpenSSF Scorecard",
+            "url": "https://github.com/ossf/scorecard"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "CISA — ICS Cybersecurity (101)",
+            "url": "https://www.cisa.gov/resources-tools/programs/ics-training-available-through-cisa"
+          }
+        ]
+      }
     },
     {
       "id": "dia1_06_fernandez_victor",
@@ -207,14 +466,14 @@
       "archivo": "06-fernandez-dispositivos-medicos.md",
       "speaker": "Víctor Fernández",
       "institucion": "Biohacking Village (DEF CON)",
-      "titulo": "Anatomía de un dispositivo médico conectado: explorando sus superficies de ataque",
+      "titulo": "Superficies de Ataque en Dispositivos Médicos Conectados",
       "dificultad": "Avanzado",
       "analogia": "Imagina un marcapasos o un suero en el brazo de un paciente que tiene una pequeña antena de radio para que la enfermera ajuste la dosis desde su escritorio. Si esa antena no tiene llave y está conectada a la misma red pública de internet que usan las visitas de la sala de espera para ver videos, cualquier intruso con un teléfono podría cambiar la medicina sin levantarse de su silla.",
-      "explicacion": "Víctor Fernández desmenuza la arquitectura de hardware y software del Internet de las Cosas Médicas (IoMT). Equipos como bombas de infusión de insulina, monitores fetales y respiradores artificiales fueron diseñados históricamente para operar en ambientes hospitalarios aislados, pero hoy incorporan módulos WiFi y Bluetooth que exponen puertos de depuración física (JTAG, UART) y firmwares vulnerables sin cifrar.\n\nEl expositor demuestra cómo un atacante con acceso a la red hospitalaria puede explotar vulnerabilidades de memoria en estos dispositivos para alterar parámetros de dosificación farmacológica o generar alarmas falsas, poniendo en riesgo directo la vida del paciente. Se concluye que la ciberseguridad biomédica requiere segmentación de red estricta mediante VLANs médicas dedicadas y auditorías de seguridad desde la fase de diseño industrial.",
+      "explicacion": "Un dispositivo médico conectado integra firmware, interfaces, servicios de actualización y dependencias de red que amplían su superficie de ataque. La confidencialidad de los datos es solo una dimensión: una pérdida de integridad o disponibilidad puede afectar al proceso asistencial. El modelo de amenazas debe relacionar cada interfaz y límite de confianza con posibles consecuencias operativas. La gestión de seguridad necesita acompañar al producto durante su diseño, integración y mantenimiento, considerando tanto el comportamiento del dispositivo como los sistemas que lo administran. [FDA — Cybersecurity in Medical Devices: Quality Management System Considerations and Content of Premarket Submissions](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-management-system-considerations-and-content-premarket).\n\nEn una red clínica, las ventanas de intervención, los equipos heredados y la disponibilidad de soporte condicionan el tratamiento de vulnerabilidades. El control de accesos, el inventario y la segmentación reducen exposición, pero su implantación debe validarse con responsables técnicos y asistenciales antes de afectar servicios reales. Conviene comenzar con observación pasiva y pruebas en entornos representativos, documentando dependencias y mecanismos de recuperación. Para equipos con modelos de IA, el análisis debe incluir datos e inferencias, además del software convencional, sin presentar resultados de laboratorio como garantía de seguridad clínica. [Systems-Theoretic and Data-Driven Security Analysis in ML-enabled Medical Devices](https://arxiv.org/abs/2506.15028).",
       "puntos_clave": [
-        "Riesgo ciberfísico en salud: En IoMT, una falla de seguridad informática se traduce inmediatamente en un daño físico o desenlace fatal para el paciente.",
-        "Superficies de ataque de hardware: Puertos de mantenimiento físico, contraseñas de fábrica predeterminadas y firmwares obsoletos sin firmar criptográficamente.",
-        "Microsegmentación clínica: Los dispositivos médicos conectados deben residir en redes aisladas sin acceso a la internet pública ni a computadores administrativos."
+        "Internet of Medical Things (IoMT): Ecosistema de dispositivos y servicios médicos que intercambian datos a través de redes.",
+        "Modelado de amenazas: Análisis de activos, interfaces, adversarios y límites de confianza para identificar escenarios de compromiso.",
+        "Ciclo de vida seguro: Gestión de controles, vulnerabilidades y actualizaciones desde el diseño hasta el retiro del dispositivo."
       ],
       "checklist": [
         "- [ ] Aislar todos los dispositivos biomédicos en una red VLAN clínica dedicada, con bloqueo estricto de tráfico hacia internet.",
@@ -225,36 +484,83 @@
         "pregunta": "¿Cuál es el peligro de mantener dispositivos médicos conectados en la misma red de computadores de administración hospitalaria?",
         "respuesta": "Que un malware o ransomware que infecte una computadora administrativa por un correo engañoso puede propagarse lateralmente hacia las bombas de infusión o monitores de signos vitales, alterando su funcionamiento y amenazando la vida de los pacientes."
       },
-      "guion_audio": "Cuando la ciberseguridad falla en un banco, se pierde dinero; pero cuando falla en un hospital, se pierden vidas humanas. Víctor Fernández de Biohacking Village nos lleva al quirófano para analizar los dispositivos médicos conectados. Hoy, bombas de infusión de medicamentos, respiradores y monitores cardíacos se comunican por redes inalámbricas. Muchos de estos equipos fueron fabricados sin defensas digitales sólidas y conservan contraseñas de fábrica que cualquiera podría vulnerar. Imagina el impacto de alterar remotamente la dosis de morfina de un paciente. Para frenar esta pesadilla, los hospitales deben aislar estos aparatos en redes privadas exclusivas y exigir a los fabricantes estándares de ciberseguridad estrictos. Defender la tecnología médica es, literalmente, salvar vidas.",
+      "guion_audio": "Un dispositivo médico conectado integra firmware, interfaces, servicios de actualización y dependencias de red que amplían su superficie de ataque. La confidencialidad de los datos es solo una dimensión: una pérdida de integridad o disponibilidad puede afectar al proceso asistencial. El modelo de amenazas debe relacionar cada interfaz y límite de confianza con posibles consecuencias operativas. La gestión de seguridad necesita acompañar al producto durante su diseño, integración y mantenimiento, considerando tanto el comportamiento del dispositivo como los sistemas que lo administran. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "FDA — Cybersecurity in Medical Devices: Quality Management System Considerations and Content of Premarket Submissions",
+          "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-management-system-considerations-and-content-premarket"
         },
         {
-          "nombre": "Video Oficial YouTube Día 1",
-          "url": "https://www.youtube.com/watch?v=PEqWRTb1idE"
+          "nombre": "NIST SP 1800-8 — Securing Wireless Infusion Pumps in Healthcare Delivery Organizations",
+          "url": "https://csrc.nist.gov/pubs/sp/1800/8/final"
         },
         {
-          "nombre": "Biohacking Village DEF CON",
-          "url": "https://www.village.bio"
+          "nombre": "Systems-Theoretic and Data-Driven Security Analysis in ML-enabled Medical Devices",
+          "url": "https://arxiv.org/abs/2506.15028"
+        },
+        {
+          "nombre": "OWASP Threat Dragon",
+          "url": "https://github.com/OWASP/threat-dragon"
+        },
+        {
+          "nombre": "Ghidra",
+          "url": "https://github.com/NationalSecurityAgency/ghidra"
+        },
+        {
+          "nombre": "Establish the guiding principles and core components of Zero Trust",
+          "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
         }
-      ]
+      ],
+      "archivo_audio": "06-fernandez-dispositivos-medicos.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "FDA — Cybersecurity in Medical Devices: Quality Management System Considerations and Content of Premarket Submissions",
+            "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-management-system-considerations-and-content-premarket"
+          },
+          {
+            "nombre": "NIST SP 1800-8 — Securing Wireless Infusion Pumps in Healthcare Delivery Organizations",
+            "url": "https://csrc.nist.gov/pubs/sp/1800/8/final"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "Systems-Theoretic and Data-Driven Security Analysis in ML-enabled Medical Devices",
+            "url": "https://arxiv.org/abs/2506.15028"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "OWASP Threat Dragon",
+            "url": "https://github.com/OWASP/threat-dragon"
+          },
+          {
+            "nombre": "Ghidra",
+            "url": "https://github.com/NationalSecurityAgency/ghidra"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "Establish the guiding principles and core components of Zero Trust",
+            "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
+          }
+        ]
+      }
     },
     {
       "id": "dia1_07_panel_multisectorial",
       "carpeta": "02-dia1-seminario",
       "archivo": "07-panel-sectores-criticos.md",
-      "speaker": "Panel Multisectorial (Soledad Bastías, Patricio Leyton, Juan Huechucura, Cristián Bravo)",
+      "speaker": "Panel Multisectorial",
       "institucion": "Codelco, Coordinador Eléctrico Nacional, Aguas Andinas, CSIRT de Gobierno",
-      "titulo": "Protegiendo lo Esencial: Ciberseguridad y Resiliencia en Sectores Críticos",
+      "titulo": "Ciberresiliencia en Sectores Críticos",
       "dificultad": "Intermedio",
       "analogia": "Imagina una junta de vecinos donde conviven la compañía de agua, la central de bomberos, la cuadrilla eléctrica y la comisaría. Si una banda de asaltantes comienza a merodear por las casas de la izquierda, la única forma de que no saqueen el barrio entero es que el primer vecino que los vea toque la alarma comunitaria al instante, en lugar de quedarse callado por vergüenza.",
-      "explicacion": "En este panel de alto nivel, los líderes de ciberseguridad de Codelco, el Coordinador Eléctrico Nacional, Aguas Andinas y el CSIRT Gubernamental analizan los desafíos reales de proteger las Tecnologías Operativas (OT) e industriales de Chile. A diferencia de las oficinas corporativas, las válvulas de agua, subestaciones eléctricas y fundiciones mineras utilizan controladores industriales (PLC) que operan las 24 horas y no admiten reinicios ni parches de seguridad intempestivos.\n\nLos panelistas enfatizan que los atacantes son oportunistas y no discriminan entre sectores públicos o privados. La clave de la ciberresiliencia nacional radica en la colaboración interinstitucional y el intercambio oportuno de indicadores de compromiso (IoCs). El secreto o el recelo ante un incidente digital solo beneficia al adversario, mientras que la transparencia técnica fortalece la defensa de todo el país.",
+      "explicacion": "Energía, agua, minería y comunicaciones forman redes de dependencias donde el impacto de un incidente no coincide necesariamente con el perímetro de la organización comprometida. La protección requiere comprender procesos físicos, sistemas de control y servicios de soporte compartidos. En tecnología operacional, los cambios de seguridad deben equilibrarse con disponibilidad, rendimiento y seguridad del proceso. La priorización debe partir de las funciones esenciales y de sus modos de falla, identificando qué controles y recursos permiten sostenerlas cuando una dependencia digital deja de responder. [NIST SP 800-82 Rev. 3 — Guide to Operational Technology (OT) Security](https://csrc.nist.gov/pubs/sp/800/82/r3/final).\n\nLa respuesta multisectorial necesita vocabulario común, responsables identificados y mecanismos de intercambio de información con criterios de sensibilidad. Compartir indicadores ayuda, pero no reemplaza la interpretación del contexto ni una capacidad local de recuperación. Los ejercicios conjuntos permiten evaluar escenarios de degradación, escalamiento y restauración con dependencias cruzadas. Como criterio de evaluación, conviene medir continuidad de la función y tiempos de coordinación, no solo disponibilidad de activos individuales. La planificación debe distinguir alternativas realmente independientes de respaldos que utilizan las mismas identidades, redes o proveedores. [ENISA Threat Landscape 2026](https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026).",
       "puntos_clave": [
-        "Brecha entre TI y TO: Los sistemas industriales priorizan disponibilidad y seguridad física; no se pueden parchar de la misma forma que un computador de oficina.",
-        "Cooperación público-privada: El intercambio rápido de alertas e incidentes a través del CSIRT frena ataques coordinados antes de que escalen.",
-        "Planes de contingencia manual: Toda infraestructura crítica debe mantener la capacidad operativa de maniobra analógica y manual en caso de apagón cibernético total."
+        "Operational Technology (OT): Sistemas que supervisan o controlan procesos y eventos físicos.",
+        "Interdependencia sectorial: Relación por la cual la continuidad de un servicio depende de funciones de otro sector.",
+        "Continuidad operacional: Capacidad de sostener funciones prioritarias durante una interrupción o recuperación."
       ],
       "checklist": [
         "- [ ] Establecer un canal formal y seguro de compartición de amenazas con el CSIRT Nacional y empresas pares del sector.",
@@ -265,40 +571,83 @@
         "pregunta": "¿Por qué en los sistemas industriales (OT) no se pueden aplicar parches de seguridad de forma automática e inmediata como en las computadoras personales?",
         "respuesta": "Porque detener un controlador industrial para reiniciarlo puede apagar turbinas eléctricas, cortar el suministro de agua o detener hornos mineros, provocando daños materiales multimillonarios y cortes de servicios básicos a miles de personas."
       },
-      "guion_audio": "¿Qué tienen en común una mina de cobre, una represa de agua y una subestación eléctrica? Todas dependen de computadoras industriales que hacen girar motores, abrir válvulas y alimentar a nuestras ciudades. En este panel de expertos con Codelco, el Coordinador Eléctrico Nacional, Aguas Andinas y el CSIRT, aprendimos que los ciberdelincuentes buscan paralizar los servicios que hacen funcionar a Chile. En el mundo industrial, los sistemas no se pueden reiniciar de un momento a otro. Por eso, el arma defensiva más poderosa no es un software mágico, sino la colaboración: si Aguas Andinas detecta una amenaza, debe avisar al instante al sector eléctrico y al gobierno. Compartir información a tiempo es lo que mantiene la luz encendida y el agua corriendo.",
+      "guion_audio": "Energía, agua, minería y comunicaciones forman redes de dependencias donde el impacto de un incidente no coincide necesariamente con el perímetro de la organización comprometida. La protección requiere comprender procesos físicos, sistemas de control y servicios de soporte compartidos. En tecnología operacional, los cambios de seguridad deben equilibrarse con disponibilidad, rendimiento y seguridad del proceso. La priorización debe partir de las funciones esenciales y de sus modos de falla, identificando qué controles y recursos permiten sostenerlas cuando una dependencia digital deja de responder. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "NIST SP 800-82 Rev. 3 — Guide to Operational Technology (OT) Security",
+          "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
         },
         {
-          "nombre": "Video Oficial YouTube Día 1",
-          "url": "https://www.youtube.com/watch?v=PEqWRTb1idE"
+          "nombre": "ISA/IEC 62443 — Industrial Automation and Control Systems Security",
+          "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards"
         },
         {
-          "nombre": "CSIRT de Gobierno de Chile",
-          "url": "https://www.csirt.gob.cl"
+          "nombre": "ENISA Threat Landscape 2026",
+          "url": "https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026"
         },
         {
-          "nombre": "Coordinador Eléctrico Nacional",
-          "url": "https://www.coordinador.cl"
+          "nombre": "Malcolm",
+          "url": "https://github.com/cisagov/Malcolm"
+        },
+        {
+          "nombre": "MISP",
+          "url": "https://github.com/MISP/MISP"
+        },
+        {
+          "nombre": "CISA — ICS Cybersecurity (101)",
+          "url": "https://www.cisa.gov/resources-tools/programs/ics-training-available-through-cisa"
         }
-      ]
+      ],
+      "archivo_audio": "07-panel-sectores-criticos.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "NIST SP 800-82 Rev. 3 — Guide to Operational Technology (OT) Security",
+            "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+          },
+          {
+            "nombre": "ISA/IEC 62443 — Industrial Automation and Control Systems Security",
+            "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "ENISA Threat Landscape 2026",
+            "url": "https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "Malcolm",
+            "url": "https://github.com/cisagov/Malcolm"
+          },
+          {
+            "nombre": "MISP",
+            "url": "https://github.com/MISP/MISP"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "CISA — ICS Cybersecurity (101)",
+            "url": "https://www.cisa.gov/resources-tools/programs/ics-training-available-through-cisa"
+          }
+        ]
+      }
     },
     {
       "id": "dia1_08_bonnaire",
       "carpeta": "02-dia1-seminario",
       "archivo": "08-bonnaire-agentes-ia.md",
-      "speaker": "Dr. Xavier Bonnaire",
+      "speaker": "Xavier Bonnaire",
       "institucion": "Departamento de Informática, Universidad Técnica Federico Santa María (USM)",
-      "titulo": "Agentes IA e infraestructura crítica: entre la falla operativa y el arma de ciberguerra",
+      "titulo": "Agentes de IA y Riesgo en Infraestructura Crítica",
       "dificultad": "Avanzado",
       "analogia": "Es como instalar un piloto automático supersónico en un autobús escolar repleto de niños, pero sin volante, sin freno de emergencia manual y sin que el chofer humano tenga permiso para pisar el pedal si el sistema confunde una sombra en el pavimento con un abismo y decide doblar bruscamente hacia el río.",
-      "explicacion": "El Dr. Xavier Bonnaire profundiza en los riesgos inherentes de delegar decisiones autónomas a agentes de Inteligencia Artificial en entornos de infraestructura crítica. La integración de modelos de lenguaje y agentes autónomos para regular flujos de energía o balance de químicos introduce el peligro de alucinaciones probabilísticas, ataques de inyección de prompts y envenenamiento de datos que pueden provocar fallas operativas catastróficas.\n\nLa entrevista distingue con agudeza entre la falla fortuita por error de diseño del modelo y el ataque deliberado de ciberguerra patrocinado por estados hostiles. El académico concluye que la IA debe concebirse exclusivamente como un asistente de apoyo a la decisión para los operadores humanos, y nunca como un decisor terminal no supervisado (human-in-the-loop), preservando mecanismos de anulación manual irrenunciables.",
+      "explicacion": "Un agente de IA incorpora un modelo, fuentes de datos, memoria y herramientas que convierten inferencias en acciones. Al integrarlo con una función crítica, la superficie de riesgo incluye las interfaces de ejecución y las credenciales, además de la precisión del modelo. La evaluación debe distinguir errores no intencionales, entradas adversarias y autorizaciones excesivas. El control de permisos y la validación externa de acciones resultan decisivos: una respuesta plausible no demuestra que la operación propuesta respete los límites físicos, económicos o de seguridad del sistema. [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework).\n\nLa inyección indirecta de instrucciones muestra cómo una aplicación puede confundir contenido recuperado con órdenes operativas. Reducir este riesgo requiere separar instrucciones y datos, restringir las herramientas disponibles y verificar cada acción según una política independiente del modelo. Como diseño prudente, las acciones de alto impacto deben contar con aprobación humana, límites de ejecución y vías de recuperación ensayadas. La evaluación necesita casos adversarios reproducibles y registros de decisiones, sin suponer que un filtro de texto o un benchmark aislado certifica la seguridad de toda la arquitectura. [Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173).",
       "puntos_clave": [
-        "Principio de Human-in-the-Loop: Las decisiones de impacto físico o vital en infraestructuras críticas deben requerir siempre la validación de un operador humano competente.",
-        "Vulnerabilidades de modelos autónomos: Inyección indirecta de instrucciones, envenenamiento de conjuntos de datos de entrenamiento y comportamientos no deterministas.",
-        "Ciberguerra versus falla técnica: La ambigüedad en el comportamiento de la IA dificulta determinar si un fallo fue un accidente algorítmico o un sabotaje digital dirigido."
+        "Agente con herramientas: Aplicación que utiliza un modelo para planificar tareas e invocar operaciones sobre sistemas externos.",
+        "Indirect Prompt Injection: Introducción de instrucciones adversarias en contenido que una aplicación recupera o procesa.",
+        "Exceso de agencia: Concesión de acciones o permisos superiores a los necesarios para una tarea."
       ],
       "checklist": [
         "- [ ] Garantizar un interruptor de parada de emergencia físico e independiente (kill-switch) que desconecte el agente de IA de los actuadores de planta.",
@@ -309,36 +658,99 @@
         "pregunta": "¿Qué significa el concepto de 'Human-in-the-Loop' en la automatización con IA para infraestructuras críticas?",
         "respuesta": "Significa que un ser humano calificado debe estar integrado obligatoriamente en el ciclo de toma de decisiones para revisar, autorizar y eventualmente cancelar cualquier acción crítica propuesta por el algoritmo de IA antes de que se ejecute en la planta real."
       },
-      "guion_audio": "¿Dejarías que un programa de computador decida por sí solo si abre una compuerta hidráulica o apaga un reactor químico? El Dr. Xavier Bonnaire de la Universidad Santa María nos plantea un dilema crucial: el uso de agentes de Inteligencia Artificial en infraestructura crítica. La IA es una herramienta maravillosa para detectar patrones y optimizar recursos, pero también puede cometer errores imprevistos, alucinar o ser engañada por atacantes externos. Si le entregamos el control absoluto sin supervisión humana, un simple error de cálculo puede transformarse en una catástrofe de ciberguerra. La regla indiscutible es mantener siempre al operador humano al mando. La tecnología debe aconsejar y asistir, pero el juicio, la ética y el botón de freno siempre deben pertenecer a las personas.",
+      "guion_audio": "Un agente de IA incorpora un modelo, fuentes de datos, memoria y herramientas que convierten inferencias en acciones. Al integrarlo con una función crítica, la superficie de riesgo incluye las interfaces de ejecución y las credenciales, además de la precisión del modelo. La evaluación debe distinguir errores no intencionales, entradas adversarias y autorizaciones excesivas. El control de permisos y la validación externa de acciones resultan decisivos: una respuesta plausible no demuestra que la operación propuesta respete los límites físicos, económicos o de seguridad del sistema. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "NIST AI Risk Management Framework",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework"
         },
         {
-          "nombre": "Video Oficial YouTube Día 1",
-          "url": "https://www.youtube.com/watch?v=PEqWRTb1idE"
+          "nombre": "OWASP Top 10 for Large Language Model Applications",
+          "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
         },
         {
-          "nombre": "Departamento de Informática USM",
-          "url": "https://inf.utfsm.cl"
+          "nombre": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
+          "url": "https://arxiv.org/abs/2302.12173"
+        },
+        {
+          "nombre": "Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations",
+          "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
+        },
+        {
+          "nombre": "garak",
+          "url": "https://github.com/NVIDIA/garak"
+        },
+        {
+          "nombre": "Promptfoo",
+          "url": "https://github.com/promptfoo/promptfoo"
+        },
+        {
+          "nombre": "CS50's Introduction to Artificial Intelligence with Python",
+          "url": "https://cs50.harvard.edu/ai/"
+        },
+        {
+          "nombre": "Mitigate threats using Microsoft Security Copilot",
+          "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/"
         }
-      ]
+      ],
+      "archivo_audio": "08-bonnaire-agentes-ia.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "NIST AI Risk Management Framework",
+            "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+          },
+          {
+            "nombre": "OWASP Top 10 for Large Language Model Applications",
+            "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
+            "url": "https://arxiv.org/abs/2302.12173"
+          },
+          {
+            "nombre": "Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations",
+            "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "garak",
+            "url": "https://github.com/NVIDIA/garak"
+          },
+          {
+            "nombre": "Promptfoo",
+            "url": "https://github.com/promptfoo/promptfoo"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "CS50's Introduction to Artificial Intelligence with Python",
+            "url": "https://cs50.harvard.edu/ai/"
+          },
+          {
+            "nombre": "Mitigate threats using Microsoft Security Copilot",
+            "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/"
+          }
+        ]
+      }
     },
     {
       "id": "dia1_09_evirtus_redes",
       "carpeta": "02-dia1-seminario",
       "archivo": "09-evirtus-zero-trust.md",
-      "speaker": "Especialista en Redes",
+      "speaker": "Especialista en redes de E-Virtus",
       "institucion": "E-Virtus",
-      "titulo": "Seguridad en la Red: Hacia una infraestructura crítica resiliente",
+      "titulo": "Arquitecturas Zero Trust para Redes Críticas",
       "dificultad": "Intermedio",
       "analogia": "Es como diseñar un gran barco transatlántico dividido en compartimentos estancos herméticos. En los barcos antiguos, si un iceberg rompía una esquina del casco, el agua entraba y llenaba todo el barco hasta hundirlo. En un barco moderno con compartimentos cerrados, el agua inunda únicamente una pequeña habitación aislada, mientras el resto del barco sigue navegando con total seguridad.",
-      "explicacion": "El especialista de E-Virtus aborda el diseño arquitectónico de redes bajo la premisa de Confianza Cero (Zero Trust). Durante décadas, las empresas construyeron su seguridad bajo el modelo perimetral tradicional de castillo y foso: quien lograba conectarse a la red interna era considerado de confianza total. Hoy, con el trabajo remoto y la infiltración de credenciales, asumir que la red interna es segura es un error fatal.\n\nLa solución radica en la microsegmentación de red, donde cada servidor, estación de trabajo y dispositivo industrial vive en su propia celda aislada con políticas de acceso mínimo estricto. Toda comunicación entre máquinas debe autenticarse, autorizarse y cifrarse continuamente. Así, si un virus o intruso infecta una computadora en el área comercial, le resulta imposible saltar hacia las redes de control de las bombas de agua o generadores eléctricos.",
+      "explicacion": "Zero Trust reemplaza la confianza implícita basada en ubicación de red por decisiones de acceso centradas en identidades, recursos y contexto. El objetivo es limitar accesos y movimientos laterales incluso cuando una cuenta o segmento ya fue comprometido. La arquitectura distingue la decisión de política de su aplicación y necesita información confiable sobre usuarios, dispositivos y cargas de trabajo. Implantar este enfoque exige inventariar flujos y dependencias; añadir autenticación fuerte a una red plana no resuelve por sí solo la autorización excesiva. [NIST SP 800-207 — Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final).\n\nEl principal desafío es sostener controles granulares sin introducir fallos de disponibilidad ni dependencias concentradas en el plano de identidad. Las políticas deben tener propietarios, mecanismos de observación y procedimientos de cambio y recuperación. En entornos operacionales, las capacidades de autenticación de equipos heredados pueden requerir controles compensatorios en puntos de acceso y zonas de red. Conviene desplegar de forma incremental y contrastar las políticas con flujos reales. La microsegmentación debe demostrar reducción de rutas de ataque sin interrumpir comunicaciones necesarias para la función crítica. [Planning for a Zero Trust Architecture: A Planning Guide for Federal Administrators](https://csrc.nist.gov/pubs/cswp/20/planning-for-a-zero-trust-architecture/final).",
       "puntos_clave": [
-        "Fin del perímetro tradicional: Todo el tráfico, tanto externo como interno, debe considerarse hostil hasta que se demuestre lo contrario.",
-        "Microsegmentación granular: Dividir la red en zonas lógicas independientes frena el movimiento lateral de ciberdelincuentes y ransomware.",
-        "Principio de privilegio mínimo (Least Privilege): Cada usuario y aplicación solo tiene acceso a los puertos y recursos indispensables para su función específica."
+        "Policy Decision Point (PDP): Componente que evalúa las condiciones y reglas para permitir o denegar un acceso.",
+        "Policy Enforcement Point (PEP): Componente que aplica la decisión de acceso en una interfaz o flujo.",
+        "Identidad de carga de trabajo: Identidad verificable asignada a un servicio o proceso para autorizar sus comunicaciones."
       ],
       "checklist": [
         "- [ ] Implementar autenticación y autorización continua basada en identidad para cada sesión de usuario y comunicación entre servidores.",
@@ -349,21 +761,60 @@
         "pregunta": "¿Cuál es la diferencia fundamental entre el modelo perimetral tradicional y el modelo Zero Trust?",
         "respuesta": "El modelo tradicional confía ciegamente en todo lo que está dentro de la red corporativa tras cruzar el firewall perimetral; en cambio, Zero Trust asume que la red interna ya está comprometida y exige verificar de manera estricta y continua la identidad de cada usuario y dispositivo en cada petición."
       },
-      "guion_audio": "Antiguamente, los castillos se defendían con una muralla alta y un foso de agua; pero si un invasor lograba cruzar la puerta con un disfraz, tenía vía libre para saquear todas las habitaciones. En esta lección, el especialista de E-Virtus nos enseña el modelo Zero Trust o Confianza Cero. En el mundo digital moderno, nunca debemos asumir que alguien es de confianza solo porque está conectado a la red de la oficina. Diseñar redes resilientes significa dividir nuestros sistemas en compartimentos herméticos, como en los submarinos. Si un virus infecta el computador de recepción, las barreras internas impiden que avance hacia las salas de control eléctrico o servidores bancarios. Verifica siempre, nunca confíes a ciegas y aísla tus activos críticos.",
+      "guion_audio": "Zero Trust reemplaza la confianza implícita basada en ubicación de red por decisiones de acceso centradas en identidades, recursos y contexto. El objetivo es limitar accesos y movimientos laterales incluso cuando una cuenta o segmento ya fue comprometido. La arquitectura distingue la decisión de política de su aplicación y necesita información confiable sobre usuarios, dispositivos y cargas de trabajo. Implantar este enfoque exige inventariar flujos y dependencias; añadir autenticación fuerte a una red plana no resuelve por sí solo la autorización excesiva. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "NIST SP 800-207 — Zero Trust Architecture",
+          "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
         },
         {
-          "nombre": "Video Oficial YouTube Día 1",
-          "url": "https://www.youtube.com/watch?v=PEqWRTb1idE"
+          "nombre": "Planning for a Zero Trust Architecture: A Planning Guide for Federal Administrators",
+          "url": "https://csrc.nist.gov/pubs/cswp/20/planning-for-a-zero-trust-architecture/final"
         },
         {
-          "nombre": "E-Virtus Arquitecturas Resilientes",
-          "url": "https://e-virtus.com"
+          "nombre": "SPIRE",
+          "url": "https://github.com/spiffe/spire"
+        },
+        {
+          "nombre": "Cilium",
+          "url": "https://github.com/cilium/cilium"
+        },
+        {
+          "nombre": "Establish the guiding principles and core components of Zero Trust",
+          "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
         }
-      ]
+      ],
+      "archivo_audio": "09-evirtus-zero-trust.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "NIST SP 800-207 — Zero Trust Architecture",
+            "url": "https://csrc.nist.gov/pubs/sp/800/207/final"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "Planning for a Zero Trust Architecture: A Planning Guide for Federal Administrators",
+            "url": "https://csrc.nist.gov/pubs/cswp/20/planning-for-a-zero-trust-architecture/final"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "SPIRE",
+            "url": "https://github.com/spiffe/spire"
+          },
+          {
+            "nombre": "Cilium",
+            "url": "https://github.com/cilium/cilium"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "Establish the guiding principles and core components of Zero Trust",
+            "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
+          }
+        ]
+      }
     },
     {
       "id": "dia2_01_caceres",
@@ -371,14 +822,14 @@
       "archivo": "01-caceres-blue-team-ia.md",
       "speaker": "Diego Cáceres",
       "institucion": "Investigador y especialista en ciberdefensa (Ganador Call for Papers)",
-      "titulo": "Blue team aumentado por inteligencia artificial: modelos de ciberdefensa y resiliencia para infraestructuras críticas",
+      "titulo": "Blue Team Aumentado por Inteligencia Artificial",
       "dificultad": "Intermedio",
       "analogia": "Imagina a un guardia de seguridad humano que tiene que revisar 500 pantallas de cámaras de vigilancia a la vez durante el turno de noche. Rápidamente se cansará y pestañeará. Ahora dale un asistente de inteligencia artificial que monitorea los 500 monitores sin parpadear jamás, detecta de inmediato si una sombra extraña cruza un pasillo en penumbra y le avisa al guardia en milisegundos indicándole exactamente en qué puerta colocar el cerrojo.",
-      "explicacion": "Diego Cáceres, ganador del Call for Papers del seminario, presenta cómo potenciar al Blue Team (el equipo defensor de ciberseguridad) utilizando modelos de aprendizaje automático y agentes autónomos defensivos. Los centros de operaciones de seguridad (SOC) reciben diariamente millones de eventos y registros de actividad (logs), provocando fatiga de alertas y demoras críticas en la detección de intrusiones complejas.\n\nEl expositor demuestra cómo los modelos de IA aumentada pueden correlacionar telemetría de red, detectar anomalías sutiles en el tráfico y orquestar respuestas automatizadas (SOAR) para aislar equipos comprometidos en segundos. Esto transforma la labor defensiva de una postura reactiva y saturada a una estrategia proactiva, reduciendo drásticamente el tiempo medio de detección (MTTD) y contención (MTTR) frente a ataques contra infraestructuras críticas.",
+      "explicacion": "El Blue Team integra telemetría, ingeniería de detección e investigación para reconocer y contener actividad adversaria. La IA puede apoyar la clasificación de eventos, el enriquecimiento de casos y la construcción de hipótesis, pero necesita datos representativos y contexto del entorno. Su valor operativo se mide en cobertura de comportamiento y reducción del tiempo de análisis, no en la cantidad de respuestas generadas. Una arquitectura consistente separa alertas, evidencias e inferencias, permitiendo reconstruir qué señales justificaron cada decisión de respuesta. [MITRE ATT&CK Enterprise](https://attack.mitre.org/matrices/enterprise/).\n\nLa calidad de la asistencia depende de la cobertura de sensores, el etiquetado y el cambio de distribución de los datos. Un modelo puede omitir ataques nuevos o ampliar errores presentes en registros y conocimiento recuperado. Conviene evaluar precisión y sensibilidad por escenario, comparar con una referencia sin IA y reservar la ejecución de acciones a controles externos de autorización. La emulación adversaria en laboratorio permite validar detecciones y procedimientos, mientras la revisión humana y las rutas de reversión limitan el impacto de recomendaciones incorrectas o automatizaciones precipitadas. [Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations](https://csrc.nist.gov/pubs/ai/100/2/e2025/final).",
       "puntos_clave": [
-        "Reducción de fatiga de alertas: La IA filtra el ruido y prioriza incidentes reales para que los analistas humanos se enfoquen en amenazas graves.",
-        "Detección de comportamiento anómalo: Los modelos de aprendizaje no supervisado identifican movimientos inusuales de datos que escapan a las firmas tradicionales.",
-        "Orquestación y respuesta automatizada (SOAR): Aislamiento inmediato de hosts comprometidos y revocación de credenciales antes de que el ataque se expanda."
+        "Detection engineering: Diseño, validación y mantenimiento de reglas o modelos vinculados a comportamientos adversarios.",
+        "Enriquecimiento de alertas: Incorporación de contexto de activos, identidades e inteligencia para orientar una investigación.",
+        "Concept drift: Cambio en la relación entre datos y objetivos que puede degradar el rendimiento de un modelo."
       ],
       "checklist": [
         "- [ ] Implementar herramientas de correlación de eventos con capacidades de aprendizaje automático (SIEM/XDR con IA).",
@@ -389,21 +840,76 @@
         "pregunta": "¿Cómo ayuda la IA a resolver el problema de la fatiga de alertas en un Centro de Operaciones de Seguridad (SOC)?",
         "respuesta": "Analizando y correlacionando automáticamente millones de registros por segundo para descartar falsos positivos y destacar únicamente aquellos patrones sospechosos que representan un riesgo real para la infraestructura."
       },
-      "guion_audio": "En ciberdefensa, cada segundo cuenta. Imagina recibir diez mil alertas de seguridad por hora en tu pantalla; ningún equipo humano puede procesar semejante avalancha sin cometer errores. En esta sesión, Diego Cáceres nos demuestra cómo la Inteligencia Artificial puede convertirse en el mejor aliado del Blue Team, nuestro equipo de guardianes digitales. Los modelos inteligentes pueden analizar millones de conexiones en tiempo real, filtrar el ruido irrelevante y detectar cuando un intruso intenta moverse en silencio por la red. Al empoderar a nuestros especialistas con asistentes de IA, logramos contener infecciones en segundos en lugar de semanas. La velocidad es la clave absoluta entre un susto pasajero y un apagón nacional. Defensores humanos con herramientas inteligentes marcan la diferencia.",
+      "guion_audio": "El Blue Team integra telemetría, ingeniería de detección e investigación para reconocer y contener actividad adversaria. La IA puede apoyar la clasificación de eventos, el enriquecimiento de casos y la construcción de hipótesis, pero necesita datos representativos y contexto del entorno. Su valor operativo se mide en cobertura de comportamiento y reducción del tiempo de análisis, no en la cantidad de respuestas generadas. Una arquitectura consistente separa alertas, evidencias e inferencias, permitiendo reconstruir qué señales justificaron cada decisión de respuesta. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "MITRE ATT&CK Enterprise",
+          "url": "https://attack.mitre.org/matrices/enterprise/"
         },
         {
-          "nombre": "Canal Oficial YouTube PDI Chile",
-          "url": "https://www.youtube.com/@PDIChileOficial"
+          "nombre": "MITRE D3FEND",
+          "url": "https://d3fend.mitre.org/"
         },
         {
-          "nombre": "Investigación Call for Papers USM",
-          "url": "https://usm.cl"
+          "nombre": "Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations",
+          "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
+        },
+        {
+          "nombre": "Apache CALDERA",
+          "url": "https://github.com/apache/caldera"
+        },
+        {
+          "nombre": "Sigma",
+          "url": "https://github.com/SigmaHQ/sigma"
+        },
+        {
+          "nombre": "Mitigate threats using Microsoft Security Copilot",
+          "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/"
+        },
+        {
+          "nombre": "Create detections and perform investigations using Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/"
         }
-      ]
+      ],
+      "archivo_audio": "01-caceres-blue-team-ia.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "MITRE ATT&CK Enterprise",
+            "url": "https://attack.mitre.org/matrices/enterprise/"
+          },
+          {
+            "nombre": "MITRE D3FEND",
+            "url": "https://d3fend.mitre.org/"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations",
+            "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "Apache CALDERA",
+            "url": "https://github.com/apache/caldera"
+          },
+          {
+            "nombre": "Sigma",
+            "url": "https://github.com/SigmaHQ/sigma"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "Mitigate threats using Microsoft Security Copilot",
+            "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-mitigate-threats-using-microsoft-copilot-for-security/"
+          },
+          {
+            "nombre": "Create detections and perform investigations using Microsoft Sentinel",
+            "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/"
+          }
+        ]
+      }
     },
     {
       "id": "dia2_02_fuentes",
@@ -411,14 +917,14 @@
       "archivo": "02-fuentes-threat-intelligence.md",
       "speaker": "Omar Fuentes",
       "institucion": "SEK",
-      "titulo": "Cyber Threat Intelligence (CTI)",
+      "titulo": "Cyber Threat Intelligence y Decisiones de Defensa",
       "dificultad": "Intermedio",
       "analogia": "Es como tener un servicio de inteligencia meteorológica y radares militares antes de una expedición marítima: en lugar de esperar en cubierta a que una tormenta azote el barco o a que piratas aborden en plena noche, tus vigías interceptan los mapas y planes de los asaltantes días antes, sabiendo con qué armas vienen y por cuál bahía intentarán entrar.",
-      "explicacion": "Omar Fuentes expone el rol estratégico de la Inteligencia de Ciberamenazas (CTI, por sus siglas en inglés). La CTI recolecta, analiza y sintetiza información proveniente de la web superficial, foros clandestinos (dark web) y telemetría global para identificar las tácticas, técnicas y procedimientos (TTPs) de grupos de amenazas avanzadas persistentes (APTs) que apuntan activamente a sectores industriales y gubernamentales.\n\nLa conferencia enseña que la seguridad no consiste en parcharlo todo a ciegas, lo cual resulta económicamente inviable, sino en priorizar la protección en base a inteligencia accionable. Al correlacionar marcos como MITRE ATT&CK con las vulnerabilidades reales de la organización, los directores de seguridad pueden tomar decisiones informadas de inversión y blindar las puertas exactas que los adversarios están intentando forzar hoy.",
+      "explicacion": "Cyber Threat Intelligence transforma observaciones de actividad adversaria en conocimiento útil para decidir qué proteger, detectar e investigar. Su calidad depende de preguntas explícitas, fuentes trazables y una evaluación de confianza que distinga hechos de hipótesis. Una lista de direcciones IP no constituye por sí sola inteligencia accionable: necesita contexto temporal, relación con campañas y relevancia para los activos de la organización. El producto debe conectar objetivos estratégicos con tareas técnicas, como ajustar una detección o revisar una exposición prioritaria. [NIST SP 800-150 — Guide to Cyber Threat Information Sharing](https://csrc.nist.gov/pubs/sp/800/150/final).\n\nLos desafíos incluyen duplicación de fuentes, indicadores obsoletos, sesgos de cobertura y atribuciones débiles. El ciclo analítico requiere registrar procedencia, corroborar hallazgos y obtener retroalimentación de quienes consumen la información. El intercambio mediante formatos estructurados facilita la automatización, pero no elimina la necesidad de controlar calidad y restricciones de difusión. Conviene medir si la inteligencia modifica decisiones y mejora cobertura, evitando evaluar un programa por el volumen de indicadores importados. Las hipótesis sobre actores deben expresar incertidumbre y poder revisarse con nueva evidencia. [ENISA Cybersecurity Threat Landscape Methodology](https://www.enisa.europa.eu/publications/enisa-cybersecurity-threat-landscape-methodology).",
       "puntos_clave": [
-        "Niveles de inteligencia (Estratégico, Operacional y Táctico): Traducir datos técnicos complejos en decisiones ejecutivas comprensibles para la alta dirección.",
-        "Mapeo mediante MITRE ATT&CK: Categorizar las fases del adversario para identificar brechas de visibilidad y control en la propia infraestructura.",
-        "Inteligencia accionable: Descartar feeds de datos masivos estériles y enfocarse en amenazas dirigidas contra tu industria y región geográfica específica."
+        "Priority Intelligence Requirements (PIR): Preguntas priorizadas que orientan la recopilación y el análisis hacia necesidades de decisión.",
+        "Indicator of Compromise (IoC): Observable que, interpretado en contexto, puede indicar actividad o compromiso adversario.",
+        "STIX/TAXII: Modelo de información y protocolo de intercambio utilizados para compartir inteligencia de amenazas."
       ],
       "checklist": [
         "- [ ] Suscribir la organización a fuentes de inteligencia de amenazas específicas para el sector industrial o geográfico correspondiente.",
@@ -429,21 +935,68 @@
         "pregunta": "¿Por qué es fundamental que la Inteligencia de Amenazas (CTI) entregue reportes a nivel estratégico y no solo táctico?",
         "respuesta": "Porque los directores y tomadores de decisiones de negocio necesitan comprender el impacto financiero, legal y operativo del riesgo para asignar presupuestos y recursos, mientras que el nivel puramente táctico solo contiene datos técnicos (como hashes o IPs) útiles para los ingenieros."
       },
-      "guion_audio": "Para ganar una batalla, primero debes conocer a tu oponente. Omar Fuentes de SEK nos enseña el valor de la Inteligencia de Ciberamenazas, conocida como CTI. En lugar de blindar cada ventana y rincón a ciegas gastando fortunas, la CTI actúa como un radar avanzado que investiga foros clandestinos y movimientos globales para advertirte: ¿quiénes son los atacantes que apuntan a tu sector?, ¿qué técnicas usarán? y ¿cuáles puertas intentarán abrir? Con esta información privilegiada, las organizaciones pueden anticiparse, cerrar las brechas antes de que sean explotadas y justificar con claridad sus inversiones ante la gerencia. En el ciberespacio, la información oportuna es el arma defensiva más poderosa. No esperes el golpe: anticípalo.",
+      "guion_audio": "Cyber Threat Intelligence transforma observaciones de actividad adversaria en conocimiento útil para decidir qué proteger, detectar e investigar. Su calidad depende de preguntas explícitas, fuentes trazables y una evaluación de confianza que distinga hechos de hipótesis. Una lista de direcciones IP no constituye por sí sola inteligencia accionable: necesita contexto temporal, relación con campañas y relevancia para los activos de la organización. El producto debe conectar objetivos estratégicos con tareas técnicas, como ajustar una detección o revisar una exposición prioritaria. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "NIST SP 800-150 — Guide to Cyber Threat Information Sharing",
+          "url": "https://csrc.nist.gov/pubs/sp/800/150/final"
         },
         {
-          "nombre": "Canal Oficial YouTube PDI Chile",
-          "url": "https://www.youtube.com/@PDIChileOficial"
+          "nombre": "OASIS Cyber Threat Intelligence — STIX/TAXII",
+          "url": "https://oasis-open.github.io/cti-documentation/"
         },
         {
-          "nombre": "SEK Cybersecurity Intelligence",
-          "url": "https://sek.com"
+          "nombre": "ENISA Cybersecurity Threat Landscape Methodology",
+          "url": "https://www.enisa.europa.eu/publications/enisa-cybersecurity-threat-landscape-methodology"
+        },
+        {
+          "nombre": "OpenCTI",
+          "url": "https://github.com/OpenCTI-Platform/opencti"
+        },
+        {
+          "nombre": "MISP",
+          "url": "https://github.com/MISP/MISP"
+        },
+        {
+          "nombre": "Perform threat hunting in Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
         }
-      ]
+      ],
+      "archivo_audio": "02-fuentes-threat-intelligence.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "NIST SP 800-150 — Guide to Cyber Threat Information Sharing",
+            "url": "https://csrc.nist.gov/pubs/sp/800/150/final"
+          },
+          {
+            "nombre": "OASIS Cyber Threat Intelligence — STIX/TAXII",
+            "url": "https://oasis-open.github.io/cti-documentation/"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "ENISA Cybersecurity Threat Landscape Methodology",
+            "url": "https://www.enisa.europa.eu/publications/enisa-cybersecurity-threat-landscape-methodology"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "OpenCTI",
+            "url": "https://github.com/OpenCTI-Platform/opencti"
+          },
+          {
+            "nombre": "MISP",
+            "url": "https://github.com/MISP/MISP"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "Perform threat hunting in Microsoft Sentinel",
+            "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
+          }
+        ]
+      }
     },
     {
       "id": "dia2_03_cordero",
@@ -451,14 +1004,14 @@
       "archivo": "03-cordero-resiliencia-hardware.md",
       "speaker": "César Cordero",
       "institucion": "Lenovo",
-      "titulo": "El Rol de la Tecnología en la Continuidad y Resiliencia Operacional",
+      "titulo": "Resiliencia de Hardware y Firmware",
       "dificultad": "Intermedio",
       "analogia": "Imagina que compras una caja fuerte blindada para guardar tus ahorros. Puedes ponerle la cerradura digital más sofisticada del mundo en la puerta, pero si quien fabricó la caja le instaló una tapa trasera de cartón o un chip espía escondido en las bisagras desde la fábrica, ningún código secreto podrá evitar que te roben.",
-      "explicacion": "César Cordero destaca la trascendencia de la seguridad a nivel de hardware, microcódigo y cadena de suministro físico. Con frecuencia, las estrategias defensivas se concentran en el software operativo (antivirus, cortafuegos), descuidando la capa más profunda: la BIOS y el firmware de los computadores y servidores. Si un atacante compromete esta capa inicial de arranque, adquiere control absoluto del equipo de manera persistente e invisible al sistema operativo.\n\nLa sesión aborda cómo los fabricantes líderes integran tecnologías como raíces de confianza de hardware (Root of Trust), chips de seguridad criptográfica TPM y plataformas de auto-recuperación de firmware que restauran el equipo a un estado limpio si detectan manipulación. Asimismo, se exploran soluciones para garantizar la continuidad del negocio, permitiendo restaurar entornos de trabajo completos en la nube en cuestión de minutos ante desastres físicos o ciberataques.",
+      "explicacion": "La confianza en una plataforma depende de código y configuración que operan antes o por debajo del sistema operativo. UEFI, firmware de periféricos y mecanismos de actualización pueden mantener una exposición que no desaparece al reinstalar aplicaciones. La resiliencia exige proteger componentes críticos, detectar cambios no autorizados y disponer de recuperación confiable. Secure Boot y el arranque medido aportan garantías diferentes: el primero valida componentes del arranque según una política, mientras el segundo registra mediciones que pueden utilizarse para evaluar el estado de la plataforma. [NIST SP 800-193 — Platform Firmware Resiliency Guidelines](https://csrc.nist.gov/pubs/sp/800/193/final).\n\nEl reto empresarial es gestionar equipos heterogéneos, soporte de fabricantes, claves y recuperación sin perder continuidad. Las políticas deben relacionar inventario de hardware, versiones de firmware y procedencia de actualizaciones con decisiones de mantenimiento. Una atestación necesita una referencia confiable y un proceso de interpretación; no demuestra que todo el equipo sea invulnerable. Conviene validar actualizaciones y recuperación en equipos de prueba representativos, conservando evidencias del estado inicial y final. La cadena de suministro requiere visibilidad adicional sobre componentes físicos y proveedores, además del inventario de software. [CISA — A Hardware Bill of Materials Framework for Supply Chain Risk Management](https://www.cisa.gov/sites/default/files/2023-09/A%20Hardware%20Bill%20of%20Materials%20Framework%20for%20Supply%20Chain%20Risk%20Management%20%28508%29.pdf).",
       "puntos_clave": [
-        "Seguridad por debajo del sistema operativo: Blindar la BIOS y el firmware contra amenazas persistentes avanzadas (bootkits/rootkits).",
-        "Raíz de confianza en hardware (Hardware Root of Trust): Validación criptográfica del arranque seguro desde el encendido inicial del procesador.",
-        "Cadenas de suministro íntegras y trazables: Certificar que los componentes no hayan sido alterados o interceptados durante la fabricación y despacho."
+        "Root of Trust: Componente o función confiable que sirve como base de una cadena de verificación de la plataforma.",
+        "Secure Boot: Verificación de componentes del arranque frente a una política de firmas y confianza.",
+        "Measured Boot: Registro de mediciones del arranque que permite comparar o atestar el estado observado."
       ],
       "checklist": [
         "- [ ] Activar Secure Boot y verificación criptográfica de BIOS/firmware en todos los servidores y terminales de trabajo.",
@@ -469,21 +1022,68 @@
         "pregunta": "¿Por qué un ataque al firmware o BIOS de un computador es mucho más peligroso que una infección típica de software en el sistema operativo?",
         "respuesta": "Porque reside por debajo del sistema operativo y los antivirus, logrando sobrevivir al formateo o cambio del disco duro y manteniendo el control oculto y persistente de la máquina en cada reinicio."
       },
-      "guion_audio": "Solemos pensar que los virus solo viven en las aplicaciones o en el correo electrónico, pero el peligro más silencioso se esconde mucho más abajo: en el hardware. En esta lección, César Cordero de Lenovo nos enseña que la verdadera resiliencia comienza en la fábrica del computador. Si un atacante logra infectar la memoria BIOS de un equipo, podrá formatear el disco mil veces y el espía seguirá allí escondido. La tecnología moderna combate esto con raíces de confianza de hardware y chips criptográficos que comprueban que el equipo esté intacto antes de encender la pantalla. Asegurar la cadena de suministro de tus computadores y servidores es tan crucial como instalar un buen antivirus. Blindar la base física garantiza la continuidad de tu operación.",
+      "guion_audio": "La confianza en una plataforma depende de código y configuración que operan antes o por debajo del sistema operativo. UEFI, firmware de periféricos y mecanismos de actualización pueden mantener una exposición que no desaparece al reinstalar aplicaciones. La resiliencia exige proteger componentes críticos, detectar cambios no autorizados y disponer de recuperación confiable. Secure Boot y el arranque medido aportan garantías diferentes: el primero valida componentes del arranque según una política, mientras el segundo registra mediciones que pueden utilizarse para evaluar el estado de la plataforma. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "NIST SP 800-193 — Platform Firmware Resiliency Guidelines",
+          "url": "https://csrc.nist.gov/pubs/sp/800/193/final"
         },
         {
-          "nombre": "Canal Oficial YouTube PDI Chile",
-          "url": "https://www.youtube.com/@PDIChileOficial"
+          "nombre": "TPM 2.0 Library Specification",
+          "url": "https://trustedcomputinggroup.org/resource/tpm-library-specification/"
         },
         {
-          "nombre": "Lenovo ThinkShield Security",
-          "url": "https://www.lenovo.com"
+          "nombre": "CISA — A Hardware Bill of Materials Framework for Supply Chain Risk Management",
+          "url": "https://www.cisa.gov/sites/default/files/2023-09/A%20Hardware%20Bill%20of%20Materials%20Framework%20for%20Supply%20Chain%20Risk%20Management%20%28508%29.pdf"
+        },
+        {
+          "nombre": "CHIPSEC",
+          "url": "https://github.com/chipsec/chipsec"
+        },
+        {
+          "nombre": "UEFITool",
+          "url": "https://github.com/LongSoft/UEFITool"
+        },
+        {
+          "nombre": "Introduction to RISC-V (LFD110)",
+          "url": "https://training.linuxfoundation.org/training/introduction-to-riscv-lfd110/"
         }
-      ]
+      ],
+      "archivo_audio": "03-cordero-resiliencia-hardware.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "NIST SP 800-193 — Platform Firmware Resiliency Guidelines",
+            "url": "https://csrc.nist.gov/pubs/sp/800/193/final"
+          },
+          {
+            "nombre": "TPM 2.0 Library Specification",
+            "url": "https://trustedcomputinggroup.org/resource/tpm-library-specification/"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "CISA — A Hardware Bill of Materials Framework for Supply Chain Risk Management",
+            "url": "https://www.cisa.gov/sites/default/files/2023-09/A%20Hardware%20Bill%20of%20Materials%20Framework%20for%20Supply%20Chain%20Risk%20Management%20%28508%29.pdf"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "CHIPSEC",
+            "url": "https://github.com/chipsec/chipsec"
+          },
+          {
+            "nombre": "UEFITool",
+            "url": "https://github.com/LongSoft/UEFITool"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "Introduction to RISC-V (LFD110)",
+            "url": "https://training.linuxfoundation.org/training/introduction-to-riscv-lfd110/"
+          }
+        ]
+      }
     },
     {
       "id": "dia2_04_alli",
@@ -491,14 +1091,14 @@
       "archivo": "04-alli-salud-ciberseguridad.md",
       "speaker": "Nina Alli",
       "institucion": "Biohacking Village",
-      "titulo": "Ciberseguridad en Salud: Protegiendo la Infraestructura que Protege Vidas",
+      "titulo": "Ciberseguridad y Continuidad Asistencial en Salud",
       "dificultad": "Principiante",
       "analogia": "Imagina la sala de urgencias de un hospital en medio de una tormenta. De repente, una banda desconecta la energía de los respiradores, cambia las etiquetas de sangre en los refrigeradores del banco de sangre y bloquea con cadenas las puertas del pabellón de cirugías. No buscan dinero de inmediato; han paralizado la máquina que mantiene con vida a tus seres queridos.",
-      "explicacion": "Nina Alli, directora de Biohacking Village, expone en esta entrevista magistral la cruda realidad del cibercrimen cuando golpea al sector sanitario. Cuando un ataque de ransomware secuestra las fichas clínicas de un hospital, el impacto no es contable: las ambulancias deben ser derivadas a otras ciudades, las sesiones de quimioterapia se cancelan de emergencia y los cirujanos pierden acceso a los antecedentes alérgicos de pacientes en la mesa de operaciones.\n\nLa expositora hace un llamado ético y urgente a transformar la cultura de seguridad en salud mediante la empatía y la educación práctica, desterrando el lenguaje técnico intimidante que aleja al personal médico y de enfermería. Promueve la colaboración estrecha con comunidades de hackers éticos para descubrir brechas en el equipamiento clínico antes de que sean explotadas por organizaciones criminales.",
+      "explicacion": "La digitalización clínica conecta registros, identidad, comunicaciones y equipos médicos con procesos que dependen de la disponibilidad de información. Un incidente puede interrumpir la atención sin modificar directamente un dispositivo: la pérdida de acceso a sistemas de apoyo ya afecta coordinación y continuidad. La gestión del riesgo debe relacionar datos y servicios con funciones asistenciales, priorizando recuperación e integridad según su impacto. El inventario técnico necesita incorporar procesos, responsables y dependencias para distinguir una interrupción tolerable de una degradación que requiere respuesta inmediata. [NIST SP 1800-8 — Securing Wireless Infusion Pumps in Healthcare Delivery Organizations](https://csrc.nist.gov/pubs/sp/1800/8/final).\n\nEl diseño de controles debe considerar ritmos operativos, acceso de terceros y equipos que no admiten las mismas intervenciones que un endpoint convencional. La segmentación, el control de identidad y la capacidad de restauración necesitan validación técnica y asistencial antes de aplicarse a servicios reales. Conviene ensayar procedimientos de trabajo degradado, coordinación de incidentes y recuperación de información en entornos representativos. La evaluación debe observar continuidad de procesos y calidad de la información recuperada, evitando presentar la mera existencia de una copia de seguridad como prueba de que el servicio puede restablecerse. [ENISA — Health Threat Landscape](https://www.enisa.europa.eu/publications/health-threat-landscape).",
       "puntos_clave": [
-        "La ciberseguridad en salud es seguridad humana: El secuestro de registros clínicos y equipos asistenciales pone en riesgo inminente vidas humanas.",
-        "Pedagogía adaptada al personal médico: La capacitación debe centrarse en flujos clínicos reales, sin culpabilizar a doctores ni enfermeras.",
-        "Divulgación coordinada de vulnerabilidades (CVD): Alianzas con hackers éticos y fabricantes para parchar equipos hospitalarios de forma segura."
+        "Continuidad asistencial: Capacidad de mantener funciones de atención durante interrupciones o degradación de sistemas de soporte.",
+        "Dependencia clínica digital: Relación entre una actividad asistencial y los datos, dispositivos o servicios necesarios para ejecutarla.",
+        "Segmentación de red clínica: Separación de flujos y accesos según funciones y riesgos de equipos y servicios de salud."
       ],
       "checklist": [
         "- [ ] Establecer un protocolo clínico de contingencia en papel para mantener la atención médica ante una caída total de las fichas electrónicas.",
@@ -509,21 +1109,76 @@
         "pregunta": "¿Por qué los hospitales son un blanco tan frecuente y vulnerable para los atacantes de ransomware?",
         "respuesta": "Porque manejan datos confidenciales y, al tratarse de servicios críticos donde minutos de interrupción amenazan vidas humanas, los delincuentes calculan que la presión para pagar el rescate rápidamente será mucho más alta."
       },
-      "guion_audio": "En un hospital, cada segundo cuenta para salvar una vida; pero ¿qué pasa cuando un ciberataque apaga los monitores de urgencia? Nina Alli, líder de Biohacking Village, nos abre los ojos ante la dimensión más humana y desgarradora de la ciberseguridad: la protección de la salud. Cuando el ransomware bloquea las fichas médicas electrónicas, los cirujanos operan a ciegas y las ambulancias deben desviarse con pacientes graves a bordo. La seguridad digital hospitalaria no es un trámite de oficina; es el soporte vital de nuestros seres queridos. Necesitamos capacitar a médicos y enfermeras con empatía y sencillez, aliarnos con investigadores éticos y blindar los sistemas sanitarios. Porque en salud, una contraseña fuerte o un respaldo seguro salvan vidas todos los días.",
+      "guion_audio": "La digitalización clínica conecta registros, identidad, comunicaciones y equipos médicos con procesos que dependen de la disponibilidad de información. Un incidente puede interrumpir la atención sin modificar directamente un dispositivo: la pérdida de acceso a sistemas de apoyo ya afecta coordinación y continuidad. La gestión del riesgo debe relacionar datos y servicios con funciones asistenciales, priorizando recuperación e integridad según su impacto. El inventario técnico necesita incorporar procesos, responsables y dependencias para distinguir una interrupción tolerable de una degradación que requiere respuesta inmediata. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "NIST SP 1800-8 — Securing Wireless Infusion Pumps in Healthcare Delivery Organizations",
+          "url": "https://csrc.nist.gov/pubs/sp/1800/8/final"
         },
         {
-          "nombre": "Canal Oficial YouTube PDI Chile",
-          "url": "https://www.youtube.com/@PDIChileOficial"
+          "nombre": "NIST SP 800-61 Rev. 3 — Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+          "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
         },
         {
-          "nombre": "Biohacking Village Health Security",
-          "url": "https://www.village.bio"
+          "nombre": "ENISA — Health Threat Landscape",
+          "url": "https://www.enisa.europa.eu/publications/health-threat-landscape"
+        },
+        {
+          "nombre": "OWASP Threat Dragon",
+          "url": "https://github.com/OWASP/threat-dragon"
+        },
+        {
+          "nombre": "OpenEMR",
+          "url": "https://github.com/openemr/openemr"
+        },
+        {
+          "nombre": "Establish the guiding principles and core components of Zero Trust",
+          "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
+        },
+        {
+          "nombre": "CS50's Introduction to Cybersecurity",
+          "url": "https://cs50.harvard.edu/cybersecurity/"
         }
-      ]
+      ],
+      "archivo_audio": "04-alli-salud-ciberseguridad.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "NIST SP 1800-8 — Securing Wireless Infusion Pumps in Healthcare Delivery Organizations",
+            "url": "https://csrc.nist.gov/pubs/sp/1800/8/final"
+          },
+          {
+            "nombre": "NIST SP 800-61 Rev. 3 — Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+            "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "ENISA — Health Threat Landscape",
+            "url": "https://www.enisa.europa.eu/publications/health-threat-landscape"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "OWASP Threat Dragon",
+            "url": "https://github.com/OWASP/threat-dragon"
+          },
+          {
+            "nombre": "OpenEMR",
+            "url": "https://github.com/openemr/openemr"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "Establish the guiding principles and core components of Zero Trust",
+            "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
+          },
+          {
+            "nombre": "CS50's Introduction to Cybersecurity",
+            "url": "https://cs50.harvard.edu/cybersecurity/"
+          }
+        ]
+      }
     },
     {
       "id": "dia2_05_albuquerque",
@@ -531,14 +1186,14 @@
       "archivo": "05-albuquerque-deteccion-respuesta.md",
       "speaker": "Tales Albuquerque",
       "institucion": "Sophos",
-      "titulo": "Seguridad Digital: Prevención, Detección y Respuesta ante Ciberamenazas",
+      "titulo": "Prevención, Detección y Respuesta ante Ciberamenazas",
       "dificultad": "Intermedio",
       "analogia": "Es como un intruso sigiloso que no rompe la ventana con estrépito para robar la televisión, sino que encuentra una copia de la llave que dejaste olvidada bajo el felpudo. Entra silenciosamente de noche, se esconde en el ático durante dos meses estudiando tus horarios y costumbres, y cuando finalmente se decide a actuar, vacía la casa entera en diez minutos.",
-      "explicacion": "Tales Albuquerque desmitifica la idea de que los ataques cibernéticos y el ransomware ocurren en un parpadeo. En incidentes contra infraestructuras críticas y grandes empresas, los adversarios suelen permanecer un promedio de semanas o meses infiltrados en la red interna (dwell time). Durante este período exploran directorios, roban credenciales con privilegios y neutralizan los respaldos de seguridad antes de detonar el cifrado masivo.\n\nLa ponencia promueve la adopción de servicios gestionados de detección y respuesta (MDR), donde cazadores de amenazas humanos monitorean la telemetría las 24 horas del día. Albuquerque resalta el peligro de las técnicas Living off the Land (LotL), donde los intrusos utilizan las propias herramientas legítimas del sistema operativo (como PowerShell o WMI) para moverse sin levantar sospechas en los antivirus convencionales.",
+      "explicacion": "La prevención reduce oportunidades de compromiso, mientras la detección y la respuesta permiten gestionar ataques que superan los controles iniciales. La efectividad depende de combinar visibilidad de identidad, endpoints y red con reglas vinculadas a escenarios de riesgo. Los avisos deben permitir reconstruir secuencias de actividad y evaluar el impacto sobre activos prioritarios. Un antivirus sin alertas o un tablero con baja severidad no acreditan ausencia de intrusión; la conclusión necesita considerar cobertura de sensores, calidad de los registros y comportamiento esperado del entorno. [NIST SP 800-61 Rev. 3 — Incident Response Recommendations and Considerations for Cybersecurity Risk Management](https://csrc.nist.gov/pubs/sp/800/61/r3/final).\n\nEl desafío operativo es convertir señales incompletas en decisiones proporcionales y recuperables. La contención debe coordinarse con propietarios de servicios, preservar evidencia y tratar credenciales o persistencia asociadas al incidente. Los procedimientos automatizados requieren criterios de activación, permisos acotados y revisión de sus efectos. Como práctica de evaluación, conviene probar detecciones, restauraciones y escalamiento con escenarios reproducibles, midiendo tiempo de análisis y recuperación efectiva. El aprendizaje posterior debe modificar controles y procedimientos, en lugar de cerrar el caso cuando desaparecen las alertas visibles. [ENISA Threat Landscape 2026](https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026).",
       "puntos_clave": [
-        "Tiempo de permanencia silenciosa (Dwell Time): Los atacantes estudian la víctima durante semanas antes de cifrar los datos; la detección temprana es crucial.",
-        "Técnicas Living off the Land: Uso malicioso de herramientas administrativas nativas para eludir antivirus basados en firmas estáticas.",
-        "Cacería activa de amenazas (Threat Hunting 24/7): No basta con alarmas pasivas; se requiere personal experto investigando anomalías de forma continua."
+        "Endpoint Detection and Response (EDR): Capacidad de observar eventos de endpoints, investigar actividad y ejecutar medidas de respuesta.",
+        "Threat hunting: Búsqueda guiada por hipótesis de actividad adversaria que las detecciones existentes podrían no identificar.",
+        "Security Orchestration, Automation and Response (SOAR): Coordinación de acciones y procedimientos automatizados de gestión de incidentes."
       ],
       "checklist": [
         "- [ ] Activar autenticación multifactor (MFA) obligatoria en todas las conexiones remotas (VPN, RDP) y cuentas de administración.",
@@ -549,21 +1204,76 @@
         "pregunta": "¿En qué consiste la técnica de ataque conocida como 'Living off the Land' (LotL)?",
         "respuesta": "Consiste en que los atacantes utilizan utilitarios y programas legítimos ya instalados en el sistema operativo (como PowerShell o utilidades de red) para ejecutar sus acciones, evitando descargar herramientas sospechosas que alertarían a los antivirus."
       },
-      "guion_audio": "¿Crees que tu computador está seguro solo porque el antivirus no muestra alertas rojas? Tales Albuquerque de Sophos nos advierte sobre una realidad inquietante: los atacantes modernos no golpean al instante. Suelen pasar semanas o meses dentro de tus redes, estudiando tus movimientos en completo silencio mediante credenciales robadas y herramientas legítimas del propio sistema. Cuando finalmente detonan el secuestro de información, el daño ya es total. Para ganarles la partida, debemos cazar activamente las amenazas las 24 horas del día, observando comportamientos anómalos antes de que sea tarde. La prevención tradicional ya no basta; la capacidad de detectar a tiempo y responder en minutos es la verdadera frontera de la ciberseguridad moderna.",
+      "guion_audio": "La prevención reduce oportunidades de compromiso, mientras la detección y la respuesta permiten gestionar ataques que superan los controles iniciales. La efectividad depende de combinar visibilidad de identidad, endpoints y red con reglas vinculadas a escenarios de riesgo. Los avisos deben permitir reconstruir secuencias de actividad y evaluar el impacto sobre activos prioritarios. Un antivirus sin alertas o un tablero con baja severidad no acreditan ausencia de intrusión; la conclusión necesita considerar cobertura de sensores, calidad de los registros y comportamiento esperado del entorno. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "NIST SP 800-61 Rev. 3 — Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+          "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
         },
         {
-          "nombre": "Canal Oficial YouTube PDI Chile",
-          "url": "https://www.youtube.com/@PDIChileOficial"
+          "nombre": "MITRE ATT&CK Enterprise",
+          "url": "https://attack.mitre.org/matrices/enterprise/"
         },
         {
-          "nombre": "Sophos MDR & Threat Research",
-          "url": "https://www.sophos.com"
+          "nombre": "ENISA Threat Landscape 2026",
+          "url": "https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026"
+        },
+        {
+          "nombre": "Velociraptor",
+          "url": "https://github.com/Velocidex/velociraptor"
+        },
+        {
+          "nombre": "Atomic Red Team",
+          "url": "https://github.com/redcanaryco/atomic-red-team"
+        },
+        {
+          "nombre": "Create detections and perform investigations using Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/"
+        },
+        {
+          "nombre": "Perform threat hunting in Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
         }
-      ]
+      ],
+      "archivo_audio": "05-albuquerque-deteccion-respuesta.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "NIST SP 800-61 Rev. 3 — Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+            "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+          },
+          {
+            "nombre": "MITRE ATT&CK Enterprise",
+            "url": "https://attack.mitre.org/matrices/enterprise/"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "ENISA Threat Landscape 2026",
+            "url": "https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "Velociraptor",
+            "url": "https://github.com/Velocidex/velociraptor"
+          },
+          {
+            "nombre": "Atomic Red Team",
+            "url": "https://github.com/redcanaryco/atomic-red-team"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "Create detections and perform investigations using Microsoft Sentinel",
+            "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/"
+          },
+          {
+            "nombre": "Perform threat hunting in Microsoft Sentinel",
+            "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
+          }
+        ]
+      }
     },
     {
       "id": "dia2_06_norman",
@@ -571,14 +1281,14 @@
       "archivo": "06-norman-amenazas-hibridas.md",
       "speaker": "James Norman",
       "institucion": "FCDO (Foreign, Commonwealth & Development Office, Reino Unido)",
-      "titulo": "Amenazas híbridas en la era digital",
+      "titulo": "Amenazas Híbridas y Resiliencia Informacional",
       "dificultad": "Principiante",
       "analogia": "Imagina que un día se corta la electricidad en todo tu barrio por una avería en un transformador. Al mismo instante, miles de cuentas en redes sociales comienzan a difundir rumores falsos de que el agua corriente está envenenada y que hay turbas saqueando las tiendas, provocando histeria colectiva, carreras al supermercado y colapso de las líneas telefónicas, todo sin disparar una sola bala.",
-      "explicacion": "James Norman, diplomático y experto del Ministerio de Asuntos Exteriores británico, expone el concepto de amenazas híbridas en el escenario geopolítico moderno. Una amenaza híbrida orquesta simultáneamente tácticas cibernéticas (como ataques a redes eléctricas o portuarias) con campañas de desinformación masiva en redes sociales y presiones económicas coordinadas por actores estatales o grupos afines.\n\nLa conferencia enseña que el objetivo de estas agresiones no es únicamente destruir infraestructura física, sino debilitar la confianza ciudadana en las instituciones democráticas y sembrar el caos social. La resiliencia nacional frente a la guerra híbrida exige no solo firewalls e ingenieros, sino una ciudadanía dotada de pensamiento crítico, cooperación diplomática internacional y una comunicación gubernamental transparente y veloz.",
+      "explicacion": "Las amenazas híbridas combinan acciones digitales, presión sobre servicios y manipulación del entorno informativo para afectar decisiones y confianza pública. El análisis debe relacionar incidentes técnicos con comportamientos observables de difusión, sin atribuir coordinación a partir de coincidencias temporales. La protección de infraestructura crítica necesita considerar tanto continuidad operacional como comunicación fiable durante la crisis. La información técnica y el análisis de influencia utilizan evidencias diferentes; integrarlos requiere conservar procedencia y separar observaciones verificadas, hipótesis y estimaciones de intención. [MITRE ATT&CK Enterprise](https://attack.mitre.org/matrices/enterprise/).\n\nEl desafío es coordinar equipos de seguridad, análisis y comunicación sin amplificar rumores ni automatizar atribuciones poco fundadas. Los marcos de comportamiento ayudan a describir tácticas, pero una similitud no identifica por sí sola al responsable. Conviene preparar canales verificables, mensajes de continuidad y procedimientos para contrastar narrativas con evidencia operacional. La resiliencia informacional puede evaluarse mediante ejercicios con escenarios de interrupción y desinformación, observando tiempos de validación y coordinación. Los conjuntos de datos de entrenamiento deben permitir reproducir el análisis sin difundir información personal innecesaria. [4th EEAS Annual Report on Foreign Information Manipulation and Interference Threats](https://www.eeas.europa.eu/eeas/4th-eeas-report-foreign-information-manipulation-and-interference-threats_en).",
       "puntos_clave": [
-        "Convergencia de sabotaje cibernético y desinformación: Los apagones informáticos se combinan con falsos rumores para potenciar el pánico social.",
-        "Guerra de zona gris: Ataques diseñados deliberadamente por debajo del umbral de un acto de guerra convencional para dificultar la atribución legal.",
-        "El pensamiento crítico como ciberdefensa: La alfabetización mediática y la verificación ciudadana son escudos esenciales para la soberanía democrática."
+        "Foreign Information Manipulation and Interference (FIMI): Patrones de manipulación e interferencia informativa vinculados a actores e intereses externos.",
+        "Operación de influencia: Conjunto de acciones orientadas a modificar percepciones o comportamientos de una audiencia.",
+        "Atribución con incertidumbre: Evaluación de responsabilidad que expresa grado de confianza, evidencia y alternativas plausibles."
       ],
       "checklist": [
         "- [ ] Establecer canales oficiales de comunicación de crisis verificados para informar rápidamente a la ciudadanía en caso de incidentes.",
@@ -589,21 +1299,68 @@
         "pregunta": "¿Cuál es el objetivo principal de una 'amenaza híbrida' frente a un ciberataque tradicional?",
         "respuesta": "No busca solo desconectar un servidor o robar datos, sino combinar el impacto del ciberataque con desinformación masiva para desestabilizar la confianza pública, sembrar caos y debilitar la gobernanza democrática de una nación."
       },
-      "guion_audio": "En el siglo XXI, las batallas no se libran únicamente en tierra, mar o aire; hoy el frente de combate está en las redes y en la opinión pública. James Norman, de la cancillería británica, nos explica las amenazas híbridas. Imagina que un apagón en una subestación eléctrica viene acompañado de una ola de noticias falsas en redes sociales para sembrar histeria colectiva y desconfianza en las instituciones. Ese cóctel de sabotaje digital y manipulación psicológica busca fracturar a la sociedad desde adentro. Frente a esto, nuestra mejor defensa colectiva es el pensamiento crítico. La ciberseguridad es hoy un pilar de la democracia: verificar las noticias antes de compartirlas es tan importante como proteger nuestras contraseñas.",
+      "guion_audio": "Las amenazas híbridas combinan acciones digitales, presión sobre servicios y manipulación del entorno informativo para afectar decisiones y confianza pública. El análisis debe relacionar incidentes técnicos con comportamientos observables de difusión, sin atribuir coordinación a partir de coincidencias temporales. La protección de infraestructura crítica necesita considerar tanto continuidad operacional como comunicación fiable durante la crisis. La información técnica y el análisis de influencia utilizan evidencias diferentes; integrarlos requiere conservar procedencia y separar observaciones verificadas, hipótesis y estimaciones de intención. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "MITRE ATT&CK Enterprise",
+          "url": "https://attack.mitre.org/matrices/enterprise/"
         },
         {
-          "nombre": "Canal Oficial YouTube PDI Chile",
-          "url": "https://www.youtube.com/@PDIChileOficial"
+          "nombre": "DISARM Frameworks",
+          "url": "https://github.com/DISARMFoundation/DISARMframeworks"
         },
         {
-          "nombre": "UK Foreign, Commonwealth & Development Office",
-          "url": "https://www.gov.uk/fcdo"
+          "nombre": "4th EEAS Annual Report on Foreign Information Manipulation and Interference Threats",
+          "url": "https://www.eeas.europa.eu/eeas/4th-eeas-report-foreign-information-manipulation-and-interference-threats_en"
+        },
+        {
+          "nombre": "OpenCTI",
+          "url": "https://github.com/OpenCTI-Platform/opencti"
+        },
+        {
+          "nombre": "Gephi",
+          "url": "https://github.com/gephi/gephi"
+        },
+        {
+          "nombre": "Perform threat hunting in Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
         }
-      ]
+      ],
+      "archivo_audio": "06-norman-amenazas-hibridas.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "MITRE ATT&CK Enterprise",
+            "url": "https://attack.mitre.org/matrices/enterprise/"
+          },
+          {
+            "nombre": "DISARM Frameworks",
+            "url": "https://github.com/DISARMFoundation/DISARMframeworks"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "4th EEAS Annual Report on Foreign Information Manipulation and Interference Threats",
+            "url": "https://www.eeas.europa.eu/eeas/4th-eeas-report-foreign-information-manipulation-and-interference-threats_en"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "OpenCTI",
+            "url": "https://github.com/OpenCTI-Platform/opencti"
+          },
+          {
+            "nombre": "Gephi",
+            "url": "https://github.com/gephi/gephi"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "Perform threat hunting in Microsoft Sentinel",
+            "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
+          }
+        ]
+      }
     },
     {
       "id": "dia2_07_abbas",
@@ -611,14 +1368,14 @@
       "archivo": "07-abbas-academia-talento.md",
       "speaker": "Nadezda Abbas",
       "institucion": "Universidad Bernardo O'Higgins (UBO)",
-      "titulo": "Transformación Digital y Ciberresiliencia: El Rol de la Academia",
+      "titulo": "Desarrollo de Talento para la Ciberresiliencia",
       "dificultad": "Principiante",
       "analogia": "Imagina que un país compra los aviones de rescate y los camiones de bomberos más modernos y veloces del planeta para proteger a sus ciudades, pero se olvida de abrir academias para formar pilotos y bomberos. Cuando ocurre la emergencia, las máquinas millonarias quedan inmóviles en los hangares porque no hay nadie que sepa conducirlas.",
-      "explicacion": "Nadezda Abbas resalta el rol insustituible de la educación superior en la construcción de la ciberresiliencia del país. Existe a nivel global y en Chile una severa escasez de talento calificado en ciberseguridad, lo que deja a instituciones públicas y privadas desprotegidas no por falta de software o presupuesto, sino por falta de especialistas humanos capaces de interpretar y responder ante las amenazas.\n\nLa académica promueve una profunda transformación en la formación universitaria: dejar atrás la enseñanza puramente teórica para adoptar laboratorios de simulación en vivo, competencias de Capture The Flag (CTF) y proyectos interdisciplinarios vinculados a las necesidades reales de la industria. Asimismo, recalca la urgencia de fomentar la inclusión de mujeres y jóvenes de regiones en carreras STEM para enriquecer la diversidad y capacidad analítica del país.",
+      "explicacion": "La capacidad de defensa depende de personas capaces de convertir herramientas y registros en decisiones verificables. Desarrollar talento exige definir funciones, tareas y competencias observables antes de seleccionar cursos o certificaciones. Los marcos NICE y ECSF ofrecen vocabulario para relacionar necesidades operativas con aprendizaje, contratación y evaluación. Un programa útil debe cubrir análisis técnico, comunicación y juicio bajo incertidumbre, evitando equiparar la acumulación de credenciales con la capacidad demostrada de investigar, contener y recuperar un servicio. [NIST SP 800-181 Rev. 1 — Workforce Framework for Cybersecurity (NICE Framework)](https://csrc.nist.gov/pubs/sp/800/181/r1/final).\n\nEl desafío formativo es construir prácticas representativas que permitan medir progreso sin afectar sistemas reales. Los CTF sirven para desarrollar habilidades específicas, pero necesitan complementarse con ejercicios de detección, documentación y trabajo de equipo. Conviene utilizar rúbricas, revisión de evidencias y escenarios alineados con una función profesional, incorporando retroalimentación tras cada ejercicio. Como criterio de diseño, la trayectoria debe permitir fundamentos comunes y especialización progresiva, con oportunidades de acceso para perfiles diversos. La evaluación debe observar decisiones reproducibles y productos útiles, no solamente velocidad o puntos obtenidos. [Cybersecurity roles and skills for NIS2 Essential and Important Entities](https://www.enisa.europa.eu/publications/cybersecurity-roles-and-skills-for-nis2-essential-and-important-entities).",
       "puntos_clave": [
-        "Cierre de la brecha de talento: La educación en ciberseguridad es una inversión crítica para la seguridad nacional y el desarrollo económico.",
-        "Metodología basada en la práctica: La formación debe apoyarse en ciberejercicios reales, análisis de incidentes y laboratorios interactivos (CTF).",
-        "Diversidad e inclusión en STEM: Impulsar la participación femenina y regional para construir equipos de ciberdefensa multidisciplinarios y robustos."
+        "Task, Knowledge and Skill (TKS): Descripción de tareas, conocimientos y habilidades utilizada para relacionar trabajo y formación.",
+        "Aprendizaje basado en evidencias: Evaluación del progreso a partir de resultados verificables y razonamientos documentados.",
+        "Capture The Flag (CTF): Entorno de desafíos controlados que ejercita habilidades técnicas mediante objetivos concretos."
       ],
       "checklist": [
         "- [ ] Integrar laboratorios prácticos y competencias de Capture The Flag (CTF) en los programas formativos y mallas curriculares.",
@@ -629,141 +1386,345 @@
         "pregunta": "¿Por qué la formación puramente teórica resulta insuficiente para preparar profesionales de ciberseguridad hoy en día?",
         "respuesta": "Porque las ciberamenazas evolucionan en tiempo real, por lo que los defensores necesitan adquirir experiencia práctica resolviendo incidentes simulados, utilizando herramientas reales y pensando tácticamente bajo presión en laboratorios y competencias."
       },
-      "guion_audio": "Puedes tener el presupuesto más grande del mundo y comprar la mejor tecnología, pero sin personas capacitadas para manejarla, estás indefenso. En esta lección, Nadezda Abbas de la Universidad Bernardo O'Higgins nos recuerda el papel vital de la educación. El mundo enfrenta una escasez dramática de especialistas en ciberseguridad. Proteger a Chile exige formar a una nueva generación de defensores digitales con mentalidad ética, curiosidad científica y experiencia práctica en laboratorios reales y torneos de hacking ético. Además, abrir las puertas a más mujeres y jóvenes de todas las regiones es indispensable para enriquecer la visión de nuestros equipos. La mejor inversión en tecnología siempre será el talento humano. Formar personas es blindar el futuro de nuestra sociedad.",
+      "guion_audio": "La capacidad de defensa depende de personas capaces de convertir herramientas y registros en decisiones verificables. Desarrollar talento exige definir funciones, tareas y competencias observables antes de seleccionar cursos o certificaciones. Los marcos NICE y ECSF ofrecen vocabulario para relacionar necesidades operativas con aprendizaje, contratación y evaluación. Un programa útil debe cubrir análisis técnico, comunicación y juicio bajo incertidumbre, evitando equiparar la acumulación de credenciales con la capacidad demostrada de investigar, contener y recuperar un servicio. Para profundizar, revisa los estándares, la literatura y los laboratorios enlazados en esta lección. Contrasta los resultados con las condiciones de tu entorno antes de aplicar una recomendación.",
       "enlaces": [
         {
-          "nombre": "Sitio PDI Ciberseguridad",
-          "url": "https://www.pdichile.cl/seminariociberseguridad"
+          "nombre": "NIST SP 800-181 Rev. 1 — Workforce Framework for Cybersecurity (NICE Framework)",
+          "url": "https://csrc.nist.gov/pubs/sp/800/181/r1/final"
         },
         {
-          "nombre": "Canal Oficial YouTube PDI Chile",
-          "url": "https://www.youtube.com/@PDIChileOficial"
+          "nombre": "European Cybersecurity Skills Framework (ECSF)",
+          "url": "https://www.enisa.europa.eu/topics/skills-and-competences/skills-development/european-cybersecurity-skills-framework-ecsf"
         },
         {
-          "nombre": "Universidad Bernardo O'Higgins (UBO)",
-          "url": "https://www.ubo.cl"
+          "nombre": "Cybersecurity roles and skills for NIS2 Essential and Important Entities",
+          "url": "https://www.enisa.europa.eu/publications/cybersecurity-roles-and-skills-for-nis2-essential-and-important-entities"
+        },
+        {
+          "nombre": "CTFd",
+          "url": "https://github.com/CTFd/CTFd"
+        },
+        {
+          "nombre": "Apache CALDERA",
+          "url": "https://github.com/apache/caldera"
+        },
+        {
+          "nombre": "CS50's Introduction to Cybersecurity",
+          "url": "https://cs50.harvard.edu/cybersecurity/"
+        },
+        {
+          "nombre": "Create detections and perform investigations using Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/"
         }
-      ]
+      ],
+      "archivo_audio": "07-abbas-academia-talento.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "NIST SP 800-181 Rev. 1 — Workforce Framework for Cybersecurity (NICE Framework)",
+            "url": "https://csrc.nist.gov/pubs/sp/800/181/r1/final"
+          },
+          {
+            "nombre": "European Cybersecurity Skills Framework (ECSF)",
+            "url": "https://www.enisa.europa.eu/topics/skills-and-competences/skills-development/european-cybersecurity-skills-framework-ecsf"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "Cybersecurity roles and skills for NIS2 Essential and Important Entities",
+            "url": "https://www.enisa.europa.eu/publications/cybersecurity-roles-and-skills-for-nis2-essential-and-important-entities"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "CTFd",
+            "url": "https://github.com/CTFd/CTFd"
+          },
+          {
+            "nombre": "Apache CALDERA",
+            "url": "https://github.com/apache/caldera"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "CS50's Introduction to Cybersecurity",
+            "url": "https://cs50.harvard.edu/cybersecurity/"
+          },
+          {
+            "nombre": "Create detections and perform investigations using Microsoft Sentinel",
+            "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-create-detections-perform-investigations-azure-sentinel/"
+          }
+        ]
+      }
     },
     {
       "id": "intl_01_eeuu_uk",
       "carpeta": "04-investigacion-global",
       "archivo": "01-nist-cisa-ncsc.md",
-      "speaker": "Marco CISA / NIST & NCSC",
+      "speaker": "Marcos de referencia de Estados Unidos y Reino Unido",
       "institucion": "CISA / NIST (EE.UU.) & NCSC (Reino Unido)",
-      "titulo": "Marco NIST CSF 2.0 y Guías de Ciberresiliencia CISA/NCSC",
+      "titulo": "Gestión del Riesgo y Ciberresiliencia: NIST, CISA y NCSC",
       "dificultad": "Intermedio",
-      "analogia": "Es como un manual universal de aviación comercial desarrollado por los mejores pilotos del mundo: no importa si vuelas un avión pequeño o un jet transcontinental, todos siguen una lista estandarizada y rigurosa para antes del despegue, durante el vuelo y en casos de emergencia, garantizando que tripulación y pasajeros lleguen siempre a salvo a su destino.",
-      "explicacion": "El modelo anglosajón liderado por el NIST (National Institute of Standards and Technology) con su marco NIST Cybersecurity Framework 2.0 (CSF 2.0), junto a CISA en EE.UU. y el NCSC en el Reino Unido, representa el estándar de oro en ciberresiliencia global. La actualización 2.0 añade formalmente la función de Gobernar (Govern) a las clásicas Identificar, Proteger, Detectar, Responder y Recuperar, situando la gestión del riesgo cibernético al nivel de la estrategia ejecutiva y la cadena de suministro.\n\nEste enfoque promueve una sinergia ágil público-privada sustentada en la arquitectura de Confianza Cero (Zero Trust Architecture según NIST SP 800-207) y normativas de reporte rápido obligatorio como la ley estadounidense CIRCIA (que exige informar ataques significativos en 72 horas y pagos de rescate en 24 horas). En el Reino Unido, el NCSC complementa esto con el Cyber Assessment Framework (CAF), ofreciendo un modelo medible de madurez de seguridad para operadores esenciales.",
+      "analogia": "Es como revisar un mapa y las reglas de circulación: el mapa ayuda a orientarse, pero no sustituye las normas y condiciones que corresponden a cada trayecto.",
+      "explicacion": "El NIST CSF 2.0 organiza resultados de gestión del riesgo en las funciones Govern, Identify, Protect, Detect, Respond y Recover. Los CPG de CISA y el CAF del NCSC ofrecen enfoques complementarios para priorizar prácticas y evaluar protección de funciones esenciales. Estos instrumentos sirven para relacionar objetivos, controles y evidencias. Deben distinguirse marcos voluntarios, criterios de evaluación y obligaciones jurídicas: utilizar un marco no acredita automáticamente cumplimiento ni convierte todos sus resultados en mandatos legales. [NIST Cybersecurity Framework (CSF) 2.0](https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final).\n\nLa implantación requiere definir perfiles, responsables y criterios de aceptación adecuados a cada servicio. Las evaluaciones y ejercicios deben observar resultados de protección y recuperación, además de la existencia documental de controles. Los programas de reporte de incidentes requieren revisar ámbito, vigencia y reglas de implementación de la jurisdicción correspondiente. La comparación internacional resulta útil si conserva estas diferencias; presentar plazos o controles como universales oculta condiciones relevantes. Las herramientas de autoevaluación apoyan el análisis, pero no reemplazan evidencia ni revisión especializada. [NIST SP 800-61 Rev. 3 — Incident Response Recommendations and Considerations for Cybersecurity Risk Management](https://csrc.nist.gov/pubs/sp/800/61/r3/final).",
       "puntos_clave": [
-        "Estructura integral del NIST CSF 2.0: Las seis funciones esenciales (Govern, Identify, Protect, Detect, Respond, Recover) cubren todo el ciclo de vida del riesgo.",
-        "Mandatos de reporte CIRCIA y colaboración con CISA: Reportes rápidos obligatorios combinados con colaboración voluntaria y compartición de indicadores.",
-        "Ciberdefensa activa del NCSC británico (ACD): Protección automatizada a escala nacional contra phishing y ataques a DNS para todo el sector público."
+        "Govern: Función que conecta decisiones, responsabilidades y estrategia con la gestión del riesgo.",
+        "Perfil de ciberseguridad: Selección de resultados actuales u objetivo adaptada al contexto de una organización.",
+        "Cyber Assessment Framework: Marco del NCSC orientado a evaluar gestión del riesgo y protección de funciones esenciales."
       ],
       "checklist": [
-        "- [ ] Alinear el programa corporativo de ciberseguridad con las seis funciones del Marco NIST CSF 2.0 (Govern, Identify, Protect, Detect, Respond, Recover).",
-        "- [ ] Implementar los Objetivos de Desempeño de Ciberseguridad Intersectoriales (CPGs) definidos por CISA para infraestructura crítica.",
-        "- [ ] Establecer un mecanismo de reporte ágil capaz de cumplir con plazos de notificación de incidentes graves antes de 72 horas (estándar CIRCIA)."
+        "- [ ] Identificar los requisitos aplicables según la jurisdicción, el servicio y el tipo de operador.",
+        "- [ ] Registrar evidencias de controles y pruebas de recuperación, distinguiendo evaluación técnica y cumplimiento.",
+        "- [ ] Contrastar modificaciones y disposiciones complementarias antes de fijar obligaciones o plazos."
       ],
       "pregunta_autoevaluacion": {
-        "pregunta": "¿Cuál fue la función principal incorporada en la versión 2.0 del Marco de Ciberseguridad del NIST (NIST CSF 2.0)?",
-        "respuesta": "La función 'Gobernar' (Govern), que establece cómo las organizaciones toman decisiones, definen su apetito de riesgo corporativo y asignan responsabilidades estratégicas de ciberseguridad a nivel del directorio y la cadena de suministro."
+        "pregunta": "¿Un marco técnico voluntario establece por sí solo las obligaciones legales de toda organización?",
+        "respuesta": "No. El marco ayuda a ordenar resultados y controles; las obligaciones dependen de la jurisdicción, el ámbito y las disposiciones aplicables."
       },
-      "guion_audio": "¿Cómo se protegen las superpotencias ante un colapso digital? En este módulo exploramos el modelo anglosajón liderado por el marco NIST 2.0 de Estados Unidos y las directrices de CISA y el NCSC británico. Este marco organiza la defensa en seis pilares fundamentales: Gobernar, Identificar, Proteger, Detectar, Responder y Recuperar. Ya no se trata solo de levantar barreras técnicas, sino de una gobernanza estratégica donde directores y gerentes lideran la gestión del riesgo. Además, leyes como CIRCIA exigen a las empresas de servicios esenciales reportar cualquier ataque grave en menos de setenta y dos horas para coordinar la respuesta colectiva. Un modelo ágil, transparente y probado que guía hoy la ciberresiliencia en todo el planeta.",
+      "guion_audio": "La protección de servicios esenciales requiere conectar decisiones, controles y evidencias. El NIST CSF organiza resultados de gestión del riesgo en seis funciones, incluida Govern. CISA y el NCSC ofrecen enfoques complementarios para priorizar prácticas y evaluar funciones esenciales. Estos instrumentos tienen alcances diferentes y no deben confundirse con una obligación legal universal. Para aplicar un marco, define responsables, perfiles de riesgo y pruebas de recuperación. Revisa por separado las disposiciones de reporte que correspondan a tu organización. Las herramientas de autoevaluación ayudan a ordenar el análisis, pero no sustituyen evidencia de funcionamiento ni demuestran automáticamente cumplimiento. El objetivo es mantener una función protegida y recuperable con decisiones documentadas.",
       "enlaces": [
         {
-          "nombre": "NIST Cybersecurity Framework 2.0",
-          "url": "https://www.nist.gov/cyberframework"
+          "nombre": "NIST Cybersecurity Framework (CSF) 2.0",
+          "url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
         },
         {
-          "nombre": "CISA - Cross-Sector Cybersecurity Performance Goals",
+          "nombre": "NCSC Cyber Assessment Framework",
+          "url": "https://www.ncsc.gov.uk/collection/cyber-assessment-framework"
+        },
+        {
+          "nombre": "NIST SP 800-61 Rev. 3 — Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+          "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+        },
+        {
+          "nombre": "CISA Cross-Sector Cybersecurity Performance Goals",
           "url": "https://www.cisa.gov/cpgs"
         },
         {
-          "nombre": "UK National Cyber Security Centre (NCSC)",
-          "url": "https://www.ncsc.gov.uk"
+          "nombre": "CISA Cyber Security Evaluation Tool (CSET)",
+          "url": "https://github.com/cisagov/cset"
+        },
+        {
+          "nombre": "OpenSCAP",
+          "url": "https://github.com/OpenSCAP/openscap"
+        },
+        {
+          "nombre": "Establish the guiding principles and core components of Zero Trust",
+          "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
         }
-      ]
+      ],
+      "archivo_audio": "01-nist-cisa-ncsc.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "NIST Cybersecurity Framework (CSF) 2.0",
+            "url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+          },
+          {
+            "nombre": "NCSC Cyber Assessment Framework",
+            "url": "https://www.ncsc.gov.uk/collection/cyber-assessment-framework"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "NIST SP 800-61 Rev. 3 — Incident Response Recommendations and Considerations for Cybersecurity Risk Management",
+            "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+          },
+          {
+            "nombre": "CISA Cross-Sector Cybersecurity Performance Goals",
+            "url": "https://www.cisa.gov/cpgs"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "CISA Cyber Security Evaluation Tool (CSET)",
+            "url": "https://github.com/cisagov/cset"
+          },
+          {
+            "nombre": "OpenSCAP",
+            "url": "https://github.com/OpenSCAP/openscap"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "Establish the guiding principles and core components of Zero Trust",
+            "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
+          }
+        ]
+      }
     },
     {
       "id": "intl_02_china",
       "carpeta": "04-investigacion-global",
       "archivo": "02-china-cii-cac.md",
-      "speaker": "Administración del Ciberespacio de China (CAC)",
+      "speaker": "Marco CII y autoridades de ciberseguridad",
       "institucion": "CAC / MPS (República Popular China)",
-      "titulo": "Reglamento de Infraestructura de Información Crítica (CII 2021) y Soberanía de Datos",
+      "titulo": "Protección de Infraestructura de Información Crítica en China",
       "dificultad": "Avanzado",
-      "analogia": "Es como una gran muralla moderna con aduanas e inspectores gubernamentales en cada portón del reino: ningún producto extranjero entra a las fábricas del estado sin pasar por un laboratorio de inspección de seguridad nacional, y toda la información valiosa de los ciudadanos tiene prohibido cruzar las fronteras sin una visa oficial concedida directamente por el emperador.",
-      "explicacion": "El modelo de la República Popular China está sustentado en el Reglamento de Protección de Seguridad de Infraestructuras de Información Crítica (CII Regulations de 2021), promulgado por el Consejo de Estado bajo la tutela de la Administración del Ciberespacio de China (CAC - 国家互联网信息办公室) y el Ministerio de Seguridad Pública (MPS). Este esquema define con extrema precisión los sectores estratégicos (energía, finanzas, transporte, defensa, agua y telecomunicaciones), imponiendo la doctrina de la soberanía digital absoluta.\n\nEl régimen chino exige la localización forzosa de datos dentro de su territorio según la Ley de Seguridad de Datos y la Ley de Protección de Información Personal (PIPL), prohibiendo transferencias transfronterizas sin evaluaciones oficiales rigurosas. Además, a través del esquema de protección multi-nivel (MLPS 2.0 / 等保2.0), todo producto de red, software o hardware importado debe someterse a revisiones de seguridad nacional para descartar puertas traseras y favorecer la sustitución tecnológica por componentes de desarrollo nacional.",
+      "analogia": "Es como revisar un mapa y las reglas de circulación: el mapa ayuda a orientarse, pero no sustituye las normas y condiciones que corresponden a cada trayecto.",
+      "explicacion": "El marco chino de protección de infraestructura de información crítica aborda sistemas y redes cuya interrupción puede afectar funciones de interés nacional o público. La regulación de 2021 contempla responsabilidades de operadores, organización de la seguridad, preparación para emergencias e intercambio de información sobre riesgos. Su estudio exige separar identificación de infraestructura, protección técnica y obligaciones de supervisión. No basta con una clasificación general del sector para deducir todos los requisitos de una organización concreta. [Regulation to strengthen protection over critical information infrastructure](https://english.www.gov.cn/policies/latestreleases/202108/17/content_WS611b8062c6d0df57f98de907.html).\n\nDesde la arquitectura, resultan relevantes el inventario de dependencias, la gestión de proveedores y la trazabilidad de decisiones sobre datos y servicios. Las condiciones de contratación o transferencia de datos deben analizarse según las disposiciones y categorías aplicables, evitando afirmar que cualquier tecnología extranjera está prohibida o que toda transferencia tiene el mismo tratamiento. La comparación con métodos de C-SCRM ayuda a formular preguntas técnicas comunes, sin convertir herramientas open source o perfiles genéricos en pruebas de conformidad con normas nacionales. [ENISA — Threat Landscape for Supply Chain Attacks](https://www.enisa.europa.eu/publications/threat-landscape-for-supply-chain-attacks).",
       "puntos_clave": [
-        "Doctrina de Soberanía Digital: Control territorial estricto del ciberespacio nacional y subordinación de las redes a los intereses de seguridad del Estado.",
-        "Localización obligatoria de datos: Almacenamiento local de datos operativos y personales recopilados en infraestructura crítica china.",
-        "Esquema MLPS 2.0 y revisión de suministros: Certificación gubernamental exhaustiva de hardware y software extranjero para prevenir espionaje o sabotaje externo."
+        "Critical Information Infrastructure (CII): Categoría de redes y sistemas sujetos a protección reforzada según el marco aplicable.",
+        "Responsabilidad del operador: Organización y medidas necesarias para proteger y recuperar funciones bajo su gestión.",
+        "Dependencia tecnológica: Relación con productos, servicios y proveedores que condiciona continuidad y exposición."
       ],
       "checklist": [
-        "- [ ] Evaluar los requisitos de localización de datos y restricciones de transferencia transfronteriza si se opera en el ecosistema digital chino.",
-        "- [ ] Cumplir con las auditorías anuales obligatorias de seguridad según el nivel correspondiente del esquema MLPS 2.0 (等级保护).",
-        "- [ ] Implementar canales de reporte inmediato a los departamentos de supervisión de la CAC y al MPS ante cualquier brecha de seguridad."
+        "- [ ] Identificar los requisitos aplicables según la jurisdicción, el servicio y el tipo de operador.",
+        "- [ ] Registrar evidencias de controles y pruebas de recuperación, distinguiendo evaluación técnica y cumplimiento.",
+        "- [ ] Contrastar modificaciones y disposiciones complementarias antes de fijar obligaciones o plazos."
       ],
       "pregunta_autoevaluacion": {
-        "pregunta": "¿Cuál es el requisito clave que impone la normativa china de Infraestructura de Información Crítica (CII) sobre el hardware y software extranjero?",
-        "respuesta": "Exige someter todos los productos y servicios de red de proveedores externos a rigurosas revisiones de seguridad nacional por parte de la CAC antes de su compra e instalación, para verificar que no contengan puertas traseras ni riesgos para la soberanía del país."
+        "pregunta": "¿Un perfil genérico de seguridad demuestra automáticamente conformidad con el marco CII chino?",
+        "respuesta": "No. Debe analizarse el ámbito aplicable y comprobarse la correspondencia entre requisitos, controles y evidencia de la organización concreta."
       },
-      "guion_audio": "En el gigante asiático, el ciberespacio se rige bajo una filosofía muy clara: soberanía digital absoluta. En este módulo analizamos el modelo de China, regulado por la Administración del Ciberespacio de China, la CAC, y el Reglamento de Infraestructura de Información Crítica de 2021. Para el gobierno chino, cualquier red que gestione energía, transporte o finanzas es una extensión de la soberanía nacional. Por ley, todos los datos estratégicos deben permanecer almacenados estrictamente dentro del país. Además, cualquier tecnología extranjera debe superar minuciosas inspecciones de seguridad nacional para descartar puertas traseras antes de conectarse a los sistemas del Estado. Un enfoque centralizado y de control total donde la seguridad nacional y la sustitución tecnológica priman por sobre todo.",
+      "guion_audio": "El marco chino de infraestructura de información crítica establece responsabilidades de protección para sistemas y redes esenciales. La regulación de 2021 incluye organización de la seguridad, preparación ante emergencias e intercambio de información sobre amenazas. Para analizar una operación concreta, primero hay que identificar qué sujetos, servicios y disposiciones resultan aplicables. Las condiciones sobre proveedores y tratamiento de datos deben revisarse según su ámbito. No es correcto convertir una descripción general en una prohibición de toda tecnología extranjera o de cualquier transferencia. Los inventarios, el análisis de dependencias y las pruebas de recuperación aportan evidencia técnica. Las herramientas de laboratorio permiten estudiar controles, pero no certifican conformidad con la normativa nacional.",
       "enlaces": [
         {
-          "nombre": "CAC - Administración del Ciberespacio de China",
-          "url": "http://www.cac.gov.cn"
+          "nombre": "Regulation to strengthen protection over critical information infrastructure",
+          "url": "https://english.www.gov.cn/policies/latestreleases/202108/17/content_WS611b8062c6d0df57f98de907.html"
         },
         {
-          "nombre": "Ministerio de Seguridad Pública de China (MPS)",
-          "url": "https://www.mps.gov.cn"
+          "nombre": "NIST SP 800-161 Rev. 1 — Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations",
+          "url": "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final"
         },
         {
-          "nombre": "Directrices MLPS 2.0 (Multi-Level Protection Scheme)",
-          "url": "http://www.tc260.org.cn"
+          "nombre": "ENISA — Threat Landscape for Supply Chain Attacks",
+          "url": "https://www.enisa.europa.eu/publications/threat-landscape-for-supply-chain-attacks"
+        },
+        {
+          "nombre": "Suricata",
+          "url": "https://github.com/OISF/suricata"
+        },
+        {
+          "nombre": "ComplianceAsCode Content",
+          "url": "https://github.com/ComplianceAsCode/content"
+        },
+        {
+          "nombre": "Introduction to Microsoft Purview and Microsoft's privacy principles",
+          "url": "https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/"
         }
-      ]
+      ],
+      "archivo_audio": "02-china-cii-cac.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "Regulation to strengthen protection over critical information infrastructure",
+            "url": "https://english.www.gov.cn/policies/latestreleases/202108/17/content_WS611b8062c6d0df57f98de907.html"
+          },
+          {
+            "nombre": "NIST SP 800-161 Rev. 1 — Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations",
+            "url": "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "ENISA — Threat Landscape for Supply Chain Attacks",
+            "url": "https://www.enisa.europa.eu/publications/threat-landscape-for-supply-chain-attacks"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "Suricata",
+            "url": "https://github.com/OISF/suricata"
+          },
+          {
+            "nombre": "ComplianceAsCode Content",
+            "url": "https://github.com/ComplianceAsCode/content"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "Introduction to Microsoft Purview and Microsoft's privacy principles",
+            "url": "https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/"
+          }
+        ]
+      }
     },
     {
       "id": "intl_03_rusia",
       "carpeta": "04-investigacion-global",
       "archivo": "03-rusia-187fz-fstec.md",
-      "speaker": "Servicio Federal de Control Técnico y Exportaciones (FSTEC / FSB)",
+      "speaker": "Marco de la Ley Federal 187-FZ",
       "institucion": "FSTEC / NKTsKI (Federación Rusa)",
-      "titulo": "Ley Federal N° 187-FZ de Seguridad de Infraestructura Crítica y GosSOPKA",
+      "titulo": "Seguridad de Infraestructura de Información Crítica en Rusia",
       "dificultad": "Avanzado",
-      "analogia": "Es como una ciudadela fortificada en el invierno siberiano, conectada a una red de telégrafos interna completamente cerrada que no toca las líneas exteriores. Si los puentes hacia el resto del mundo se dinamitan o quedan bloqueados por tormentas, la ciudadela puede activar sus propios generadores, cerrar sus compuertas herméticas y seguir funcionando de manera 100% autosuficiente con sus propios recursos locales.",
-      "explicacion": "El marco de la Federación Rusa se articula en torno a la Ley Federal N° 187-FZ (Sobre la Seguridad de la Infraestructura de Información Crítica), supervisada por el Servicio Federal de Control Técnico y de Exportaciones (FSTEC - ФСТЭК России) y el Centro Nacional de Coordinación de Incidentes Informáticos (NKTsKI - НКЦКИ) dependiente del FSB. Este marco clasifica a los sujetos de infraestructura crítica en tres categorías de significancia según el impacto potencial sobre la defensa, salud, economía y seguridad del Estado.\n\nEl pilar operacional ruso es el sistema GosSOPKA (ГосСОПКА), una red estatal unificada para la detección, prevención y mitigación de ciberataques a la que todos los operadores críticos deben conectarse obligatoriamente para compartir telemetría en tiempo real. Este modelo se complementa con la doctrina del Runet soberano y decretos presidenciales que obligan a reemplazar todo el software, hardware y criptografía extranjera por soluciones rusas certificadas bajo estándares GOST.",
+      "analogia": "Es como revisar un mapa y las reglas de circulación: el mapa ayuda a orientarse, pero no sustituye las normas y condiciones que corresponden a cada trayecto.",
+      "explicacion": "La Ley Federal 187-FZ constituye una referencia del marco ruso sobre seguridad de infraestructura de información crítica. Para analizar sus implicaciones es necesario distinguir sujetos, objetos protegidos, autoridades y requisitos desarrollados en normativa complementaria. La publicación oficial permite identificar el instrumento de origen; su interpretación operativa requiere contrastar modificaciones y disposiciones aplicables. No debe deducirse una obligación concreta de sustitución tecnológica o envío de telemetría para todos los sistemas a partir de una descripción general del modelo nacional. [Федеральный закон от 26.07.2017 № 187-ФЗ](https://publication.pravo.gov.ru/document/view/0001201707260023).\n\nLa comparación técnica puede centrarse en inventarios, coordinación de incidentes y protección de dependencias, manteniendo separados el control operacional y la valoración jurídica. Los informes sobre actividad adversaria aportan escenarios de amenaza, pero no describen por sí solos los requisitos legales de un operador. Las herramientas de detección e intercambio ayudan a experimentar con controles en laboratorio, sin acreditar conformidad con FSTEC u otros organismos. Una evaluación útil documenta qué controles se han comprobado y qué condiciones de contexto permanecen por verificar. [Russian State-Sponsored and Criminal Cyber Threats to Critical Infrastructure](https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-110a).",
       "puntos_clave": [
-        "Integración obligatoria con GosSOPKA: Conexión técnica directa de centros de seguridad corporativos con la red estatal de alerta del FSB/NKTsKI.",
-        "Categorización de importancia crítica (187-FZ): Clasificación formal de objetos de infraestructura para asignar niveles obligatorios de control técnico.",
-        "Aislamiento y sustitución de importaciones (Import Substitution): Migración obligatoria a software, criptografía certificada GOST y sistemas operativos nacionales."
+        "Infraestructura de información crítica: Sistemas y redes cuya protección se organiza mediante categorías y requisitos del marco nacional.",
+        "Categorización: Determinación del alcance y relevancia de un objeto según criterios de la normativa aplicable.",
+        "Coordinación de incidentes: Intercambio y escalamiento de información entre responsables y autoridades competentes."
       ],
       "checklist": [
-        "- [ ] Realizar la categorización formal de todos los objetos de infraestructura crítica de acuerdo a los criterios de la Ley 187-FZ.",
-        "- [ ] Configurar la integración y envío automatizado de incidentes y telemetría de red al sistema estatal GosSOPKA (НКЦКИ).",
-        "- [ ] Diseñar e implementar planes de sustitución de software y hardware importado por alternativas nacionales o independientes certificadas."
+        "- [ ] Identificar los requisitos aplicables según la jurisdicción, el servicio y el tipo de operador.",
+        "- [ ] Registrar evidencias de controles y pruebas de recuperación, distinguiendo evaluación técnica y cumplimiento.",
+        "- [ ] Contrastar modificaciones y disposiciones complementarias antes de fijar obligaciones o plazos."
       ],
       "pregunta_autoevaluacion": {
-        "pregunta": "¿Qué es el sistema GosSOPKA en el marco de ciberseguridad de la Federación Rusa?",
-        "respuesta": "Es el Sistema Estatal de Detección, Prevención y Eliminación de Consecuencias de Ataques Informáticos, una plataforma centralizada obligatoria del FSB donde todos los operadores de infraestructura crítica deben reportar incidentes y coordinar su defensa técnica."
+        "pregunta": "¿Un informe sobre actividad adversaria describe las obligaciones legales de un operador crítico?",
+        "respuesta": "No. Un informe de amenazas aporta escenarios de riesgo; las obligaciones se contrastan con normativa y disposiciones aplicables."
       },
-      "guion_audio": "Cruzamos ahora hacia el modelo de la Federación Rusa, guiado por la Ley Federal 187-FZ y normativas del organismo técnico FSTEC. En Rusia, la protección de las redes esenciales se basa en dos conceptos clave: desconexión soberana y centralización total. Todos los operadores estratégicos de energía, transporte y gobierno están obligados a integrarse al sistema GosSOPKA, una red estatal coordinada que monitorea ciberataques en tiempo real a nivel nacional. Además, tras las tensiones geopolíticas, la ley rusa exige la sustitución obligatoria de software y componentes extranjeros por tecnología nacional y algoritmos de criptografía propios. Un esquema diseñado para que, incluso si el país quedara completamente aislado de la internet global, su infraestructura crítica continúe operando sin interrupción.",
+      "guion_audio": "La Ley Federal 187-FZ es una referencia del marco ruso para proteger infraestructura de información crítica. Su análisis necesita distinguir sujetos, objetos protegidos y requisitos desarrollados en disposiciones complementarias. La publicación inicial debe contrastarse con modificaciones y reglas aplicables antes de deducir obligaciones operativas. En una comparación técnica, podemos estudiar inventarios, coordinación de incidentes y protección de dependencias. Los informes sobre actores de amenazas aportan escenarios adversarios, pero no describen por sí solos las obligaciones de un operador. Las herramientas de detección e intercambio ayudan a ensayar controles en entornos autorizados. Sus resultados deben documentarse sin presentarlos como prueba automática de conformidad con organismos reguladores.",
       "enlaces": [
         {
-          "nombre": "FSTEC de Rusia (ФСТЭК России)",
-          "url": "https://fstec.ru"
+          "nombre": "Федеральный закон от 26.07.2017 № 187-ФЗ",
+          "url": "https://publication.pravo.gov.ru/document/view/0001201707260023"
         },
         {
-          "nombre": "Centro Nacional de Coordinación de Incidentes Informáticos (NKTsKI)",
-          "url": "http://safe-surf.ru"
+          "nombre": "NIST SP 800-150 — Guide to Cyber Threat Information Sharing",
+          "url": "https://csrc.nist.gov/pubs/sp/800/150/final"
         },
         {
-          "nombre": "Portal Oficial de Información Legal de Rusia (Ley 187-FZ)",
-          "url": "http://pravo.gov.ru"
+          "nombre": "Russian State-Sponsored and Criminal Cyber Threats to Critical Infrastructure",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-110a"
+        },
+        {
+          "nombre": "Suricata",
+          "url": "https://github.com/OISF/suricata"
+        },
+        {
+          "nombre": "MISP",
+          "url": "https://github.com/MISP/MISP"
+        },
+        {
+          "nombre": "Perform threat hunting in Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
         }
-      ]
+      ],
+      "archivo_audio": "03-rusia-187fz-fstec.mp3",
+      "recursos_globales": {
+        "Estándares y Frameworks": [
+          {
+            "nombre": "Федеральный закон от 26.07.2017 № 187-ФЗ",
+            "url": "https://publication.pravo.gov.ru/document/view/0001201707260023"
+          },
+          {
+            "nombre": "NIST SP 800-150 — Guide to Cyber Threat Information Sharing",
+            "url": "https://csrc.nist.gov/pubs/sp/800/150/final"
+          }
+        ],
+        "Papers y Literatura de Frontera": [
+          {
+            "nombre": "Russian State-Sponsored and Criminal Cyber Threats to Critical Infrastructure",
+            "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-110a"
+          }
+        ],
+        "Repositorios y Herramientas Open Source": [
+          {
+            "nombre": "Suricata",
+            "url": "https://github.com/OISF/suricata"
+          },
+          {
+            "nombre": "MISP",
+            "url": "https://github.com/MISP/MISP"
+          }
+        ],
+        "Ruta de Aprendizaje Autónoma": [
+          {
+            "nombre": "Perform threat hunting in Microsoft Sentinel",
+            "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
+          }
+        ]
+      }
     }
   ]
 }

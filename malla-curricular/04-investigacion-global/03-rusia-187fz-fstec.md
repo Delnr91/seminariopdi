@@ -1,52 +1,44 @@
-# Ley Federal N° 187-FZ de Seguridad de Infraestructura Crítica y GosSOPKA - Servicio Federal de Control Técnico y Exportaciones (FSTEC / FSB)
+# Seguridad de Infraestructura de Información Crítica en Rusia - Marco de la Ley Federal 187-FZ
 
 ## Síntesis Ejecutiva
 
-La doctrina de ciberseguridad de la Federación Rusa concibe la protección de la infraestructura crítica como un pilar indivisible de la defensa nacional y la soberanía estatal. Este marco se fundamenta en la Ley Federal N° 187-FZ ('Sobre la Seguridad de la Infraestructura de Información Crítica'), promulgada para blindar las redes esenciales de energía, transporte, banca, defensa, industria nuclear y química. Bajo la supervisión técnica del Servicio Federal de Control Técnico y de Exportaciones (FSTEC) y el Centro Nacional de Coordinación de Incidentes Informáticos (NKTsKI, adscrito al FSB), el modelo impone una estructura de comando altamente centralizada.
+La Ley Federal 187-FZ constituye una referencia del marco ruso sobre seguridad de infraestructura de información crítica. Para analizar sus implicaciones es necesario distinguir sujetos, objetos protegidos, autoridades y requisitos desarrollados en normativa complementaria. La publicación oficial permite identificar el instrumento de origen; su interpretación operativa requiere contrastar modificaciones y disposiciones aplicables. No debe deducirse una obligación concreta de sustitución tecnológica o envío de telemetría para todos los sistemas a partir de una descripción general del modelo nacional. [Федеральный закон от 26.07.2017 № 187-ФЗ](https://publication.pravo.gov.ru/document/view/0001201707260023).
 
-El componente operacional distintivo del esquema ruso es el sistema estatal GosSOPKA (ГосСОПКА). Todos los operadores de importancia vital están obligados a integrar sus centros de monitoreo con esta plataforma centralizada para alimentar la detección y mitigación de ciberataques a escala nacional en tiempo real. Este modelo se articula con la estrategia del 'Runet Soberano' (Ley N° 90-FZ) y decretos presidenciales de sustitución obligatoria de importaciones, que exigen a las organizaciones estratégicas migrar de plataformas occidentales hacia hardware, sistemas operativos rusos certificados (Astra Linux) y algoritmos criptográficos propios homologados bajo estándares GOST.
-
----
+La comparación técnica puede centrarse en inventarios, coordinación de incidentes y protección de dependencias, manteniendo separados el control operacional y la valoración jurídica. Los informes sobre actividad adversaria aportan escenarios de amenaza, pero no describen por sí solos los requisitos legales de un operador. Las herramientas de detección e intercambio ayudan a experimentar con controles en laboratorio, sin acreditar conformidad con FSTEC u otros organismos. Una evaluación útil documenta qué controles se han comprobado y qué condiciones de contexto permanecen por verificar. [Russian State-Sponsored and Criminal Cyber Threats to Critical Infrastructure](https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-110a).
 
 ## Conceptos Core
 
-* **Federal Law No. 187-FZ (Федеральный закон № 187-ФЗ):** Marco legal que clasifica los objetos de infraestructura crítica en tres categorías de significancia según su impacto potencial en la defensa y economía.
-* **GosSOPKA System (ГосСОПКА):** Sistema Estatal para la Detección, Prevención y Eliminación de Consecuencias de Ataques Informáticos contra los recursos informáticos de la Federación Rusa.
-* **Import Substitution (Импортозамещение):** Mandato estatal que prohíbe el uso de software, firmware y hardware extranjeros en infraestructuras críticas, forzando la adopción de tecnología rusa certificada.
-* **GOST Cryptography Standards (Криптография ГОСТ):** Conjunto de algoritmos criptográficos oficiales y asimétricos aprobados por el FSB para la firma digital y cifrado en redes de infraestructura estratégica.
-
----
+* **Infraestructura de información crítica:** Sistemas y redes cuya protección se organiza mediante categorías y requisitos del marco nacional.
+* **Categorización:** Determinación del alcance y relevancia de un objeto según criterios de la normativa aplicable.
+* **Coordinación de incidentes:** Intercambio y escalamiento de información entre responsables y autoridades competentes.
+* **Conformidad y efectividad:** Distinción entre satisfacer requisitos formales y demostrar el funcionamiento de controles.
 
 ## 🧠 Ecosistema de Recursos Globales (Deep Dive)
 
 ### Estándares y Frameworks
-* [Ley Federal N° 187-FZ 'Sobre la Seguridad de la Infraestructura de Información Crítica'](http://pravo.gov.ru): Texto legal oficial que norma los deberes de categorización técnica, seguridad informática y reporte obligatorio de incidentes.
-* [Orden FSTEC N° 239: Requisitos de Seguridad de la Información para Sistemas de Control en CII](https://fstec.ru): Norma técnica que especifica los controles de hardware, software y segmentación para PLCs y servidores de infraestructura crítica.
-* [GOST R 57580.1-2017: Seguridad de Operaciones Financieras y Transacciones Críticas](https://www.gost.ru/): Estándar nacional de seguridad de la información para el sector bancario y financiero ruso.
-* [Ley Federal N° 90-FZ 'Sobre el Internet Soberano' (Runet)](http://pravo.gov.ru): Marco legislativo que establece la infraestructura técnica necesaria para aislar el tráfico de internet ruso de los servidores raíz internacionales en caso de desconexión externa.
+
+* [Федеральный закон от 26.07.2017 № 187-ФЗ](https://publication.pravo.gov.ru/document/view/0001201707260023) — consultar la publicación oficial del instrumento de 2017.
+* [NIST SP 800-150 — Guide to Cyber Threat Information Sharing](https://csrc.nist.gov/pubs/sp/800/150/final) — comparar principios de intercambio de información sobre amenazas.
 
 ### Papers y Literatura de Frontera
-* **Center for Strategic and International Studies (CSIS, 2022):** *Russian Cyber Warfare Doctrine, Critical Infrastructure Defense, and Sovereign Networks* ([CSIS](https://www.csis.org/analysis/russian-cyber-warfare)) — Estudio sobre la arquitectura de GosSOPKA y su relación con las capacidades ofensivas y defensivas del Estado ruso.
-* **Chatham House (2021):** *The Sovereign Internet Law and the Architecture of GosSOPKA: Security through Isolation* ([Chatham House](https://www.chathamhouse.org/)) — Investigación sobre los desafíos técnicos y de gobernanza de la sustitución tecnológica y el enrutamiento autónomo nacional.
 
-### Repositorios y Herramientas (Open Source)
-* [Suricata IDS/IPS Engine](https://github.com/OISF/suricata): Motor de detección de intrusiones de código abierto ampliamente utilizado como componente de sensores de red distribuidos en centros de GosSOPKA.
-* [Greenbone Vulnerability Management (OpenVAS)](https://github.com/greenbone/gvmd): Suite de análisis de vulnerabilidades open source adoptada para auditorías internas de cumplimiento de la orden FSTEC 239.
-* [MISP GosSOPKA Connectors](https://github.com/MISP): Módulos comunitarios para formatear y reenviar indicadores de compromiso conforme a los esquemas de telemetría requeridos por el NKTsKI.
-* [Wazuh FSTEC Compliance Mapping](https://github.com/wazuh/wazuh): Reglas de telemetría de endpoints mapeadas a los requisitos de integridad de archivos y auditoría de accesos de la normativa 187-FZ.
+* [Russian State-Sponsored and Criminal Cyber Threats to Critical Infrastructure](https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-110a) — estudiar escenarios de amenazas a infraestructura crítica; el informe no es una guía de cumplimiento ruso.
+
+### Repositorios y Herramientas Open Source
+
+* [Suricata](https://github.com/OISF/suricata) — observar y detectar actividad de red en entornos de prueba.
+* [MISP](https://github.com/MISP/MISP) — organizar indicadores y reglas de intercambio sin asumir conectores regulatorios específicos.
 
 ### Ruta de Aprendizaje Autónoma
-* [European University Institute: Cyber Resilience, Sovereignty and Post-Soviet Geopolitics](https://www.eui.eu): Módulos académicos abiertos sobre gobernanza de internet soberano, diplomacia de ciberdefensa y marcos de seguridad euroasiáticos.
-* [TryHackMe: Threat Hunting State-Sponsored Actors (Sandworm, APT28/29)](https://tryhackme.com/module/threat-hunting): Laboratorios interactivos para analizar las tácticas, herramientas (BlackEnergy, Industroyer) y telemetría de actores avanzados de la región.
-* [SANS Reading Room: National CERT and Incident Response Architectures](https://www.sans.org/white-papers/): Documentación técnica sobre la coordinación centralizada de CSIRTs nacionales e intercambio de alertas críticas.
-* [Coursera / Stanford: International Security in a Changing World](https://www.coursera.org): Análisis sobre doctrinas militares de disuasión cibernética, ciberguerra y soberanía de infraestructura crítica.
+
+* [Perform threat hunting in Microsoft Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/) — practicar análisis guiado por hipótesis con material gratuito; las prácticas Azure pueden generar costes.
+
+## 🎧 Audio Resumen
+
+**Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.
+
+[▶️ Escuchar Podcast Resumen](../../assets/audio/03-rusia-187fz-fstec.mp3)
 
 ---
 
-## Enlace al Audio
-
-[▶️ Escuchar Podcast Resumen](../../assets/audio/intl_03_rusia.mp3)
-
----
-
-[⬅️ Lección Anterior](02-china-cii-cac.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Fin de Malla 🏁](../../README.md)
+[⬅ Lección Anterior](02-china-cii-cac.md) | [🏠 Volver a la Malla Curricular](../../README.md) | Fin del recorrido ➡

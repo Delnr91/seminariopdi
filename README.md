@@ -1,61 +1,77 @@
-# 🛡️ Knowledge Base: Ciberseguridad e Infraestructura Crítica (Lattices Architecture)
+# 🏛️ Seminario PDI — Ecosistema Educativo en Ciberseguridad e IA
 
-Base de conocimiento abierta de alto nivel técnico sobre **protección de infraestructura crítica, inteligencia artificial adversarial y ciberresiliencia**. Este repositorio recopila y expande las ponencias técnicas del 9° Seminario Internacional de Ciberseguridad (PDI-USM) junto a un análisis exhaustivo de los tres principales modelos regulatorios globales (EE.UU./UK, China y Rusia).
+**Curaduría y arquitectura de contenidos: [Lattices](https://lattices.cl).**
 
-El material está estructurado bajo los estándares de ingeniería de contenidos de **Lattices** para profesionales de ciberdefensa, arquitectos de infraestructura e investigadores.
+Base de conocimiento abierta sobre protección de infraestructura crítica, inteligencia artificial y ciberresiliencia, vinculada a las temáticas del 9° Seminario Internacional de Ciberseguridad PDI-USM 2026. Las síntesis son material educativo complementario, con referencias a fuentes originales; no son transcripciones de las charlas ni publicaciones institucionales oficiales.
 
----
+[Malla Curricular](#malla-curricular) · [Audio Hub](#audio-hub) · [Investigación Global](#investigación-global) · [Verificación](VERIFICACION.md)
 
-## 🧭 Malla Curricular y Ecosistema de Recursos
+## Filosofía del Proyecto
 
-Cada lección incluye **Síntesis Ejecutiva**, **Conceptos Core**, **🧠 Ecosistema de Recursos Globales (Estándares, Papers, Repositorios Open Source y Cursos Enterprise)** y enlace a podcast de resumen.
+Lattices reúne conceptos, estándares, literatura técnica, herramientas open source y rutas de aprendizaje para estudiar a distintos niveles de experiencia. El contenido se lee directamente en la web o la app de GitHub mediante GitHub Flavored Markdown (GFM), sin CSS, JavaScript, frameworks ni despliegue adicional.
 
-### 01. Fundamentos
-| Módulo | Documento | Enfoque Técnico |
-| :--- | :--- | :--- |
-| Fundamentos | [Conceptos Fundamentales de Infraestructura Crítica y Ciberresiliencia](malla-curricular/01-fundamentos/01-conceptos-infraestructura-critica.md) | Modelo Purdue, Convergencia IT/OT y Resiliencia |
+Las 19 lecciones temáticas incluyen dos párrafos de síntesis, cuatro conceptos fundamentales, cuatro categorías de recursos y un enlace de audio identificado como pendiente. El recorrido incorpora también dos documentos de fundamentos. Cada página permite avanzar, retroceder y volver a esta malla.
 
-### 02. Día 1: Amenazas Emergentes, Regulación y Protección Sectorial
-| Lección | Speaker / Institución | Temática Principal |
-| :--- | :--- | :--- |
-| [01. Adversarios Digitales IA y Amenazas a IC](malla-curricular/02-dia1-seminario/01-wong-ia-cibercrimen.md) | Subprefecto Marcelo Wong Cea (PDI Cibercrimen) | Automatización ofensiva, síntesis adversarial y CTEM |
-| [02. Infraestructura de Internet: DNS y Resiliencia](malla-curricular/02-dia1-seminario/02-lama-infraestructura-dns.md) | Guillermo Lama (NIC Chile) | Topologías BGP Anycast, mitigación DDoS y DNSSEC |
-| [03. El Lado Práctico del Crimen con IA](malla-curricular/02-dia1-seminario/03-fernandez-crimen-ia.md) | Manu Fernández (TRM - IAFIS) | Multimodal Deepfakes, fraude BEC 3.0 y evasión biométrica |
-| [04. Ciberseguridad y Resiliencia: Desafío Nacional](malla-curricular/02-dia1-seminario/04-bordachar-anci-regulacion.md) | Michelle Bordachar (ANCI) | Ley Marco N° 21.663, Operadores OIV y gobernanza |
-| [05. Un Incidente, Múltiples Impactos: Efecto Dominó](malla-curricular/02-dia1-seminario/05-evirtus-efecto-domino.md) | Representante Técnico Sectorial (E-Virtus) | C-SCRM, fallas en cascada y accesos Just-In-Time |
-| [06. Dispositivos Médicos Conectados (IoMT)](malla-curricular/02-dia1-seminario/06-fernandez-dispositivos-medicos.md) | Víctor Fernández (Biohacking Village) | Superficies JTAG/UART, microsegmentación y CVD |
-| [07. Protegiendo lo Esencial: Sectores Críticos](malla-curricular/02-dia1-seminario/07-panel-sectores-criticos.md) | Panel (Codelco, CEN, Aguas Andinas, CSIRT) | Brecha IT/OT, ISA/IEC 62443 y operación manual |
-| [08. Agentes IA e Infraestructura Crítica](malla-curricular/02-dia1-seminario/08-bonnaire-agentes-ia.md) | Dr. Xavier Bonnaire (USM) | Human-in-the-Loop, prompt injection y safety envelopes |
-| [09. Seguridad en la Red: Zero Trust Resiliente](malla-curricular/02-dia1-seminario/09-evirtus-zero-trust.md) | Especialista en Redes (E-Virtus) | NIST SP 800-207, microsegmentación y eBPF |
+## Malla Curricular
 
-### 03. Día 2: Ciberdefensa Activa, Inteligencia y Resiliencia Operacional
-| Lección | Speaker / Institución | Temática Principal |
-| :--- | :--- | :--- |
-| [10. Blue Team Aumentado por IA](malla-curricular/03-dia2-seminario/01-caceres-blue-team-ia.md) | Diego Cáceres (Especialista en Ciberdefensa) | A-SOC, orquestación SOAR y reducción de fatiga de alertas |
-| [11. Cyber Threat Intelligence (CTI)](malla-curricular/03-dia2-seminario/02-fuentes-threat-intelligence.md) | Omar Fuentes (SEK) | Diamond Model, Pyramid of Pain y STIX/TAXII |
-| [12. Resiliencia y Continuidad en Hardware](malla-curricular/03-dia2-seminario/03-cordero-resiliencia-hardware.md) | César Cordero (Lenovo) | Hardware Root of Trust, NIST SP 800-193 y TPM 2.0 |
-| [13. Ciberseguridad en Salud y Biohacking Ético](malla-curricular/03-dia2-seminario/04-alli-salud-ciberseguridad.md) | Nina Alli (Biohacking Village) | Seguridad del paciente, resiliencia EHR y mitigación ransomware |
-| [14. Prevención, Detección y Respuesta Activa](malla-curricular/03-dia2-seminario/05-albuquerque-deteccion-respuesta.md) | Tales Albuquerque (Sophos) | Dwell Time, técnicas Living off the Land (LotL) y MDR |
-| [15. Amenazas Híbridas en la Era Digital](malla-curricular/03-dia2-seminario/06-norman-amenazas-hibridas.md) | James Norman (FCDO Reino Unido) | Guerra de zona gris, operaciones de desinformación y atribución |
-| [16. Transformación Digital y Brecha de Talento](malla-curricular/03-dia2-seminario/07-abbas-academia-talento.md) | Nadezda Abbas (UBO) | NIST NICE Framework, ciberejercicios CTF e inclusión STEM |
+### Fundamentos
 
-### 04. Investigación Comparativa Internacional
-| Módulo Global | Autoridad / Modelo | Marco Regulatorio y Tecnológico |
-| :--- | :--- | :--- |
-| [17. Estados Unidos & Reino Unido](malla-curricular/04-investigacion-global/01-nist-cisa-ncsc.md) | CISA / NIST & NCSC | Marco NIST CSF 2.0 (Función Govern), CIRCIA y NCSC CAF |
-| [18. República Popular China](malla-curricular/04-investigacion-global/02-china-cii-cac.md) | CAC & MPS (China) | Reglamento CII 2021, Soberanía de Datos y MLPS 2.0 |
-| [19. Federación Rusa](malla-curricular/04-investigacion-global/03-rusia-187fz-fstec.md) | FSTEC & FSB (Rusia) | Ley Federal 187-FZ, Red GosSOPKA y Runet Soberano |
+| Documento | Enfoque |
+| --- | --- |
+| [Glosario y conceptos clave](malla-curricular/01-fundamentos/01-glosario-y-conceptos-clave.md) | Phishing, ransomware, Zero Trust, IoMT y CTF |
+| [Infraestructura crítica y ciberresiliencia](malla-curricular/01-fundamentos/01-conceptos-infraestructura-critica.md) | Dependencias, IT/OT, zonas y recuperación operacional |
 
----
+### Día 1: Amenazas, Regulación y Protección Sectorial
 
-## 🎧 Audio-Clases y Podcasts Técnicos
+| Lección | Speaker | Conceptos principales |
+| --- | --- | --- |
+| [Inteligencia Artificial aplicada al Cibercrimen](malla-curricular/02-dia1-seminario/01-wong-ia-cibercrimen.md) | Marcelo Wong Cea | Spear phishing asistido por IA, Adversarial Machine Learning |
+| [Seguridad y Resiliencia de la Infraestructura DNS](malla-curricular/02-dia1-seminario/02-lama-infraestructura-dns.md) | Guillermo Lama | DNSSEC, Cadena de confianza |
+| [Fraude y Suplantación de Identidad con IA](malla-curricular/02-dia1-seminario/03-fernandez-crimen-ia.md) | Manu Fernández | Deepfake, Autenticación resistente al phishing |
+| [Regulación ANCI y Gobernanza de Ciberseguridad](malla-curricular/02-dia1-seminario/04-bordachar-anci-regulacion.md) | Michelle Bordachar | Gobernanza del riesgo, Servicios esenciales y OIV |
+| [Efecto Dominó de los Incidentes y Riesgo de Proveedores](malla-curricular/02-dia1-seminario/05-evirtus-efecto-domino.md) | Representante técnico de E-Virtus | Cybersecurity Supply Chain Risk Management (C-SCRM), Software Bill of Materials (SBOM) |
+| [Superficies de Ataque en Dispositivos Médicos Conectados](malla-curricular/02-dia1-seminario/06-fernandez-dispositivos-medicos.md) | Víctor Fernández | Internet of Medical Things (IoMT), Modelado de amenazas |
+| [Ciberresiliencia en Sectores Críticos](malla-curricular/02-dia1-seminario/07-panel-sectores-criticos.md) | Panel Multisectorial | Operational Technology (OT), Interdependencia sectorial |
+| [Agentes de IA y Riesgo en Infraestructura Crítica](malla-curricular/02-dia1-seminario/08-bonnaire-agentes-ia.md) | Xavier Bonnaire | Agente con herramientas, Indirect Prompt Injection |
+| [Arquitecturas Zero Trust para Redes Críticas](malla-curricular/02-dia1-seminario/09-evirtus-zero-trust.md) | Especialista en redes de E-Virtus | Policy Decision Point (PDP), Policy Enforcement Point (PEP) |
 
-Cada módulo está acompañado de una cápsula de audio técnico de 60 segundos sintetizada a partir de los guiones de alta densidad. El inventario de archivos se gestiona en [assets/audio/README.md](assets/audio/README.md).
+### Día 2: Ciberdefensa, Inteligencia y Resiliencia
 
----
+| Lección | Speaker | Conceptos principales |
+| --- | --- | --- |
+| [Blue Team Aumentado por Inteligencia Artificial](malla-curricular/03-dia2-seminario/01-caceres-blue-team-ia.md) | Diego Cáceres | Detection engineering, Enriquecimiento de alertas |
+| [Cyber Threat Intelligence y Decisiones de Defensa](malla-curricular/03-dia2-seminario/02-fuentes-threat-intelligence.md) | Omar Fuentes | Priority Intelligence Requirements (PIR), Indicator of Compromise (IoC) |
+| [Resiliencia de Hardware y Firmware](malla-curricular/03-dia2-seminario/03-cordero-resiliencia-hardware.md) | César Cordero | Root of Trust, Secure Boot |
+| [Ciberseguridad y Continuidad Asistencial en Salud](malla-curricular/03-dia2-seminario/04-alli-salud-ciberseguridad.md) | Nina Alli | Continuidad asistencial, Dependencia clínica digital |
+| [Prevención, Detección y Respuesta ante Ciberamenazas](malla-curricular/03-dia2-seminario/05-albuquerque-deteccion-respuesta.md) | Tales Albuquerque | Endpoint Detection and Response (EDR), Threat hunting |
+| [Amenazas Híbridas y Resiliencia Informacional](malla-curricular/03-dia2-seminario/06-norman-amenazas-hibridas.md) | James Norman | Foreign Information Manipulation and Interference (FIMI), Operación de influencia |
+| [Desarrollo de Talento para la Ciberresiliencia](malla-curricular/03-dia2-seminario/07-abbas-academia-talento.md) | Nadezda Abbas | Task, Knowledge and Skill (TKS), Aprendizaje basado en evidencias |
 
-## 🚀 Metodología de Contenido Lattices
+## Investigación Global
 
-1. **Rigor Académico y Operacional:** Sin generalizaciones superficiales; referencias a RFCs, estándares ISO, marcos NIST/MITRE y papers indexados.
-2. **Orientación Práctica (Open Source):** Cada temática se vincula a herramientas reales de GitHub y utilidades de línea de comandos para auditoría y experimentación.
-3. **Rutas de Aprendizaje Certificables:** Mapeo directo a laboratorios y especializaciones de Microsoft Learn, AWS Skill Builder, Cisco NetAcad, TryHackMe y HackTheBox.
+Los módulos comparan enfoques y fuentes, distinguiendo marcos técnicos de requisitos jurídicos específicos.
+
+| Módulo | Enfoque |
+| --- | --- |
+| [Gestión del Riesgo y Ciberresiliencia: NIST, CISA y NCSC](malla-curricular/04-investigacion-global/01-nist-cisa-ncsc.md) | Marcos de referencia de Estados Unidos y Reino Unido |
+| [Protección de Infraestructura de Información Crítica en China](malla-curricular/04-investigacion-global/02-china-cii-cac.md) | Marco CII y autoridades de ciberseguridad |
+| [Seguridad de Infraestructura de Información Crítica en Rusia](malla-curricular/04-investigacion-global/03-rusia-187fz-fstec.md) | Marco de la Ley Federal 187-FZ |
+
+## Audio Hub
+
+**Los 19 MP3 están pendientes.** Las lecciones muestran el nombre esperado de cada grabación. El [inventario de audios](assets/audio/README.md) permite localizar la lección correspondiente; los enlaces de podcast funcionarán cuando se incorporen los archivos.
+
+Cuando haya grabaciones, abre el MP3 desde GitHub y usa la opción de descargar o ver el archivo sin procesar para reproducirlo en tu dispositivo. GitHub filtra etiquetas HTML de audio en el Markdown; la lectura del repositorio no requiere un reproductor incrustado. La duración se medirá al producir cada grabación.
+
+## Metodología Lattices
+
+* **Fuentes precisas:** enlaces al documento, especificación, paper, repositorio o módulo formativo concreto.
+* **Análisis verificable:** separación entre evidencia, recomendaciones de arquitectura y obligaciones sujetas a contexto.
+* **Práctica controlada:** herramientas para laboratorios autorizados y datos sintéticos; sin promesas de certificación o cumplimiento automático.
+* **Aprendizaje autónomo:** materiales gratuitos identificados; cuando las prácticas requieren infraestructura o licencias, se indica el posible coste.
+
+Consulta el [informe de verificación](VERIFICACION.md) para conocer la revisión de estructura, navegación y enlaces. El directorio de [documentos PDF](assets/docs-pdf/README.md) permanece reservado, sin archivos suministrados.
+
+## Acerca de Lattices
+
+[Lattices](https://lattices.cl) es una startup enfocada en infraestructura, inteligencia artificial y automatización. Esta base de conocimiento organiza material educativo para profesionales, equipos técnicos y personas que buscan desarrollar capacidades de ciberseguridad.

@@ -1,52 +1,44 @@
-# Infraestructura de Internet: Seguridad, Continuidad y Resiliencia - Guillermo Lama
+# Seguridad y Resiliencia de la Infraestructura DNS - Guillermo Lama
 
 ## Síntesis Ejecutiva
 
-El Sistema de Nombres de Dominio (DNS) constituye la infraestructura crítica fundacional que arbitra la conectividad global y la resolución jerárquica de servicios transaccionales. Su operación en dominios nacionales de nivel superior (ccTLD, como .cl) enfrenta vectores de amenaza complejos, incluyendo ataques volumétricos de denegación distribuida de servicio (DDoS), envenenamiento de caché (cache poisoning) y secuestro de rutas BGP, eventos que amenazan con desarticular la disponibilidad digital de servicios financieros, gubernamentales y asistenciales a escala de país.
+El DNS conecta los nombres de los servicios con los destinos utilizados por aplicaciones y usuarios. Su indisponibilidad puede impedir el acceso a sistemas que continúan funcionando, mientras una resolución manipulada puede desviar conexiones hacia infraestructura hostil. DNSSEC incorpora autenticación del origen y verificación de integridad mediante firmas y una cadena de confianza; no cifra las consultas ni elimina los riesgos de saturación. La arquitectura debe abordar por separado autenticidad, disponibilidad y privacidad. [RFC 4033 — DNS Security Introduction and Requirements](https://www.rfc-editor.org/rfc/rfc4033).
 
-Garantizar la resiliencia sistémica del DNS demanda implementar topologías Anycast distribuidas multirregionales, orquestación automatizada de zonas y la adopción estricta de extensiones criptográficas DNSSEC. La continuidad operativa no puede concebirse como un atributo estático, sino como una capacidad dinámica de absorción de sobrecargas y conmutación por error (failover) transparente, respaldada por gobernanza institucional y acuerdos de intercambio de tráfico en IXPs neutros.
-
----
+La resiliencia exige distribuir autoridad y resolución sin reproducir dependencias comunes de red, energía o administración. Anycast puede mejorar la distribución del tráfico, pero no sustituye la capacidad suficiente ni la operación correcta de las zonas. La rotación de claves, la publicación de registros DS y la monitorización de errores de validación necesitan procedimientos de cambio y recuperación. La evaluación debe considerar expiraciones, fallos de proveedores y tiempos de propagación, además de distinguir una respuesta criptográficamente válida de un destino seguro para el usuario. [CISA — DNS Risk Assessment](https://www.cisa.gov/sites/default/files/c3vp/DNS_Risk_Assessment.pdf).
 
 ## Conceptos Core
 
-* **BGP Anycast Routing:** Técnica de direccionamiento donde múltiples nodos distribuidos geográficamente anuncian la misma IP, dispersando el tráfico legítimo y absorbiendo ataques DDoS en el borde.
-* **DNSSEC (Domain Name System Security Extensions):** Conjunto de extensiones criptográficas basadas en firmas digitales asimétricas que garantizan la autenticidad e integridad de las respuestas de resolución DNS.
-* **Root & TLD Name Server Redundancy:** Despliegue de réplicas autoritativas locales para mitigar la latencia y neutralizar fallas de enlaces internacionales en situaciones de aislamiento.
-* **Amplification & Reflection Attacks:** Vector volumétrico que explota configuraciones de resolutores recursivos abiertos (open resolvers) mediante UDP para inundar enlaces troncales.
-
----
+* **DNSSEC:** Extensiones que permiten verificar el origen y la integridad de los datos DNS mediante firmas digitales.
+* **Cadena de confianza:** Relación entre anclas de confianza, registros DS y claves DNSKEY utilizada para validar zonas.
+* **Anycast:** Anuncio de una dirección desde múltiples ubicaciones para dirigir tráfico según el enrutamiento de la red.
+* **Resiliencia de resolución:** Capacidad de mantener consultas y respuestas correctas ante fallos de nodos, rutas o dependencias.
 
 ## 🧠 Ecosistema de Recursos Globales (Deep Dive)
 
 ### Estándares y Frameworks
-* [IETF RFC 4033, 4034, 4035 (DNSSEC Specifications)](https://datatracker.ietf.org/doc/html/rfc4033): Estándares oficiales del Internet Engineering Task Force para la arquitectura e implementación de seguridad en DNS.
-* [NIST SP 800-81-2: Secure Domain Name System Deployment Guide](https://csrc.nist.gov/publications/detail/sp/800-81/2/final): Directrices del NIST para la configuración, operación y aseguramiento criptográfico de servidores DNS autoritativos y recursivos.
-* [ICANN Security and Stability Advisory Committee (SSAC) Reports](https://www.icann.org/groups/ssac): Informes de autoridad global sobre amenazas a la seguridad, estabilidad y resiliencia del sistema de nombres de Internet.
-* [ISO/IEC 27001: Control A.13 - Communications Security](https://www.iso.org/standard/27001): Marco normativo internacional para la protección de canales de red y servicios de infraestructura esenciales.
+
+* [RFC 4033 — DNS Security Introduction and Requirements](https://www.rfc-editor.org/rfc/rfc4033) — comprender el modelo de seguridad y sus límites.
+* [RFC 4035 — Protocol Modifications for the DNS Security Extensions](https://www.rfc-editor.org/rfc/rfc4035) — estudiar validación, firmas y comportamiento del protocolo.
 
 ### Papers y Literatura de Frontera
-* **ACM SIGCOMM (2020):** *A Global Measurement of DNSSEC Validation: Operational Realities and Resilience* ([DOI: 10.1145/3387514.3405890](https://dl.acm.org/doi/10.1145/3387514.3405890)) — Análisis cuantitativo de la adopción de validación criptográfica en resolutores globales y su impacto en la seguridad del usuario final.
-* **IEEE/ACM Transactions on Networking (2018):** *Anycast in Context: A Guided Tour of BGP Anycast Routing and DDoS Mitigation* ([IEEE Xplore](https://ieeexplore.ieee.org/document/8387498)) — Estudio seminal sobre la eficiencia de arquitecturas Anycast para dispersar tráfico malicioso en infraestructuras de TLD.
 
-### Repositorios y Herramientas (Open Source)
-* [NLnet Labs Unbound & NSD](https://github.com/NLnetLabs/unbound): Servidores de nombres recursivos y autoritativos de alto rendimiento con validación DNSSEC nativa desarrollados en C.
-* [DNSViz](https://github.com/dnsviz/dnsviz): Herramienta analítica de código abierto para diagnóstico visual, auditoría y resolución de cadenas de confianza criptográficas DNSSEC.
-* [Knot DNS (CZ.NIC)](https://github.com/CZ-NIC/knot): Servidor autoritativo open source optimizado para soportar millones de zonas con recarga dinámica y mitigación Anycast.
-* [BGPStream](https://bgpstream.caida.org/): Framework de análisis y telemetría en tiempo real desarrollado por CAIDA para monitorear eventos de secuestro (hijacks) de rutas y caídas de conectividad.
+* [CISA — DNS Risk Assessment](https://www.cisa.gov/sites/default/files/c3vp/DNS_Risk_Assessment.pdf) — examinar riesgos de las funciones de resolución y de la operación DNS.
+
+### Repositorios y Herramientas Open Source
+
+* [Unbound](https://github.com/NLnetLabs/unbound) — construir un laboratorio de resolución con validación DNSSEC.
+* [DNSViz](https://github.com/dnsviz/dnsviz) — analizar cadenas de confianza y problemas de configuración DNSSEC.
 
 ### Ruta de Aprendizaje Autónoma
-* [RIPE NCC Academy: DNSSEC & Routing Security Courses](https://academy.ripe.net/): Certificación gratuita de nivel carrier sobre implementación de DNSSEC, RPKI y aseguramiento de enrutamiento BGP.
-* [Cloudflare Learning Center: DNS Architecture & DDoS Mitigation](https://www.cloudflare.com/learning/dns/what-is-dns/): Módulos técnicos interactivos sobre resolución jerárquica, Anycast y mecanismos de amortiguación de sobrecargas.
-* [TryHackMe: Network Fundamentals & DNS in Detail](https://tryhackme.com/module/network-fundamentals): Laboratorios prácticos para inspeccionar tráfico DNS, depurar registros autoritativos y detectar transferencias de zona no autorizadas.
-* [Cisco NetAcad: Network Security Architecture](https://www.netacad.com): Formación enterprise sobre diseño de perímetros de red, redundancia de servicios troncales e inspección de protocolos.
+
+* [Host your domain on Azure DNS](https://learn.microsoft.com/en-us/training/modules/host-domain-azure-dns/) — aprender gestión de zonas y registros; material gratuito, despliegues Azure sujetos a costes.
+
+## 🎧 Audio Resumen
+
+**Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.
+
+[▶️ Escuchar Podcast Resumen](../../assets/audio/02-lama-infraestructura-dns.mp3)
 
 ---
 
-## Enlace al Audio
-
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_02_lama.mp3)
-
----
-
-[⬅️ Lección Anterior](01-wong-ia-cibercrimen.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡️](03-fernandez-crimen-ia.md)
+[⬅ Lección Anterior](01-wong-ia-cibercrimen.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](03-fernandez-crimen-ia.md)

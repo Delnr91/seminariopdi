@@ -1,43 +1,38 @@
-# Conceptos Fundamentales: Infraestructura Crítica y Ciberresiliencia - Arquitectura Lattices
+# Infraestructura Crítica y Ciberresiliencia - Arquitectura Lattices
 
 ## Síntesis Ejecutiva
 
-La infraestructura crítica representa el entramado físico y computacional sobre el cual descansa el funcionamiento de la civilización moderna: redes de generación y despacho eléctrico, matrices de tratamiento y distribución de agua potable, servicios de transporte masivo, sistemas financieros y la columna vertebral de telecomunicaciones e Internet. La digitalización masiva y la interconexión de sistemas de control industrial (ICS/SCADA) con plataformas corporativas ha generado una superficie de ataque continua donde una falla inducida en el dominio lógico tiene consecuencias destructivas inmediatas sobre el dominio físico.
+Una infraestructura crítica sostiene funciones cuya interrupción puede afectar gravemente a personas, economía o servicios esenciales. La digitalización conecta procesos físicos con identidades, redes y software, ampliando las dependencias que deben analizarse. Un incidente digital puede tener consecuencias operacionales, pero su impacto depende de la arquitectura y de los controles del proceso. El análisis comienza por identificar funciones, activos y modos de falla, antes de decidir qué tecnologías de protección o recuperación implantar. [NIST SP 800-82 Rev. 3 — Guide to Operational Technology (OT) Security](https://csrc.nist.gov/pubs/sp/800/82/r3/final).
 
-La ciberresiliencia trasciende la noción clásica de ciberseguridad defensiva basada en la ilusión de la invulnerabilidad perimetral. En el contexto operacional contemporáneo, la resiliencia se define como la capacidad arquitectónica de una organización para absorber un impacto severo o una brecha confirmada, contener la propagación lateral del compromiso, mantener los servicios esenciales en modo degradado o analógico y restaurar la operación completa con rapidez y rigor forense.
-
----
+La ciberresiliencia combina prevención, resistencia, adaptación y recuperación. En sistemas operacionales, la disponibilidad y la seguridad del proceso condicionan cambios, observación y pruebas. Los modelos de segmentación ayudan a ordenar funciones y flujos, pero no constituyen controles efectivos por sí solos. Conviene distinguir redundancia de independencia, validar rutas de recuperación y practicar la coordinación entre equipos técnicos y responsables de operación. Las referencias internacionales aportan métodos de análisis; su aplicación requiere evaluar el entorno y las obligaciones locales. [ENISA Threat Landscape 2026](https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026).
 
 ## Conceptos Core
 
-* **Infraestructura Crítica (Critical Infrastructure):** Redes, servicios y activos vitales cuya interrupción prolongada provocaría un colapso en la seguridad nacional, la salud pública o la economía de un país.
-* **Ciberresiliencia Operacional:** Capacidad proactiva y probada para anticipar, resistir, recuperarse y evolucionar ante condiciones adversas, estrés o ataques cibernéticos deliberados.
-* **Modelo Purdue (Purdue Enterprise Reference Architecture - PERA):** Modelo jerárquico clásico de segmentación en redes industriales que separa los niveles de procesos físicos (Nivel 0/1/2) de los niveles de supervisión empresarial y conectividad IT (Nivel 3/4/5).
-* **Convergencia IT/OT:** Desafío arquitectónico derivado de unir las tecnologías de la información empresariales (centradas en la confidencialidad de datos) con las tecnologías de operación industrial (centradas en la disponibilidad, tiempo real y seguridad física humana).
-
----
+* **Infraestructura crítica:** Servicios y activos cuya interrupción puede generar consecuencias relevantes para la sociedad.
+* **Convergencia IT/OT:** Interconexión entre sistemas de información y sistemas que supervisan o controlan procesos físicos.
+* **Zonas y conductos:** Agrupación de activos y definición de comunicaciones para gestionar fronteras de seguridad industrial.
+* **Recuperación operacional:** Restablecimiento validado de una función, considerando dependencias y seguridad del proceso.
 
 ## 🧠 Ecosistema de Recursos Globales (Deep Dive)
 
 ### Estándares y Frameworks
-* [NIST SP 800-82 Rev. 3: Guide to Operational Technology (OT) Security](https://csrc.nist.gov/publications/detail/sp/800-82/rev-3/final): Manual de referencia de estándares de seguridad en sistemas de control y supervisión industrial.
-* [ISA/IEC 62443: Security for Industrial Automation and Control Systems](https://www.isa.org/standards-and-publications/isa-standards/isa-standards-committees/isa62443): Estándar internacional por excelencia para la definición de zonas, conductos y niveles de seguridad (SL-1 a SL-4).
-* [CISA Critical Infrastructure Sectors Overview](https://www.cisa.gov/topics/critical-infrastructure-sectors): Mapeo oficial de los 16 sectores de infraestructura crítica definidos por el gobierno de Estados Unidos.
+
+* [NIST SP 800-82 Rev. 3 — Guide to Operational Technology (OT) Security](https://csrc.nist.gov/pubs/sp/800/82/r3/final) — estudiar arquitectura y restricciones de tecnología operacional.
+* [ISA/IEC 62443 — Industrial Automation and Control Systems Security](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards) — examinar gestión del riesgo, zonas y conductos.
 
 ### Papers y Literatura de Frontera
-* **IEEE Transactions on Industrial Informatics (2021):** *Cyber-Physical Security in Industrial Control Systems: A Survey of Architectures and Mitigation Models* ([IEEE Xplore](https://ieeexplore.ieee.org/document/9354921)).
-* **ACM Digital Threats (2020):** *Resilience by Design: Analyzing the Evolution of SCADA Systems under Adversarial Pressure* ([ACM DTRAP](https://dl.acm.org/journal/dtrap)).
 
-### Repositorios y Herramientas (Open Source)
-* [Malcolm Network Traffic Analysis](https://github.com/cisagov/Malcolm): Suite de observabilidad y análisis profundo de paquetes para protocolos de control industrial.
-* [GRASSMARLIN](https://github.com/iadgov/grassmarlin): Herramienta de mapeo pasivo de redes OT desarrollada por la NSA.
-* [OpenPLC Project](https://github.com/thiagoralves/OpenPLC_v3): Simulador y software PLC de código abierto para investigación de control físico.
+* [ENISA Threat Landscape 2026](https://www.enisa.europa.eu/publications/enisa-threat-landscape-2026) — contrastar el papel de las dependencias en el panorama de amenazas.
+
+### Repositorios y Herramientas Open Source
+
+* [Malcolm](https://github.com/cisagov/Malcolm) — observar tráfico y capturas de laboratorio.
+* [CISA Cyber Security Evaluation Tool (CSET)](https://github.com/cisagov/cset) — estructurar evaluaciones y registrar evidencias de controles.
 
 ### Ruta de Aprendizaje Autónoma
-* [CISA Virtual Learning: ICS Cybersecurity Fundamentals (101)](https://www.cisa.gov/ics-training-available-through-cisa): Módulos oficiales gratuitos sobre fundamentos de control industrial.
-* [SANS Industrial Cybersecurity Whitepaper Library](https://www.sans.org/white-papers/): Repositorio abierto de documentos técnicos y guías de defensa en profundidad.
-* [TryHackMe: Intro to ICS & SCADA](https://tryhackme.com/module/defensive-security): Laboratorio interactivo para comprender las bases del modelo Purdue.
+
+* [CISA — ICS Cybersecurity (101)](https://www.cisa.gov/resources-tools/programs/ics-training-available-through-cisa) — comenzar por ICS Cybersecurity (101), gratuito con registro.
 
 ---
 
-[🏠 Volver a la Malla Curricular](../../README.md) | [Comenzar Día 1: Charla 01 (Marcelo Wong Cea) ➡️](../02-dia1-seminario/01-wong-ia-cibercrimen.md)
+[⬅ Lección Anterior](01-glosario-y-conceptos-clave.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](../02-dia1-seminario/01-wong-ia-cibercrimen.md)

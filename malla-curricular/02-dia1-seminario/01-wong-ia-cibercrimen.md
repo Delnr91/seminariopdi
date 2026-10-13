@@ -1,53 +1,46 @@
-# Adversarios Digitales IA y el Nuevo Escenario de Amenazas a la Infraestructura Crítica - Subprefecto Marcelo Wong Cea
+# Inteligencia Artificial aplicada al Cibercrimen - Marcelo Wong Cea
 
 ## Síntesis Ejecutiva
 
-La convergencia entre modelos generativos de lenguaje, síntesis multimodal y automatización de exploits ha reconfigurado asimétricamente el vector de amenazas sobre infraestructuras críticas (OT/IT). Los adversarios computacionales ya no dependen de procesos manuales lineales de reconocimiento; actualmente despliegan pipelines automatizados capaces de ejecutar escaneos probabilísticos masivos sobre superficies expuestas, generar campañas de spear-phishing contextualizadas con telemetría de objetivos en tiempo real y sintetizar identidades biométricas de alta fidelidad para eludir controles de acceso perimetrales.
+La IA generativa reduce el coste de producir mensajes de suplantación, adaptar señuelos y procesar información obtenida durante el reconocimiento. Para una organización crítica, el impacto relevante es la combinación de escala y personalización: un acceso inicial aparentemente menor puede comprometer identidades con permisos sobre servicios esenciales. La defensa debe relacionar autenticación, telemetría y exposición de activos con escenarios adversarios concretos; evaluar únicamente la calidad visual de un mensaje deja fuera el contexto técnico del ataque. [MITRE ATLAS](https://atlas.mitre.org/).
 
-Este cambio de paradigma exige una transición desde esquemas de ciberdefensa reactivos hacia arquitecturas de resiliencia continua orientadas a inteligencia y contención proactiva. La mitigación frente a actores hostiles potenciados por IA requiere integrar capas de inspección criptográfica profunda, validación de identidad fuera de banda (Out-of-Band), telemetría unificada en centros de operaciones (SOC/CSIRT) y la formalización de políticas de detección que asuman la brecha como premisa operativa fundamental en redes de energía, agua potable, telecomunicaciones y sistemas financieros.
-
----
+El desafío operativo consiste en investigar campañas asistidas por IA sin convertir inferencias en evidencia. La conservación de registros, la trazabilidad de los artefactos y la revisión humana de hipótesis ayudan a separar hechos observables de atribuciones inciertas. Como criterio de diseño, conviene medir cobertura de detección, calidad de los avisos y capacidad de revocar accesos, mientras se ensayan controles frente a abuso de modelos en un laboratorio. La automatización defensiva requiere permisos acotados y validación de resultados antes de actuar sobre sistemas críticos. [2023 Redacted Europol Report on the Impact of ChatGPT and Large Language Models on Law Enforcement](https://www.europol.europa.eu/publications-events/publications/2023-redacted-europol-report-impact-of-chatgpt-and-large-language-models-law-enforcement).
 
 ## Conceptos Core
 
-* **AI-Driven Offensive Automation:** Orquestación de flujos de ataque mediante algoritmos de aprendizaje automático para acelerar fases de reconocimiento, mapeo de puertos y explotación sistemática en entornos industriales y corporativos.
-* **Synthetic Identity Fraud & Multimodal Deepfakes:** Generación de identidades sintéticas y clonación de patrones biométricos (voz y rostro) a partir de Large Language Models (LLMs) y redes generativas antagónicas (GANs) para ejecutar fraudes ejecutivos de alta precisión.
-* **Critical Infrastructure Interdependency:** Red de acoplamiento operativo entre sistemas de control industrial (ICS/SCADA) y plataformas transaccionales IT, donde la caída de un único nodo perimetral propaga fallas en cascada sobre servicios esenciales.
-* **Continuous Threat Exposure Management (CTEM):** Enfoque sistemático y continuo para la priorización, validación y remediación de vectores de ataque explotables basado en la telemetría del adversario y el impacto en el negocio.
-
----
+* **Spear phishing asistido por IA:** Producción de señuelos adaptados a una persona o función utilizando información contextual.
+* **Adversarial Machine Learning:** Estudio de ataques y defensas que afectan datos, modelos o aplicaciones basadas en aprendizaje automático.
+* **Tactics, Techniques and Procedures (TTP):** Descripción del comportamiento adversario que permite relacionar señales con una estrategia de ataque.
+* **Cadena de custodia digital:** Registro verificable de obtención, conservación y tratamiento de evidencia para mantener su integridad.
 
 ## 🧠 Ecosistema de Recursos Globales (Deep Dive)
 
 ### Estándares y Frameworks
-* [NIST AI Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework): Estándar del National Institute of Standards and Technology para gobernar, mapear, medir y gestionar riesgos de seguridad en sistemas de Inteligencia Artificial.
-* [MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems)](https://atlas.mitre.org/): Matriz global de tácticas, técnicas y procedimientos (TTPs) orientada a modelar y neutralizar ciberataques contra sistemas basados en Machine Learning e IA.
-* [MITRE ATT&CK for Enterprise & ICS](https://attack.mitre.org/): Base de conocimiento taxonómica sobre el comportamiento de actores de amenazas avanzadas (APTs) en redes corporativas e infraestructura operativa.
-* [CISA Cross-Sector Cybersecurity Performance Goals (CPGs)](https://www.cisa.gov/cpgs): Conjunto de controles prioritarios y medibles emitidos por CISA para mitigar los riesgos de ciberseguridad más comunes en infraestructura crítica.
+
+* [MITRE ATLAS](https://atlas.mitre.org/) — relacionar amenazas contra IA con escenarios de evaluación.
+* [MITRE ATT&CK Enterprise](https://attack.mitre.org/matrices/enterprise/) — modelar el acceso inicial y el abuso de identidades.
 
 ### Papers y Literatura de Frontera
-* **IEEE Access (2023):** *Adversarial Attacks on Machine Learning in Critical Infrastructure: A Systematic Survey* ([DOI: 10.1109/ACCESS.2023.3283296](https://ieeexplore.ieee.org/document/10121435)) — Estudio exhaustivo sobre técnicas de envenenamiento de datos, ataques de evasión y estrategias de robustez en sistemas ciberfísicos.
-* **ENISA Threat Landscape Report:** *Artificial Intelligence Threat Landscape* ([ENISA Publications](https://www.enisa.europa.eu/publications/artificial-intelligence-threat-landscape)) — Diagnóstico de la Agencia de la Unión Europea para la Ciberseguridad sobre vectores de explotación emergentes en cadenas de suministro estratégicas.
-* **USENIX Security / arXiv (2021):** *Extracting Training Data from Large Language Models* ([arXiv:2012.07805](https://arxiv.org/abs/2012.07805)) — Investigación clave sobre filtración de secretos, extracción de datos de entrenamiento y vulnerabilidades estructurales en arquitecturas basadas en Transformers.
 
-### Repositorios y Herramientas (Open Source)
-* [Microsoft Counterfit](https://github.com/Azure/counterfit): Framework de automatización para pruebas de penetración y evaluación de seguridad adversarial en modelos de Machine Learning.
-* [Adversarial Robustness Toolbox (ART - Linux Foundation)](https://github.com/Trusted-AI/adversarial-robustness-toolbox): Biblioteca en Python para pruebas de evasión, envenenamiento de modelos y análisis de robustez algorítmica frente a adversarios digitales.
-* [Garak (LLM Vulnerability Scanner)](https://github.com/leondz/garak): Escáner de seguridad dinámico de código abierto especializado en detectar jailbreaks, inyecciones de prompts y vectores de fuga de datos en modelos fundacionales.
-* [Zeek Network Security Monitor](https://github.com/zeek/zeek): Plataforma de telemetría y análisis de tráfico de red en tiempo real a escala enterprise para la detección de comportamientos anómalos.
+* [2023 Redacted Europol Report on the Impact of ChatGPT and Large Language Models on Law Enforcement](https://www.europol.europa.eu/publications-events/publications/2023-redacted-europol-report-impact-of-chatgpt-and-large-language-models-law-enforcement) — analizar usos delictivos de LLM y desafíos de investigación.
+* [Extracting Training Data from Large Language Models](https://arxiv.org/abs/2012.07805) — estudiar la recuperación de datos de entrenamiento mediante consultas a un modelo.
+
+### Repositorios y Herramientas Open Source
+
+* [garak](https://github.com/NVIDIA/garak) — evaluar vulnerabilidades de LLM con datos de laboratorio.
+* [Adversarial Robustness Toolbox (ART)](https://github.com/Trusted-AI/adversarial-robustness-toolbox) — comparar robustez de modelos frente a evasión, envenenamiento y extracción.
 
 ### Ruta de Aprendizaje Autónoma
-* [Microsoft Learn: SC-200 - Mitigación de Amenazas con Microsoft Sentinel y Defender](https://learn.microsoft.com/es-es/training/paths/sc-200-mitigate-threats-using-microsoft-sentinel/): Especialización técnica en operaciones SOC para correlación de eventos y orquestación defensiva basada en analítica avanzada.
-* [CISA ICS Training Program (Federal Virtual Training Environment)](https://www.cisa.gov/cyber-training): Ruta de entrenamiento técnico del gobierno de EE.UU. sobre seguridad en sistemas de control industrial (ICS/SCADA) y respuesta a incidentes en infraestructura crítica.
-* [TryHackMe: Defensive Security & Security Operations](https://tryhackme.com/module/defensive-security): Entorno práctico interactivo con laboratorios para detección de amenazas, telemetría de red y ciberdefensa asistida.
-* [HackTheBox: Enterprise Pro Labs & ICS Challenges](https://www.hackthebox.com): Laboratorios de explotación y aseguramiento de protocolos industriales (Modbus, DNP3, OPC UA) y redes corporativas segmentadas.
+
+* [CS50's Introduction to Artificial Intelligence with Python](https://cs50.harvard.edu/ai/) — estudiar los fundamentos de los modelos y sus límites; requiere experiencia previa en Python.
+* [Perform threat hunting in Microsoft Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/) — practicar investigaciones basadas en telemetría; lectura gratuita, con posibles costes si se despliegan servicios Azure.
+
+## 🎧 Audio Resumen
+
+**Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.
+
+[▶️ Escuchar Podcast Resumen](../../assets/audio/01-wong-ia-cibercrimen.mp3)
 
 ---
 
-## Enlace al Audio
-
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_01_wong.mp3)
-
----
-
-[⬅️ Inicio de Malla](../../README.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡️](02-lama-infraestructura-dns.md)
+[⬅ Lección Anterior](../01-fundamentos/01-conceptos-infraestructura-critica.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](02-lama-infraestructura-dns.md)

@@ -1,5 +1,5 @@
 # Documentos PDF
 
-Directorio reservado para documentos del seminario. Los datos recibidos incluyen enlaces a recursos externos, pero no archivos PDF locales. No se han creado enlaces a PDF inexistentes.
+Directorio reservado para documentos del seminario. No hay archivos PDF incorporados; los recursos externos se consultan desde las lecciones.
 
 [Volver a la malla curricular](../../README.md).

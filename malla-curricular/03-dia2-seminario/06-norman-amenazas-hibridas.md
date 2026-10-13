@@ -1,52 +1,44 @@
-# Amenazas Híbridas en la Era Digital - James Norman
+# Amenazas Híbridas y Resiliencia Informacional - James Norman
 
 ## Síntesis Ejecutiva
 
-En el tablero geopolítico del siglo XXI, el ciberespacio se ha consolidado como el teatro de operaciones predilecto para la ejecución de agresiones en la denominada 'Zona Gris'. Las amenazas híbridas orquestan de manera sincrónica vectores de sabotaje informático contra infraestructuras críticas (puertos marítimos, redes eléctricas y telecomunicaciones) con sofisticadas campañas de desinformación masiva en redes sociales y plataformas de mensajería. El objetivo no es solo desconectar un servicio técnico, sino quebrar la cohesión social, inducir pánico colectivo y erosionar la confianza de la ciudadanía en las instituciones democráticas.
+Las amenazas híbridas combinan acciones digitales, presión sobre servicios y manipulación del entorno informativo para afectar decisiones y confianza pública. El análisis debe relacionar incidentes técnicos con comportamientos observables de difusión, sin atribuir coordinación a partir de coincidencias temporales. La protección de infraestructura crítica necesita considerar tanto continuidad operacional como comunicación fiable durante la crisis. La información técnica y el análisis de influencia utilizan evidencias diferentes; integrarlos requiere conservar procedencia y separar observaciones verificadas, hipótesis y estimaciones de intención. [MITRE ATT&CK Enterprise](https://attack.mitre.org/matrices/enterprise/).
 
-James Norman, diplomático y experto del FCDO británico, demuestra cómo estas operaciones están diseñadas deliberadamente para mantenerse por debajo del umbral formal de un acto de guerra armada, dificultando la atribución jurídica y la activación de tratados de defensa mutua. La respuesta ante este vector asimétrico trasciende las soluciones exclusivamente técnicas: requiere una doctrina de resiliencia nacional total, sustentada en la cooperación diplomática multilateral, la comunicación gubernamental transparente en tiempo de crisis y el fortalecimiento del pensamiento crítico como primera línea de defensa cívica.
-
----
+El desafío es coordinar equipos de seguridad, análisis y comunicación sin amplificar rumores ni automatizar atribuciones poco fundadas. Los marcos de comportamiento ayudan a describir tácticas, pero una similitud no identifica por sí sola al responsable. Conviene preparar canales verificables, mensajes de continuidad y procedimientos para contrastar narrativas con evidencia operacional. La resiliencia informacional puede evaluarse mediante ejercicios con escenarios de interrupción y desinformación, observando tiempos de validación y coordinación. Los conjuntos de datos de entrenamiento deben permitir reproducir el análisis sin difundir información personal innecesaria. [4th EEAS Annual Report on Foreign Information Manipulation and Interference Threats](https://www.eeas.europa.eu/eeas/4th-eeas-report-foreign-information-manipulation-and-interference-threats_en).
 
 ## Conceptos Core
 
-* **Hybrid Threats & Gray Zone Warfare:** Estrategia hostil que combina coerción cibernética, desinformación, presión económica y operaciones encubiertas por debajo del umbral de guerra abierta.
-* **Information Operations (IO) & Disinformation Swarms:** Campañas automatizadas mediante granjas de bots y cuentas sintéticas diseñadas para amplificar el caos social durante una emergencia física o digital.
-* **Strategic Attribution in Cyberspace:** Proceso político y técnico mediante el cual una coalición internacional imputa formal y públicamente la autoría de un ciberataque a un Estado hostil.
-* **Societal Cyber Resilience:** Capacidad de una población civil informada para resistir la manipulación informativa, verificar noticias y mantener la calma ante contingencias críticas.
-
----
+* **Foreign Information Manipulation and Interference (FIMI):** Patrones de manipulación e interferencia informativa vinculados a actores e intereses externos.
+* **Operación de influencia:** Conjunto de acciones orientadas a modificar percepciones o comportamientos de una audiencia.
+* **Atribución con incertidumbre:** Evaluación de responsabilidad que expresa grado de confianza, evidencia y alternativas plausibles.
+* **Resiliencia informacional:** Capacidad de mantener decisiones y comunicaciones fiables ante manipulación o información contradictoria.
 
 ## 🧠 Ecosistema de Recursos Globales (Deep Dive)
 
 ### Estándares y Frameworks
-* [European Centre of Excellence for Countering Hybrid Threats (Hybrid CoE) Framework](https://www.hybridcoe.fi/): Marco analítico de referencia conjunto de la UE y la OTAN para clasificar y responder a agresiones híbridas.
-* [NATO Cyber Defence Pledge](https://www.nato.int/cps/en/natohq/topics_78170.htm): Compromiso de los países aliados de fortalecer la resiliencia ciberespacial como parte indivisible de la defensa colectiva (Artículo 5).
-* [CISA Mis-, Dis-, and Malinformation (MDM) Planning Guidance](https://www.cisa.gov/topics/election-security/mis-dis-and-malinformation): Guía estratégica para infraestructuras críticas sobre mitigación de campañas de manipulación psicológica en contingencias electorales y de servicios básicos.
-* [Tallinn Manual 2.0 on the International Law Applicable to Cyber Operations](https://ccdcoe.org/research/tallinn-manual/): Tratado doctrinal de referencia publicado por el Centro de Excelencia de la OTAN en Tallin sobre el derecho internacional aplicable a la ciberguerra.
+
+* [MITRE ATT&CK Enterprise](https://attack.mitre.org/matrices/enterprise/) — clasificar la dimensión técnica de campañas.
+* [DISARM Frameworks](https://github.com/DISARMFoundation/DISARMframeworks) — describir comportamientos de manipulación informativa con una taxonomía abierta.
 
 ### Papers y Literatura de Frontera
-* **International Affairs (Chatham House, 2022):** *Hybrid Warfare in the Digital Age: Geopolitics, Critical Infrastructure, and the Erosion of Democratic Trust* ([Chatham House](https://www.chathamhouse.org/publications/ia)) — Estudio sobre cómo los ciberataques coordinados con desinformación desestabilizan sistemas electorales y cadenas de abastecimiento.
-* **Global Cyber Security Capacity Centre (Oxford, 2021):** *Cyber Resilience and Democratic Stability: The Role of Societal Education and Verification* ([Oxford University](https://gcscc.ox.ac.uk/)) — Evaluación del impacto de la alfabetización mediática en la reducción del pánico inducido durante incidentes cibernéticos.
 
-### Repositorios y Herramientas (Open Source)
-* [Gephi (Open Source Network Exploration & Manipulation)](https://github.com/gephi/gephi): Software líder de código abierto para visualización y análisis de grafos complejos, utilizado para mapear redes de bots y flujos de desinformación.
-* [Botometer (Observatory on Social Media)](https://botometer.osome.iu.edu/): Herramienta analítica para evaluar la probabilidad de que una cuenta de red social sea un agente automatizado en campañas coordinadas.
-* [Maltego Community Edition](https://www.maltego.com/): Plataforma de inteligencia gráfica para investigación de fuentes abiertas (OSINT), relaciones de infraestructura y atribución de dominios.
-* [Spiderfoot (Automated OSINT Collection)](https://github.com/smicallef/spiderfoot): Herramienta de automatización de inteligencia de fuentes abiertas para recopilar datos de huella digital y amenazas de forma pasiva.
+* [4th EEAS Annual Report on Foreign Information Manipulation and Interference Threats](https://www.eeas.europa.eu/eeas/4th-eeas-report-foreign-information-manipulation-and-interference-threats_en) — examinar métodos y patrones de interferencia informativa documentados por EEAS.
+
+### Repositorios y Herramientas Open Source
+
+* [OpenCTI](https://github.com/OpenCTI-Platform/opencti) — relacionar campañas, observaciones y evidencias.
+* [Gephi](https://github.com/gephi/gephi) — explorar grafos de difusión sin interpretar una relación gráfica como prueba de coordinación.
 
 ### Ruta de Aprendizaje Autónoma
-* [NATO CCDCOE: Cyber Defence Open Lectures & Exercises](https://ccdcoe.org/): Materiales y grabaciones del ejercicio internacional Locked Shields sobre defensa de infraestructuras nacionales ante guerra híbrida.
-* [United States Institute of Peace (USIP): Countering Disinformation in Crises](https://www.usip.org): Curso en línea sobre estrategias cívicas y gubernamentales para desarticular operaciones psicológicas en emergencias.
-* [Cisco NetAcad: Cybersecurity and Geopolitical Risk](https://www.netacad.com): Módulo sobre el papel de las telecomunicaciones y la seguridad de los cables submarinos en la soberanía de las naciones.
-* [Coursera / Sciences Po: Geopolitics of Cyberspace](https://www.coursera.org): Especialización en diplomacia cibernética, atribución internacional y normas de comportamiento responsable de los Estados en el ciberespacio.
+
+* [Perform threat hunting in Microsoft Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/) — desarrollar investigación basada en hipótesis y corroboración técnica; material gratuito, entornos Azure sujetos a consumo.
+
+## 🎧 Audio Resumen
+
+**Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.
+
+[▶️ Escuchar Podcast Resumen](../../assets/audio/06-norman-amenazas-hibridas.mp3)
 
 ---
 
-## Enlace al Audio
-
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_06_norman.mp3)
-
----
-
-[⬅️ Lección Anterior](05-albuquerque-deteccion-respuesta.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡️](07-abbas-academia-talento.md)
+[⬅ Lección Anterior](05-albuquerque-deteccion-respuesta.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](07-abbas-academia-talento.md)

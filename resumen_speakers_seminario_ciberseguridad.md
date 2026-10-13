@@ -2,7 +2,7 @@
 **Organizado por:** Policía de Investigaciones de Chile (PDI) & Universidad Técnica Federico Santa María (USM)  
 **Fechas:** 7 y 8 de octubre de 2026  
 **Lugar:** Escuela de Investigaciones Policiales, Santiago de Chile  
-**Documento base de referencia para agentes autónomos y desarrolladores de contenido educativo.**
+**Guía temática de referencia para el estudio de las ponencias.**
 
 ---
 

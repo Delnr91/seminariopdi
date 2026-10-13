@@ -59,8 +59,8 @@ Porque la ciberresiliencia incluye resistir el impacto y volver a funcionar. En 
 ### 📚 Fuente y Continuación
 
 * 📄 [Documento base: guía de lectura rápida y glosario ilustrado](../../resumen_speakers_seminario_ciberseguridad.md).
-* 🎧 Esta guía introductoria no tiene un guion de audio propio. Los 19 guiones disponibles corresponden a las lecciones de AGY.
+* 🎧 Esta guía introductoria no tiene un guion de audio propio. Los guiones disponibles corresponden a las 19 lecciones temáticas.
 
 ---
 
-⬅ Inicio del recorrido | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](../02-dia1-seminario/01-wong-ia-cibercrimen.md)
+⬅ Inicio del recorrido | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](01-conceptos-infraestructura-critica.md)
