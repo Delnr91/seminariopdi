@@ -1,50 +1,52 @@
-# Diego Cáceres · Blue team aumentado por inteligencia artificial: modelos de ciberdefensa y resiliencia para infraestructuras críticas
-**Institución:** Investigador y especialista en ciberdefensa (Ganador Call for Papers) | **Nivel:** Intermedio
+# Blue Team Aumentado por Inteligencia Artificial: Modelos de Ciberdefensa y Resiliencia para Infraestructuras Críticas - Diego Cáceres
 
-### 🎧 Audio-Clase (1 Minuto)
-<audio controls src="../../assets/audio/dia2_01_caceres.mp3">
-  Tu dispositivo no soporta audio nativo. <a href="../../assets/audio/dia2_01_caceres.mp3">Descargar MP3</a>
-</audio>
+## Síntesis Ejecutiva
 
----
+Los Centros de Operaciones de Ciberseguridad (SOC) modernos enfrentan una crisis estructural de fatiga de alertas generada por la ingestion continua de millones de eventos por segundo en redes de infraestructura crítica. La dispersión de telemetría y el alto volumen de falsos positivos desbordan la capacidad cognitiva de los analistas del Blue Team, provocando demoras críticas en el tiempo medio de detección (MTTD) e identificación de anomalías sutiles asociadas a campañas de intrusión avanzadas.
 
-### 💡 La Idea en Palabras Simples
-> Imagina a un guardia de seguridad humano que tiene que revisar 500 pantallas de cámaras de vigilancia a la vez durante el turno de noche. Rápidamente se cansará y pestañeará. Ahora dale un asistente de inteligencia artificial que monitorea los 500 monitores sin parpadear jamás, detecta de inmediato si una sombra extraña cruza un pasillo en penumbra y le avisa al guardia en milisegundos indicándole exactamente en qué puerta colocar el cerrojo.
-
-Diego Cáceres, ganador del Call for Papers del seminario, presenta cómo potenciar al Blue Team (el equipo defensor de ciberseguridad) utilizando modelos de aprendizaje automático y agentes autónomos defensivos. Los centros de operaciones de seguridad (SOC) reciben diariamente millones de eventos y registros de actividad (logs), provocando fatiga de alertas y demoras críticas en la detección de intrusiones complejas.
-
-El expositor demuestra cómo los modelos de IA aumentada pueden correlacionar telemetría de red, detectar anomalías sutiles en el tráfico y orquestar respuestas automatizadas (SOAR) para aislar equipos comprometidos en segundos. Esto transforma la labor defensiva de una postura reactiva y saturada a una estrategia proactiva, reduciendo drásticamente el tiempo medio de detección (MTTD) y contención (MTTR) frente a ataques contra infraestructuras críticas.
+La integración de modelos de aprendizaje automático y agentes autónomos defensivos transforma radicalmente esta dinámica operacional, evolucionando el SOC reactivo hacia arquitecturas A-SOC (AI-Augmented SOC). Mediante la correlación probabilística en tiempo real y la orquestación automatizada de respuestas (SOAR), los equipos defensores pueden contener endpoints comprometidos, revocar credenciales filtradas y aislar subredes industriales en milisegundos, blindando la continuidad del servicio ante adversarios que operan a velocidad de máquina.
 
 ---
 
-### 🛠️ Lo que Debes Aprender
-* Reducción de fatiga de alertas: La IA filtra el ruido y prioriza incidentes reales para que los analistas humanos se enfoquen en amenazas graves.
-* Detección de comportamiento anómalo: Los modelos de aprendizaje no supervisado identifican movimientos inusuales de datos que escapan a las firmas tradicionales.
-* Orquestación y respuesta automatizada (SOAR): Aislamiento inmediato de hosts comprometidos y revocación de credenciales antes de que el ataque se expanda.
+## Conceptos Core
+
+* **AI-Augmented Security Operations Center (A-SOC):** Centro de defensa digital potenciado por modelos analíticos para la priorización inteligente de alertas y reducción de ruido operacional.
+* **Security Orchestration, Automation, and Response (SOAR):** Plataforma que ejecuta libros de jugadas (playbooks) preprogramados para contener ataques automáticamente sin esperar intervención manual.
+* **Mean Time to Detect (MTTD) & Contain (MTTC):** Métricas clave de rendimiento operativo en ciberdefensa que miden la rapidez para identificar y neutralizar una intrusión.
+* **Unsupervised Anomaly Detection:** Algoritmos de clustering que modelan la línea base del comportamiento normal de la red para detectar desviaciones anómalas sin depender de firmas conocidas.
 
 ---
 
-### 📋 Lista de Chequeo Preventiva
-- [ ] Implementar herramientas de correlación de eventos con capacidades de aprendizaje automático (SIEM/XDR con IA).
-- [ ] Diseñar libros de jugadas automatizados (playbooks) para contener y aislar equipos infectados en menos de un minuto.
-- [ ] Entrenar a los analistas del SOC en la interpretación y auditoría de decisiones sugeridas por herramientas automatizadas.
+## 🧠 Ecosistema de Recursos Globales (Deep Dive)
+
+### Estándares y Frameworks
+* [MITRE D3FEND: A Knowledge Graph of Cybersecurity Countermeasures](https://d3fend.mitre.org/): Matriz complementaria a ATT&CK desarrollada por NSA y MITRE que cataloga técnicas defensivas de ingeniería y respuesta.
+* [NIST SP 800-137: Information Security Continuous Monitoring (ISCM)](https://csrc.nist.gov/publications/detail/sp/800-137/final): Marco técnico del NIST para el monitoreo continuo de la postura de seguridad operacional.
+* [CISA Automated Indicator Sharing (AIS)](https://www.cisa.gov/resources-tools/programs/automated-indicator-sharing): Ecosistema para el intercambio bidireccional en tiempo real de indicadores de compromiso entre gobierno e industrias.
+* [ISO/IEC 27035 Series: Information Security Incident Management](https://www.iso.org/standard/60803.html): Estándar internacional para planificar, detectar, responder y aprender de incidentes de seguridad.
+
+### Papers y Literatura de Frontera
+* **IEEE Transactions on Information Forensics and Security (2022):** *Machine Learning for Security Operations Centers: Alert Triage, Prioritization, and Explainability* ([IEEE Xplore](https://ieeexplore.ieee.org/document/9681421)) — Modelado empírico de redes neuronales aplicadas a la reducción del 90% de falsos positivos en SOCs corporativos.
+* **Computers & Security (2021):** *Automating Incident Response in Critical Infrastructures: A Comparative Evaluation of SOAR Architectures* ([DOI: 10.1016/j.cose.2021.102340](https://www.sciencedirect.com/journal/computers-and-security)) — Análisis sobre latencia y resiliencia en la ejecución de playbooks automáticos en plantas de energía.
+
+### Repositorios y Herramientas (Open Source)
+* [Shuffle (Open Source SOAR)](https://github.com/Shuffle/Shuffle): Plataforma de orquestación y automatización de seguridad de código abierto orientada a flujos de trabajo en equipos Blue Team.
+* [Wazuh (Open Source XDR & SIEM)](https://github.com/wazuh/wazuh): Solución open source enterprise para monitoreo de seguridad, detección de amenazas, integridad de archivos y respuesta en endpoints.
+* [Sigma Rules Repository](https://github.com/SigmaHQ/sigma): Formato de firma genérico y abierto para describir eventos de registro relevantes de forma independiente del SIEM utilizado.
+* [Velociraptor (DFIR Endpoint Visibility)](https://github.com/Velocidex/velociraptor): Herramienta avanzada para recolección forense digital y cacería de amenazas distribuida en miles de equipos en vivo.
+
+### Ruta de Aprendizaje Autónoma
+* [TryHackMe: SOC Level 1 & Level 2 Career Paths](https://tryhackme.com/path/outline/soclevel1): Ruta de formación interactiva que entrena en análisis de logs, uso de SIEM (Splunk/ELK) y respuesta a incidentes en tiempo real.
+* [Microsoft Learn: Creación de Reglas Analíticas y Automatización con Microsoft Sentinel](https://learn.microsoft.com/es-es/training/modules/configure-microsoft-sentinel-rules/): Laboratorios oficiales sobre automatización de incidentes y uso de Kusto Query Language (KQL).
+* [HackTheBox: Blue Team Sherlocks & Defensive Modules](https://www.hackthebox.com): Desafíos forenses reales para investigar capturas de memoria RAM, tráfico malicioso y persistencia de atacantes.
+* [Cisco NetAcad: CyberOps Associate Certification](https://www.netacad.com): Curso profesional sobre operaciones defensivas, análisis de alertas y monitoreo de infraestructura crítica.
 
 ---
 
-### ❓ Autoevaluación Rápida
-**¿Cómo ayuda la IA a resolver el problema de la fatiga de alertas en un Centro de Operaciones de Seguridad (SOC)?**
-<details>
-<summary>▶️ Toca aquí para ver la respuesta</summary>
+## Enlace al Audio
 
-Analizando y correlacionando automáticamente millones de registros por segundo para descartar falsos positivos y destacar únicamente aquellos patrones sospechosos que representan un riesgo real para la infraestructura.
-</details>
+[▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_01_caceres.mp3)
 
 ---
 
-### 📚 Enlaces y Video
-* 📺 [Canal Oficial YouTube PDI Chile](https://www.youtube.com/@PDIChile)
-* 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [Investigación Call for Papers USM](https://usm.cl)
-
----
-
-[⬅ Lección Anterior](../02-dia1-seminario/09-evirtus-zero-trust.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](02-fuentes-threat-intelligence.md)
+[⬅️ Lección Anterior](../02-dia1-seminario/09-evirtus-zero-trust.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡️](02-fuentes-threat-intelligence.md)

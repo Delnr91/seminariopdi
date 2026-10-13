@@ -1,50 +1,52 @@
-# Manu Fernández · El lado práctico del crimen con IA
-**Institución:** TRM - IAFIS | **Nivel:** Intermedio
+# El Lado Práctico del Crimen con IA - Manu Fernández
 
-### 🎧 Audio-Clase (1 Minuto)
-<audio controls src="../../assets/audio/dia1_03_fernandez_manu.mp3">
-  Tu dispositivo no soporta audio nativo. <a href="../../assets/audio/dia1_03_fernandez_manu.mp3">Descargar MP3</a>
-</audio>
+## Síntesis Ejecutiva
 
----
+La mercantilización de herramientas generativas avanzadas ha democratizado tácticas de ingeniería social de grado militar para organizaciones delictivas de alcance global. A través de la síntesis neuronal de voz (Voice Cloning) y la generación de avatares sintéticos dinámicos en tiempo real, los ciberdelincuentes están ejecutando con éxito ataques de compromiso de correo corporativo (BEC 3.0) y fraudes de autorización financiera, sorteando los filtros de verificación auditiva y visual tradicionales aplicados por el personal operativo.
 
-### 💡 La Idea en Palabras Simples
-> Es como un imitador profesional con una máscara de silicona hiperrealista que entra a una sucursal bancaria imitando a la perfección los gestos, la voz y la firma del dueño de la cuenta para retirar los fondos de emergencia, mientras por teléfono llama a los empleados con la voz idéntica de la junta directiva diciendo que liberen el dinero inmediatamente.
-
-Manu Fernández aterriza las amenazas de la Inteligencia Artificial a la práctica cotidiana del cibercrimen financiero y corporativo. Demuestra cómo delincuentes con herramientas de bajo costo clonan timbres vocales a partir de videos públicos de ejecutivos y crean avatares hiperrealistas capaces de participar en videollamadas para autorizar transferencias millonarias hacia cuentas en el extranjero.
-
-Además, la presentación expone la debilidad de los métodos biométricos convencionales cuando no cuentan con algoritmos de detección de vida (liveness detection). Ante este panorama, se exige a las organizaciones redefinir sus procesos de validación de identidad, incorporando autenticaciones contextuales, palabras clave fuera de canal y una cultura de tolerancia cero a la precipitación ante órdenes urgentes.
+Simultáneamente, la fiabilidad de las credenciales biométricas convencionales (reconocimiento facial y huella dactilar) se encuentra en entredicho frente a vectores de ataque de presentación (PAD) construidos con modelos de difusión y máscaras tridimensionales. Neutralizar estas amenazas requiere evolucionar los esquemas de autenticación hacia arquitecturas de confianza cero contextuales, exigiendo desafíos de prueba de vida dinámicos (liveness verification), canales independientes de autorización fuera de banda y una reingeniería profunda de los procesos de autorización corporativa.
 
 ---
 
-### 🛠️ Lo que Debes Aprender
-* Suplantación de voz y video en tiempo real: Los deepfakes ya no son solo teóricos; se usan en estafas del CEO y fraudes corporativos en vivo.
-* Evasión de biometría sin prueba de vida: Fotografías 3D o máscaras generadas por IA pueden burlar cámaras si los algoritmos no exigen desafíos dinámicos reales.
-* Quiebre de la urgencia psicológica: Los atacantes combinan la perfección técnica del engaño con un ambiente de extrema presión para evitar que la víctima verifique.
+## Conceptos Core
+
+* **Presentation Attack Detection (PAD):** Conjunto de algoritmos y sensores fisiológicos diseñados para discriminar entre una muestra biométrica humana viva y una suplantación sintética o pregrabada.
+* **Business Email Compromise 3.0 (AI-BEC):** Evolución del fraude corporativo donde se integran llamadas y videoconferencias sintéticas hiperrealistas para ordenar transferencias monetarias urgentes.
+* **Voice Biometrics Spoofing:** Técnicas adversariales basadas en síntesis de audio texto-a-voz (TTS) condicionadas a muestras acústicas de pocos segundos para burlar IVRs bancarios.
+* **Out-of-Band Multi-Factor Authentication (OOB-MFA):** Mecanismo de validación criptográfica que utiliza canales físicos y de red completamente desacoplados para confirmar instrucciones críticas.
 
 ---
 
-### 📋 Lista de Chequeo Preventiva
-- [ ] Implementar un canal secundario obligatorio y telefónico directo para autorizar transferencias monetarias o cambios de cuentas bancarias.
-- [ ] Actualizar los sistemas de autenticación facial y dactilar con módulos de detección activa de prueba de vida (liveness detection).
-- [ ] Definir palabras de paso o códigos secretos verbales entre directivos clave para validar instrucciones confidenciales en caso de duda.
+## 🧠 Ecosistema de Recursos Globales (Deep Dive)
+
+### Estándares y Frameworks
+* [ISO/IEC 30107 (Biometric Presentation Attack Detection Framework)](https://www.iso.org/standard/67381.html): Estándar internacional que regula la evaluación, métricas y pruebas de resistencia frente a ataques de suplantación biométrica.
+* [NIST SP 800-63-3: Digital Identity Guidelines](https://pages.nist.gov/800-63-3/): Directrices técnicas del NIST sobre niveles de aseguramiento de identidad (IAL), autenticación (AAL) y federación (FAL).
+* [FIDO Alliance Biometric Certification Requirements](https://fidoalliance.org/certification/biometric-component-certification/): Criterios de certificación independiente para garantizar que los sensores y algoritmos biométricos resistan falsificaciones de alta complejidad.
+* [MITRE ATT&CK: Technique T1566.002 (Spearphishing Link) & T1656 (Impersonation)](https://attack.mitre.org/techniques/T1656/): Mapeo formal de técnicas de suplantación de identidad e ingeniería social dirigida.
+
+### Papers y Literatura de Frontera
+* **IEEE Transactions on Biometrics, Behavior, and Identity Science (2022):** *Deepfake Detection in Biometrics: A Comprehensive Review and Future Directions* ([IEEE Xplore](https://ieeexplore.ieee.org/document/9672074)) — Evaluación de modelos de aprendizaje profundo para identificar anomalías espectrales y micropatrones en rostros sintéticos.
+* **arXiv / Computer Vision Foundation (2023):** *Real-Time Deepfake Detection via Physiological Dynamics* ([arXiv:2303.04838](https://arxiv.org/abs/2303.04838)) — Propuesta metodológica para validar la pulsación sanguínea dérmica (fotopletismografía remota) en videollamadas.
+
+### Repositorios y Herramientas (Open Source)
+* [FaceForensics++ Toolkit](https://github.com/ondyari/FaceForensics): Benchmark y biblioteca forense de referencia desarrollada por la Universidad Técnica de Múnich para detección de manipulaciones faciales.
+* [DeepFaceLab](https://github.com/iperov/DeepFaceLab): Framework de código abierto líder en pipeline de generación neural facial, utilizado por investigadores para diseñar defensas y pruebas de penetración biométrica.
+* [OpenFace 2.0](https://github.com/TadasBaltrusaitis/OpenFace): Herramienta de análisis facial open source capaz de capturar microexpresiones y puntos de referencia de mirada para detectar patrones sintéticos anómalos.
+* [Canarytokens (Thinkst Canary)](https://github.com/thinkst/canarytokens): Generador de señuelos digitales y trampas de credenciales para alertar tempranamente accesos no autorizados en canales corporativos.
+
+### Ruta de Aprendizaje Autónoma
+* [Microsoft Learn: Implementación de Soluciones Biométricas con Azure AI Face](https://learn.microsoft.com/es-es/training/modules/detect-analyze-faces/): Módulo técnico sobre integración de verificación facial, detección de máscaras y prueba de vida.
+* [AWS Skill Builder: Architecting Identity and Access Management](https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-identity-and-access-management-iam-foundations): Formación sobre políticas de mínimo privilegio, autenticación multifactor contextual y control de accesos federados.
+* [TryHackMe: Phishing & Social Engineering Analysis](https://tryhackme.com/module/phishing): Laboratorios interactivos para analizar cabeceras de correo, desarmar señuelos de ingeniería social y desplegar contramedidas en gateways.
+* [SANS Cyber Defense Community Curriculum](https://www.sans.org): Recursos abiertos sobre mitigación de fraudes ejecutivos y procedimientos de control interno ante incidentes financieros.
 
 ---
 
-### ❓ Autoevaluación Rápida
-**¿Qué es una prueba de vida (liveness detection) y por qué es indispensable ante el uso de IA?**
-<details>
-<summary>▶️ Toca aquí para ver la respuesta</summary>
+## Enlace al Audio
 
-Es una tecnología que verifica si la persona frente a la cámara es un ser humano real presente en ese instante (mediante parpadeo, movimiento o patrones de luz), impidiendo que videos pregrabados o deepfakes sintéticos engañen al sistema de biometría.
-</details>
+[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_03_fernandez_manu.mp3)
 
 ---
 
-### 📚 Enlaces y Video
-* 📺 [Video Oficial YouTube Día 1](https://www.youtube.com/watch?v=PEqWRTb1idE)
-* 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [TRM - IAFIS Biometrics](https://www.iafisgroup.com/nosotros/)
-
----
-
-[⬅ Lección Anterior](02-lama-infraestructura-dns.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](04-bordachar-anci-regulacion.md)
+[⬅️ Lección Anterior](02-lama-infraestructura-dns.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡️](04-bordachar-anci-regulacion.md)

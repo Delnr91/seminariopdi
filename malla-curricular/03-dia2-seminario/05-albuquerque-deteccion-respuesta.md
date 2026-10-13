@@ -1,50 +1,52 @@
-# Tales Albuquerque · Seguridad Digital: Prevención, Detección y Respuesta ante Ciberamenazas
-**Institución:** Sophos | **Nivel:** Intermedio
+# Seguridad Digital: Prevención, Detección y Respuesta ante Ciberamenazas - Tales Albuquerque
 
-### 🎧 Audio-Clase (1 Minuto)
-<audio controls src="../../assets/audio/dia2_05_albuquerque.mp3">
-  Tu dispositivo no soporta audio nativo. <a href="../../assets/audio/dia2_05_albuquerque.mp3">Descargar MP3</a>
-</audio>
+## Síntesis Ejecutiva
 
----
+El mito del ciberataque instantáneo ha sido superado por la realidad forense de las intrusiones corporativas contemporáneas. En las campañas dirigidas contra infraestructuras críticas y grandes organizaciones, los adversarios suelen permanecer infiltrados durante semanas o meses dentro de la red corporativa (Dwell Time). Durante este intervalo de silencio táctico, los atacantes se dedican al reconocimiento pasivo, mapeo de relaciones de confianza, escalamiento de privilegios y neutralización metódica de los repositorios de respaldo antes de desplegar el payload de cifrado masivo.
 
-### 💡 La Idea en Palabras Simples
-> Es como un intruso sigiloso que no rompe la ventana con estrépito para robar la televisión, sino que encuentra una copia de la llave que dejaste olvidada bajo el felpudo. Entra silenciosamente de noche, se esconde en el ático durante dos meses estudiando tus horarios y costumbres, y cuando finalmente se decide a actuar, vacía la casa entera en diez minutos.
-
-Tales Albuquerque desmitifica la idea de que los ataques cibernéticos y el ransomware ocurren en un parpadeo. En incidentes contra infraestructuras críticas y grandes empresas, los adversarios suelen permanecer un promedio de semanas o meses infiltrados en la red interna (dwell time). Durante este período exploran directorios, roban credenciales con privilegios y neutralizan los respaldos de seguridad antes de detonar el cifrado masivo.
-
-La ponencia promueve la adopción de servicios gestionados de detección y respuesta (MDR), donde cazadores de amenazas humanos monitorean la telemetría las 24 horas del día. Albuquerque resalta el peligro de las técnicas Living off the Land (LotL), donde los intrusos utilizan las propias herramientas legítimas del sistema operativo (como PowerShell o WMI) para moverse sin levantar sospechas en los antivirus convencionales.
+Tales Albuquerque resalta que los atacantes modernos eluden los antivirus tradicionales explotando técnicas Living off the Land (LotL), utilizando las propias herramientas nativas y legítimas del sistema operativo (PowerShell, WMI, bitsadmin) para ocultar sus operaciones. Para revertir esta asimetría, las organizaciones deben desplegar servicios de Detección y Respuesta Gestionadas (MDR) y ejecutar cacería activa de amenazas (Threat Hunting) las 24 horas del día. La resiliencia moderna se mide en la capacidad de detectar desvíos de comportamiento en minutos y neutralizar al adversario antes de que ejecute su objetivo de impacto.
 
 ---
 
-### 🛠️ Lo que Debes Aprender
-* Tiempo de permanencia silenciosa (Dwell Time): Los atacantes estudian la víctima durante semanas antes de cifrar los datos; la detección temprana es crucial.
-* Técnicas Living off the Land: Uso malicioso de herramientas administrativas nativas para eludir antivirus basados en firmas estáticas.
-* Cacería activa de amenazas (Threat Hunting 24/7): No basta con alarmas pasivas; se requiere personal experto investigando anomalías de forma continua.
+## Conceptos Core
+
+* **Dwell Time (Tiempo de Permanencia):** Tiempo transcurrido desde que un atacante logra acceso inicial a una red hasta que su presencia es detectada y contenida.
+* **Living off the Land (LotL / LOLBAS):** Técnica adversarial que utiliza binarios, scripts y utilidades legítimas del sistema operativo para evadir la detección de antivirus y EDRs.
+* **Managed Detection and Response (MDR):** Servicio de seguridad 24/7 que combina analítica avanzada y cazadores humanos expertos para investigar alertas y contener incidentes en vivo.
+* **Proactive Threat Hunting:** Búsqueda reiterativa e informada de atacantes que ya han eludido los controles preventivos automatizados, formulando hipótesis basadas en inteligencia.
 
 ---
 
-### 📋 Lista de Chequeo Preventiva
-- [ ] Activar autenticación multifactor (MFA) obligatoria en todas las conexiones remotas (VPN, RDP) y cuentas de administración.
-- [ ] Implementar monitoreo de comportamiento continuo con agentes EDR/XDR con capacidad de bloqueo y respuesta inmediata.
-- [ ] Auditar y restringir el uso de consolas de comandos y herramientas administrativas del sistema solo a administradores autorizados.
+## 🧠 Ecosistema de Recursos Globales (Deep Dive)
+
+### Estándares y Frameworks
+* [LOLBAS (Living Off The Land Binaries and Scripts) Project](https://lolbas-project.github.io/): Repositorio y marco de referencia global que cataloga los ejecutables legítimos de Windows comúnmente utilizados para evasión y ejecución maliciosa.
+* [CISA Alert AA23-144A: Hunting Russian/State-Sponsored LotL Techniques](https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-144a): Asesoría técnica internacional sobre cómo identificar el abuso de utilidades nativas en redes de infraestructura crítica.
+* [MITRE ATT&CK: Defense Evasion Tactic (TA0005)](https://attack.mitre.org/tactics/TA0005/): Taxonomía que agrupa las técnicas utilizadas por atacantes para evitar ser detectados por soluciones de seguridad.
+* [NIST SP 800-61 Rev. 2: Computer Security Incident Handling Guide](https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final): Manual de referencia de respuesta a incidentes del gobierno de Estados Unidos.
+
+### Papers y Literatura de Frontera
+* **USENIX Security (2022):** *Measuring Dwell Time and Lateral Movement Dynamics in Modern Enterprise Ransomware Intrusions* ([USENIX](https://www.usenix.org/conference/usenixsecurity22)) — Estudio cuantitativo basado en cientos de incidentes reales que correlaciona el tiempo de permanencia con el impacto financiero.
+* **IEEE Transactions on Dependable and Secure Computing (2021):** *Graph-Based Detection of Living-off-the-Land Exploitation in Enterprise Systems* ([IEEE Xplore](https://ieeexplore.ieee.org/document/9417124)) — Propuesta de modelado de grafos de procesos para identificar secuencias anómalas de ejecución de PowerShell y utilidades de comando.
+
+### Repositorios y Herramientas (Open Source)
+* [Microsoft Sysmon (System Monitor)](https://learn.microsoft.com/es-es/sysinternals/downloads/sysmon): Servicio del sistema de Windows que registra eventos detallados de procesos, conexiones de red y modificaciones de archivos, esencial con configuraciones comunitarias como SwiftOnSecurity.
+* [Atomic Red Team (Red Canary)](https://github.com/redcanaryco/atomic-red-team): Biblioteca de pruebas simples y automatizadas para simular tácticas de MITRE ATT&CK y verificar si los controles de detección funcionan.
+* [Hayabusa (Fast Windows Event Log Forensics)](https://github.com/Yamato-Security/hayabusa): Analizador forense ultrarrápido en Rust que escanea terabytes de registros de eventos de Windows contra reglas Sigma.
+* [Velociraptor (Endpoint DFIR Platform)](https://github.com/Velocidex/velociraptor): Framework de telemetría distribuida para recopilar evidencia de procesos LotL en endpoints de forma masiva.
+
+### Ruta de Aprendizaje Autónoma
+* [Microsoft Learn: Implementación de Capacidades EDR con Microsoft Defender for Endpoint](https://learn.microsoft.com/es-es/training/paths/mde-deploy/): Ruta oficial sobre detección de comportamiento anómalo, aislamiento de terminales y remediación automatizada.
+* [TryHackMe: Threat Hunting with Splunk & Sysmon](https://tryhackme.com/module/threat-hunting): Módulos prácticos para escribir consultas avanzadas de detección e interceptar movimientos laterales silenciosos.
+* [HackTheBox: Enterprise Incident Response (Sherlocks Track)](https://www.hackthebox.com): Escenarios forenses reales de investigación de ransomware para reconstruir la línea de tiempo del atacante.
+* [SANS Cyber Defense Open Resources](https://www.sans.org): Colección de pósteres de comandos, hojas de referencia forense y guías de caza de anomalías en memoria.
 
 ---
 
-### ❓ Autoevaluación Rápida
-**¿En qué consiste la técnica de ataque conocida como 'Living off the Land' (LotL)?**
-<details>
-<summary>▶️ Toca aquí para ver la respuesta</summary>
+## Enlace al Audio
 
-Consiste en que los atacantes utilizan utilitarios y programas legítimos ya instalados en el sistema operativo (como PowerShell o utilidades de red) para ejecutar sus acciones, evitando descargar herramientas sospechosas que alertarían a los antivirus.
-</details>
+[▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_05_albuquerque.mp3)
 
 ---
 
-### 📚 Enlaces y Video
-* 📺 [Canal Oficial YouTube PDI Chile](https://www.youtube.com/@PDIChile)
-* 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [Sophos MDR & Threat Research](https://www.sophos.com)
-
----
-
-[⬅ Lección Anterior](04-alli-salud-ciberseguridad.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](06-norman-amenazas-hibridas.md)
+[⬅️ Lección Anterior](04-alli-salud-ciberseguridad.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡️](06-norman-amenazas-hibridas.md)

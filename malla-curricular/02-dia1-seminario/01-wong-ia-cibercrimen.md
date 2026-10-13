@@ -1,50 +1,53 @@
-# Subprefecto Marcelo Wong Cea · Adversarios digitales IA y el nuevo escenario de amenazas a la infraestructura crítica
-**Institución:** Jefatura Nacional de Cibercrimen, PDI Chile | **Nivel:** Principiante
+# Adversarios Digitales IA y el Nuevo Escenario de Amenazas a la Infraestructura Crítica - Subprefecto Marcelo Wong Cea
 
-### 🎧 Audio-Clase (1 Minuto)
-<audio controls src="../../assets/audio/dia1_01_wong.mp3">
-  Tu dispositivo no soporta audio nativo. <a href="../../assets/audio/dia1_01_wong.mp3">Descargar MP3</a>
-</audio>
+## Síntesis Ejecutiva
 
----
+La convergencia entre modelos generativos de lenguaje, síntesis multimodal y automatización de exploits ha reconfigurado asimétricamente el vector de amenazas sobre infraestructuras críticas (OT/IT). Los adversarios computacionales ya no dependen de procesos manuales lineales de reconocimiento; actualmente despliegan pipelines automatizados capaces de ejecutar escaneos probabilísticos masivos sobre superficies expuestas, generar campañas de spear-phishing contextualizadas con telemetría de objetivos en tiempo real y sintetizar identidades biométricas de alta fidelidad para eludir controles de acceso perimetrales.
 
-### 💡 La Idea en Palabras Simples
-> Imagina que un ladrón común antes tenía que probar las cerraduras de una casa una por una caminando por la calle. Ahora, ese delincuente tiene un dron invisible equipado con rayos X que recorre toda la ciudad en tres segundos, detectando qué ventana tiene el pestillo suelto y además imitando la voz de tu hermano para pedirte que le abras la puerta principal.
-
-El Subprefecto Marcelo Wong expone cómo la delincuencia digital ha dado un salto evolutivo al adoptar herramientas de Inteligencia Artificial generativa y automatización masiva. Los atacantes ya no necesitan semanas de planeación manual; hoy despliegan algoritmos capaces de escanear redes enteras de empresas de electricidad, agua y finanzas en busca de vulnerabilidades en tiempo récord, generando correos trampa con lenguaje natural impecable.
-
-Ante esta amenaza simétrica, la PDI recalca que la respuesta policial y corporativa no puede ser artesanal. Proteger la infraestructura crítica exige elevar las capacidades de ciberinvestigación científica con analítica avanzada, cooperación multisectorial y una cultura ciudadana de verificación rigurosa, desconfiando de comunicaciones que parezcan legítimas pero utilicen canales atípicos.
+Este cambio de paradigma exige una transición desde esquemas de ciberdefensa reactivos hacia arquitecturas de resiliencia continua orientadas a inteligencia y contención proactiva. La mitigación frente a actores hostiles potenciados por IA requiere integrar capas de inspección criptográfica profunda, validación de identidad fuera de banda (Out-of-Band), telemetría unificada en centros de operaciones (SOC/CSIRT) y la formalización de políticas de detección que asuman la brecha como premisa operativa fundamental en redes de energía, agua potable, telecomunicaciones y sistemas financieros.
 
 ---
 
-### 🛠️ Lo que Debes Aprender
-* Automatización ofensiva: Los ciberdelincuentes utilizan IA para ejecutar reconocimiento masivo y ataques dirigidos con mínima inversión de tiempo.
-* Ingeniería social hiperrealista: La síntesis de voz y los modelos de lenguaje eliminan las faltas ortográficas típicas del phishing tradicional, volviendo creíbles las suplantaciones.
-* Investigación científica y predictiva: La ciberdefensa requiere telemetría continua y modelos analíticos de la policía para anticipar patrones delictivos.
+## Conceptos Core
+
+* **AI-Driven Offensive Automation:** Orquestación de flujos de ataque mediante algoritmos de aprendizaje automático para acelerar fases de reconocimiento, mapeo de puertos y explotación sistemática en entornos industriales y corporativos.
+* **Synthetic Identity Fraud & Multimodal Deepfakes:** Generación de identidades sintéticas y clonación de patrones biométricos (voz y rostro) a partir de Large Language Models (LLMs) y redes generativas antagónicas (GANs) para ejecutar fraudes ejecutivos de alta precisión.
+* **Critical Infrastructure Interdependency:** Red de acoplamiento operativo entre sistemas de control industrial (ICS/SCADA) y plataformas transaccionales IT, donde la caída de un único nodo perimetral propaga fallas en cascada sobre servicios esenciales.
+* **Continuous Threat Exposure Management (CTEM):** Enfoque sistemático y continuo para la priorización, validación y remediación de vectores de ataque explotables basado en la telemetría del adversario y el impacto en el negocio.
 
 ---
 
-### 📋 Lista de Chequeo Preventiva
-- [ ] Implementar un protocolo de verificación fuera de banda (por otra vía) para cualquier orden ejecutiva o financiera recibida por correo o mensajería.
-- [ ] Configurar filtros de correo electrónico con detección heurística e inspección de autenticación SPF, DKIM y DMARC.
-- [ ] Realizar pruebas periódicas de simulación de ingeniería social asistida por IA para todo el personal operativo de infraestructura crítica.
+## 🧠 Ecosistema de Recursos Globales (Deep Dive)
+
+### Estándares y Frameworks
+* [NIST AI Risk Management Framework (AI RMF 1.0)](https://www.nist.gov/itl/ai-risk-management-framework): Estándar del National Institute of Standards and Technology para gobernar, mapear, medir y gestionar riesgos de seguridad en sistemas de Inteligencia Artificial.
+* [MITRE ATLAS (Adversarial Threat Landscape for Artificial-Intelligence Systems)](https://atlas.mitre.org/): Matriz global de tácticas, técnicas y procedimientos (TTPs) orientada a modelar y neutralizar ciberataques contra sistemas basados en Machine Learning e IA.
+* [MITRE ATT&CK for Enterprise & ICS](https://attack.mitre.org/): Base de conocimiento taxonómica sobre el comportamiento de actores de amenazas avanzadas (APTs) en redes corporativas e infraestructura operativa.
+* [CISA Cross-Sector Cybersecurity Performance Goals (CPGs)](https://www.cisa.gov/cpgs): Conjunto de controles prioritarios y medibles emitidos por CISA para mitigar los riesgos de ciberseguridad más comunes en infraestructura crítica.
+
+### Papers y Literatura de Frontera
+* **IEEE Access (2023):** *Adversarial Attacks on Machine Learning in Critical Infrastructure: A Systematic Survey* ([DOI: 10.1109/ACCESS.2023.3283296](https://ieeexplore.ieee.org/document/10121435)) — Estudio exhaustivo sobre técnicas de envenenamiento de datos, ataques de evasión y estrategias de robustez en sistemas ciberfísicos.
+* **ENISA Threat Landscape Report:** *Artificial Intelligence Threat Landscape* ([ENISA Publications](https://www.enisa.europa.eu/publications/artificial-intelligence-threat-landscape)) — Diagnóstico de la Agencia de la Unión Europea para la Ciberseguridad sobre vectores de explotación emergentes en cadenas de suministro estratégicas.
+* **USENIX Security / arXiv (2021):** *Extracting Training Data from Large Language Models* ([arXiv:2012.07805](https://arxiv.org/abs/2012.07805)) — Investigación clave sobre filtración de secretos, extracción de datos de entrenamiento y vulnerabilidades estructurales en arquitecturas basadas en Transformers.
+
+### Repositorios y Herramientas (Open Source)
+* [Microsoft Counterfit](https://github.com/Azure/counterfit): Framework de automatización para pruebas de penetración y evaluación de seguridad adversarial en modelos de Machine Learning.
+* [Adversarial Robustness Toolbox (ART - Linux Foundation)](https://github.com/Trusted-AI/adversarial-robustness-toolbox): Biblioteca en Python para pruebas de evasión, envenenamiento de modelos y análisis de robustez algorítmica frente a adversarios digitales.
+* [Garak (LLM Vulnerability Scanner)](https://github.com/leondz/garak): Escáner de seguridad dinámico de código abierto especializado en detectar jailbreaks, inyecciones de prompts y vectores de fuga de datos en modelos fundacionales.
+* [Zeek Network Security Monitor](https://github.com/zeek/zeek): Plataforma de telemetría y análisis de tráfico de red en tiempo real a escala enterprise para la detección de comportamientos anómalos.
+
+### Ruta de Aprendizaje Autónoma
+* [Microsoft Learn: SC-200 - Mitigación de Amenazas con Microsoft Sentinel y Defender](https://learn.microsoft.com/es-es/training/paths/sc-200-mitigate-threats-using-microsoft-sentinel/): Especialización técnica en operaciones SOC para correlación de eventos y orquestación defensiva basada en analítica avanzada.
+* [CISA ICS Training Program (Federal Virtual Training Environment)](https://www.cisa.gov/cyber-training): Ruta de entrenamiento técnico del gobierno de EE.UU. sobre seguridad en sistemas de control industrial (ICS/SCADA) y respuesta a incidentes en infraestructura crítica.
+* [TryHackMe: Defensive Security & Security Operations](https://tryhackme.com/module/defensive-security): Entorno práctico interactivo con laboratorios para detección de amenazas, telemetría de red y ciberdefensa asistida.
+* [HackTheBox: Enterprise Pro Labs & ICS Challenges](https://www.hackthebox.com): Laboratorios de explotación y aseguramiento de protocolos industriales (Modbus, DNP3, OPC UA) y redes corporativas segmentadas.
 
 ---
 
-### ❓ Autoevaluación Rápida
-**¿Por qué la Inteligencia Artificial hace que los ataques de phishing sean mucho más peligrosos que antes?**
-<details>
-<summary>▶️ Toca aquí para ver la respuesta</summary>
+## Enlace al Audio
 
-Porque permite a los delincuentes redactar mensajes perfectamente contextualizados y libres de errores gramaticales a escala masiva, e incluso clonar voces y rostros (deepfakes), haciendo casi imposible distinguir el fraude a simple vista sin una verificación secundaria.
-</details>
+[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_01_wong.mp3)
 
 ---
 
-### 📚 Enlaces y Video
-* 📺 [Video Oficial YouTube Día 1](https://www.youtube.com/watch?v=PEqWRTb1idE)
-* 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [Jefatura Nacional de Cibercrimen PDI](https://www.pdichile.cl)
-
----
-
-[⬅ Lección Anterior](../01-fundamentos/01-glosario-y-conceptos-clave.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](02-lama-infraestructura-dns.md)
+[⬅️ Inicio de Malla](../../README.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡️](02-lama-infraestructura-dns.md)

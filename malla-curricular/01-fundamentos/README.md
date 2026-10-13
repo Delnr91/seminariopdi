@@ -1,5 +1,7 @@
-# Fundamentos
+# 01 - Fundamentos de Infraestructura Crítica y Ciberresiliencia
 
-Empieza por [Glosario y conceptos clave](01-glosario-y-conceptos-clave.md), una guía introductoria basada en las definiciones y el glosario ilustrado del documento base.
+Módulo introductorio para sentar las bases conceptuales, técnicas y regulatorias de la protección de infraestructuras vitales.
 
-Después, continúa por las lecciones del día 1. El pie de cada lección permite avanzar, retroceder o volver a la [malla curricular](../../README.md).
+* [📘 Lección 01: Conceptos Fundamentales de Infraestructura Crítica y Resiliencia](01-conceptos-infraestructura-critica.md)
+
+[Volver a la Malla Curricular](../../README.md).

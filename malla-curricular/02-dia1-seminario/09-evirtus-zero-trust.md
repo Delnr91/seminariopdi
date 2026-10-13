@@ -1,50 +1,52 @@
-# Especialista en Redes · Seguridad en la Red: Hacia una infraestructura crítica resiliente
-**Institución:** E-Virtus | **Nivel:** Intermedio
+# Seguridad en la Red: Hacia una Infraestructura Crítica Resiliente - Especialista en Redes (E-Virtus)
 
-### 🎧 Audio-Clase (1 Minuto)
-<audio controls src="../../assets/audio/dia1_09_evirtus_redes.mp3">
-  Tu dispositivo no soporta audio nativo. <a href="../../assets/audio/dia1_09_evirtus_redes.mp3">Descargar MP3</a>
-</audio>
+## Síntesis Ejecutiva
 
----
+El modelo de seguridad perimetral tradicional (Castillo y Foso) ha quedado formalmente obsoleto frente al auge del trabajo híbrido, la dispersión de cargas en nubes múltiples y la proliferación de credenciales corporativas robadas. Asumir que cualquier dispositivo o usuario conectado dentro de la red corporativa es inherentemente confiable constituye una vulnerabilidad estructural crítica: una vez que el adversario franquea el firewall de borde, disfruta de libertad irrestricta para ejecutar escaneos laterales no detectados y propagar ransomware hacia servidores transaccionales y salas de control industrial.
 
-### 💡 La Idea en Palabras Simples
-> Es como diseñar un gran barco transatlántico dividido en compartimentos estancos herméticos. En los barcos antiguos, si un iceberg rompía una esquina del casco, el agua entraba y llenaba todo el barco hasta hundirlo. En un barco moderno con compartimentos cerrados, el agua inunda únicamente una pequeña habitación aislada, mientras el resto del barco sigue navegando con total seguridad.
-
-El especialista de E-Virtus aborda el diseño arquitectónico de redes bajo la premisa de Confianza Cero (Zero Trust). Durante décadas, las empresas construyeron su seguridad bajo el modelo perimetral tradicional de castillo y foso: quien lograba conectarse a la red interna era considerado de confianza total. Hoy, con el trabajo remoto y la infiltración de credenciales, asumir que la red interna es segura es un error fatal.
-
-La solución radica en la microsegmentación de red, donde cada servidor, estación de trabajo y dispositivo industrial vive en su propia celda aislada con políticas de acceso mínimo estricto. Toda comunicación entre máquinas debe autenticarse, autorizarse y cifrarse continuamente. Así, si un virus o intruso infecta una computadora en el área comercial, le resulta imposible saltar hacia las redes de control de las bombas de agua o generadores eléctricos.
+La construcción de una infraestructura verdaderamente resiliente exige la adopción integral del paradigma de Confianza Cero (Zero Trust: 'Nunca confíes, siempre verifica'). Este modelo descompone la red en microsegmentos granulares donde cada petición de conexión, tanto este-oeste como norte-sur, debe autenticarse, autorizarse y cifrarse continuamente en función de la identidad de la carga de trabajo, la postura del dispositivo y el contexto de riesgo. Si un endpoint en el área administrativa resulta infectado, las políticas de microsegmentación actúan como mamparas estancas en un buque, impidiendo que el compromiso alcance los sistemas SCADA de control eléctrico o bombeo de agua.
 
 ---
 
-### 🛠️ Lo que Debes Aprender
-* Fin del perímetro tradicional: Todo el tráfico, tanto externo como interno, debe considerarse hostil hasta que se demuestre lo contrario.
-* Microsegmentación granular: Dividir la red en zonas lógicas independientes frena el movimiento lateral de ciberdelincuentes y ransomware.
-* Principio de privilegio mínimo (Least Privilege): Cada usuario y aplicación solo tiene acceso a los puertos y recursos indispensables para su función específica.
+## Conceptos Core
+
+* **Zero Trust Architecture (ZTA):** Paradigma de ciberseguridad que asume la red interna como hostil y exige autenticación y autorización continua para cada acceso a recursos.
+* **East-West Microsegmentation:** División granular de la red interna para inspeccionar y bloquear el tráfico lateral no autorizado entre servidores de un mismo segmento o centro de datos.
+* **Least Privilege Principle (POLP):** Asignación estricta del mínimo nivel de acceso y permisos temporales necesarios para que un usuario o máquina ejecute su tarea legítima.
+* **Software-Defined Perimeter (SDP):** Tecnología que vuelve invisibles los servicios de infraestructura en internet, otorgando conectividad encriptada uno a uno solo tras una validación de identidad rigurosa.
 
 ---
 
-### 📋 Lista de Chequeo Preventiva
-- [ ] Implementar autenticación y autorización continua basada en identidad para cada sesión de usuario y comunicación entre servidores.
-- [ ] Segmentar la red interna en zonas independientes mediante cortafuegos de próxima generación (NGFW) y políticas de microsegmentación.
-- [ ] Bloquear por defecto todo tráfico este-oeste (entre computadores de la misma red) que no esté explícitamente autorizado en una lista blanca.
+## 🧠 Ecosistema de Recursos Globales (Deep Dive)
+
+### Estándares y Frameworks
+* [NIST SP 800-207: Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final): Documento fundacional y estándar de referencia que describe los componentes lógicos (Policy Engine, Policy Administrator, PEP) de una arquitectura de confianza cero.
+* [CISA Zero Trust Maturity Model 2.0](https://www.cisa.gov/zero-trust-maturity-model): Guía técnica para que organizaciones evalúen y evolucionen su madurez en cinco pilares: Identidad, Dispositivos, Redes, Cargas de trabajo y Datos.
+* [DoD Zero Trust Strategy and Roadmap](https://dodcio.defense.gov/Cybersecurity/Zero-Trust/): Marco estratégico del Departamento de Defensa de EE.UU. para implementar Zero Trust a escala global en entornos de máxima criticidad.
+* [ISO/IEC 27033 Series: Information Technology - Network Security](https://www.iso.org/standard/63462.html): Conjunto de normas internacionales sobre arquitectura, diseño, implementación y aseguramiento de redes corporativas.
+
+### Papers y Literatura de Frontera
+* **IEEE Communications Surveys & Tutorials (2021):** *Zero Trust Architecture: A Comprehensive Survey and Future Directions* ([IEEE Xplore](https://ieeexplore.ieee.org/document/9485088)) — Revisión exhaustiva sobre protocolos, mecanismos de decisión contextual y desafíos de despliegue en redes híbridas.
+* **ACM Digital Threats: Research and Practice (2022):** *Microsegmentation in Industrial Networks: Evaluating Latency and Resilience under Attack* ([DOI: 10.1145/3510582](https://dl.acm.org/journal/dtrap)) — Análisis experimental del impacto operativo de firewalls basados en host sobre controladores industriales.
+
+### Repositorios y Herramientas (Open Source)
+* [Cilium (eBPF-based Networking & Security)](https://github.com/cilium/cilium): Plataforma de código abierto para observabilidad, conectividad y aplicación de políticas de seguridad Zero Trust en contenedores y Linux mediante tecnología eBPF.
+* [Tailscale / WireGuard](https://github.com/tailscale/tailscale): Red en malla segura de código abierto basada en el protocolo WireGuard que implementa acceso de confianza cero sin requerir complejas VPNs centralizadas.
+* [Open Policy Agent (OPA)](https://github.com/open-policy-agent/opa): Motor de políticas de propósito general de código abierto que permite unificar y desacoplar el control de autorización en APIs, redes y microservicios.
+* [SPIFFE / SPIRE](https://github.com/spiffe/spire): Estándares y herramientas de la Cloud Native Computing Foundation (CNCF) para emitir identidades criptográficas mutuas y efímeras entre cargas de trabajo heterogéneas.
+
+### Ruta de Aprendizaje Autónoma
+* [Microsoft Learn: SC-100 - Arquitecto de Ciberseguridad: Diseño de Estrategias Zero Trust](https://learn.microsoft.com/es-es/training/paths/sc-100-design-zero-trust-strategy/): Especialización técnica oficial para planificar e implementar arquitecturas de confianza cero empresariales.
+* [AWS Skill Builder: Implementing Zero Trust on AWS Cloud](https://explore.skillbuilder.aws): Capacitación técnica sobre autenticación contextual, políticas de red privadas y cifrado en tránsito continuo.
+* [Cisco NetAcad: Network Security Architecture & Defense](https://www.netacad.com): Formación profesional sobre configuración de cortafuegos de próxima generación (NGFW), VPNs IPSec y políticas de acceso 802.1X.
+* [TryHackMe: Network Security & Traffic Analysis](https://tryhackme.com/module/network-security): Laboratorios interactivos para diseñar reglas de firewall iptables, inspeccionar tráfico cifrado TLS y segmentar subredes virtuales.
 
 ---
 
-### ❓ Autoevaluación Rápida
-**¿Cuál es la diferencia fundamental entre el modelo perimetral tradicional y el modelo Zero Trust?**
-<details>
-<summary>▶️ Toca aquí para ver la respuesta</summary>
+## Enlace al Audio
 
-El modelo tradicional confía ciegamente en todo lo que está dentro de la red corporativa tras cruzar el firewall perimetral; en cambio, Zero Trust asume que la red interna ya está comprometida y exige verificar de manera estricta y continua la identidad de cada usuario y dispositivo en cada petición.
-</details>
+[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_09_evirtus_redes.mp3)
 
 ---
 
-### 📚 Enlaces y Video
-* 📺 [Video Oficial YouTube Día 1](https://www.youtube.com/watch?v=PEqWRTb1idE)
-* 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [E-Virtus Arquitecturas Resilientes](https://e-virtus.com)
-
----
-
-[⬅ Lección Anterior](08-bonnaire-agentes-ia.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](../03-dia2-seminario/01-caceres-blue-team-ia.md)
+[⬅️ Lección Anterior](08-bonnaire-agentes-ia.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡️](10-caceres-blue-team-ia.md)

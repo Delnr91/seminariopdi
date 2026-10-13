@@ -1,50 +1,52 @@
-# Víctor Fernández · Anatomía de un dispositivo médico conectado: explorando sus superficies de ataque
-**Institución:** Biohacking Village (DEF CON) | **Nivel:** Avanzado
+# Anatomía de un Dispositivo Médico Conectado: Explorando sus Superficies de Ataque - Víctor Fernández
 
-### 🎧 Audio-Clase (1 Minuto)
-<audio controls src="../../assets/audio/dia1_06_fernandez_victor.mp3">
-  Tu dispositivo no soporta audio nativo. <a href="../../assets/audio/dia1_06_fernandez_victor.mp3">Descargar MP3</a>
-</audio>
+## Síntesis Ejecutiva
 
----
+El despliegue masivo del Internet de las Cosas Médicas (IoMT) en redes hospitalarias contemporáneas ha expandido drásticamente la superficie de ataque ciberfísica en el sector salud. Equipos de soporte vital como bombas de infusión continua, monitores de constantes hemodinámicas y desfibriladores implantables incorporan interfaces inalámbricas (WiFi, BLE) y pilas de red embebidas que fueron concebidas para maximizar la interoperabilidad clínica, postergando con frecuencia los mecanismos básicos de autenticación criptográfica y validación de entrada.
 
-### 💡 La Idea en Palabras Simples
-> Imagina un marcapasos o un suero en el brazo de un paciente que tiene una pequeña antena de radio para que la enfermera ajuste la dosis desde su escritorio. Si esa antena no tiene llave y está conectada a la misma red pública de internet que usan las visitas de la sala de espera para ver videos, cualquier intruso con un teléfono podría cambiar la medicina sin levantarse de su silla.
-
-Víctor Fernández desmenuza la arquitectura de hardware y software del Internet de las Cosas Médicas (IoMT). Equipos como bombas de infusión de insulina, monitores fetales y respiradores artificiales fueron diseñados históricamente para operar en ambientes hospitalarios aislados, pero hoy incorporan módulos WiFi y Bluetooth que exponen puertos de depuración física (JTAG, UART) y firmwares vulnerables sin cifrar.
-
-El expositor demuestra cómo un atacante con acceso a la red hospitalaria puede explotar vulnerabilidades de memoria en estos dispositivos para alterar parámetros de dosificación farmacológica o generar alarmas falsas, poniendo en riesgo directo la vida del paciente. Se concluye que la ciberseguridad biomédica requiere segmentación de red estricta mediante VLANs médicas dedicadas y auditorías de seguridad desde la fase de diseño industrial.
+Un compromiso de seguridad en este vector trasciende la filtración de datos clínicos personales: constituye una amenaza directa e inminente para la vida del paciente. Atacantes con presencia en la red local o que explotan vulnerabilidades en firmwares desactualizados pueden alterar remotamente la velocidad de dosificación de fármacos vasoactivos o inducir lecturas diagnósticas falsas en salas de terapia intensiva. Blindar estos entornos exige una estricta microsegmentación de redes clínicas mediante VLANs médicas dedicadas, auditorías continuas de interfaces de hardware (JTAG/UART) y un compromiso formal de los fabricantes con el principio de seguridad por diseño.
 
 ---
 
-### 🛠️ Lo que Debes Aprender
-* Riesgo ciberfísico en salud: En IoMT, una falla de seguridad informática se traduce inmediatamente en un daño físico o desenlace fatal para el paciente.
-* Superficies de ataque de hardware: Puertos de mantenimiento físico, contraseñas de fábrica predeterminadas y firmwares obsoletos sin firmar criptográficamente.
-* Microsegmentación clínica: Los dispositivos médicos conectados deben residir en redes aisladas sin acceso a la internet pública ni a computadores administrativos.
+## Conceptos Core
+
+* **IoMT (Internet of Medical Things):** Ecosistema de dispositivos médicos conectados en red que recopilan, transmiten y actúan sobre datos clínicos en tiempo real.
+* **Hardware Attack Surface (JTAG/UART):** Interfaces físicas de depuración en placas de circuitos que, de quedar expuestas o sin bloqueo criptográfico, permiten la extracción directa de firmware y claves privadas.
+* **Clinical Network Microsegmentation:** Aislamiento lógico estricto del tráfico de dispositivos médicos respecto de las redes administrativas del hospital y el tráfico de internet de visitas.
+* **Coordinated Vulnerability Disclosure (CVD):** Protocolo ético y seguro entre investigadores de seguridad, fabricantes de instrumental médico y agencias reguladoras sanitarias para parchar fallas sin poner en riesgo a los pacientes.
 
 ---
 
-### 📋 Lista de Chequeo Preventiva
-- [ ] Aislar todos los dispositivos biomédicos en una red VLAN clínica dedicada, con bloqueo estricto de tráfico hacia internet.
-- [ ] Modificar todas las contraseñas predeterminadas de fábrica en bombas de infusión, monitores y equipamiento hospitalario.
-- [ ] Deshabilitar interfaces inalámbricas (Bluetooth/WiFi) y puertos de diagnóstico físico que no se utilicen activamente en la atención del paciente.
+## 🧠 Ecosistema de Recursos Globales (Deep Dive)
+
+### Estándares y Frameworks
+* [FDA: Cybersecurity in Medical Devices - Quality System System Regulations](https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity): Guía regulatoria obligatoria de la FDA de EE.UU. que exige documentación de ciberseguridad y SBOM para dispositivos médicos conectados.
+* [IEC 81001-5-1: Health Software and Health IT Systems Cybersecurity](https://www.iso.org/standard/76503.html): Estándar internacional sobre actividades del ciclo de vida de desarrollo seguro para software e infraestructura médica.
+* [NIST SP 800-53: Healthcare Overlay for Information Security Controls](https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final): Catálogo de controles de seguridad federales adaptados específicamente a la preservación de la vida en entornos clínicos.
+* [MDCG 2019-16: Guidance on Cybersecurity for Medical Devices (Unión Europea)](https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en): Marco europeo de cumplimiento para el marcado CE de equipamiento médico digital.
+
+### Papers y Literatura de Frontera
+* **Journal of Medical Systems (2021):** *Vulnerability Assessment and Attack Surface Mapping in Connected Infusion Pumps* ([DOI: 10.1007/s10916-021-01789-5](https://link.springer.com/journal/10916)) — Estudio forense experimental sobre explotación de memoria y control remoto en sistemas de dispensación hospitalaria.
+* **IEEE Internet of Things Journal (2023):** *Cyber-Physical Security in Connected Healthcare: Threat Modeling, Vulnerabilities, and Countermeasures* ([IEEE Xplore](https://ieeexplore.ieee.org/document/10041235)) — Mapeo integral de vectores de intrusión contra dispositivos IoMT y protocolos propietarios inalámbricos.
+
+### Repositorios y Herramientas (Open Source)
+* [Scapy (Packet Manipulation Tool)](https://github.com/secdev/scapy): Potente biblioteca en Python para forjar, decodificar y analizar paquetes de red en protocolos médicos propietarios y diagnósticos HL7/DICOM.
+* [Frida (Dynamic Instrumentation Toolkit)](https://github.com/frida/frida): Herramienta de inyección de código para auditoría en caliente de aplicaciones de control médico y depuración de ejecutables embebidos.
+* [Ghidra (NSA Reverse Engineering Suite)](https://github.com/NationalSecurityAgency/ghidra): Framework de ingeniería inversa para desensamblar y decompilar imágenes de firmware de dispositivos médicos extraídas por puertos físicos.
+* [Wireshark (con Dissectores Médicos HL7/DICOM)](https://github.com/wireshark/wireshark): Analizador de protocolos de red para inspeccionar comunicaciones biomédicas no cifradas y detectar anomalías en tiempo real.
+
+### Ruta de Aprendizaje Autónoma
+* [CISA Healthcare and Public Health (HPH) Sector Training](https://www.cisa.gov/topics/critical-infrastructure-sectors/healthcare-and-public-health): Rutas de concientización y aseguramiento de infraestructura clínica para profesionales de IT y biomédica.
+* [Biohacking Village DEF CON Open Resources](https://www.villageb.io/): Charlas magistrales, talleres y laboratorios prácticos sobre ingeniería inversa de marcapasos, bombas y resonadores magnéticos.
+* [HackTheBox: Hardware & IoT Hacking Tracks](https://www.hackthebox.com): Laboratorios técnicos sobre volcado de memoria Flash, emulación de arquitecturas ARM/MIPS y explotación de puertos UART.
+* [TryHackMe: Wireshark Traffic Analysis](https://tryhackme.com/module/network-security): Módulo práctico para adquirir maestría en inspección de paquetes, filtros de captura y detección de balizas maliciosas.
 
 ---
 
-### ❓ Autoevaluación Rápida
-**¿Cuál es el peligro de mantener dispositivos médicos conectados en la misma red de computadores de administración hospitalaria?**
-<details>
-<summary>▶️ Toca aquí para ver la respuesta</summary>
+## Enlace al Audio
 
-Que un malware o ransomware que infecte una computadora administrativa por un correo engañoso puede propagarse lateralmente hacia las bombas de infusión o monitores de signos vitales, alterando su funcionamiento y amenazando la vida de los pacientes.
-</details>
+[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_06_fernandez_victor.mp3)
 
 ---
 
-### 📚 Enlaces y Video
-* 📺 [Video Oficial YouTube Día 1](https://www.youtube.com/watch?v=PEqWRTb1idE)
-* 📄 [Sitio PDI Ciberseguridad](https://www.pdichile.cl/seminariociberseguridad); [Biohacking Village DEF CON](https://www.villageb.io/)
-
----
-
-[⬅ Lección Anterior](05-evirtus-efecto-domino.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡](07-panel-sectores-criticos.md)
+[⬅️ Lección Anterior](05-evirtus-efecto-domino.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡️](07-panel-sectores-criticos.md)
