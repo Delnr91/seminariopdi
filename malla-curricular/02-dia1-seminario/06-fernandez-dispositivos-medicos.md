@@ -43,9 +43,41 @@ Un compromiso de seguridad en este vector trasciende la filtración de datos cl�
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_06_fernandez_victor.mp3)
+### Estrategia Operativa Empresarial
+Para proteger dispositivos IoMT en entornos hospitalarios sin interrumpir el cuidado clínico, se debe desplegar un analizador pasivo de tráfico en el switch de la red clínica que alerte inmediatamente sobre comandos de reconfiguración o paquetes broadcast no autorizados dirigidos a bombas de infusión.
+
+### Código / Laboratorio Ejecutable
+```python
+# sniffer_iomt_anomalias.py
+# Monitor pasivo con Scapy para detectar comandos no autorizados hacia dispositivos médicos
+from scapy.all import sniff, TCP, IP
+
+IOMT_IP_RANGE = ["192.168.50."]
+PUERTOS_CRITICOS = [80, 443, 502, 23, 22] # Puertos de gestión en bombas de infusión
+
+def analizar_paquete_medico(packet):
+    if packet.haslayer(IP) and packet.haslayer(TCP):
+        ip_dst = packet[IP].dst
+        port_dst = packet[TCP].dport
+        
+        # Verificar si el destino es un equipo IoMT
+        if any(ip_dst.startswith(prefix) for prefix in IOMT_IP_RANGE):
+            if port_dst in PUERTOS_CRITICOS:
+                print(f"[!] ALERTA CLÍNICA: Intento de conexión sospechoso hacia IoMT {ip_dst}:{port_dst} desde {packet[IP].src}")
+
+if __name__ == "__main__":
+    print("[*] Iniciando sensor pasivo de tráfico clínico IoMT...")
+    # sniff(filter="tcp", prn=analizar_paquete_medico, store=0)
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 1 · Minuto 6:30:20)](https://www.youtube.com/watch?v=PEqWRTb1idE&t=6h30m20s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_06_fernandez_victor.mp3)
 
 ---
 

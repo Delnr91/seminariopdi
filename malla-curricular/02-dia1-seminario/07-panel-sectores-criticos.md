@@ -43,9 +43,33 @@ Los líderes de la industria subrayan que los grupos de ciberdelincuencia y los 
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_07_panel_multisectorial.mp3)
+### Estrategia Operativa Empresarial
+Para proteger controladores industriales (PLC) sin arriesgar la disponibilidad física, se deben implementar reglas de inspección profunda de paquetes (DPI) en el cortafuegos industrial que bloqueen comandos de escritura forzada o reinicio fuera de las ventanas de mantenimiento autorizadas.
+
+### Código / Laboratorio Ejecutable
+```python
+# reglas_suricata_modbus_ot.rules
+# Reglas para IDS/IPS Suricata para detectar comandos no autorizados en subestaciones y plantas de agua
+alert tcp any any -> $HOME_NET 502 (msg:"[ALERTA OT] Modbus TCP: Intento de Escritura en Registro Único (Function Code 06)"; \
+    flow:to_server,established; \
+    content:"|00 00|"; offset:2; depth:2; \
+    content:"|06|"; offset:7; depth:1; \
+    classtype:attempted-admin; sid:1000001; rev:1;)
+
+alert tcp any any -> $HOME_NET 502 (msg:"[ALERTA CRITICA OT] Modbus TCP: Escritura en Múltiples Bobinas (Function Code 15) - Posible Sabotaje"; \
+    flow:to_server,established; \
+    content:"|0f|"; offset:7; depth:1; \
+    classtype:bad-unknown; sid:1000002; rev:1;)
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 1 · Minuto 7:25:15)](https://www.youtube.com/watch?v=PEqWRTb1idE&t=7h25m15s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_07_panel_multisectorial.mp3)
 
 ---
 

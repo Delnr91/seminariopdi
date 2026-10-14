@@ -43,9 +43,43 @@ El componente operacional distintivo del esquema ruso es el sistema estatal GosS
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/intl_03_rusia.mp3)
+### Estrategia Operativa Empresarial
+Para cumplir con el requerimiento de integración obligatoria de incidentes hacia la red estatal GosSOPKA (NKTsKI), las organizaciones rusas o con filiales locales deben disponer de un conector automatizado que formatee alertas de intrusión conforme al protocolo oficial de telemetría.
+
+### Código / Laboratorio Ejecutable
+```python
+# conector_gossopka_telemetria.py
+# Módulo para estructurar alertas de ciberataques en formato de intercambio GosSOPKA
+import json
+import datetime
+import socket
+
+def empaquetar_alerta_gossopka(objeto_cii_id: str, ip_atacante: str, categoria_ataque: str):
+    alerta = {
+        "sensor_id": f"SENSOR-{socket.gethostname()}",
+        "cii_object_code": objeto_cii_id,
+        "timestamp_utc": datetime.datetime.utcnow().isoformat() + "Z",
+        "incident_category": categoria_ataque, # Ej: 'Scan', 'DoS', 'Malware'
+        "source_ip": ip_atacante,
+        "target_ip": "10.200.0.1",
+        "action_taken": "BLOCKED_BY_FIREWALL",
+        "transmission_channel": "GOSSOPKA_SECURE_TUNNEL"
+    }
+    return json.dumps(alerta, indent=2)
+
+if __name__ == "__main__":
+    payload = empaquetar_alerta_gossopka("CII-ENERGO-774", "198.51.100.23", "Exploit_Attempt_ICS")
+    print(payload)
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Conferencia de Ciberresiliencia y Doctrina Estatal](https://www.youtube.com/watch?v=jLbdG67TqW8)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/intl_03_rusia.mp3)
 
 ---
 

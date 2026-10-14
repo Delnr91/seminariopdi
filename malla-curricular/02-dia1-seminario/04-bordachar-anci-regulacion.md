@@ -43,9 +43,58 @@ Un eje neurálgico del marco es la calificación formal de Operadores de Importa
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_04_bordachar.mp3)
+### Estrategia Operativa Empresarial
+Para dar cumplimiento estricto al deber de notificación legal en menos de 3 horas ante la ANCI / CSIRT de Gobierno sin entorpecer la contención técnica, las empresas OIV deben automatizar la recopilación y estructuración del reporte de incidente utilizando el formato estándar STIX 2.1.
+
+### Código / Laboratorio Ejecutable
+```python
+# generador_reporte_stix_anci.py
+# Herramienta para empaquetar incidentes según el estándar STIX 2.1 para reporte a CSIRT
+import json
+import datetime
+import uuid
+
+def generar_reporte_incidente(oiv_nombre: str, tipo_ataque: str, impacto_descripcion: str):
+    incidente_stix = {
+        "type": "bundle",
+        "id": f"bundle--{uuid.uuid4()}",
+        "objects": [
+            {
+                "type": "incident",
+                "spec_version": "2.1",
+                "id": f"incident--{uuid.uuid4()}",
+                "created": datetime.datetime.utcnow().isoformat() + "Z",
+                "modified": datetime.datetime.utcnow().isoformat() + "Z",
+                "name": f"Notificación Urgente OIV: {tipo_ataque}",
+                "description": impacto_descripcion,
+                "labels": ["oiv-report", "ley-21663", "urgente"],
+                "custom_properties": {
+                    "entidad_afectada": oiv_nombre,
+                    "plazo_reporte_horas": 3,
+                    "canal_notificacion": "ANCI_CSIRT_API"
+                }
+            }
+        ]
+    }
+    return json.dumps(incidente_stix, indent=2)
+
+if __name__ == "__main__":
+    reporte = generar_reporte_incidente(
+        "Aguas Andinas S.A.", 
+        "DDoS en Portal de Clientes y Telemetría Primaria", 
+        "Saturación de enlaces troncales de monitoreo; no hay afectación en distribución física de agua."
+    )
+    print(reporte)
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 1 · Minuto 3:30:45)](https://www.youtube.com/watch?v=PEqWRTb1idE&t=3h30m45s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_04_bordachar.mp3)
 
 ---
 

@@ -43,9 +43,54 @@ El Dr. Xavier Bonnaire enfatiza la delgada y peligrosa frontera entre un error d
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_08_bonnaire.mp3)
+### Estrategia Operativa Empresarial
+Para evitar que agentes autónomos conectados a sistemas SCADA ejecuten comandos destructivos por alucinación o inyección adversarial, se debe encapsular el agente dentro de un 'Safety Envelope' determinista e imponer autorización humana de dos factores antes de interactuar con actuadores físicos.
+
+### Código / Laboratorio Ejecutable
+```python
+# safety_envelope_agent_guard.py
+# Guardrail determinista con interrupción manual (Kill-Switch) para actuadores industriales
+class SafetyEnvelope:
+    def __init__(self, max_temperatura=85.0, max_presion_bar=10.0):
+        self.MAX_TEMP = max_temperatura
+        self.MAX_PRESION = max_presion_bar
+        self.KILL_SWITCH_ACTIVE = False
+
+    def validar_comando_agente(self, comando: dict, operador_token: str = None) -> bool:
+        if self.KILL_SWITCH_ACTIVE:
+            print("[-] INTERRUPCIÓN TOTAL: Kill-Switch activado. Comando rechazado.")
+            return False
+
+        # Validación de envolvente físico determinista
+        target_temp = comando.get("temperatura", 0)
+        target_presion = comando.get("presion", 0)
+
+        if target_temp > self.MAX_TEMP or target_presion > self.MAX_PRESION:
+            print(f"[!] RECHAZO AUTOMÁTICO: Parámetros ({target_temp}°C, {target_presion}bar) violan límites físicos seguros.")
+            return False
+
+        # Requiere validación de operador humano para comandos críticos
+        if comando.get("requiere_human_in_the_loop", True) and not operador_token:
+            print("[!] ESPERANDO APROBACIÓN HUMANA: Se requiere confirmación de ingeniero.")
+            return False
+
+        print("[+] Comando validado dentro de la envolvente de seguridad.")
+        return True
+
+if __name__ == "__main__":
+    guard = SafetyEnvelope()
+    cmd = {"accion": "ajustar_caldera", "temperatura": 95.0, "presion": 8.0}
+    guard.validar_comando_agente(cmd)
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 1 · Minuto 8:30:10)](https://www.youtube.com/watch?v=PEqWRTb1idE&t=8h30m10s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_08_bonnaire.mp3)
 
 ---
 

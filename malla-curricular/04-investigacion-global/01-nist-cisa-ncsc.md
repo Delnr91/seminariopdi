@@ -43,9 +43,37 @@ El paradigma anglosajón se distingue por articular mandatos legales de reporte 
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/intl_01_eeuu_uk.mp3)
+### Estrategia Operativa Empresarial
+Para operacionalizar el marco NIST CSF 2.0 en infraestructura crítica, las entidades deben evaluar automáticamente sus sistemas frente a las seis funciones maestras (GV, ID, PR, DE, RS, RC) utilizando herramientas como CSET y scripts de telemetría de cumplimiento.
+
+### Código / Laboratorio Ejecutable
+```python
+# evaluador_madurez_nist_csf2.py
+# Script de diagnóstico para medir la implementación de las 6 funciones del NIST CSF 2.0
+def auditar_madurez_nist(respuestas: dict) -> dict:
+    pesos = {"GV": 0.20, "ID": 0.15, "PR": 0.20, "DE": 0.15, "RS": 0.15, "RC": 0.15}
+    puntajes = {}
+    total = 0.0
+    for funcion, peso in pesos.items():
+        score = respuestas.get(funcion, 0) # Calificación de 0 a 100
+        puntajes[funcion] = score
+        total += score * peso
+    return {"puntajes_funcion": puntajes, "indice_madurez_global": round(total, 2)}
+
+if __name__ == "__main__":
+    datos_evaluacion = {"GV": 85, "ID": 90, "PR": 75, "DE": 70, "RS": 80, "RC": 65}
+    resultado = auditar_madurez_nist(datos_evaluacion)
+    print(f"[+] Índice de Madurez NIST CSF 2.0: {resultado['indice_madurez_global']}%")
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Masterclass Oficial: NIST Cybersecurity Framework 2.0 Overview](https://www.youtube.com/watch?v=0kH8R5-yUCo)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/intl_01_eeuu_uk.mp3)
 
 ---
 

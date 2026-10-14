@@ -43,9 +43,48 @@ James Norman, diplomático y experto del FCDO británico, demuestra cómo estas 
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_06_norman.mp3)
+### Estrategia Operativa Empresarial
+Para contrarrestar campañas de pánico y operaciones de desinformación coordinadas durante cortes de servicios básicos, los equipos de ciberdefensa nacional deben desplegar análisis de grafos en redes sociales para identificar granjas de bots y emitir desmentidos oficiales verificados.
+
+### Código / Laboratorio Ejecutable
+```python
+# detector_campanas_coordinadas_bots.py
+# Herramienta analítica para medir la sincronización de mensajes y volumen anómalo
+from collections import Counter
+import datetime
+
+def analizar_propagacion_desinformacion(mensajes_muestra: list):
+    print("[*] Analizando correlación temporal y textual de publicaciones...")
+    usuarios = [m["usuario"] for m in mensajes_muestra]
+    textos = [m["texto"] for m in mensajes_muestra]
+    
+    conteo_textos = Counter(textos)
+    texto_mas_comun, repeticiones = conteo_textos.most_common(1)[0]
+    
+    if repeticiones >= 3:
+        print(f"[!] ALERTA DE GUERRA HÍBRIDA: Campaña coordinada detectada.")
+        print(f"    - Mensaje idéntico repetido {repeticiones} veces por diferentes cuentas.")
+        print(f"    - Contenido: '{texto_mas_comun}'")
+    else:
+        print("[+] Patrones de dispersión orgánicos normales.")
+
+if __name__ == "__main__":
+    datos = [
+        {"usuario": "bot1", "texto": "El agua de la ciudad está envenenada, no beban."},
+        {"usuario": "bot2", "texto": "El agua de la ciudad está envenenada, no beban."},
+        {"usuario": "bot3", "texto": "El agua de la ciudad está envenenada, no beban."}
+    ]
+    analizar_propagacion_desinformacion(datos)
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 2 · Minuto 6:05:10)](https://www.youtube.com/watch?v=jLbdG67TqW8&t=6h05m10s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_06_norman.mp3)
 
 ---
 

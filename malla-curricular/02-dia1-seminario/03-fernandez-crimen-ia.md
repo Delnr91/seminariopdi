@@ -43,9 +43,46 @@ Simultáneamente, la fiabilidad de las credenciales biométricas convencionales 
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_03_fernandez_manu.mp3)
+### Estrategia Operativa Empresarial
+Para blindar las transacciones financieras y órdenes operativas contra suplantaciones mediante voz clonada y deepfakes en videollamadas, se debe implementar una política de 'Desafío Fuera de Banda' (OOB) respaldada por un sistema de palabras clave secretas preacordadas y algoritmos de prueba de vida dinámica.
+
+### Código / Laboratorio Ejecutable
+```python
+# verificador_liveness_biometrico.py
+# Script de análisis de micro-variaciones y parpadeo para detección de avatares sintéticos
+import cv2
+import numpy as np
+
+def detectar_liveness_stream(simulated_frame_count=30):
+    print("[*] Iniciando verificación dinámica de prueba de vida (Liveness Challenge)")
+    # En un entorno real se procesa el stream de video de la cámara
+    ear_values = []
+    for i in range(simulated_frame_count):
+        # Simulación de cálculo de Eye Aspect Ratio (EAR)
+        simulated_ear = 0.30 if (i < 10 or i > 15) else 0.12  # Cierre de ojos (parpadeo)
+        ear_values.append(simulated_ear)
+        
+    blinks = sum(1 for j in range(1, len(ear_values)) if ear_values[j-1] > 0.25 and ear_values[j] <= 0.15)
+    
+    if blinks >= 1:
+        print(f"[+] Desafío de prueba de vida SUPERADO ({blinks} parpadeos naturales detectados).")
+        return True
+    else:
+        print("[-] ALERTA DE SEGURIDAD: Comportamiento estático o sintético. Posible deepfake.")
+        return False
+
+if __name__ == "__main__":
+    detectar_liveness_stream()
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 1 · Minuto 2:35:20)](https://www.youtube.com/watch?v=PEqWRTb1idE&t=2h35m20s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_03_fernandez_manu.mp3)
 
 ---
 

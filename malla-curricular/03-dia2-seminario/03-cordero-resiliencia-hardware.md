@@ -43,9 +43,40 @@ César Cordero destaca que la continuidad operacional exige blindar la cadena de
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_03_cordero.mp3)
+### Estrategia Operativa Empresarial
+Para certificar que los servidores y estaciones críticas no han sido comprometidos con bootkits o implantes físicos en firmware, los equipos de infraestructura deben auditar periódicamente los registros de configuración de plataforma (PCR) en el chip TPM 2.0 y el estado de Secure Boot.
+
+### Código / Laboratorio Ejecutable
+```python
+#!/bin/bash
+# auditar_hardware_tpm_boot.sh
+# Script para verificar estado de TPM 2.0, Secure Boot y PCRs en entornos Linux/Enterprise
+set -e
+
+echo "[*] 1. Comprobando estado de UEFI Secure Boot..."
+if [ -d "/sys/firmware/efi" ]; then
+    mokutil --sb-state || echo "[-] MOKUtil no disponible, verificando vía efivarfs..."
+else
+    echo "[-] ALERTA: Sistema arrancado en modo BIOS Legacy (Sin protección criptográfica UEFI)."
+fi
+
+echo "[*] 2. Leyendo registros de configuración de plataforma (PCR) en TPM 2.0..."
+if which tpm2_pcrread >/dev/null 2>&1; then
+    echo "[+] Leyendo PCR 0 (Código de BIOS/Firmware) y PCR 7 (Política de Secure Boot):"
+    tpm2_pcrread sha256:0,7
+else
+    echo "[-] tpm2-tools no instalado. Instale con: sudo apt install tpm2-tools"
+fi
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 2 · Minuto 2:20:45)](https://www.youtube.com/watch?v=jLbdG67TqW8&t=2h20m45s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_03_cordero.mp3)
 
 ---
 

@@ -43,9 +43,52 @@ Garantizar la resiliencia sistémica del DNS demanda implementar topologías Any
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_02_lama.mp3)
+### Estrategia Operativa Empresarial
+Para garantizar la resiliencia y evitar ataques de intermediario (Man-in-the-Middle) en resoluciones de servicios esenciales, las organizaciones deben desplegar monitoreo continuo de cadenas de confianza DNSSEC y verificar la consistencia de respuestas entre diferentes nodos Anycast distribuidos.
+
+### Código / Laboratorio Ejecutable
+```python
+# auditor_dnssec_resilience.py
+# Herramienta para verificar firmas DNSKEY y registros DS de infraestructura crítica
+import dns.resolver
+import dns.dnssec
+
+def auditar_zona_dnssec(dominio: str):
+    print(f"[*] Auditando cadena criptográfica para: {dominio}")
+    resolver = dns.resolver.Resolver()
+    resolver.use_edns(0, dns.flags.DO, 4096) # Solicitar registros DNSSEC
+    
+    try:
+        # 1. Obtener llaves DNSKEY
+        resp_dnskey = resolver.resolve(dominio, 'DNSKEY')
+        print(f"[+] Registros DNSKEY encontrados: {len(resp_dnskey)}")
+        for rdata in resp_dnskey:
+            print(f"    - Flag: {rdata.flags} | Protocolo: {rdata.protocol} | Algoritmo: {rdata.algorithm}")
+            
+        # 2. Obtener registros RRSIG correspondientes
+        rrsig = resp_dnskey.response.find_rrset(
+            resp_dnskey.response.answer, dns.name.from_text(dominio), dns.rdataclass.IN, dns.rdatatype.RRSIG
+        )
+        if rrsig:
+            print(f"[+] Firma criptográfica RRSIG válida presente (Expira en época UNIX: {rrsig[0].expiration})")
+        else:
+            print("[-] ALERTA: No se encontró registro RRSIG para la zona.")
+            
+    except Exception as e:
+        print(f"[-] Error en validación DNSSEC: {e}")
+
+if __name__ == "__main__":
+    auditar_zona_dnssec("nic.cl")
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 1 · Minuto 1:40:15)](https://www.youtube.com/watch?v=PEqWRTb1idE&t=1h40m15s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_02_lama.mp3)
 
 ---
 

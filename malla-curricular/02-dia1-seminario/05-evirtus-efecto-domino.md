@@ -43,9 +43,36 @@ Un incidente aislado en un eslabón logístico o de soporte técnico desata un e
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_05_evirtus_incidentes.mp3)
+### Estrategia Operativa Empresarial
+Para evitar que un compromiso en un proveedor de software se propague a los sistemas de control, la organización debe auditar automáticamente cada paquete y contenedor mediante listas de materiales de software (SBOM) y bloquear binarios no firmados con Cosign.
+
+### Código / Laboratorio Ejecutable
+```python
+#!/bin/bash
+# pipeline_verificacion_sbom_proveedores.sh
+# Automatización para auditar artefactos de software entregados por terceros
+set -e
+
+ARTIFACT_IMAGE="proveedor-externo/scada-adapter:v2.1"
+echo "[*] 1. Descargando y generando SBOM con Syft para: $ARTIFACT_IMAGE"
+syft packages "$ARTIFACT_IMAGE" -o cyclonedx-json > sbom.json
+
+echo "[*] 2. Escaneando vulnerabilidades críticas en dependencias con Grype"
+grype sbom:./sbom.json --fail-on high
+
+echo "[*] 3. Verificando firma criptográfica de proveedor con Cosign"
+# cosign verify --key proveedor-public-key.pub "$ARTIFACT_IMAGE"
+echo "[+] Artefacto verificado y aprobado para despliegue en zona industrial."
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 1 · Minuto 5:40:10)](https://www.youtube.com/watch?v=PEqWRTb1idE&t=5h40m10s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_05_evirtus_incidentes.mp3)
 
 ---
 

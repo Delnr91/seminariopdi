@@ -43,9 +43,41 @@ Nadezda Abbas plantea una modernización pedagógica radical basada en el aprend
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_07_abbas.mp3)
+### Estrategia Operativa Empresarial
+Para acelerar la formación práctica de ingenieros y cerrar la brecha de habilidades, las organizaciones deben desplegar entornos de simulación de ciberpolígonos (Cyber Ranges) locales basados en contenedores Docker y plataformas CTF.
+
+### Código / Laboratorio Ejecutable
+```python
+# docker-compose-ctf-lab.yml
+# Entorno de laboratorio de simulación abierto para entrenamiento práctico en ciberdefensa
+version: '3.8'
+
+services:
+  ctfd-platform:
+    image: ctfd/ctfd:latest
+    ports:
+      - "8000:8000"
+    environment:
+      - UPLOAD_FOLDER=/var/uploads
+      - DATABASE_URL=sqlite:////var/CTFd/ctfd.db
+    volumes:
+      - ./ctfd_data:/var/CTFd
+
+  vulnerable-target-app:
+    image: bkimminich/juice-shop:latest
+    ports:
+      - "3000:3000"
+    restart: always
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 2 · Minuto 6:50:20)](https://www.youtube.com/watch?v=jLbdG67TqW8&t=6h50m20s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_07_abbas.mp3)
 
 ---
 

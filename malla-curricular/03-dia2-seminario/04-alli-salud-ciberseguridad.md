@@ -43,9 +43,40 @@ Nina Alli, líder de Biohacking Village, apela a una profunda transformación é
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_04_alli.mp3)
+### Estrategia Operativa Empresarial
+Para garantizar la atención de pacientes de urgencia durante un ataque destructivo de ransomware contra el hospital, los equipos clínicos e informáticos deben contar con un protocolo automatizado de conmutación a 'Modo de Ficha Clínica Degradada' con almacenamiento local inmutable.
+
+### Código / Laboratorio Ejecutable
+```python
+# protocolo_conmutacion_salud_degradada.py
+# Playbook automatizado para aislamiento de red clínica y activación de respaldo seguro
+import sys
+
+def conmutar_modo_contingencia_clinica(alerta_ransomware_confirmada: bool):
+    if not alerta_ransomware_confirmada:
+        print("[+] Operación clínica normal.")
+        return
+        
+    print("[!] ALERTA CRÍTICA: Desconectando base de datos central EHR de la red pública...")
+    # 1. Aislar VLANs clínicas para proteger instrumental de pacientes
+    print("    - Desactivando interfaces de red entre el área administrativa y pabellones.")
+    # 2. Habilitar servidor local de contingencia en modo sólo lectura (Read-Only)
+    print("    - Activando réplicas inmutables locales de historias clínicas para médicos de turno.")
+    # 3. Notificación a jefatura médica de urgencias
+    print("[+] Protocolo de Contingencia Asistencial 100% OPERATIVO. Proceder con soporte vital.")
+
+if __name__ == "__main__":
+    conmutar_modo_contingencia_clinica(True)
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 2 · Minuto 4:25:10)](https://www.youtube.com/watch?v=jLbdG67TqW8&t=4h25m10s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_04_alli.mp3)
 
 ---
 

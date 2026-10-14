@@ -43,9 +43,35 @@ El marco chino destaca por imponer estrictos requisitos de localización de dato
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/intl_02_china.mp3)
+### Estrategia Operativa Empresarial
+Para multinacionales u operadores que interactúan con el ecosistema digital chino, es obligatorio verificar que las configuraciones de los servidores cumplan con los requisitos de endurecimiento del estándar GB/T 22239-2019 (MLPS 2.0 Nivel 3) respecto a almacenamiento de logs por 180 días y algoritmos de cifrado aprobados.
+
+### Código / Laboratorio Ejecutable
+```python
+#!/bin/bash
+# auditar_cumplimiento_mlps2_linux.sh
+# Script de verificación de controles clave exigidos por el estándar chino MLPS 2.0 (Nivel 3)
+set -e
+
+echo "[*] 1. Comprobando retención mínima de 180 días en registros del sistema (MLPS 2.0 req)..."
+LOG_RETENTION=$(grep -i "rotate" /etc/logrotate.conf || true)
+echo "    - Configuración actual: $LOG_RETENTION"
+
+echo "[*] 2. Verificando complejidad y bloqueo de contraseñas (PAM pam_pwquality)..."
+grep -E "pam_pwquality|pam_tally2|pam_faillock" /etc/pam.d/common-auth || echo "[-] Requiere configuración de módulo de bloqueo."
+
+echo "[*] 3. Comprobando estado del servicio de auditoría auditd..."
+systemctl is-active auditd || echo "[-] ALERTA: auditd inactivo. Obligatorio bajo GB/T 22239-2019."
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Conferencia de Contexto Geopolítico y Soberanía Digital](https://www.youtube.com/watch?v=PEqWRTb1idE)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/intl_02_china.mp3)
 
 ---
 

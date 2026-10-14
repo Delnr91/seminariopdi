@@ -43,10 +43,51 @@ La construcción de una infraestructura verdaderamente resiliente exige la adopc
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_09_evirtus_redes.mp3)
+### Estrategia Operativa Empresarial
+Para implementar microsegmentación Zero Trust a nivel de kernel sin degradar la latencia de servicios críticos, se deben desplegar políticas basadas en eBPF con Cilium, asegurando que solo pods y servicios explícitamente autorizados puedan comunicarse a través de mTLS y Layer 7.
+
+### Código / Laboratorio Ejecutable
+```python
+# cilium_zero_trust_policy.yaml
+# Manifiesto de microsegmentación eBPF para aislar sistemas SCADA y BDs críticas
+apiVersion: "cilium.io/v2"
+kind: CiliumNetworkPolicy
+metadata:
+  name: "scada-isolation-zerotrust"
+  namespace: "critical-infrastructure"
+spec:
+  endpointSelector:
+    matchLabels:
+      app: "scada-core-service"
+  ingress:
+  - fromEndpoints:
+    - matchLabels:
+        role: "authorized-operator-hmi"
+    toPorts:
+    - ports:
+      - port: "502"
+        protocol: TCP
+      rules:
+        http: []
+  egress:
+  - toEndpoints:
+    - matchLabels:
+        app: "telemetry-timescale-db"
+    toPorts:
+    - ports:
+      - port: "5432"
+        protocol: TCP
+```
 
 ---
 
-[⬅️ Lección Anterior](08-bonnaire-agentes-ia.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡️](10-caceres-blue-team-ia.md)
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 1 · Minuto 9:20:00)](https://www.youtube.com/watch?v=PEqWRTb1idE&t=9h20m00s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia1_09_evirtus_redes.mp3)
+
+---
+
+[⬅️ Lección Anterior](08-bonnaire-agentes-ia.md) | [🏠 Volver a la Malla Curricular](../../README.md) | [Siguiente Lección ➡️](../03-dia2-seminario/01-caceres-blue-team-ia.md)

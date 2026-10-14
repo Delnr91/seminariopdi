@@ -43,9 +43,40 @@ La efectividad de la CTI radica en su capacidad de articular tres niveles de dec
 
 ---
 
-## Enlace al Audio
+## 🧪 Anexo Práctico: Estrategia Operativa y Laboratorio Open Source
 
-[▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_02_fuentes.mp3)
+### Estrategia Operativa Empresarial
+Para pasar de feeds estáticos de IoCs a inteligencia accionable que modifique reglas de firewall en tiempo real, se debe automatizar la extracción de hashes y dominios maliciosos desde servidores MISP o feeds STIX, compilando reglas YARA para los endpoints.
+
+### Código / Laboratorio Ejecutable
+```python
+# cti_parser_yara_builder.py
+# Herramienta CTI para compilar indicadores de amenaza en reglas YARA operativas
+def compilar_regla_yara(nombre_campana: str, hashes_maliciosos: list) -> str:
+    strings_block = "\n        ".join([f"$hash_{i} = \"{h}\"" for i, h in enumerate(hashes_maliciosos)])
+    regla = f"""rule CTI_{nombre_campana} {{
+    meta:
+        author = "Lattices CTI Unit"
+        description = "Regla generada automáticamente desde feed de inteligencia de amenazas"
+        tlp = "AMBER"
+    strings:
+        {strings_block}
+    condition:
+        any of them
+}}"""
+    return regla
+
+if __name__ == "__main__":
+    hashes = ["e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"]
+    print(compilar_regla_yara("Ransomware_Industrial_APT", hashes))
+```
+
+---
+
+## Recursos Multimedia Oficiales
+
+* [📺 Ver Ponencia en Video Oficial (Día 2 · Minuto 1:25:30)](https://www.youtube.com/watch?v=jLbdG67TqW8&t=1h25m30s)
+* [▶️ Escuchar Podcast Resumen](../../assets/audio/dia2_02_fuentes.mp3)
 
 ---
 
