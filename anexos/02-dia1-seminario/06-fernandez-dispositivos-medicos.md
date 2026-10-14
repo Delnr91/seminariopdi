@@ -32,13 +32,29 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. Abrir un firmware de práctica en Ghidra como archivo para análisis estático; conservar el original y anotar el hash de la copia.
 4. Proponer segmentación y mantenimiento mediante la matriz de flujos; explicar cómo comprobar continuidad sin conectar equipos clínicos reales.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-```csv
-origen,destino,flujo,necesario,justificacion
-dispositivo_ficticio,estacion_clinica,telemetria,si,seguimiento_simulado
-dispositivo_ficticio,internet_general,navegacion,no,sin_requisito_operacional
+Comparar un flujo ficticio con un inventario explícito. El ejemplo no captura tráfico ni conecta dispositivos.
+
+```python
+from ipaddress import ip_address
+
+def revisar_flujo(destino, puerto, inventario):
+    direccion = str(ip_address(destino))
+    if type(puerto) is not int or not 1 <= puerto <= 65535:
+        raise ValueError("Puerto inválido")
+    return {"destino": direccion, "puerto": puerto,
+            "resultado": "inventariado" if (direccion, puerto) in inventario
+                         else "fuera_del_inventario_revisar"}
+
+if __name__ == "__main__":
+    inventario = {("192.0.2.10", 443)}
+    print(revisar_flujo("192.0.2.10", 23, inventario))
 ```
+
+**Alcance:** Una IP o un puerto no identifica una bomba de infusión ni un comando médico. Un flujo ajeno al inventario requiere corroboración; este resultado no declara una amenaza clínica.
+
+**Comprobación:** ejemplo ejecutado con datos ficticios; se probaron entradas válidas, límites y errores. La prueba cubre el comportamiento local de la función, no un sistema de producción.
 
 ## Evaluación del resultado
 

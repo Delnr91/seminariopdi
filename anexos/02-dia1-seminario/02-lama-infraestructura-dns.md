@@ -32,14 +32,20 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. Crear una variante de la zona con una delegación o firma incorrecta y explicar el error esperado. No modificar una zona productiva.
 4. Documentar un plan de recuperación con responsables y comprobar la respuesta del resolver tras la corrección en el laboratorio.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-Con DNSViz ya disponible y una captura propia guardada como `zona.json`:
+Procesar una captura DNSViz propia ya obtenida en el laboratorio, sin consultar dominios de terceros.
 
 ```bash
+set -eu
+test -s zona.json
 dnsviz grok -r zona.json -o zona-evaluada.json
 dnsviz print -r zona.json
 ```
+
+**Alcance:** Encontrar DNSKEY o RRSIG no valida una firma. Revisar autenticación criptográfica, vigencia, DS y cadena hasta un ancla de confianza conocida. El análisis de una captura no prueba disponibilidad actual.
+
+**Comprobación:** sintaxis Bash revisada. Los comandos de herramientas externas requieren preparación; sus funciones reales no se ejecutaron en esta revisión.
 
 ## Evaluación del resultado
 
@@ -53,6 +59,8 @@ dnsviz print -r zona.json
 
 ## Fuentes y profundización global
 
+* [dnspython DNSSEC: validación y límites](https://dnspython.readthedocs.io/en/stable/dnssec.html).
+* [NIST SP 800-81 Rev. 3](https://csrc.nist.gov/pubs/sp/800/81/r3/final).
 * [DNSSEC Protocol Modifications (RFC 4035)](https://www.rfc-editor.org/rfc/rfc4035).
 * [DNSViz: ejemplos y diagnóstico](https://github.com/dnsviz/dnsviz#usage).
 

@@ -34,15 +34,34 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. Comparar con otra versión y explicar al menos dos cambios. No considerar la diferencia de hash como prueba suficiente de alteración maliciosa.
 4. Diseñar el plan de recuperación con compatibilidad, respaldo y criterios de reversión; si no hay equipo dedicado, terminar con un ejercicio de mesa.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-Con el archivo de práctica disponible:
+Consultas de lectura para un equipo de laboratorio con herramientas preparadas. Si algo falta o falla, el resultado termina como revisión incompleta.
 
 ```bash
-sha256sum firmware.bin
+incompleto=0
+if command -v mokutil >/dev/null 2>&1; then
+    mokutil --sb-state || incompleto=1
+else
+    printf '%s\n' 'mokutil no disponible; estado no evaluado.'
+    incompleto=1
+fi
+if command -v tpm2_pcrread >/dev/null 2>&1; then
+    tpm2_pcrread sha256:0,7 || incompleto=1
+else
+    printf '%s\n' 'tpm2_pcrread no disponible; PCR no evaluados.'
+    incompleto=1
+fi
+if [ "$incompleto" -ne 0 ]; then
+    printf '%s\n' 'Revisión incompleta; no emitir conclusiones de integridad.'
+    exit 1
+fi
+printf '%s\n' 'Lecturas obtenidas; contrastar baseline y registro de eventos.'
 ```
 
-Conservar también el origen y la versión: el hash acredita identidad del archivo, no autenticidad del proveedor.
+**Alcance:** Leer PCR y Secure Boot no certifica ausencia de bootkits. Comparar valores con referencias y eventos medidos; no instalar herramientas ni modificar firmware como parte de este ejemplo.
+
+**Comprobación:** sintaxis Bash revisada. Los comandos de herramientas externas requieren preparación; sus funciones reales no se ejecutaron en esta revisión.
 
 ## Evaluación del resultado
 
@@ -56,6 +75,7 @@ Conservar también el origen y la versión: el hash acredita identidad del archi
 
 ## Fuentes y profundización global
 
+* [tpm2_pcrread: manual oficial](https://tpm2-tools.readthedocs.io/en/latest/man/tpm2_pcrread.1/).
 * [NIST SP 800-193](https://csrc.nist.gov/pubs/sp/800/193/final).
 * [UEFITool](https://github.com/LongSoft/UEFITool).
 

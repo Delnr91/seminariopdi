@@ -34,13 +34,41 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. En un laboratorio separado y preparado para ello, verificar flujo permitido, denegado, identidad ausente e identidad expirada.
 4. Simular indisponibilidad del mecanismo de identidad y comprobar el procedimiento de continuidad sin convertirlo en acceso abierto.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-```csv
-identidad,servicio,accion,decision
-spiffe://laboratorio.example/portal,consulta,leer,permitir
-spiffe://laboratorio.example/portal,administracion,modificar,denegar
+Política L4 para un namespace de laboratorio con workloads simulados. El ejemplo no configura TLS ni asegura identidad de usuario.
+
+```yaml
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata:
+  name: aislamiento-simulador
+  namespace: laboratorio
+spec:
+  endpointSelector:
+    matchLabels:
+      app: simulador
+  ingress:
+    - fromEndpoints:
+        - matchLabels:
+            app: hmi-simulada
+      toPorts:
+        - ports:
+            - port: "502"
+              protocol: TCP
+  egress:
+    - toEndpoints:
+        - matchLabels:
+            app: base-simulada
+      toPorts:
+        - ports:
+            - port: "5432"
+              protocol: TCP
 ```
+
+**Alcance:** Requiere Cilium y etiquetas reales del laboratorio. Revisar también otras políticas: los permisos pueden combinarse. DNS y servicios adicionales necesitan reglas justificadas; no aplicar reglas HTTP a Modbus ni deducir mTLS de una política TCP.
+
+**Comprobación:** YAML leído y estructura revisada. No se desplegó la configuración ni se convirtió con un backend operativo.
 
 ## Evaluación del resultado
 

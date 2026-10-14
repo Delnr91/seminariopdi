@@ -32,20 +32,40 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. Evaluar con aserciones sobre salida y trazas; comprobar que ningún caso no autorizado produjo un efecto en el mock.
 4. Repetir tras acotar permisos y agregar interrupción. Guardar diferencias de versión y casos que todavía fallen.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-Fragmento de prueba para adaptar a una configuración de Promptfoo con proveedor mock o local:
+Modelo de autorización para herramientas mock. Rechaza campos ausentes, acciones desconocidas, booleanos usados como números y valores no finitos.
 
-```yaml
-tests:
-  - description: Una respuesta debe conservar estructura JSON
-    vars:
-      tarea: resumir_incidente_ficticio
-    assert:
-      - type: is-json
+```python
+import math
+
+def evaluar_propuesta(comando, *, aprobacion_verificada=False, detenido=False):
+    if type(aprobacion_verificada) is not bool or type(detenido) is not bool:
+        return False
+    if detenido or not aprobacion_verificada:
+        return False
+    if not isinstance(comando, dict) or set(comando) != {"accion", "temperatura", "presion"}:
+        return False
+    if comando["accion"] != "ajustar_simulador":
+        return False
+    limites = {"temperatura": (0, 85), "presion": (0, 10)}
+    for campo, (minimo, maximo) in limites.items():
+        valor = comando[campo]
+        if type(valor) not in (int, float):
+            return False
+        if not minimo <= valor <= maximo or not math.isfinite(valor):
+            return False
+    return True
+
+if __name__ == "__main__":
+    propuesta = {"accion": "ajustar_simulador", "temperatura": 25, "presion": 2}
+    print({"propuesta_admisible_en_mock": evaluar_propuesta(propuesta),
+           "efectos_en_sistemas": False})
 ```
 
-Esta aserción comprueba formato; la autorización debe comprobarse también en las trazas de herramientas.
+**Alcance:** Los límites son arbitrarios del simulador. La aprobación proviene del harness de prueba, no del comando solicitado; el booleano no implementa autenticación real. No conectar este ejemplo a actuadores ni tratarlo como una barrera de seguridad certificada.
+
+**Comprobación:** ejemplo ejecutado con datos ficticios; se probaron entradas válidas, límites y errores. La prueba cubre el comportamiento local de la función, no un sistema de producción.
 
 ## Evaluación del resultado
 

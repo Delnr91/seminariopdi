@@ -33,6 +33,10 @@ Desde la arquitectura, resultan relevantes el inventario de dependencias, la ges
 
 * [Introduction to Microsoft Purview and Microsoft's privacy principles](https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/) — estudiar conceptos de gestión y privacidad con material gratuito; no es un curso de cumplimiento chino.
 
+## 🛠️ Anexo de métodos y herramientas
+
+[Ejercicio técnico, evidencia y límites de aplicabilidad](../../anexos/04-investigacion-global/02-china-cii-cac.md). El módulo es investigación complementaria y no se asocia a una charla del seminario sin corroboración.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

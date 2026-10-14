@@ -34,14 +34,25 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. Revisar una dependencia con Scorecard y explicar dos checks mediante su documentación; una puntuación agregada no equivale a ausencia de vulnerabilidades.
 4. Simular un fallo del componente compartido y definir continuidad, responsable y recuperación para cada servicio afectado.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-Con Syft ya disponible:
+Ejecutar tres comprobaciones independientes con herramientas ya disponibles: inventario, vulnerabilidades conocidas y firma del SBOM. Preparar una muestra local, un SBOM de proveedor ficticio y su bundle Sigstore de laboratorio.
 
 ```bash
-syft ./muestra -o cyclonedx-json > sbom.json
-sha256sum sbom.json
+set -eu
+test -d muestra
+test -s laboratorio.pub
+test -s sbom-proveedor.json
+test -s sbom-proveedor.sigstore.json
+syft ./muestra -o cyclonedx-json > sbom-local.json
+cosign verify-blob --key laboratorio.pub --bundle sbom-proveedor.sigstore.json sbom-proveedor.json
+grype sbom:./sbom-local.json --fail-on high
+printf '%s\n' 'Comprobaciones terminadas; comparar inventarios y revisar impacto.'
 ```
+
+**Alcance:** La firma verifica el SBOM de proveedor recibido, sin sobrescribirlo; la clave debe provenir de una fuente confiable. Comparar ese inventario con el generado localmente. Grype puede actualizar su base por red. Firmar un inventario no verifica por sí solo el contenedor, ni autoriza despliegue en OT.
+
+**Comprobación:** sintaxis Bash revisada. Los comandos de herramientas externas requieren preparación; sus funciones reales no se ejecutaron en esta revisión.
 
 ## Evaluación del resultado
 
@@ -55,6 +66,9 @@ sha256sum sbom.json
 
 ## Fuentes y profundización global
 
+* [Cosign verify-blob: CLI oficial](https://github.com/sigstore/cosign/blob/main/doc/cosign_verify-blob.md).
+* [Cosign: verificar firmas](https://docs.sigstore.dev/cosign/verifying/verify/).
+* [Grype](https://github.com/anchore/grype).
 * [NIST SP 800-161 Rev. 1 Update 1](https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final).
 * [OpenSSF Scorecard: checks](https://github.com/ossf/scorecard/blob/main/docs/checks.md).
 

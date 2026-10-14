@@ -32,15 +32,31 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. Representar una solicitud ficticia de pago; un participante confirma por un canal independiente y otro documenta la decisión.
 4. Evaluar el procedimiento cuando el interlocutor está ausente, la solicitud es urgente o no hay manifiesto disponible.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-Con C2PA Tool ya disponible y un archivo de laboratorio:
+Contar cruces de un umbral en una serie numérica ficticia para comprender una medición; no se procesa cámara ni biometría.
 
-```bash
-c2patool imagen.jpg
+```python
+import math
+
+def contar_cruces(muestras, umbral=0.15):
+    if type(umbral) not in (int, float) or not 0 < umbral < 1 or not math.isfinite(umbral):
+        raise ValueError("Umbral inválido")
+    if not isinstance(muestras, (list, tuple)) or not muestras:
+        raise ValueError("Faltan muestras")
+    if any(type(x) not in (int, float) or not 0 <= x <= 1 or not math.isfinite(x)
+           for x in muestras):
+        raise ValueError("Las muestras deben ser valores finitos entre 0 y 1")
+    return sum(a > umbral and b <= umbral for a, b in zip(muestras, muestras[1:]))
+
+if __name__ == "__main__":
+    print({"cruces_en_serie_ficticia": contar_cruces([0.30, 0.12, 0.30]),
+           "identidad_verificada": False})
 ```
 
-Un manifiesto válido acredita relaciones de procedencia comprobables; no demuestra que la escena o la solicitud sean verdaderas.
+**Alcance:** Un cruce de umbral no demuestra vida, identidad ni ausencia de deepfake. Un sistema PAD exige evaluación y señales adicionales; mantener verificación independiente de las órdenes financieras.
+
+**Comprobación:** ejemplo ejecutado con datos ficticios; se probaron entradas válidas, límites y errores. La prueba cubre el comportamiento local de la función, no un sistema de producción.
 
 ## Evaluación del resultado
 

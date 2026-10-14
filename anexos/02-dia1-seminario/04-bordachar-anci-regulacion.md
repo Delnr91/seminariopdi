@@ -32,12 +32,32 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. Introducir tres eventos: aviso inicial, confirmación de alcance y recuperación. Registrar qué información falta en cada etapa.
 4. Comparar la cronología con el procedimiento aprobado y documentar las obligaciones aplicables mediante revisión jurídica del contexto, sin deducir plazos de este ejercicio.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-```csv
-servicio,responsable,evidencia,brecha,accion
-portal_ficticio,operaciones,prueba_restauracion,sin_suplente,asignar_reemplazo
+Preparar una ficha interna con datos ficticios y estado explícito de envío. Su estructura sirve para un ejercicio de respuesta.
+
+```python
+from datetime import datetime, timezone
+import json
+import uuid
+
+def preparar_ficha(servicio, descripcion):
+    if any(not isinstance(v, str) or not v.strip() or len(v) > 2000
+           for v in (servicio, descripcion)):
+        raise ValueError("Servicio y descripción deben ser textos válidos")
+    return {"esquema": "ficha_interna_laboratorio_v1", "id": str(uuid.uuid4()),
+            "fecha_utc": datetime.now(timezone.utc).isoformat(),
+            "servicio": servicio.strip(), "descripcion": descripcion.strip(),
+            "estado_envio": "no_enviado", "accion_confirmada": "ninguna"}
+
+if __name__ == "__main__":
+    print(json.dumps(preparar_ficha("portal_ficticio", "Evento por corroborar"),
+                     ensure_ascii=False, indent=2))
 ```
+
+**Alcance:** Este JSON no es un formulario oficial ni un objeto STIX. No envía reportes, no presupone una API de ANCI y no determina plazos jurídicos. Si se necesita intercambio STIX, utilizar su esquema y extensiones documentadas.
+
+**Comprobación:** ejemplo ejecutado con datos ficticios; se probaron entradas válidas, límites y errores. La prueba cubre el comportamiento local de la función, no un sistema de producción.
 
 ## Evaluación del resultado
 
@@ -51,6 +71,7 @@ portal_ficticio,operaciones,prueba_restauracion,sin_suplente,asignar_reemplazo
 
 ## Fuentes y profundización global
 
+* [OASIS STIX Version 2.1](https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html).
 * [NIST CSF 2.0](https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final).
 * [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final).
 

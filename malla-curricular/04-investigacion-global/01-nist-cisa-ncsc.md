@@ -34,6 +34,10 @@ La implantación requiere definir perfiles, responsables y criterios de aceptaci
 
 * [Establish the guiding principles and core components of Zero Trust](https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/) — estudiar una ruta gratuita de diseño de acceso y protección de recursos.
 
+## 🛠️ Anexo de métodos y herramientas
+
+[Ejercicio técnico, evidencia y límites de aplicabilidad](../../anexos/04-investigacion-global/01-nist-cisa-ncsc.md). El módulo es investigación complementaria y no se asocia a una charla del seminario sin corroboración.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

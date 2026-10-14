@@ -34,13 +34,28 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. Representar una indisponibilidad en mesa: registrar órdenes pendientes y responsables mediante un procedimiento alternativo.
 4. Restaurar la instancia de laboratorio cuando exista y reconciliar los registros; si se usa una tabla, informar que se evaluó el procedimiento y no la restauración del software.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-```csv
-registro_ficticio,accion_pendiente,responsable,estado
-PAC-001,resultado_laboratorio,operador_prueba,pendiente_reconciliacion
-PAC-002,confirmacion_admision,operador_prueba,pendiente_reconciliacion
+Proponer pasos de continuidad para una mesa de trabajo. El código no desconecta redes, activa réplicas ni valida disponibilidad clínica.
+
+```python
+def proponer_plan(alerta_confirmada):
+    if type(alerta_confirmada) is not bool:
+        raise ValueError("La confirmación del ejercicio debe ser un booleano")
+    pasos = ["confirmar alcance con responsables clínicos y técnicos",
+             "evaluar impacto antes de proponer aislamiento",
+             "comprobar respaldo y alternativa de atención",
+             "ensayar reconciliación y recuperación"] if alerta_confirmada else []
+    return {"modo": "simulacion", "pasos_propuestos": pasos,
+            "cambios_ejecutados": False, "continuidad_comprobada": False}
+
+if __name__ == "__main__":
+    print(proponer_plan(True))
 ```
+
+**Alcance:** La salida es un plan pendiente de ensayo. Su validación exige responsables asistenciales, pruebas de restauración y reconciliación; imprimir mensajes no implementa continuidad.
+
+**Comprobación:** ejemplo ejecutado con datos ficticios; se probaron entradas válidas, límites y errores. La prueba cubre el comportamiento local de la función, no un sistema de producción.
 
 ## Evaluación del resultado
 

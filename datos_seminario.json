@@ -1758,7 +1758,8 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/zero-trust-principles/"
           }
         ]
-      }
+      },
+      "anexo_practico": "anexos/04-investigacion-global/01-nist-cisa-ncsc.md"
     },
     {
       "id": "intl_02_china",
@@ -1845,7 +1846,8 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/"
           }
         ]
-      }
+      },
+      "anexo_practico": "anexos/04-investigacion-global/02-china-cii-cac.md"
     },
     {
       "id": "intl_03_rusia",
@@ -1932,7 +1934,8 @@
             "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/"
           }
         ]
-      }
+      },
+      "anexo_practico": "anexos/04-investigacion-global/03-rusia-187fz-fstec.md"
     }
   ],
   "videos_seminario": [
@@ -2198,7 +2201,12 @@
           "nombre": "NIST Adversarial Machine Learning",
           "url": "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "python",
+        "descripcion": "Triage léxico de textos ficticios. Devuelve indicadores para revisión y deja la autorización a un componente independiente.",
+        "verificacion": "ejecutado_con_datos_ficticios"
+      }
     },
     {
       "ruta": "anexos/02-dia1-seminario/02-lama-infraestructura-dns.md",
@@ -2223,8 +2231,21 @@
         {
           "nombre": "DNSViz: ejemplos y diagnóstico",
           "url": "https://github.com/dnsviz/dnsviz#usage"
+        },
+        {
+          "nombre": "NIST SP 800-81 Rev. 3",
+          "url": "https://csrc.nist.gov/pubs/sp/800/81/r3/final"
+        },
+        {
+          "nombre": "dnspython DNSSEC: validación y límites",
+          "url": "https://dnspython.readthedocs.io/en/stable/dnssec.html"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "bash",
+        "descripcion": "Procesar una captura DNSViz propia ya obtenida en el laboratorio, sin consultar dominios de terceros.",
+        "verificacion": "revision_sintactica_o_documental_sin_despliegue"
+      }
     },
     {
       "ruta": "anexos/02-dia1-seminario/03-fernandez-crimen-ia.md",
@@ -2250,7 +2271,12 @@
           "nombre": "NIST Digital Identity Guidelines: Authentication",
           "url": "https://csrc.nist.gov/pubs/sp/800/63/b/4/final"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "python",
+        "descripcion": "Contar cruces de un umbral en una serie numérica ficticia para comprender una medición; no se procesa cámara ni biometría.",
+        "verificacion": "ejecutado_con_datos_ficticios"
+      }
     },
     {
       "ruta": "anexos/02-dia1-seminario/04-bordachar-anci-regulacion.md",
@@ -2275,8 +2301,17 @@
         {
           "nombre": "NIST SP 800-61 Rev. 3",
           "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+        },
+        {
+          "nombre": "OASIS STIX Version 2.1",
+          "url": "https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "python",
+        "descripcion": "Preparar una ficha interna con datos ficticios y estado explícito de envío. Su estructura sirve para un ejercicio de respuesta.",
+        "verificacion": "ejecutado_con_datos_ficticios"
+      }
     },
     {
       "ruta": "anexos/02-dia1-seminario/05-evirtus-efecto-domino.md",
@@ -2301,8 +2336,25 @@
         {
           "nombre": "OpenSSF Scorecard: checks",
           "url": "https://github.com/ossf/scorecard/blob/main/docs/checks.md"
+        },
+        {
+          "nombre": "Grype",
+          "url": "https://github.com/anchore/grype"
+        },
+        {
+          "nombre": "Cosign: verificar firmas",
+          "url": "https://docs.sigstore.dev/cosign/verifying/verify/"
+        },
+        {
+          "nombre": "Cosign verify-blob: CLI oficial",
+          "url": "https://github.com/sigstore/cosign/blob/main/doc/cosign_verify-blob.md"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "bash",
+        "descripcion": "Ejecutar tres comprobaciones independientes con herramientas ya disponibles: inventario, vulnerabilidades conocidas y firma del SBOM. Preparar una muestra local y su firma de laboratorio.",
+        "verificacion": "revision_sintactica_o_documental_sin_despliegue"
+      }
     },
     {
       "ruta": "anexos/02-dia1-seminario/06-fernandez-dispositivos-medicos.md",
@@ -2328,7 +2380,12 @@
           "nombre": "Ghidra",
           "url": "https://github.com/NationalSecurityAgency/ghidra"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "python",
+        "descripcion": "Comparar un flujo ficticio con un inventario explícito. El ejemplo no captura tráfico ni conecta dispositivos.",
+        "verificacion": "ejecutado_con_datos_ficticios"
+      }
     },
     {
       "ruta": "anexos/02-dia1-seminario/07-panel-sectores-criticos.md",
@@ -2353,8 +2410,17 @@
         {
           "nombre": "FIRST Traffic Light Protocol",
           "url": "https://www.first.org/tlp/"
+        },
+        {
+          "nombre": "Suricata 8.0.1: Modbus Keyword",
+          "url": "https://docs.suricata.io/en/suricata-8.0.1/rules/modbus-keyword.html"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "text",
+        "descripcion": "Regla de observación de Modbus con el parser del protocolo, para adaptar y probar con PCAP propios. Se usa alert, sin bloquear comunicaciones.",
+        "verificacion": "revision_sintactica_o_documental_sin_despliegue"
+      }
     },
     {
       "ruta": "anexos/02-dia1-seminario/08-bonnaire-agentes-ia.md",
@@ -2380,7 +2446,12 @@
           "nombre": "OWASP Top 10 for LLM Applications",
           "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "python",
+        "descripcion": "Modelo de autorización para herramientas mock. Rechaza campos ausentes, acciones desconocidas, booleanos usados como números y valores no finitos.",
+        "verificacion": "ejecutado_con_datos_ficticios"
+      }
     },
     {
       "ruta": "anexos/02-dia1-seminario/09-evirtus-zero-trust.md",
@@ -2406,7 +2477,12 @@
           "nombre": "SPIFFE Overview",
           "url": "https://spiffe.io/docs/latest/spiffe-about/overview/"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "yaml",
+        "descripcion": "Política L4 para un namespace de laboratorio con workloads simulados. El ejemplo no configura TLS ni asegura identidad de usuario.",
+        "verificacion": "revision_sintactica_o_documental_sin_despliegue"
+      }
     },
     {
       "ruta": "anexos/03-dia2-seminario/01-caceres-blue-team-ia.md",
@@ -2431,8 +2507,17 @@
         {
           "nombre": "MITRE D3FEND",
           "url": "https://d3fend.mitre.org/"
+        },
+        {
+          "nombre": "Sigma Rules Specification",
+          "url": "https://sigmahq.io/sigma-specification/specification/sigma-rules-specification.html"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "yaml",
+        "descripcion": "Regla Sigma experimental que exige indicios de descarga y de ejecución, además del proceso PowerShell. Debe convertirse con el backend y mapeo de campos apropiados.",
+        "verificacion": "revision_sintactica_o_documental_sin_despliegue"
+      }
     },
     {
       "ruta": "anexos/03-dia2-seminario/02-fuentes-threat-intelligence.md",
@@ -2462,7 +2547,12 @@
           "nombre": "FIRST TLP",
           "url": "https://www.first.org/tlp/"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "python",
+        "descripcion": "Comparar el SHA-256 de bytes de laboratorio con un indicador. Se calcula el hash del contenido, en lugar de buscar el texto del hash dentro del archivo.",
+        "verificacion": "ejecutado_con_datos_ficticios"
+      }
     },
     {
       "ruta": "anexos/03-dia2-seminario/03-cordero-resiliencia-hardware.md",
@@ -2487,8 +2577,17 @@
         {
           "nombre": "UEFITool",
           "url": "https://github.com/LongSoft/UEFITool"
+        },
+        {
+          "nombre": "tpm2_pcrread: manual oficial",
+          "url": "https://tpm2-tools.readthedocs.io/en/latest/man/tpm2_pcrread.1/"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "bash",
+        "descripcion": "Consultas de lectura para un equipo de laboratorio con herramientas preparadas. Si algo falta o falla, el resultado termina como revisión incompleta.",
+        "verificacion": "revision_sintactica_o_documental_sin_despliegue"
+      }
     },
     {
       "ruta": "anexos/03-dia2-seminario/04-alli-salud-ciberseguridad.md",
@@ -2514,7 +2613,12 @@
           "nombre": "ENISA Health Threat Landscape",
           "url": "https://www.enisa.europa.eu/publications/health-threat-landscape"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "python",
+        "descripcion": "Proponer pasos de continuidad para una mesa de trabajo. El código no desconecta redes, activa réplicas ni valida disponibilidad clínica.",
+        "verificacion": "ejecutado_con_datos_ficticios"
+      }
     },
     {
       "ruta": "anexos/03-dia2-seminario/05-albuquerque-deteccion-respuesta.md",
@@ -2540,7 +2644,12 @@
           "nombre": "NIST SP 800-61 Rev. 3",
           "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "python",
+        "descripcion": "Revisar un registro de proceso ficticio y señalar un patrón acotado. No consulta procesos reales ni aplica contención.",
+        "verificacion": "ejecutado_con_datos_ficticios"
+      }
     },
     {
       "ruta": "anexos/03-dia2-seminario/06-norman-amenazas-hibridas.md",
@@ -2566,7 +2675,12 @@
           "nombre": "Gephi",
           "url": "https://github.com/gephi/gephi"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "python",
+        "descripcion": "Resumir coincidencias textuales entre canales ficticios. La función acepta también conjuntos vacíos y no atribuye bots ni coordinación.",
+        "verificacion": "ejecutado_con_datos_ficticios"
+      }
     },
     {
       "ruta": "anexos/03-dia2-seminario/07-abbas-academia-talento.md",
@@ -2591,8 +2705,17 @@
         {
           "nombre": "CTFd: Challenge Overview",
           "url": "https://docs.ctfd.io/docs/challenges/overview/"
+        },
+        {
+          "nombre": "CTFd: instalación oficial",
+          "url": "https://docs.ctfd.io/docs/deployment/installation/"
         }
-      ]
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "yaml",
+        "descripcion": "Plantilla Compose para CTFd en un laboratorio local. Definir una imagen publicada fijada por digest y una clave del entorno antes de usarla; no guardar claves en Git.",
+        "verificacion": "revision_sintactica_o_documental_sin_despliegue"
+      }
     },
     {
       "ruta": "anexos/02-dia1-seminario/10-macias-analisis-amenazas.md",
@@ -2653,7 +2776,107 @@
           "url": "https://sigmahq.io/docs/guide/getting-started.html"
         }
       ]
+    },
+    {
+      "ruta": "anexos/04-investigacion-global/01-nist-cisa-ncsc.md",
+      "titulo": "Gestión del Riesgo y Ciberresiliencia: NIST, CISA y NCSC",
+      "objetivo": "Comparar resultados de seguridad y evidencia por función sin convertir una rúbrica local en una certificación.",
+      "tipo": "investigacion_global",
+      "herramientas": [
+        {
+          "nombre": "CSET",
+          "url": "https://github.com/cisagov/cset"
+        },
+        {
+          "nombre": "OpenSCAP",
+          "url": "https://github.com/OpenSCAP/openscap"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "NIST Cybersecurity Framework (CSF) 2.0",
+          "url": "https://csrc.nist.gov/pubs/cswp/29/the-nist-cybersecurity-framework-csf-20/final"
+        },
+        {
+          "nombre": "NCSC Cyber Assessment Framework",
+          "url": "https://www.ncsc.gov.uk/collection/cyber-assessment-framework"
+        }
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "python",
+        "descripcion": "Resumir conteos de resultados con o sin evidencia para cada función del ejercicio, manteniendo visibles los resultados no evaluados.",
+        "verificacion": "ejecutado_con_datos_ficticios"
+      }
+    },
+    {
+      "ruta": "anexos/04-investigacion-global/02-china-cii-cac.md",
+      "titulo": "Protección de Infraestructura de Información Crítica en China",
+      "objetivo": "Analizar evidencia de configuración y retención con un alcance técnico y jurídico explícito.",
+      "tipo": "investigacion_global",
+      "herramientas": [
+        {
+          "nombre": "OpenSCAP",
+          "url": "https://github.com/OpenSCAP/openscap"
+        },
+        {
+          "nombre": "ComplianceAsCode Content",
+          "url": "https://github.com/ComplianceAsCode/content"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Regulation to strengthen protection over critical information infrastructure",
+          "url": "https://english.www.gov.cn/policies/latestreleases/202108/17/content_WS611b8062c6d0df57f98de907.html"
+        },
+        {
+          "nombre": "NIST SP 800-161 Rev. 1 — Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations",
+          "url": "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final"
+        }
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "python",
+        "descripcion": "Comparar la antigüedad de un registro ficticio con la fecha de referencia del ejercicio. El código no inspecciona el equipo ni interpreta obligaciones de MLPS.",
+        "verificacion": "ejecutado_con_datos_ficticios"
+      }
+    },
+    {
+      "ruta": "anexos/04-investigacion-global/03-rusia-187fz-fstec.md",
+      "titulo": "Seguridad de Infraestructura de Información Crítica en Rusia",
+      "objetivo": "Estudiar clasificación y preparación de evidencia sin inventar protocolos ni conectores oficiales.",
+      "tipo": "investigacion_global",
+      "herramientas": [
+        {
+          "nombre": "Suricata",
+          "url": "https://github.com/OISF/suricata"
+        },
+        {
+          "nombre": "MISP",
+          "url": "https://github.com/MISP/MISP"
+        }
+      ],
+      "fuentes": [
+        {
+          "nombre": "Федеральный закон от 26.07.2017 № 187-ФЗ",
+          "url": "https://publication.pravo.gov.ru/document/view/0001201707260023"
+        },
+        {
+          "nombre": "NIST SP 800-150 — Guide to Cyber Threat Information Sharing",
+          "url": "https://csrc.nist.gov/pubs/sp/800/150/final"
+        }
+      ],
+      "ejemplo_tecnico": {
+        "lenguaje": "python",
+        "descripcion": "Generar una ficha local de laboratorio con una dirección documental y estado de envío explícito. No recoge hostname ni contacta servicios externos.",
+        "verificacion": "ejecutado_con_datos_ficticios"
+      }
     }
   ],
-  "total_anexos_practicos": 18
+  "total_anexos_practicos": 21,
+  "total_ejemplos_tecnicos_revisados": 19,
+  "ejemplos_tecnicos_verificados": {
+    "python_ejecutados": 12,
+    "bash_revisados": 3,
+    "yaml_revisados": 3,
+    "reglas_contrastadas_documentalmente": 1
+  }
 }

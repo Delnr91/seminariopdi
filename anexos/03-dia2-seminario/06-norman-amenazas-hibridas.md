@@ -32,15 +32,33 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. Importar en Gephi una tabla de nodos y otra de aristas. Comparar agrupación temporal y difusión; conservar parámetros del análisis.
 4. Redactar un aviso que describa hechos confirmados y continuidad del servicio, evitando atribución no corroborada y amplificación innecesaria de la narrativa.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-Tabla de aristas para importar junto a un inventario de nodos sintéticos:
+Resumir coincidencias textuales entre canales ficticios. La función acepta también conjuntos vacíos y no atribuye bots ni coordinación.
 
-```csv
-Source,Target,Type,Weight
-canal_A,canal_B,Directed,1
-canal_B,canal_C,Directed,1
+```python
+def resumir_coincidencias(mensajes):
+    if not isinstance(mensajes, list):
+        raise ValueError("Se requiere una lista de registros")
+    grupos = {}
+    for m in mensajes:
+        if not isinstance(m, dict) or any(not isinstance(m.get(k), str) or not m[k].strip()
+                                         for k in ("canal", "texto")):
+            raise ValueError("Cada registro necesita canal y texto")
+        grupos.setdefault(m["texto"], set()).add(m["canal"])
+    return [{"texto": texto, "canales_distintos": len(canales),
+             "coordinacion": "no_demostrada"}
+            for texto, canales in sorted(grupos.items()) if len(canales) >= 3]
+
+if __name__ == "__main__":
+    datos = [{"canal": c, "texto": "Servicio ficticio temporalmente fuera de linea"}
+             for c in ("canal_A", "canal_B", "canal_C")]
+    print(resumir_coincidencias(datos))
 ```
+
+**Alcance:** La repetición puede ser legítima. El ejemplo no analiza tiempos, no identifica personas y no demuestra una operación informacional. Contrastar hipótesis alternativas con evidencia adicional.
+
+**Comprobación:** ejemplo ejecutado con datos ficticios; se probaron entradas válidas, límites y errores. La prueba cubre el comportamiento local de la función, no un sistema de producción.
 
 ## Evaluación del resultado
 

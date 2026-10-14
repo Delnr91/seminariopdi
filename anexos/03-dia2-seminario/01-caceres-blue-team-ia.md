@@ -27,18 +27,48 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 
 **Entorno:** datos sintéticos o artefactos de ejemplo autorizados, en un espacio de práctica separado. Los archivos nombrados en los ejemplos son entradas o salidas que prepara el estudiante; no se suministran como descargas de este repositorio.
 
-1. Crear 20 registros de autenticación ficticios y etiquetar previamente cinco anomalías de laboratorio; incluir cambios benignos que puedan parecer sospechosos.
+1. Crear 20 registros ficticios de creación de procesos Windows y etiquetar cinco escenarios del laboratorio; incluir PowerShell administrativo, otros procesos y registros con campos ausentes.
 2. Seleccionar una detección Sigma y documentar qué campos necesita. Si faltan datos, marcar la detección como no evaluable.
 3. Comparar clasificación manual y asistida por un modelo local o un proveedor autorizado; conservar salida y evidencia citada para cada alerta.
 4. Revisar falsos positivos y negativos. Como extensión, preparar una emulación CALDERA aislada; no ejecutarla en infraestructura real.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-```csv
-evento,cuenta,resultado,contexto,etiqueta
-EV-01,usuario_prueba,exito,dispositivo_habitual,normal
-EV-02,usuario_prueba,exito,dispositivo_no_autorizado,anomalia_laboratorio
+Regla Sigma experimental que exige indicios de descarga y de ejecución, además del proceso PowerShell. Debe convertirse con el backend y mapeo de campos apropiados.
+
+```yaml
+title: PowerShell con indicadores combinados de descarga y ejecucion
+id: 5fb69381-2c60-4c41-91fb-fb121f51509f
+status: experimental
+description: Senal para revision; puede coincidir con administracion legitima.
+tags:
+    - attack.execution
+    - attack.t1059.001
+logsource:
+    category: process_creation
+    product: windows
+detection:
+    imagen:
+        Image|endswith:
+            - '\powershell.exe'
+            - '\pwsh.exe'
+    descarga:
+        CommandLine|contains:
+            - 'DownloadString'
+            - 'Net.WebClient'
+    ejecucion:
+        CommandLine|contains:
+            - 'Invoke-Expression'
+            - 'IEX'
+    condition: imagen and descarga and ejecucion
+falsepositives:
+    - Automatizacion administrativa autorizada.
+level: medium
 ```
+
+**Alcance:** Una coincidencia no confirma intrusión. Probar casos positivos y negativos, incluidos scripts legítimos y telemetría incompleta; no aislar equipos automáticamente por esta regla aislada.
+
+**Comprobación:** YAML leído y estructura revisada. No se desplegó la configuración ni se convirtió con un backend operativo.
 
 ## Evaluación del resultado
 
@@ -52,6 +82,7 @@ EV-02,usuario_prueba,exito,dispositivo_no_autorizado,anomalia_laboratorio
 
 ## Fuentes y profundización global
 
+* [Sigma Rules Specification](https://sigmahq.io/sigma-specification/specification/sigma-rules-specification.html).
 * [Sigma: Getting Started](https://sigmahq.io/docs/guide/getting-started.html).
 * [MITRE D3FEND](https://d3fend.mitre.org/).
 

@@ -32,13 +32,28 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. Si hay una VM de práctica autorizada, recoger únicamente los artefactos elegidos y comparar la cronología; en caso contrario, trabajar con un paquete sintético.
 4. Diseñar contención y recuperación en una mesa de trabajo. Definir quién autoriza, cómo se conserva evidencia y qué prueba permite cerrar el caso.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-```csv
-hora_utc,evento,evidencia,hipotesis
-2026-10-13T10:00:00Z,acceso_ficticio,registro_auth,cuenta_posiblemente_abusada
-2026-10-13T10:02:00Z,archivo_consultado,registro_app,requiere_correlacion
+Revisar un registro de proceso ficticio y señalar un patrón acotado. No consulta procesos reales ni aplica contención.
+
+```python
+from pathlib import PureWindowsPath
+
+def revisar_proceso(imagen, argumentos):
+    if any(not isinstance(x, str) or not x.strip() for x in (imagen, argumentos)):
+        raise ValueError("Faltan imagen o argumentos")
+    nombre = PureWindowsPath(imagen).name.casefold()
+    indicio = nombre == "certutil.exe" and "-urlcache" in argumentos.casefold().split()
+    return {"resultado": "revisar_contexto" if indicio else "sin_senal_en_esta_regla",
+            "malicia_confirmada": False, "contencion_ejecutada": False}
+
+if __name__ == "__main__":
+    print(revisar_proceso(r"C:\Windows\System32\certutil.exe", "-urlcache"))
 ```
+
+**Alcance:** El binario y sus argumentos pueden pertenecer a tareas legítimas. Correlacionar árbol de procesos, usuario, origen y resultado; una sola cadena no justifica aislar un endpoint.
+
+**Comprobación:** ejemplo ejecutado con datos ficticios; se probaron entradas válidas, límites y errores. La prueba cubre el comportamiento local de la función, no un sistema de producción.
 
 ## Evaluación del resultado
 

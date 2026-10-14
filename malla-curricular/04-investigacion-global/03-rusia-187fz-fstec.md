@@ -33,6 +33,10 @@ La comparación técnica puede centrarse en inventarios, coordinación de incide
 
 * [Perform threat hunting in Microsoft Sentinel](https://learn.microsoft.com/en-us/training/paths/sc-200-perform-threat-hunting-azure-sentinel/) — practicar análisis guiado por hipótesis con material gratuito; las prácticas Azure pueden generar costes.
 
+## 🛠️ Anexo de métodos y herramientas
+
+[Ejercicio técnico, evidencia y límites de aplicabilidad](../../anexos/04-investigacion-global/03-rusia-187fz-fstec.md). El módulo es investigación complementaria y no se asocia a una charla del seminario sin corroboración.
+
 ## 🎧 Audio Resumen
 
 **Grabación pendiente.** El siguiente enlace estará disponible al incorporar el MP3.

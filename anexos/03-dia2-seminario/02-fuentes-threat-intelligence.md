@@ -32,13 +32,32 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. Representar indicadores y relaciones con STIX 2.1; documentar el significado de cada campo y validar mediante la biblioteca oficial de OASIS.
 4. Importar en una instancia de laboratorio si está disponible y redactar una recomendación breve con fecha de revisión y evidencia que podría refutarla.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-Ficha previa a su representación STIX; este JSON no es un objeto STIX completo:
+Comparar el SHA-256 de bytes de laboratorio con un indicador. Se calcula el hash del contenido, en lugar de buscar el texto del hash dentro del archivo.
 
-```json
-{"indicador":"fraude.example.invalid","tipo":"domain-name","fuente":"simulacion","confianza":"baja","revision":"2026-10-20","distribucion":"solo_laboratorio"}
+```python
+import hashlib
+import re
+
+def comparar_sha256(contenido, esperado):
+    if not isinstance(contenido, bytes):
+        raise ValueError("Se requieren bytes de laboratorio")
+    if not isinstance(esperado, str) or not re.fullmatch(r"[0-9a-fA-F]{64}", esperado):
+        raise ValueError("Indicador SHA-256 inválido")
+    calculado = hashlib.sha256(contenido).hexdigest()
+    return {"sha256": calculado, "coincidencia": calculado == esperado.lower(),
+            "veredicto_malware": "no_evaluado"}
+
+if __name__ == "__main__":
+    muestra = b"ejemplo educativo"
+    indicador = hashlib.sha256(muestra).hexdigest()
+    print(comparar_sha256(muestra, indicador))
 ```
+
+**Alcance:** La coincidencia identifica el contenido comparado, no demuestra malicia. Para reglas YARA de hashes usar el módulo hash y validar con el motor; añadir fuente, vigencia y contexto a los indicadores.
+
+**Comprobación:** ejemplo ejecutado con datos ficticios; se probaron entradas válidas, límites y errores. La prueba cubre el comportamiento local de la función, no un sistema de producción.
 
 ## Evaluación del resultado
 

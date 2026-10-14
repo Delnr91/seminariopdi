@@ -34,13 +34,17 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. Crear un evento sintético en MISP con fuente, fecha y etiqueta TLP; comprobar permisos y distribución efectivos antes de compartir.
 4. Ensayar avisos y operación degradada, identificando qué sector necesita cada dato y qué información puede omitirse.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-Ejemplo offline de la [guía oficial de Zeek](https://docs.zeek.org/en/current/quickstart.html), con su PCAP de práctica en un directorio de trabajo:
+Regla de observación de Modbus con el parser del protocolo, para adaptar y probar con PCAP propios. Se usa alert, sin bloquear comunicaciones.
 
-```bash
-zeek -r quickstart.pcap LogAscii::use_json=T
+```text
+alert tcp any any -> $HOME_NET 502 (msg:"LAB Modbus funcion 6 observada"; flow:to_server,established; modbus: function 6; sid:1000001; rev:1;)
 ```
+
+**Alcance:** La función 6 puede ser legítima. Autorización, ventana de mantenimiento e impacto necesitan contexto externo. Requiere Suricata con parser Modbus habilitado; validar la regla y sus alertas en un laboratorio antes de cualquier uso operacional.
+
+**Comprobación:** keyword contrastado con documentación oficial. No se ejecutó el motor de detección sobre PCAP.
 
 ## Evaluación del resultado
 
@@ -54,6 +58,7 @@ zeek -r quickstart.pcap LogAscii::use_json=T
 
 ## Fuentes y profundización global
 
+* [Suricata 8.0.1: Modbus Keyword](https://docs.suricata.io/en/suricata-8.0.1/rules/modbus-keyword.html).
 * [NIST SP 800-82 Rev. 3](https://csrc.nist.gov/pubs/sp/800/82/r3/final).
 * [FIRST Traffic Light Protocol](https://www.first.org/tlp/).
 

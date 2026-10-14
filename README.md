@@ -51,7 +51,7 @@ Las 19 lecciones temáticas incluyen dos párrafos de síntesis, cuatro concepto
 
 El [índice audiovisual de ambas jornadas](VIDEOS.md) reúne **17 bloques temáticos**, con puntos de entrada, cierre y duración aproximada. Permite saltar las largas pausas grabadas; los enlaces no suprimen publicidad de YouTube ni detienen automáticamente el video al cierre. Los paneles incluyen varias personas y su duración no equivale al tiempo de voz de un speaker.
 
-Los [18 anexos prácticos](anexos/README.md) agregan métodos, estrategias, herramientas open source, ejercicios y criterios de evaluación. Las dos guías de E-Virtus son ampliaciones temáticas relacionadas con la misma intervención de **Mauricio Barrera**; no se presentan como dos charlas diferentes.
+Los [21 anexos prácticos](anexos/README.md) agregan métodos, estrategias, herramientas open source, ejercicios y criterios de evaluación, incluyendo los tres módulos internacionales. Integran 19 ejemplos técnicos revisados: 12 funciones Python probadas con datos ficticios y siete ejemplos de comandos, configuración o detección cuyo alcance de verificación se documenta. Las dos guías de E-Virtus son ampliaciones temáticas relacionadas con la misma intervención de **Mauricio Barrera**; no se presentan como dos charlas diferentes.
 
 ### Intervenciones adicionales del Día 1
 
@@ -66,11 +66,11 @@ Estas entradas amplían la cobertura audiovisual. Las propuestas prácticas son 
 
 Los módulos comparan enfoques y fuentes, distinguiendo marcos técnicos de requisitos jurídicos específicos.
 
-| Módulo | Enfoque |
-| --- | --- |
-| [Gestión del Riesgo y Ciberresiliencia: NIST, CISA y NCSC](malla-curricular/04-investigacion-global/01-nist-cisa-ncsc.md) | Marcos de referencia de Estados Unidos y Reino Unido |
-| [Protección de Infraestructura de Información Crítica en China](malla-curricular/04-investigacion-global/02-china-cii-cac.md) | Marco CII y autoridades de ciberseguridad |
-| [Seguridad de Infraestructura de Información Crítica en Rusia](malla-curricular/04-investigacion-global/03-rusia-187fz-fstec.md) | Marco de la Ley Federal 187-FZ |
+| Módulo | Enfoque | Práctica |
+| --- | --- | --- |
+| [Gestión del Riesgo y Ciberresiliencia: NIST, CISA y NCSC](malla-curricular/04-investigacion-global/01-nist-cisa-ncsc.md) | Marcos de referencia de Estados Unidos y Reino Unido | [Anexo](anexos/04-investigacion-global/01-nist-cisa-ncsc.md) |
+| [Protección de Infraestructura de Información Crítica en China](malla-curricular/04-investigacion-global/02-china-cii-cac.md) | Marco CII y autoridades de ciberseguridad | [Anexo](anexos/04-investigacion-global/02-china-cii-cac.md) |
+| [Seguridad de Infraestructura de Información Crítica en Rusia](malla-curricular/04-investigacion-global/03-rusia-187fz-fstec.md) | Marco de la Ley Federal 187-FZ | [Anexo](anexos/04-investigacion-global/03-rusia-187fz-fstec.md) |
 
 ## Audio Hub
 

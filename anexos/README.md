@@ -1,6 +1,6 @@
 # 🛠️ Anexos prácticos de métodos y herramientas
 
-**Curaduría: [Lattices](https://lattices.cl).** Dieciocho guías para profundizar las temáticas de las dos jornadas, con tres métodos por guía, herramientas open source, un laboratorio, evidencias y métricas.
+**Curaduría: [Lattices](https://lattices.cl).** Veintiuna guías para profundizar las temáticas de las dos jornadas y la investigación internacional, con tres métodos por guía, herramientas open source, un laboratorio, evidencias y métricas.
 
 ## Cómo recorrer las guías
 
@@ -15,7 +15,7 @@ Los tiempos del video son aproximados; las propuestas prácticas son ampliacione
 
 La lectura y las tablas requieren pocos recursos. PCAP pequeños, SBOM de muestras y análisis estático pueden trabajarse por separado. OpenCTI, Malcolm, OpenEMR, SPIRE/Cilium o CALDERA completos necesitan un laboratorio dimensionado; en equipos modestos conviene utilizar primero las alternativas con archivos o ejercicios de mesa indicadas en cada guía. Los modelos y servicios de nube pueden consumir recursos o generar costes; no son requisitos para consultar este repositorio.
 
-Los comandos y configuraciones son ejemplos de estudio. Se contrastaron con documentación primaria, pero no se ejecutaron los 18 laboratorios ni se desplegaron sus herramientas durante la curaduría. Sus resultados deben medirse en el entorno que prepare el estudiante.
+Los 19 ejemplos técnicos se distribuyen en 12 funciones de Python ejecutadas con datos ficticios, tres bloques Bash revisados, tres configuraciones YAML leídas y una regla Suricata contrastada documentalmente. No se desplegaron las herramientas externas ni se ejecutaron los 21 laboratorios completos. Los ejemplos de Python usan la biblioteca estándar; sus pruebas no acreditan seguridad operacional ni cumplimiento legal.
 
 ## Día 1
 
@@ -44,6 +44,14 @@ Los comandos y configuraciones son ejemplos de estudio. Se contrastaron con docu
 | Tales Albuquerque | [Prevención, Detección y Respuesta ante Ciberamenazas](03-dia2-seminario/05-albuquerque-deteccion-respuesta.md) | Conectar una hipótesis de intrusión con evidencia mínima, una decisión de contención y una recuperación comprobable. |
 | James Norman | [Amenazas Híbridas y Resiliencia Informacional](03-dia2-seminario/06-norman-amenazas-hibridas.md) | Analizar una campaña informacional ficticia junto a un incidente técnico sin confundir coordinación, identidad y atribución. |
 | Nadezda Abbas | [Desarrollo de Talento para la Ciberresiliencia](03-dia2-seminario/07-abbas-academia-talento.md) | Construir una ruta de formación basada en tareas y evidencias observables, con evaluación repetible de capacidades. |
+
+## Investigación global
+
+| Módulo | Guía | Práctica |
+| --- | --- | --- |
+| Gestión del Riesgo y Ciberresiliencia: NIST, CISA y NCSC | [Anexo](04-investigacion-global/01-nist-cisa-ncsc.md) | Comparar resultados de seguridad y evidencia por función sin convertir una rúbrica local en una certificación. |
+| Protección de Infraestructura de Información Crítica en China | [Anexo](04-investigacion-global/02-china-cii-cac.md) | Analizar evidencia de configuración y retención con un alcance técnico y jurídico explícito. |
+| Seguridad de Infraestructura de Información Crítica en Rusia | [Anexo](04-investigacion-global/03-rusia-187fz-fstec.md) | Estudiar clasificación y preparación de evidencia sin inventar protocolos ni conectores oficiales. |
 
 ---
 

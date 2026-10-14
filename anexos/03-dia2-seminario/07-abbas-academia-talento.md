@@ -32,15 +32,28 @@ El ejercicio puede comenzar con tablas y archivos pequeños. Registrar la versi�
 3. Cargar los retos en CTFd si existe una instancia de laboratorio; como alternativa ligera, utilizar archivos y revisión manual.
 4. Evaluar un caso nuevo sin revelar la solución anterior y revisar el informe con otra persona. Identificar errores, no solo la puntuación total.
 
-### Ejemplo de trabajo
+### Código y configuración de referencia
 
-```csv
-criterio,peso_porcentaje,evidencia
-hipotesis_y_contexto,25,explicacion_verificable
-analisis_tecnico,35,registro_y_resultado
-respuesta_y_recuperacion,25,plan_justificado
-comunicacion,15,informe_claro
+Plantilla Compose para CTFd en un laboratorio local. Definir una imagen publicada fijada por digest y una clave del entorno antes de usarla; no guardar claves en Git.
+
+```yaml
+services:
+  ctfd:
+    image: ${CTFD_IMAGE:?definir_imagen_publicada_con_digest_verificado}
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      DATABASE_URL: sqlite:////var/CTFd/ctfd.db
+      SECRET_KEY: ${CTFD_SECRET_KEY:?definir_clave_del_laboratorio}
+    volumes:
+      - ctfd_datos:/var/CTFd
+volumes:
+  ctfd_datos:
 ```
+
+**Alcance:** Es una plantilla que requiere preparación y ensayo, no un despliegue realizado. No expone el puerto en todas las interfaces ni incorpora objetivos vulnerables. No se usaron imágenes latest; revisar permisos y persistencia de la versión elegida.
+
+**Comprobación:** YAML leído y estructura revisada. No se desplegó la configuración ni se convirtió con un backend operativo.
 
 ## Evaluación del resultado
 
@@ -54,6 +67,7 @@ comunicacion,15,informe_claro
 
 ## Fuentes y profundización global
 
+* [CTFd: instalación oficial](https://docs.ctfd.io/docs/deployment/installation/).
 * [NICE Framework Resource Center](https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center).
 * [CTFd: Challenge Overview](https://docs.ctfd.io/docs/challenges/overview/).
 
